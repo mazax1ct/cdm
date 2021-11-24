@@ -1,0 +1,67 @@
+.switch
+    align-items: center
+    display: inline-flex
+
+    input[type="checkbox"],
+    input[type="radio"]
+      position: absolute
+      height: 1px
+      overflow: hidden
+      clip: rect(0 0 0 0)
+      width: 1px
+
+      &:not(:disabled) + .switch__icon
+        cursor: pointer
+
+      &:checked + .switch__icon
+        background-color: $text-color
+
+        &::after
+          background-color: $green_light
+          left: 18px
+
+          @media(min-width: 1200px)
+            left: 44px
+
+      &:not(:disabled):focus + .switch__icon
+        box-shadow: 0 0 4px 0 $green
+        outline: 1px solid $green
+
+      &:not(:disabled):focus + .switch__icon
+
+      &:disabled + .switch__icon
+        opacity: 0.5
+
+    &__icon
+      border-radius: 20px
+      background-color: $green_light
+      content: ''
+      display: block
+      height: 24px
+      position: relative
+      transition: background-color 0.3s
+      width: 40px
+
+      @media(min-width: 1200px)
+        height: 40px
+        width: 80px
+
+      &:not(:last-child)
+        margin-right: 10px
+
+      &::after
+        background-color: $text-color
+        border-radius: 50%
+        content: ''
+        height: 20px
+        left: 2px
+        position: absolute
+        transition: left 0.3s, background-color 0.3s
+        top: 2px
+        width: 20px
+
+        @media(min-width: 1200px)
+          height: 32px
+          left: 4px
+          top: 4px
+          width: 32px

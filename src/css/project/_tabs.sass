@@ -1,0 +1,67 @@
+.tabs
+  border-radius: $border-radius
+  border: 1px solid $purple_light
+  background-color: #fff
+
+  &__nav
+    background-color: #fff
+    box-shadow: 0 4px 4px 0 rgba(#000,0.1)
+    border-radius: $border-radius
+    display: flex
+    list-style: none
+    margin: 0
+    overflow-x: auto
+    padding: 8px
+    scrollbar-width: thin
+    scrollbar-color: $purple $purple_light
+
+    &::-webkit-scrollbar
+      border-radius: $border-radius
+      height: 6px
+      width: 6px
+
+    &::-webkit-scrollbar-track
+      background-color: $purple_light
+
+    &::-webkit-scrollbar-thumb
+      background-color: $purple
+      border-radius: $border-radius
+      width: 6px
+
+  &__nav-item
+    padding-left: 6px
+    padding-right: 6px
+
+  &__nav-button
+    align-items: center
+    border-radius: $border-radius
+    background-color: #fff
+    border: 1px solid $purple
+    color: $purple
+    cursor: pointer
+    display: inline-flex
+    font-family: 'Mediator', Arial, sans-serif
+    font-size: 16px
+    height: 40px
+    line-height: 1.25
+    padding: 8px 14px
+    text-decoration: none
+    text-align: center
+    transition: background-color 0.3s, color 0.3s
+    vertical-align: middle
+
+    &:hover,
+    &:focus
+      background-color: $purple_light
+
+    &.is-active
+      background-color: $purple
+      color: #fff
+
+
+.tab
+  display: none
+  padding: 16px
+
+  &.is-active
+    display: block

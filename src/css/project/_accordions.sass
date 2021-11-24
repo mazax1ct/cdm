@@ -1,0 +1,84 @@
+.accordions
+  border-radius: $border-radius
+  border: 2px solid $purple
+  background-color: #fff
+  margin-left: auto
+  margin-right: auto
+  max-width: 1160px
+
+.accordion
+  &:not(:last-child)
+    border-bottom: 1px solid $purple
+
+  &:first-child
+    .accordion__toggler
+      border-top-left-radius: $border-radius
+      border-top-right-radius: $border-radius
+
+  &:last-child
+    .accordion__toggler
+      border-bottom-left-radius: $border-radius
+      border-bottom-right-radius: $border-radius
+
+      &.is-active
+        border-bottom-left-radius: 0
+        border-bottom-right-radius: 0
+
+  &__toggler
+    background-color: transparent
+    border: none
+    cursor: pointer
+    font-size: 16px
+    font-weight: 700
+    padding: 16px 40px 16px 16px
+    position: relative
+    text-align: left
+    transition: background-color 0.3s
+    width: 100%
+
+    &:hover,
+    &:focus
+      background-color: $purple_light
+
+    @media(min-width: 1024px)
+      font-size: 18px
+      padding-right: 80px
+
+    @media(min-width: 1350px)
+      font-size: 24px
+      padding-left: 40px
+
+    &::after
+      background-image: url("data:image/svg+xml,%3Csvg width='26' height='12' viewBox='0 0 26 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13 12L0.00961974 0.749998L25.9904 0.75L13 12Z' fill='%238D83B2'/%3E%3C/svg%3E%0A")
+      background-repeat: no-repeat
+      background-position: 50% 50%
+      background-size: 100% auto
+      content: ''
+      height: 16px
+      left: auto
+      position: absolute
+      right: 10px
+      top: 50%
+      transform-origin: center
+      transform: translateY(-50%)
+      width: 16px
+      z-index: 1
+
+      @media(min-width: 1024px)
+        height: 26px
+        right: 40px
+        width: 26px
+
+    &.is-active
+      &::after
+        transform: rotate(-180deg) translateY(50%)
+
+  &__body
+    display: none
+    padding: 16px 40px 16px 16px
+
+    @media(min-width: 1024px)
+      padding-right: 80px
+
+    @media(min-width: 1350px)
+      padding-left: 40px

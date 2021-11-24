@@ -1,0 +1,89 @@
+.checkbox-label,
+.radio-label
+  display: block
+  position: relative
+  padding-left: 28px
+
+  &:last-child
+    margin-bottom: 0
+
+  &.disabled
+    &:focus
+      outline: none
+
+  &:focus
+    outline: 1px dotted inherit
+
+  input[type="checkbox"],
+  input[type="radio"]
+    position: absolute
+    height: 1px
+    overflow: hidden
+    clip: rect(0 0 0 0)
+    width: 1px
+
+.checkbox-icon,
+.radio-icon
+  border: 2px solid $purple
+  cursor: pointer
+  height: 20px
+  left: 0
+  position: absolute
+  top: 2px
+  text-align: center
+  width: 20px
+
+  @media(min-width: 1200px)
+    top: 3px
+
+.checkbox-icon
+  border-radius: 4px
+
+.radio-icon
+  border-radius: 50%
+
+input[type="checkbox"]:checked + .checkbox-icon:before
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpolygon fill='%238D83B2' points='9,18.4 3.3,12.7 4.7,11.3 9,15.6 19.3,5.3 20.7,6.7'/%3E%3C/svg%3E%0A")
+  background-position: 50% 50%
+  background-repeat: no-repeat
+  content: ''
+  height: 14px
+  left: 50%
+  position: absolute
+  top: 50%
+  transform: translate(-50%, -50%)
+  width: 14px
+
+input[type="checkbox"]:focus + .checkbox-icon,
+input[type="checkbox"]:active + .checkbox-icon
+
+
+input[type="radio"]:checked + .radio-icon::before
+  background-color: $purple
+  border-radius: 50%
+  content: ''
+  height: 14px
+  left: 50%
+  position: absolute
+  top: 50%
+  transform: translate(-50%, -50%)
+  width: 14px
+
+input[type="radio"]:focus + .radio-icon,
+input[type="radio"]:active + .radio-icon
+
+
+.checkbox-text,
+.radio-text
+  cursor: pointer
+
+input[type="checkbox"]:disabled ~ .checkbox-text,
+input[type="checkbox"].disabled ~ .checkbox-text,
+input[type="checkbox"]:disabled ~ .checkbox-icon,
+input[type="checkbox"].disabled ~ .checkbox-icon,
+input[type="radio"]:disabled ~ .radio-text,
+input[type="radio"].disabled ~ .radio-text,
+input[type="radio"]:disabled ~ .radio-icon,
+input[type="radio"].disabled ~ .radio-icon
+  cursor: default
+  opacity: 0.5

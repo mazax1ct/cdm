@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Главная</title>
+
+    <meta name="description" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    
+
+    <link rel="preload" href="fonts/subset-Mediator-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Mediator-Bold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Mediator-ExtraBold.woff2" as="font" crossorigin="anonymous">
+
+    <style>
+        #preloader {
+            align-items: center;
+            bottom: 0;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            left: 0;
+            opacity: 1;
+            position: fixed;
+            right: 0;
+            top: 0;
+            transition: opacity 0.3s;
+            z-index: 999999;
+        }
+    
+        #preloader p {
+            color: #333;
+            font-family: sans-serif;
+            font-size: 14px;
+            margin-top: 25px;
+        }
+    
+        .loaded #preloader {
+            opacity: 0
+        }
+    </style>
+
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+    <svg aria-hidden="true" style="width: 0px; height: 0px; overflow: hidden; position: absolute;" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="refresh" viewBox="0 0 20 20">
+            <path
+              d="M9.99992 5.00004V7.50004L13.3333 4.16671L9.99992 0.833374V3.33337C6.31658 3.33337 3.33325 6.31671 3.33325 10C3.33325 11.3084 3.71659 12.525 4.36659 13.55L5.58325 12.3334C5.20825 11.6417 4.99992 10.8417 4.99992 10C4.99992 7.24171 7.24159 5.00004 9.99992 5.00004ZM15.6333 6.45004L14.4166 7.66671C14.7832 8.36671 14.9999 9.15837 14.9999 10C14.9999 12.7584 12.7583 15 9.99992 15V12.5L6.66658 15.8334L9.99992 19.1667V16.6667C13.6833 16.6667 16.6666 13.6834 16.6666 10C16.6666 8.69171 16.2833 7.47504 15.6333 6.45004Z" />
+        </symbol>
+        <symbol id="arrow_left" viewBox="0 0 29 29">
+            <path d="M0,14.5l6.1-6V13H29v3H6.1v4.5L0,14.5z" />
+        </symbol>
+        <symbol id="arrow_right" viewBox="0 0 29 29">
+            <path d="M29,14.5l-6.1,6V16H0v-3h22.9V8.5L29,14.5z" />
+        </symbol>
+        <symbol id="search" viewBox="0 0 15 15">
+            <path
+              d="M13.3969 11.7855C13.0283 11.4325 12.6696 11.0693 12.3211 10.6964C12.0283 10.399 11.852 10.1826 11.852 10.1826L9.64848 9.13047C10.5307 8.13003 11.0176 6.84214 11.0178 5.50834C11.0178 2.47167 8.54669 0 5.50892 0C2.47114 0 0 2.47167 0 5.50834C0 8.54501 2.47114 11.0167 5.50892 11.0167C6.89638 11.0167 8.16107 10.4973 9.13143 9.64825L10.1836 11.8516C10.1836 11.8516 10.4001 12.0279 10.6975 12.3206C11.0021 12.6062 11.4027 12.9926 11.7867 13.3963L12.8555 14.4917L13.3308 15L15 13.331L14.4916 12.8557C14.1933 12.563 13.7951 12.1742 13.3969 11.7855ZM5.50892 9.44287C3.33919 9.44287 1.57398 7.67784 1.57398 5.50834C1.57398 3.33884 3.33919 1.57381 5.50892 1.57381C7.67865 1.57381 9.44386 3.33884 9.44386 5.50834C9.44386 7.67784 7.67865 9.44287 5.50892 9.44287Z" />
+        </symbol>
+    </svg>
+
+    <div id="preloader">
+        <p>Загрузка...</p>
+    </div>
+
+    <header class="header compensate-for-scrollbar">
+    
+    </header>
+
+    <main class="page-content">
+        <div class="container">
+
+        </div>
+    </main>
+
+    <footer class="footer">
+    
+    </footer>
+
+    <!--общие скрипты-->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    
+    <script src="js/jquery.inputmask.min.js"></script>
+    <script src="js/inputmask-init.js"></script>
+    
+    <script src="js/select2.full.min.js"></script>
+    <script src="js/select2-addon.js"></script>
+    
+    <script src="js/header.js"></script>
+    
+    <script src="js/scroller-min.js"></script>
+    <script src="js/search.js"></script>
+    
+    <script src="js/accordions.js"></script>
+    <script src="js/tabs.js"></script>
+    
+    <script src="js/main.js"></script>
+
+    <!--скрипты страницы-->
+
+    <!--прелоадер-->
+    <script src="js/preloader.js"></script>
+</body>
+
+</html>

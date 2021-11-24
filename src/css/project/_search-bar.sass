@@ -1,0 +1,224 @@
+.search-bar
+  &__title-block
+    align-items: center
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 20px
+
+  &__title
+    margin-bottom: 0
+    margin-right: auto
+    padding-right: 16px
+
+  &__form-block
+    background-color: $green_light
+    margin-left: -20px
+    margin-right: -20px
+    padding: 32px 20px 64px
+
+    @media(min-width: 768px)
+      border-radius: $border-radius
+      margin-left: 0
+      margin-right: 0
+      padding-left: 45px
+      padding-right: 45px
+      padding-bottom: 32px
+
+  &__form
+    background-color: #fff
+    border-radius: $border-radius
+    box-shadow: 0 4px 4px 0 rgba(#000, 0.05)
+    position: relative
+
+  &__input
+    background-color: #fff
+    border-radius: $border-radius
+    border: none
+    box-shadow: none
+    height: 48px
+    padding: 16px
+    width: 100%
+
+    @media(min-width: 768px)
+      padding-left: 24px
+      padding-right: 236px
+
+    &:focus
+      outline: none
+
+      &::-webkit-input-placeholder
+        color: $text-color
+        opacity: 0.6
+
+      &::-moz-placeholder
+        color: $text-color
+        opacity: 0.6
+
+      &:-ms-input-placeholder
+        color: $text-color
+        opacity: 0.6
+
+    &::-webkit-input-placeholder
+      color: $text-color
+      opacity: 1
+      transition: opacity 0.3s
+
+    &::-moz-placeholder
+      color: $text-color
+      opacity: 1
+      transition: opacity 0.3s
+
+    &:-ms-input-placeholder
+      color: $text-color
+      opacity: 1
+      transition: opacity 0.3s
+
+  &__button-block
+    align-items: center
+    display: flex
+    left: auto
+    position: absolute
+    right: 16px
+    top: 50%
+    transform: translateY(-50%)
+    z-index: 1
+
+    @media(min-width: 768px)
+      right: 24px
+
+  &__select
+    left: auto
+    position: absolute
+    top: 64px
+    right: 16px
+
+    @media(min-width: 768px)
+      right: 64px
+      top: 10px
+
+  &__submit
+    align-items: center
+    border-radius: 4px
+    border: none
+    background-color: $text-color
+    cursor: pointer
+    display: flex
+    height: 30px
+    justify-content: center
+    left: auto
+    position: absolute
+    padding: 0
+    right: 16px
+    top: 10px
+    transition: background-color 0.3s
+    width: 30px
+
+    @media(min-width: 768px)
+      right: 24px
+
+    &:hover,
+    &:focus
+      background-color: rgba($text-color, 0.7)
+
+    .icon
+      fill: #fff
+      height: 15px
+      width: 15px
+
+  &__dropdown
+    background-color: #fff
+    border-radius: 0 0 $border-radius $border-radius
+    box-shadow: 0 4px 4px 0 rgba(#000, 0.1)
+    display: none
+    left: 0
+    opacity: 0
+    position: absolute
+    padding: 0 16px 16px
+    transform: translateY(-30px)
+    top: calc(100% - 6px)
+    transition: opacity 0.3s, transform 0.3s
+    width: 100%
+    z-index: 2
+
+    @media(min-width: 768px)
+      padding: 0 24px 24px
+
+    &.is-active
+      display: block
+
+    &.is-open
+      opacity: 1
+      transform: translateY(0)
+
+  &__dropdown-title
+    margin-bottom: 6px
+
+  &__dropdown-list
+    display: flex
+    list-style: none
+    margin-bottom: 18px
+    padding: 0
+    overflow-x: auto
+    scrollbar-width: thin
+    scrollbar-color: $purple $purple_light
+
+    &::-webkit-scrollbar
+      border-radius: $border-radius
+      height: 6px
+      width: 6px
+
+    &::-webkit-scrollbar-track
+      background-color: $purple_light
+
+    &::-webkit-scrollbar-thumb
+      background-color: $purple
+      border-radius: $border-radius
+      width: 6px
+
+    &.is-no-scrollbar
+      scrollbar-width: none
+
+      &::-webkit-scrollbar
+        height: 0
+        width: 0
+
+    li
+      &:not(:last-child)
+        margin-right: 24px
+
+    .button
+      min-width: 130px
+
+  .ab_scroller
+    .search-bar__dropdown-list-item
+      padding-right: 24px
+
+.search-category
+  border-radius: $border-radius
+  background-size: cover
+  background-position: 50% 50%
+  background-repeat: no-repeat
+  color: #fff
+  display: block
+  font-size: 12px
+  height: 80px
+  overflow: hidden
+  position: relative
+  text-decoration: none
+  width: 216px
+
+  &:hover,
+  &:focus
+    color: #fff
+    font-weight: 700
+
+  &__title
+    bottom: 0
+    background-image: linear-gradient(180deg, rgba(2, 48, 71, 0.14) 0%, rgba(2, 48, 71, 0.02) 100%)
+    content: ''
+    left: 0
+    position: absolute
+    padding: 16px 24px
+    right: 0
+    top: 0
+    z-index: 1

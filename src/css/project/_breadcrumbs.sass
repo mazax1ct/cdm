@@ -1,0 +1,30 @@
+.breadcrumbs
+  color: $text-color
+  display: flex
+  font-weight: 700
+  flex-wrap: wrap
+  list-style: none
+  margin-bottom: 50px
+  margin-left: auto
+  margin-right: auto
+  padding: 0
+
+  &__item
+    align-items: center
+    display: flex
+    margin-bottom: 10px
+
+    &:not(:last-child)
+      margin-right: 10px
+
+      &::after
+        content: '/'
+        margin-left: 10px
+
+  &__link
+    color: rgba($text-color, 0.5)
+    text-decoration: none
+
+    &:hover,
+    &:focus
+      color: rgba($text-color, 0.7)

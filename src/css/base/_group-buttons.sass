@@ -1,0 +1,78 @@
+.group-buttons
+  display: inline-flex
+  vertical-align: top
+
+  &__button
+    display: block
+    position: relative
+
+    &:not(:last-child)
+      .group-buttons__button-text
+        border-right: none
+
+    &:first-child
+      .group-buttons__button-text
+        border-top-left-radius: 6px
+        border-bottom-left-radius: 6px
+
+    &:last-child
+      .group-buttons__button-text
+        border-top-right-radius: 6px
+        border-bottom-right-radius: 6px
+
+    input[type="checkbox"],
+    input[type="radio"]
+      position: absolute
+      height: 1px
+      overflow: hidden
+      clip: rect(0 0 0 0)
+      width: 1px
+
+      &:focus + .group-buttons__button-text
+        background-color: $purple_light
+
+      &:focus + .group-buttons__button-text--type_1
+        background-color: $green_light
+
+      &:checked + .group-buttons__button-text
+        background-color: $purple
+        color: #fff
+
+        .icon
+          fill: #fff
+
+      &:checked + .group-buttons__button-text--type_1
+        background-color: $green
+        color: #fff
+
+  &__button-text
+    align-items: center
+    border: 2px solid $purple
+    color: $purple
+    cursor: pointer
+    display: flex
+    height: 48px
+    line-height: 1.25
+    padding: 8px
+    transition: background-color 0.3s, color 0.3s
+
+    @media(min-width: 768px)
+      padding: 14px 16px
+
+    .icon
+      fill: $purple
+      height: 20px
+      width: 20px
+
+      &:first-child
+        margin-right: 8px
+
+      &:last-child
+        margin-left: 8px
+
+    &--type_1
+      border-color: $green
+      color: $green
+
+      .icon
+        fill: $green

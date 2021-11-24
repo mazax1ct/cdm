@@ -1,0 +1,62 @@
+.pager
+  align-items: center
+  display: flex
+  list-style: none
+  margin-top: 40px
+  margin-bottom: 40px
+  margin-left: -8px
+  margin-right: -8px
+  padding: 0
+
+  &--center
+    justify-content: center
+
+  &__item
+    margin-left: 8px
+    margin-right: 8px
+
+    &:first-child
+      margin-left: 0
+
+    &:last-child
+      margin-right: 0
+
+  &__arrow
+    display: none
+
+    @media(min-width: 768px)
+      display: block
+
+  &__link
+    align-items: center
+    border-radius: 50%
+    color: $green
+    display: flex
+    font-weight: 700
+    height: 40px
+    justify-content: center
+    text-decoration: none
+    transition: background-color 0.3s
+    width: 40px
+
+    @media(min-width: 768px)
+      height: 48px
+      width: 48px
+
+    &.is-active
+      background-color: $green_light
+
+    .icon
+      fill: $green
+      height: 29px
+      width: 29px
+
+a.pager__link
+  &:hover,
+  &:focus
+    background-color: $green_light
+    color: $green
+
+span.pager__link
+  .icon
+    fill: $green_light

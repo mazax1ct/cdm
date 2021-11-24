@@ -1,0 +1,16 @@
+.header
+  background-color: #fff
+  left: 0
+  position: fixed
+  right: 0
+  top: 0
+  transition: box-shadow 0.3s, transform 0.3s, background-color 0.3s
+  transform: translateY(0)
+  z-index: 10
+
+  &.scrolled
+    box-shadow: 0 0 6px 0 rgba($text-color, 0.1)
+
+  &.out
+    box-shadow: none
+    transform: translateY(-100%)

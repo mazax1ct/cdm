@@ -1,0 +1,194 @@
+.select-wrapper
+  display: block
+  font-size: 16px
+
+  &__container
+    display: block
+    height: 48px
+    position: relative
+
+  .select2-container
+    display: block
+    min-width: 0
+    width: 100% !important
+
+  .selection
+    display: block
+
+  .select2-container--default .select2-selection--single
+    border-width: 2px
+    border-style: solid
+    border-radius: $border-radius
+    background-color: #fff
+
+  .select2-container .select2-selection--single
+    height: 48px
+
+  .select2-container--default .select2-selection--single .select2-selection__rendered
+    line-height: 44px
+
+  .select2-container .select2-selection--single .select2-selection__rendered
+    padding-left: 14px
+    padding-right: 34px
+
+  .select2-container--default .select2-selection--single .select2-selection__arrow
+    height: 44px
+    right: 2px
+    top: 2px
+    width: 32px
+
+  .select2-container--default .select2-selection--single .select2-selection__arrow b
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    border: none
+    height: 8px
+    left: 8px
+    margin: 0
+    transform: translateY(-50%)
+    width: 12px
+
+  .select2-dropdown
+    border-width: 2px
+    border-bottom-left-radius: $border-radius
+    border-bottom-right-radius: $border-radius
+
+  .select2-container--default .select2-results > .select2-results__options
+    scrollbar-width: thin
+
+    &::-webkit-scrollbar
+      border-radius: $border-radius
+      height: 6px
+      width: 6px
+
+    &::-webkit-scrollbar-thumb
+      border-radius: $border-radius
+      width: 6px
+
+  .select2-results__option
+    &:last-child
+      border-bottom-left-radius: $border-radius
+      border-bottom-right-radius: $border-radius
+
+  &--type_1
+    .select2-container--default .select2-selection--single
+      border-color: $purple
+      background-color: #fff
+
+    .select2-container--default .select2-selection--single .select2-selection__rendered
+      color: $purple
+
+    .select2-container--default .select2-selection--single .select2-selection__placeholder
+      color: $purple
+
+    .select2-container--default .select2-selection--single .select2-selection__arrow b
+      background-image: url("data:image/svg+xml,%3Csvg width='12' height='6' viewBox='0 0 12 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 6L0.803847 -2.51245e-08L11.1962 8.834e-07L6 6Z' fill='%238D83B2'/%3E%3C/svg%3E%0A")
+
+    .select2-dropdown
+      border-color: $purple
+
+    .select2-container--default .select2-results > .select2-results__options
+      scrollbar-color: $purple $purple_light
+
+      &::-webkit-scrollbar-track
+        background-color: $purple_light
+
+      &::-webkit-scrollbar-thumb
+        background-color: $purple
+
+    .select2-results__option
+      color: $purple
+
+    .select2-container--default .select2-results__option--selected,
+    .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable
+      background-color: $purple_light
+      color: $purple
+
+  &--type_2
+    .select2-container--default .select2-selection--single
+      border-color: $green
+      background-color: #fff
+
+    .select2-container--default .select2-selection--single .select2-selection__rendered
+      color: $green
+
+    .select2-container--default .select2-selection--single .select2-selection__placeholder
+      color: $green
+
+    .select2-container--default .select2-selection--single .select2-selection__arrow b
+      background-image: url("data:image/svg+xml,%3Csvg width='12' height='6' viewBox='0 0 12 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 6L0.803847 -2.51245e-08L11.1962 8.834e-07L6 6Z' fill='%2300B0C8'/%3E%3C/svg%3E%0A")
+
+    .select2-dropdown
+      border-color: $green
+
+    .select2-container--default .select2-results > .select2-results__options
+      scrollbar-color: $green $green_light
+
+      &::-webkit-scrollbar-track
+        background-color: $green_light
+
+      &::-webkit-scrollbar-thumb
+        background-color: $green
+
+    .select2-results__option
+      color: $green
+
+    .select2-container--default .select2-results__option--selected,
+    .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable
+      background-color: $green_light
+      color: $green
+
+  &--type_3
+    font-size: 12px
+
+    .select-wrapper__container,
+    .select2-container .select2-selection--single
+      height: 30px
+
+    .select2-container--default .select2-selection--single
+      border-radius: 4px
+      background-color: $text-color
+      border-color: $text-color
+
+    .select2-container--default .select2-selection--single .select2-selection__rendered
+      color: #fff
+      line-height: 26px
+      padding-left: 12px
+      padding-right: 30px
+
+    .select2-container--default .select2-selection--single .select2-selection__arrow
+      height: 26px
+      width: 30px
+
+    .select2-container--default .select2-selection--single .select2-selection__arrow b
+      background-image: url("data:image/svg+xml,%3Csvg width='12' height='6' viewBox='0 0 12 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 6L0.803847 -2.51245e-08L11.1962 8.834e-07L6 6Z' fill='%23FFFFFF'/%3E%3C/svg%3E%0A")
+
+    .select2-dropdown
+      border-color: $text-color
+
+    .select2-container--default .select2-results > .select2-results__options
+      scrollbar-color: rgba($text-color, 0.8) $green_light
+
+      &::-webkit-scrollbar-track
+        background-color: $green_light
+
+      &::-webkit-scrollbar-thumb
+        background-color: rgba($text-color, 0.8)
+
+    .select2-container--default .select2-results__option--selected
+      background-color: #fff !important
+      color: $text-color
+
+    .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable
+      background-color: rgba(#fff, 0.7)
+      color: $text-color
+
+    .select2-dropdown
+      background-color: $text-color
+      border-bottom-left-radius: 4px
+      border-bottom-right-radius: 4px
+      color: #fff
+
+    .select2-results__option
+      &:last-child
+        border-bottom-left-radius: 4px
+        border-bottom-right-radius: 4px
