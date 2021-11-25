@@ -1,0 +1,43 @@
+.float-bar
+  box-shadow: 0 0 6px 0 rgba($text-color, 0.1)
+  bottom: 0
+  background-color: #fff
+  display: flex
+  justify-content: space-around
+  left: 0
+  min-height: 64px
+  padding-top: 6px
+  padding-left: 20px
+  padding-right: 20px
+  position: fixed
+  right: 0
+  top: auto
+  z-index: 5
+
+  @media(min-width: 1024px)
+    display: none
+
+.iconed-link
+  color: $text-color
+  display: block
+  font-size: 12px
+  line-height: 1.16666
+  min-width: 84px
+  text-decoration: none
+  text-align: center
+  white-space: nowrap
+
+  &:focus,
+  &:hover
+    color: $green
+
+    .icon
+      fill: $green
+
+  .icon
+    fill: $text-color
+    height: 24px
+    width: 24px
+
+  &__title
+    display: block

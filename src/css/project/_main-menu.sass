@@ -1,0 +1,31 @@
+.main-menu
+  font-size: 18px
+  font-weight: 700
+
+  @media(min-width: 1024px) and (max-width: 1349px)
+    font-size: 16px
+
+  &__list
+    list-style: none
+    margin: 0
+    padding: 0
+
+    @media(min-width: 1024px)
+      display: flex
+
+  &__list-item
+    margin-bottom: 24px
+
+    @media(min-width: 1024px)
+      margin-bottom: 0
+
+    &:not(:last-child)
+      @media(min-width: 1024px)
+        margin-right: 24px
+
+  &__link
+    align-items: center
+    color: $text-color
+    display: flex
+    height: 32px
+    text-decoration: none

@@ -1,3 +1,102 @@
 <header class="header compensate-for-scrollbar">
-
+    <div class="header__top container">
+        <a class="header__logo" href="#" title="На главную">
+            <picture>
+                <source srcset="images/logo_full.svg" media="(min-width: 1350px)">
+                <img src="images/logo.svg" alt="СЕВЕРО-ЗАПАДНЫЙ ЦЕНТР ДОКАЗАТЕЛЬНОЙ МЕДИЦИНЫ">
+            </picture>
+        </a>
+        <div class="location">
+            <button class="location__button" type="button">
+                <svg class="icon">
+                    <use xlink:href="#city"></use>
+                </svg>
+                <span>Петропавловск-Камчатский</span>
+            </button>
+        </div>
+        <div class="header__contacts">
+            <div class="header__phone">
+                <a href="tel:+78126004200">8 (812) 600-42-00</a>
+                <span>Контактный центр</span>
+            </div>
+            <button class="button button--height_2 button--type_1" type="button">
+                <span>Записаться онлайн</span>
+            </button>
+            <button class="button button--height_2 button--type_1" type="button">
+                <svg class="icon">
+                    <use xlink:href="#analysis"></use>
+                </svg>
+                <span>Проверить анализ</span>
+            </button>
+        </div>
+        <div class="header__top-links">
+            <a class="header__top-link" href="#">
+                <svg class="icon">
+                    <use xlink:href="#user"></use>
+                </svg>
+                <span>Личный кабинет</span>
+            </a>
+            <a class="header__top-link" href="#" title="Корзина">
+                <svg class="icon">
+                    <use xlink:href="#cart"></use>
+                </svg>
+            </a>
+            <a class="header__top-link" href="#" title="Версия для слабовидящих">
+                <svg class="icon">
+                    <use xlink:href="#eye"></use>
+                </svg>
+            </a>
+        </div>
+        <button class="js-menu-opener header__burger" type="button" title="Открыть меню">
+            <svg class="icon">
+                <use xlink:href="#burger"></use>
+            </svg>
+        </button>
+    </div>
+    <div class="header__bottom">
+        <div class="header__bottom-inner container">
+            <button class="js-menu-closer header__menu-closer" type="button" title="Закрыть меню">
+                <svg class="icon">
+                    <use xlink:href="#close"></use>
+                </svg>
+            </button>
+            <div class="header__users-type">
+                <label class="select-wrapper select-wrapper--type_4">
+                    <span class="select-wrapper__container">
+                        <select class="js-select">
+                            <option value="1">Пациентам</option>
+                            <option value="2">Врачам</option>
+                        </select>
+                    </span>
+                </label>
+            </div>
+            <nav class="main-menu">
+                <ul class="main-menu__list">
+                    <li class="main-menu__list-item">
+                        <a class="main-menu__link" href="#">Анализы</a>
+                    </li>
+                    <li class="main-menu__list-item">
+                        <a class="main-menu__link" href="#">Программы</a>
+                    </li>
+                    <li class="main-menu__list-item">
+                        <a class="main-menu__link" href="#">Медицина</a>
+                    </li>
+                    <li class="main-menu__list-item">
+                        <a class="main-menu__link" href="#">Адреса</a>
+                    </li>
+                    <li class="main-menu__list-item">
+                        <a class="main-menu__link" href="#">О компании</a>
+                    </li>
+                </ul>
+            </nav>
+            <form class="search-form">
+                <input class="search-form__input" type="text" placeholder="Поиск по сайту">
+                <button class="search-form__submit" type="submit" title="Найти">
+                    <svg class="icon">
+                        <use xlink:href="#search"></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
 </header>

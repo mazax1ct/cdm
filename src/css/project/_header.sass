@@ -5,7 +5,7 @@
   right: 0
   top: 0
   transition: box-shadow 0.3s, transform 0.3s, background-color 0.3s
-  transform: translateY(0)
+  //transform: translateY(0)
   z-index: 10
 
   &.scrolled
@@ -14,3 +14,214 @@
   &.out
     box-shadow: none
     transform: translateY(-100%)
+
+  &__top
+    align-items: center
+    display: flex
+    padding-top: 15px
+    padding-bottom: 15px
+
+  &__logo
+    margin-right: 16px
+    width: 36px
+
+    @media(min-width: 1024px)
+      margin-right: 24px
+      width: 50px
+
+    @media(min-width: 1350px)
+      margin-right: 32px
+      width: 254px
+
+  &__contacts
+    align-items: center
+    display: none
+    margin-left: auto
+    margin-right: 24px
+
+    @media(min-width: 1024px)
+      display: flex
+
+    @media(min-width: 1350px)
+      margin-right: 40px
+
+    .button
+      min-width: 142px
+
+      @media(min-width: 1350px)
+        min-width: 160px
+
+      &:not(:last-child)
+        margin-right: 24px
+
+  &__phone
+    margin-right: 24px
+
+    @media(min-width: 1350px)
+      margin-right: 40px
+
+    a
+      color: $text-color
+      display: block
+      font-size: 18px
+      font-weight: 900
+      line-height: 1
+      margin-bottom: 4px
+      text-decoration: none
+
+      &:hover,
+      &:focus
+        color: $green
+
+    span
+      display: block
+      font-size: 12px
+      line-height: 1
+
+  &__top-links
+    align-items: center
+    display: none
+
+    @media(min-width: 1024px)
+      display: flex
+
+  &__top-link
+    align-items: center
+    color: $text-color
+    display: flex
+    font-size: 14px
+    height: 30px
+    position: relative
+    text-decoration: none
+
+    &:not(:last-child)
+      margin-right: 24px
+
+    &::after
+      content: ''
+      height: 40px
+      left: 50%
+      min-width: 40px
+      position: absolute
+      top: 50%
+      transform: translate(-50%, -50%)
+      width: 100%
+
+    &:hover,
+    &:focus
+      color: $green
+
+      .icon
+        fill: $green
+
+    .icon
+      fill: $text-color
+      height: 24px
+      transition: fill 0.3s
+      width: 24px
+
+    span
+      display: none
+      margin-left: 4px
+
+      @media(min-width: 1540px)
+        display: block
+
+  &__burger
+    align-items: center
+    background-color: transparent
+    border: none
+    cursor: pointer
+    display: flex
+    height: 40px
+    justify-content: center
+    margin-left: auto
+    padding: 0
+    width: 40px
+
+    @media(min-width: 1024px)
+      display: none
+
+    .icon
+      fill: $text-color
+      height: 24px
+      width: 24px
+
+  &__bottom
+    background-color: rgba($text-color, 0.3)
+    bottom: 0
+    display: none
+    left: 0
+    position: fixed
+    right: 0
+    top: 0
+    z-index: 10
+
+    @media(min-width: 1024px)
+      background-color: transparent
+      bottom: auto
+      display: block
+      left: auto
+      position: static
+      padding-bottom: 15px
+      right: auto
+      top: auto
+      z-index: auto
+
+  &__bottom-inner
+    background-color: #fff
+    height: 100%
+    margin-left: 0
+    max-width: 320px
+    overflow-y: auto
+    padding-top: 60px
+    padding-bottom: 30px
+    position: relative
+    transition: transform 0.3s
+    transform: translateX(-100%)
+
+    @media(min-width: 1024px)
+      align-items: center
+      display: flex
+      height: auto
+      justify-content: space-between
+      margin-left: auto
+      max-width: 1570px
+      overflow: visible
+      padding-bottom: 0
+      padding-top: 0
+      transform: none
+
+    &.is-open
+      transform: translateX(0)
+
+  &__menu-closer
+    align-items: center
+    background-color: transparent
+    border: none
+    cursor: pointer
+    display: flex
+    height: 40px
+    justify-content: center
+    left: auto
+    margin-left: auto
+    padding: 0
+    position: absolute
+    right: 0
+    top: 0
+    width: 40px
+
+    @media(min-width: 1024px)
+      display: none
+
+    .icon
+      fill: $text-color
+      height: 18px
+      width: 18px
+
+  &__users-type
+    margin-bottom: 24px
+    width: 160px
+
+    @media(min-width: 1024px)
+      margin-bottom: 0
