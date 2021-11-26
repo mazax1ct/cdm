@@ -1,18 +1,17 @@
 .header
   background-color: #fff
   left: 0
-  position: fixed
+  position: absolute
   right: 0
   top: 0
   transition: box-shadow 0.3s, transform 0.3s, background-color 0.3s
-  //transform: translateY(0)
   z-index: 10
 
   &.scrolled
     box-shadow: 0 0 6px 0 rgba($text-color, 0.1)
+    position: fixed
 
   &.out
-    box-shadow: none
     transform: translateY(-100%)
 
   &__top
@@ -21,9 +20,39 @@
     padding-top: 15px
     padding-bottom: 15px
 
+    .header__contacts
+      align-items: center
+      display: none
+      margin-left: auto
+      margin-right: 24px
+
+      @media(min-width: 1024px)
+        display: flex
+
+      @media(min-width: 1350px)
+        margin-right: 40px
+
+      .button
+        min-width: 142px
+
+        @media(min-width: 1350px)
+          min-width: 160px
+
+        &:not(:last-child)
+          margin-right: 24px
+
+    .header__phone
+      margin-right: 24px
+
+      @media(min-width: 1350px)
+        margin-right: 40px
+
   &__logo
-    margin-right: 16px
+    margin-right: 12px
     width: 36px
+
+    @media(min-width: 375px)
+      margin-right: 16px
 
     @media(min-width: 1024px)
       margin-right: 24px
@@ -33,33 +62,7 @@
       margin-right: 32px
       width: 254px
 
-  &__contacts
-    align-items: center
-    display: none
-    margin-left: auto
-    margin-right: 24px
-
-    @media(min-width: 1024px)
-      display: flex
-
-    @media(min-width: 1350px)
-      margin-right: 40px
-
-    .button
-      min-width: 142px
-
-      @media(min-width: 1350px)
-        min-width: 160px
-
-      &:not(:last-child)
-        margin-right: 24px
-
   &__phone
-    margin-right: 24px
-
-    @media(min-width: 1350px)
-      margin-right: 40px
-
     a
       color: $text-color
       display: block
@@ -81,9 +84,13 @@
   &__top-links
     align-items: center
     display: none
+    margin-left: auto
+
+    @media(min-width: 768px)
+      display: flex
 
     @media(min-width: 1024px)
-      display: flex
+      margin-left: 0
 
   &__top-link
     align-items: center
@@ -139,6 +146,9 @@
     padding: 0
     width: 40px
 
+    @media(min-width: 768px)
+      margin-left: 16px
+
     @media(min-width: 1024px)
       display: none
 
@@ -160,13 +170,26 @@
     @media(min-width: 1024px)
       background-color: transparent
       bottom: auto
-      display: block
+      display: block !important
       left: auto
       position: static
       padding-bottom: 15px
       right: auto
       top: auto
       z-index: auto
+
+    .header__phone
+      margin-bottom: 24px
+
+    .header__contacts
+      @media(min-width: 1024px)
+        display: none
+
+      .button
+        width: 100%
+
+        &:not(:last-child)
+          margin-bottom: 24px
 
   &__bottom-inner
     background-color: #fff
@@ -207,8 +230,8 @@
     margin-left: auto
     padding: 0
     position: absolute
-    right: 0
-    top: 0
+    right: 12px
+    top: 12px
     width: 40px
 
     @media(min-width: 1024px)
@@ -222,6 +245,12 @@
   &__users-type
     margin-bottom: 24px
     width: 160px
+
+    @media(min-width: 1024px)
+      margin-bottom: 0
+
+  &__search
+    margin-bottom: 40px
 
     @media(min-width: 1024px)
       margin-bottom: 0

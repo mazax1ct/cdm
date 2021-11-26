@@ -89,14 +89,31 @@
                     </li>
                 </ul>
             </nav>
-            <form class="search-form">
-                <input class="search-form__input" type="text" placeholder="Поиск по сайту">
-                <button class="search-form__submit" type="submit" title="Найти">
-                    <svg class="icon">
-                        <use xlink:href="#search"></use>
-                    </svg>
+            <div class="header__search">
+                <form class="search-form">
+                    <input class="search-form__input" type="text" placeholder="Поиск по сайту">
+                    <button class="search-form__submit" type="submit" title="Найти">
+                        <svg class="icon">
+                            <use xlink:href="#search"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+            <div class="header__contacts">
+                <div class="header__phone">
+                    <a href="tel:+78126004200">8 (812) 600-42-00</a>
+                    <span>Контактный центр</span>
+                </div>
+                <button class="button button--height_2 button--type_1" type="button">
+                    <span>Записаться онлайн</span>
                 </button>
-            </form>
+                <button class="button button--height_2 button--type_1" type="button">
+                    <svg class="icon">
+                        <use xlink:href="#analysis"></use>
+                    </svg>
+                    <span>Проверить анализ</span>
+                </button>
+            </div>
         </div>
     </div>
 </header>

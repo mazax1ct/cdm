@@ -15,11 +15,3 @@ function closeSearch(evt) {
     }, 100);
 	}
 }
-
-const searchScroller = new Scroller({
-    el: document.querySelector('.js-search-scrooler'),
-    scrollbar: 'hidden',
-    anchors: 'hidden',
-    align: 'left',
-    start: 'start'
-});

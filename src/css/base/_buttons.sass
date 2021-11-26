@@ -132,7 +132,7 @@
 
     &:hover,
     &:focus
-      background-color: rgba($purple, 0.7)
+      background-color: darken($purple_light, 7%)
 
       .icon
         fill: #fff
@@ -164,6 +164,41 @@
 
     .icon
       fill: $text-color
+
+  &--type_6
+    background-color: $purple_light
+    color: $text-color
+
+    &:hover,
+    &:focus
+      background-color: darken($purple_light, 5%)
+      color: $text-color
+
+    &:disabled,
+    &.disabled
+      background-color: rgba($purple, 0.3)
+      pointer-events: none
+
+    .icon
+      fill: $text-color
+
+  &--type_7
+    background-color: $purple
+    border: 1px solid $purple
+    color: #fff
+
+    &:hover,
+    &:focus
+      background-color: $purple_light
+      color: $purple
+
+    &:disabled,
+    &.disabled
+      background-color: rgba($purple, 0.3)
+      pointer-events: none
+
+    .icon
+      fill: $purple
 
 a.button
   align-items: center

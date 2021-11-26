@@ -104,6 +104,20 @@
             <path d="M3.9,21c-0.2,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.3L19.4,3.3c0.4-0.4,1-0.4,1.3,0c0.4,0.4,0.4,1,0,1.3L4.6,20.7C4.4,20.9,4.2,21,3.9,21z" />
             <path d="M20.1,21c-0.2,0-0.5-0.1-0.7-0.3L3.3,4.6c-0.4-0.4-0.4-1,0-1.3s1-0.4,1.3,0l16.1,16.1c0.4,0.4,0.4,1,0,1.3C20.5,20.9,20.3,21,20.1,21z" />
         </symbol>
+        <symbol id="city_2" viewBox="0 0 40 40">
+            <path
+              d="M28.3333 18.3333V8.33333C28.3333 6.5 26.8333 5 25 5H15C13.1667 5 11.6667 6.5 11.6667 8.33333V11.6667H8.33333C6.5 11.6667 5 13.1667 5 15V31.6667C5 33.5 6.5 35 8.33333 35H16.6667C17.5833 35 18.3333 34.25 18.3333 33.3333V28.3333H21.6667V33.3333C21.6667 34.25 22.4167 35 23.3333 35H31.6667C33.5 35 35 33.5 35 31.6667V21.6667C35 19.8333 33.5 18.3333 31.6667 18.3333H28.3333ZM11.6667 31.6667H8.33333V28.3333H11.6667V31.6667ZM11.6667 25H8.33333V21.6667H11.6667V25ZM11.6667 18.3333H8.33333V15H11.6667V18.3333ZM18.3333 25H15V21.6667H18.3333V25ZM18.3333 18.3333H15V15H18.3333V18.3333ZM18.3333 11.6667H15V8.33333H18.3333V11.6667ZM25 25H21.6667V21.6667H25V25ZM25 18.3333H21.6667V15H25V18.3333ZM25 11.6667H21.6667V8.33333H25V11.6667ZM31.6667 31.6667H28.3333V28.3333H31.6667V31.6667ZM31.6667 25H28.3333V21.6667H31.6667V25Z" />
+        </symbol>
+        <symbol id="envelope" viewBox="0 0 40 40">
+            <path
+              d="M33.3335 6.66675H6.66683C4.8335 6.66675 3.3335 8.16675 3.3335 10.0001V30.0001C3.3335 31.8334 4.8335 33.3334 6.66683 33.3334H33.3335C35.1668 33.3334 36.6668 31.8334 36.6668 30.0001V10.0001C36.6668 8.16675 35.1668 6.66675 33.3335 6.66675ZM32.6668 13.7501L21.7668 20.5667C20.6835 21.2501 19.3168 21.2501 18.2335 20.5667L7.3335 13.7501C6.91683 13.4834 6.66683 13.0334 6.66683 12.5501C6.66683 11.4334 7.8835 10.7667 8.8335 11.3501L20.0002 18.3334L31.1668 11.3501C32.1168 10.7667 33.3335 11.4334 33.3335 12.5501C33.3335 13.0334 33.0835 13.4834 32.6668 13.7501Z" />
+        </symbol>
+        <symbol id="voice" viewBox="0 0 40 40">
+            <path
+              d="M13.3335 20.0869C16.6585 20.0869 19.1668 17.5786 19.1668 14.2536C19.1668 10.9286 16.6585 8.42022 13.3335 8.42022C10.0085 8.42022 7.50016 10.9286 7.50016 14.2536C7.50016 17.5786 10.0085 20.0869 13.3335 20.0869ZM15.0002 21.6669H11.6668C7.07183 21.6669 3.3335 25.4052 3.3335 30.0002V31.6669H23.3335V30.0002C23.3335 25.4052 19.5952 21.6669 15.0002 21.6669ZM30.6068 4.39355L28.2502 6.75022C30.4518 8.95522 31.6668 11.8852 31.6668 15.0002C31.6668 18.1152 30.4518 21.0452 28.2502 23.2502L30.6068 25.6069C33.4402 22.7719 35.0002 19.0052 35.0002 15.0002C35.0002 10.9952 33.4402 7.22855 30.6068 4.39355Z" />
+            <path
+              d="M25.8918 9.10645L23.5352 11.4664C24.4802 12.4081 25.0002 13.6631 25.0002 14.9998C25.0002 16.3364 24.4802 17.5914 23.5352 18.5331L25.8918 20.8931C27.4652 19.3198 28.3335 17.2281 28.3335 14.9998C28.3335 12.7714 27.4652 10.6798 25.8918 9.10645Z" />
+        </symbol>
     </svg>
 
     <div id="preloader">
@@ -201,14 +215,31 @@
                         </li>
                     </ul>
                 </nav>
-                <form class="search-form">
-                    <input class="search-form__input" type="text" placeholder="Поиск по сайту">
-                    <button class="search-form__submit" type="submit" title="Найти">
-                        <svg class="icon">
-                            <use xlink:href="#search"></use>
-                        </svg>
+                <div class="header__search">
+                    <form class="search-form">
+                        <input class="search-form__input" type="text" placeholder="Поиск по сайту">
+                        <button class="search-form__submit" type="submit" title="Найти">
+                            <svg class="icon">
+                                <use xlink:href="#search"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                <div class="header__contacts">
+                    <div class="header__phone">
+                        <a href="tel:+78126004200">8 (812) 600-42-00</a>
+                        <span>Контактный центр</span>
+                    </div>
+                    <button class="button button--height_2 button--type_1" type="button">
+                        <span>Записаться онлайн</span>
                     </button>
-                </form>
+                    <button class="button button--height_2 button--type_1" type="button">
+                        <svg class="icon">
+                            <use xlink:href="#analysis"></use>
+                        </svg>
+                        <span>Проверить анализ</span>
+                    </button>
+                </div>
             </div>
         </div>
     </header>
@@ -253,82 +284,99 @@
                             </span>
                         </label>
                         <div class="search-bar__dropdown">
-                            <p class="search-bar__dropdown-title">Кто пациент?</p>
-                            <ul class="search-bar__dropdown-list">
-                                <li class="search-bar__dropdown-list-item"><button class="button button--height_2 button--type_5" type="button"><span>Мужчинам</span></button></li>
-                                <li class="search-bar__dropdown-list-item"><button class="button button--height_2 button--type_5" type="button"><span>Женщинам</span></button></li>
-                                <li class="search-bar__dropdown-list-item"><button class="button button--height_2 button--type_5" type="button"><span>Детям</span></button></li>
-                                <li class="search-bar__dropdown-list-item"><button class="button button--height_2 button--type_5" type="button"><span>Беременным</span></button></li>
-                            </ul>
-                            <p class="search-bar__dropdown-title">Категории</p>
-                            <ul class="js-search-scrooler search-bar__dropdown-list">
-                                <li class="search-bar__dropdown-list-item">
-                                    <a class="search-category" href="#">
-                                        <img src="images/content/search/img_1.jpg" srcset="images/content/search/img_1@2x.jpg 2x" alt="alt">
-                                        <span class="search-category__title">Аллергология</span>
-                                    </a>
-                                </li>
-                                <li class="search-bar__dropdown-list-item">
-                                    <a class="search-category" href="#">
-                                        <img src="images/content/search/img_1.jpg" srcset="images/content/search/img_1@2x.jpg 2x" alt="alt">
-                                        <span class="search-category__title">Аллергология</span>
-                                    </a>
-                                </li>
-                                <li class="search-bar__dropdown-list-item">
-                                    <a class="search-category" href="#">
-                                        <img src="images/content/search/img_1.jpg" srcset="images/content/search/img_1@2x.jpg 2x" alt="alt">
-                                        <span class="search-category__title">Аллергология</span>
-                                    </a>
-                                </li>
-                                <li class="search-bar__dropdown-list-item">
-                                    <a class="search-category" href="#">
-                                        <img src="images/content/search/img_1.jpg" srcset="images/content/search/img_1@2x.jpg 2x" alt="alt">
-                                        <span class="search-category__title">Аллергология</span>
-                                    </a>
-                                </li>
-                                <li class="search-bar__dropdown-list-item">
-                                    <a class="search-category" href="#">
-                                        <img src="images/content/search/img_1.jpg" srcset="images/content/search/img_1@2x.jpg 2x" alt="alt">
-                                        <span class="search-category__title">Аллергология</span>
-                                    </a>
-                                </li>
-                                <li class="search-bar__dropdown-list-item">
-                                    <a class="search-category" href="#">
-                                        <img src="images/content/search/img_1.jpg" srcset="images/content/search/img_1@2x.jpg 2x" alt="alt">
-                                        <span class="search-category__title">Аллергология</span>
-                                    </a>
-                                </li>
-                                <li class="search-bar__dropdown-list-item">
-                                    <a class="search-category" href="#">
-                                        <img src="images/content/search/img_1.jpg" srcset="images/content/search/img_1@2x.jpg 2x" alt="alt">
-                                        <span class="search-category__title">Аллергология</span>
-                                    </a>
-                                </li>
-                                <li class="search-bar__dropdown-list-item">
-                                    <a class="search-category" href="#">
-                                        <img src="images/content/search/img_1.jpg" srcset="images/content/search/img_1@2x.jpg 2x" alt="alt">
-                                        <span class="search-category__title">Аллергология</span>
-                                    </a>
-                                </li>
-                                <li class="search-bar__dropdown-list-item">
-                                    <a class="search-category" href="#">
-                                        <img src="images/content/search/img_1.jpg" srcset="images/content/search/img_1@2x.jpg 2x" alt="alt">
-                                        <span class="search-category__title">Аллергология</span>
-                                    </a>
-                                </li>
-                                <li class="search-bar__dropdown-list-item">
-                                    <a class="search-category" href="#">
-                                        <img src="images/content/search/img_1.jpg" srcset="images/content/search/img_1@2x.jpg 2x" alt="alt">
-                                        <span class="search-category__title">Аллергология</span>
-                                    </a>
-                                </li>
-                                <li class="search-bar__dropdown-list-item">
-                                    <a class="search-category" href="#">
-                                        <img src="images/content/search/img_1.jpg" srcset="images/content/search/img_1@2x.jpg 2x" alt="alt">
-                                        <span class="search-category__title">Аллергология</span>
-                                    </a>
-                                </li>
-                            </ul>
+                            <div class="search-bar__options">
+                                <div class="search-bar__options-column">
+                                    <p class="search-bar__options-title">Популярные</p>
+                                    <ul class="search-bar__options-list">
+                                        <li><button class="button button--type_6 button--height_1" type="button">Антитела к ТПО</button></li>
+                                        <li><button class="button button--type_6 button--height_1" type="button">TORCH</button></li>
+                                        <li><button class="button button--type_6 button--height_1" type="button">Клинический</button></li>
+                                        <li><button class="button button--type_6 button--height_1" type="button">ТТГ</button></li>
+                                        <li><button class="button button--type_6 button--height_1" type="button">Т4</button></li>
+                                        <li><button class="button button--type_6 button--height_1" type="button">Все</button></li>
+                                        <li><button class="button button--type_6 button--height_1" type="button">Клинический</button></li>
+                                        <li><button class="button button--type_6 button--height_1" type="button">Витамин С</button></li>
+                                        <li><button class="button button--type_6 button--height_1" type="button">Клинический</button></li>
+                                        <li><button class="button button--type_6 button--height_1" type="button">Клинический</button></li>
+                                    </ul>
+                                </div>
+                                <div class="search-bar__options-column">
+                                    <p class="search-bar__options-title">Сезонные</p>
+                                    <ul class="search-bar__options-list">
+                                        <li><button class="button button--type_6 button--height_1" type="button">Антитела</button></li>
+                                        <li><button class="button button--type_6 button--height_1" type="button">Клинический</button></li>
+                                        <li><button class="button button--type_6 button--height_1" type="button">Клинический</button></li>
+                                        <li><button class="button button--type_6 button--height_1" type="button">Витамин D</button></li>
+                                        <li><button class="button button--type_6 button--height_1" type="button">COVID-19</button></li>
+                                        <li><button class="button button--type_6 button--height_1" type="button">COVID-19</button></li>
+                                        <li><button class="button button--type_6 button--height_1" type="button">Витамин С</button></li>
+                                        <li><button class="button button--type_6 button--height_1" type="button">Витамин С</button></li>
+                                        <li><button class="button button--type_6 button--height_1" type="button">Витамин С</button></li>
+                                    </ul>
+                                </div>
+                                <div class="search-bar__options-column">
+                                    <p class="search-bar__options-title">Женские</p>
+                                    <ul class="search-bar__options-list">
+                                        <li><button class="button button--type_6 button--height_1" type="button">Эстроген</button></li>
+                                        <li><button class="button button--type_6 button--height_1" type="button">Тестостерон</button></li>
+                                        <li><button class="button button--type_6 button--height_1" type="button">Эстрадиол</button></li>
+                                        <li><button class="button button--type_6 button--height_1" type="button">Прогестерон</button></li>
+                                        <li><button class="button button--type_6 button--height_1" type="button">Пролактин</button></li>
+                                        <li><button class="button button--type_6 button--height_1" type="button">COVID-19</button></li>
+                                        <li><button class="button button--type_6 button--height_1" type="button">ФСГ</button></li>
+                                        <li><button class="button button--type_6 button--height_1" type="button">Клинический</button></li>
+                                        <li><button class="button button--type_6 button--height_1" type="button">ТТГ</button></li>
+                                        <li><button class="button button--type_6 button--height_1" type="button">Т4</button></li>
+                                    </ul>
+                                </div>
+                                <div class="search-bar__options-column">
+                                    <p class="search-bar__options-title">Мужские</p>
+                                    <ul class="search-bar__options-list">
+                                        <li><button class="button button--type_6 button--height_1" type="button">Тестостерон</button></li>
+                                        <li><button class="button button--type_6 button--height_1" type="button">ЛГ</button></li>
+                                        <li><button class="button button--type_6 button--height_1" type="button">ФСГ</button></li>
+                                        <li><button class="button button--type_6 button--height_1" type="button">Эстрадиол</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="search-bar__items">
+                                <button class="search-bar__item" type="button">
+                                    <svg class="icon">
+                                        <use xlink:href="#search"></use>
+                                    </svg>
+                                    Клинический анализ крови
+                                </button>
+                                <button class="search-bar__item" type="button">
+                                    <svg class="icon">
+                                        <use xlink:href="#search"></use>
+                                    </svg>
+                                    Клинический анализ крови
+                                </button>
+                                <button class="search-bar__item" type="button">
+                                    <svg class="icon">
+                                        <use xlink:href="#search"></use>
+                                    </svg>
+                                    Клинический анализ крови
+                                </button>
+                                <button class="search-bar__item" type="button">
+                                    <svg class="icon">
+                                        <use xlink:href="#search"></use>
+                                    </svg>
+                                    Клинический анализ крови
+                                </button>
+                                <button class="search-bar__item" type="button">
+                                    <svg class="icon">
+                                        <use xlink:href="#search"></use>
+                                    </svg>
+                                    Клинический анализ крови
+                                </button>
+                                <button class="search-bar__item" type="button">
+                                    <svg class="icon">
+                                        <use xlink:href="#search"></use>
+                                    </svg>
+                                    Клинический анализ крови
+                                </button>
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -761,6 +809,54 @@
                 <button class="button button--height_4 button--type_5" type="button" disabled>Нет я кнопка!</button>
             </p>
 
+            <p>
+                <a class="button button--height_1 button--type_6" href="javascript:void(0)">Я кнопка!</a>
+                <button class="button button--height_1 button--type_6" type="button">
+                    <svg class="icon">
+                        <use xlink:href="#refresh"></use>
+                    </svg>
+                    <span>Нет я кнопка!</span>
+                </button>
+                <input class="button button--height_1 button--type_6" type="button" value="Акститесь!">
+                <button class="button button--height_1 button--type_6" type="button" disabled>Нет я кнопка!</button>
+            </p>
+
+            <p>
+                <a class="button button--height_2 button--type_6" href="javascript:void(0)">Я кнопка!</a>
+                <button class="button button--height_2 button--type_6" type="button">
+                    <svg class="icon">
+                        <use xlink:href="#refresh"></use>
+                    </svg>
+                    <span>Нет я кнопка!</span>
+                </button>
+                <input class="button button--height_2 button--type_6" type="button" value="Акститесь!">
+                <button class="button button--height_2 button--type_6" type="button" disabled>Нет я кнопка!</button>
+            </p>
+
+            <p>
+                <a class="button button--height_3 button--type_6" href="javascript:void(0)">Я кнопка!</a>
+                <button class="button button--height_3 button--type_6" type="button">
+                    <svg class="icon">
+                        <use xlink:href="#refresh"></use>
+                    </svg>
+                    <span>Нет я кнопка!</span>
+                </button>
+                <input class="button button--height_3 button--type_6" type="button" value="Акститесь!">
+                <button class="button button--height_3 button--type_6" type="button" disabled>Нет я кнопка!</button>
+            </p>
+
+            <p>
+                <a class="button button--height_4 button--type_6" href="javascript:void(0)">Я кнопка!</a>
+                <button class="button button--height_4 button--type_6" type="button">
+                    <svg class="icon">
+                        <use xlink:href="#refresh"></use>
+                    </svg>
+                    <span>Нет я кнопка!</span>
+                </button>
+                <input class="button button--height_4 button--type_6" type="button" value="Акститесь!">
+                <button class="button button--height_4 button--type_6" type="button" disabled>Нет я кнопка!</button>
+            </p>
+
             <h6>Радио группы</h6>
 
             <div class="group-buttons">
@@ -975,12 +1071,231 @@
                 <li class="tags__item"><a class="tags__button" href="#">Зоб</a></li>
             </ul>
 
+            <br><br>
+
+            <div class="map-block">
+                <div class="map-block__buttons">
+                    <button class="map-block__button is-active" type="button" data-center="59.941707, 30.301902">Санкт-Петербург</button>
+                    <button class="map-block__button" type="button" data-center="55.755819, 37.617644">Москва</button>
+                </div>
+                <div class="map-block__container">
+                    <div class="map-block__map">
+                        <div id="clinics_map" class="map-block__map-block"></div>
+                    </div>
+                    <div class="map-block__list">
+                        <div class="map-item">
+                            <p class="map-item__title">Центр Урологии</p>
+                            <div class="map-item__info">
+                                <p>Санкт-Петербург, ул. Ильюшина, 25<br> <a href="tel:+79650038609">+7 (965) 003 86 09</a></p>
+                                <button class="button button--type_7 button--height_2" type="button" data-center="59.922064, 30.307739" data-info="1">На карте</button>
+                            </div>
+                        </div>
+                        <div class="map-item">
+                            <p class="map-item__title">Центр Урологии</p>
+                            <div class="map-item__info">
+                                <p>Санкт-Петербург, ул. Ильюшина, 25<br> <a href="tel:+79650038609">+7 (965) 003 86 09</a></p>
+                                <button class="button button--type_7 button--height_2" type="button" data-center="59.916929, 30.351444" data-info="2">На карте</button>
+                            </div>
+                        </div>
+                        <div class="map-item">
+                            <p class="map-item__title">Центр Урологии</p>
+                            <div class="map-item__info">
+                                <p>Санкт-Петербург, ул. Ильюшина, 25<br> <a href="tel:+79650038609">+7 (965) 003 86 09</a></p>
+                                <button class="button button--type_7 button--height_2" type="button" data-center="59.942068, 30.270203" data-info="3">На карте</button>
+                            </div>
+                        </div>
+                        <div class="map-item">
+                            <p class="map-item__title">Центр Урологии</p>
+                            <div class="map-item__info">
+                                <p>Санкт-Петербург, ул. Ильюшина, 25<br> <a href="tel:+79650038609">+7 (965) 003 86 09</a></p>
+                                <button class="button button--type_7 button--height_2" type="button" data-center="59.941707, 30.301902" data-info="4">На карте</button>
+                            </div>
+                        </div>
+                        <div class="map-item">
+                            <p class="map-item__title">Центр Урологии</p>
+                            <div class="map-item__info">
+                                <p>Санкт-Петербург, ул. Ильюшина, 25<br> <a href="tel:+79650038609">+7 (965) 003 86 09</a></p>
+                                <button class="button button--type_7 button--height_2" type="button" data-center="59.941707, 30.301902" data-info="5">На карте</button>
+                            </div>
+                        </div>
+                        <div class="map-item">
+                            <p class="map-item__title">Центр Урологии</p>
+                            <div class="map-item__info">
+                                <p>Санкт-Петербург, ул. Ильюшина, 25<br> <a href="tel:+79650038609">+7 (965) 003 86 09</a></p>
+                                <button class="button button--type_7 button--height_2" type="button" data-center="59.941707, 30.301902" data-info="6">На карте</button>
+                            </div>
+                        </div>
+                        <div class="map-item">
+                            <p class="map-item__title">Центр Урологии</p>
+                            <div class="map-item__info">
+                                <p>Санкт-Петербург, ул. Ильюшина, 25<br> <a href="tel:+79650038609">+7 (965) 003 86 09</a></p>
+                                <button class="button button--type_7 button--height_2" type="button" data-center="59.941707, 30.301902" data-info="7">На карте</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </div>
 
     <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__top-left">
+                    <div class="footer-menu">
+                        <div class="footer-menu__column">
+                            <h3 class="footer-menu__title"><a href="#">Анализы</a></h3>
+                            <ul class="footer-menu__list">
+                                <li><a href="#">Анализ</a></li>
+                                <li><a href="#">Ограничение по приему биоматериалов</a></li>
+                                <li><a href="#">Подготовка к анализам</a></li>
+                                <li><a href="#">Где получить результаты</a></li>
+                                <li><a href="#">Какие анализы мы делаем</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-menu__column">
+                            <h3 class="footer-menu__title"><a href="#">Пациентам</a></h3>
+                            <ul class="footer-menu__list">
+                                <li><a href="#">Забор анализов на дом</a></li>
+                                <li><a href="#">Телемедицина</a></li>
+                                <li><a href="#">Болезни и симптомы</a></li>
+                                <li><a href="#">Отзывы</a></li>
+                                <li><a href="#">Справки</a></li>
+                                <li><a href="#">Страховые компании</a></li>
+                                <li><a href="#">Партнеры</a></li>
+                                <li><a href="#">Детская педиатрия выездная NB</a></li>
+                                <li><a href="#">Бонусная программа</a></li>
+                                <li><a href="#">Полезные статьи и материалы</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-menu__column">
+                            <h3 class="footer-menu__title"><a href="#">Адреса</a></h3>
+                            <ul class="footer-menu__list">
+                                <li><a href="#">Лабораторные терминалы</a></li>
+                                <li><a href="#">Клиники</a></li>
+                            </ul>
+                            <h3 class="footer-menu__title"><a href="#">Программы</a></h3>
+                            <ul class="footer-menu__list">
+                                <li><a href="#">COVID-19</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-menu__column">
+                            <h3 class="footer-menu__title"><a href="#">Клиника</a></h3>
+                            <ul class="footer-menu__list">
+                                <li><a href="#">Направления</a></li>
+                                <li><a href="#">Специалисты</a></li>
+                                <li><a href="#">Медицинские услуги</a></li>
+                                <li><a href="#">Навигатор</a></li>
+                            </ul>
+                            <h3 class="footer-menu__title"><a href="#">Врачам</a></h3>
+                            <ul class="footer-menu__list">
+                                <li><a href="#">Высшая школа</a></li>
+                                <li><a href="#">Клуб врачей</a></li>
+                                <li><a href="#">Что такое клуб?</a></li>
+                                <li><a href="#">База знаний</a></li>
+                                <li><a href="#">Работать у нас</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-menu__column">
+                            <h3 class="footer-menu__title"><a href="#">О компании</a></h3>
+                            <ul class="footer-menu__list">
+                                <li><a href="#">Руководство</a></li>
+                                <li><a href="#">История</a></li>
+                                <li><a href="#">Вакансии</a></li>
+                                <li><a href="#">Лицензия и сертификаты</a></li>
+                                <li><a href="#">Миссия</a></li>
+                                <li><a href="#">Команда</a></li>
+                                <li><a href="#">Мероприятия</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-menu__column">
+                            <h3 class="footer-menu__title"><a href="#">Юридическая информация</a></h3>
+                            <ul class="footer-menu__list">
+                                <li><a href="#">Работа в системе ОМС</a></li>
+                                <li><a href="#">Оказание платных услуг</a></li>
+                                <li><a href="#">Специальная оценка условий труда</a></li>
+                                <li><a href="#">Пользовательское соглашение</a></li>
+                                <li><a href="#">Политика конфденциальности</a></li>
+                                <li><a href="#">ФЗ 54</a></li>
+                                <li><a href="#">Образец договора</a></li>
+                                <li><a href="#">Реквизиты</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-menu__column">
+                            <h3 class="footer-menu__title"><a href="#">Корпоративным клиентам</a></h3>
+                            <ul class="footer-menu__list">
+                                <li><a href="#">Медицинским организациям</a></li>
+                                <li><a href="#">Немедицинским организациям</a></li>
+                                <li><a href="#">Страховым организациям</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-menu__column">
+                            <h3 class="footer-menu__title"><a href="#">Для прессы</a></h3>
+                            <ul class="footer-menu__list">
+                                <li><a href="#">Медицинским организациям</a></li>
+                                <li><a href="#">Немедицинским организациям</a></li>
+                                <li><a href="#">Страховым организациям</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__top-right">
+                    <a class="footer__button button button--type_1" href="#">Личный кабинет</a>
     
+                    <p class="footer__phone">
+                        <a href="tel:+78126004200">8 (812) 600-42-00</a>
+                        <span>Многоканальный</span>
+                    </p>
+                    <p class="footer__phone"><a href="tel:+78126004200">8 (812) 600-42-00</a></p>
+                    <p class="footer__work-time">
+                        Принимаем звонки сегодня<br>
+                        <span>С 7:30 - 22:00</span>
+                    </p>
+    
+                    <div class="footer__contact">
+                        <svg class="icon">
+                            <use xlink:href="#city_2"></use>
+                        </svg>
+                        <span>Центральный офис</span><br>
+                        <b>
+                            Время работы:<br>
+                            пн.-пт.: с 09:00 до 17:45<br>
+                            Пулковское шоссе, дом 28А<br>
+                            8 (812) 600-47-12
+                        </b>
+                    </div>
+                    <div class="footer__contact">
+                        <svg class="icon">
+                            <use xlink:href="#envelope"></use>
+                        </svg>
+                        <span>Почта для связи:</span><br>
+                        <a href="#"><b>info@cdmed.ru</b></a>
+                    </div>
+                    <div class="footer__contact">
+                        <svg class="icon">
+                            <use xlink:href="#voice"></use>
+                        </svg>
+                        <span>Пожелания и предложения по качеству работы можно отправить на электронную почту <a href="mailto:expert@cdmed.ru"><b>expert@cdmed.ru</b></a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__logo">
+                    <img src="images/logo_full.svg" alt="СЕВЕРО-ЗАПАДНЫЙ ЦЕНТР ДОКАЗАТЕЛЬНОЙ МЕДИЦИНЫ">
+                </div>
+                <div class="footer__links">
+                    <ul>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Обработка персональных даных</a></li>
+                        <li><a href="#">Карта сайта</a></li>
+                    </ul>
+                </div>
+                <div class="footer__copyright">© СЗЦДМ 2021</div>
+            </div>
+        </div>
     </footer>
 
     <div class="float-bar compensate-for-scrollbar">
@@ -1017,15 +1332,14 @@
     
     <script src="js/header-menu.js"></script>
     
-    <script src="js/scroller-min.js"></script>
-    <script src="js/search.js"></script>
-    
     <script src="js/accordions.js"></script>
     <script src="js/tabs.js"></script>
     
     <script src="js/main.js"></script>
 
     <!--скрипты страницы-->
+    <script src="js/search.js"></script>
+    <script src="js/clinics-map.js"></script>
 
     <!--прелоадер-->
     <script src="js/preloader.js"></script>

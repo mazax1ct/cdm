@@ -20,9 +20,11 @@
       border-radius: $border-radius
       margin-left: 0
       margin-right: 0
+      padding-bottom: 32px
+
+    @media(min-width: 1024px)
       padding-left: 45px
       padding-right: 45px
-      padding-bottom: 32px
 
   &__form
     background-color: #fff
@@ -131,34 +133,16 @@
     box-shadow: 0 4px 4px 0 rgba(#000, 0.1)
     display: none
     left: 0
+    max-height: 300px
+    overflow-y: auto
     opacity: 0
     position: absolute
-    padding: 0 16px 16px
+    padding: 0 16px
     transform: translateY(-30px)
     top: calc(100% - 6px)
     transition: opacity 0.3s, transform 0.3s
     width: 100%
     z-index: 2
-
-    @media(min-width: 768px)
-      padding: 0 24px 24px
-
-    &.is-active
-      display: block
-
-    &.is-open
-      opacity: 1
-      transform: translateY(0)
-
-  &__dropdown-title
-    margin-bottom: 6px
-
-  &__dropdown-list
-    display: flex
-    list-style: none
-    margin-bottom: 18px
-    padding: 0
-    overflow-x: auto
     scrollbar-width: thin
     scrollbar-color: $purple $purple_light
 
@@ -175,50 +159,83 @@
       border-radius: $border-radius
       width: 6px
 
-    &.is-no-scrollbar
-      scrollbar-width: none
+    @media(min-width: 768px)
+      padding: 0 24px
 
-      &::-webkit-scrollbar
-        height: 0
-        width: 0
+    @media(min-width: 1350px)
+      max-height: 500px   
+
+    &.is-active
+      display: block
+
+    &.is-open
+      opacity: 1
+      transform: translateY(0)
+
+  &__options
+    margin-bottom: 16px
+
+    @media(min-width: 768px)
+      display: flex
+      flex-wrap: wrap
+      margin-left: -8px
+      margin-right: -8px
+
+  &__options-column
+    @media(min-width: 768px)
+      padding-left: 8px
+      padding-right: 8px
+      width: 50%
+
+    @media(min-width: 1200px)
+      width: 25%
+
+  &__options-title
+    font-weight: 700
+    margin-bottom: 12px
+
+  &__options-list
+    display: flex
+    flex-wrap: wrap
+    list-style: none
+    padding: 0
 
     li
+      margin-bottom: 8px
+
       &:not(:last-child)
-        margin-right: 24px
+        margin-right: 8px
 
-    .button
-      min-width: 130px
+  &__items
+    border-top: 1px solid $purple_light
+    margin-left: -16px
+    margin-right: -16px
 
-  .ab_scroller
-    .search-bar__dropdown-list-item
+    @media(min-width: 768px)
+      margin-left: -24px
+      margin-right: -24px
+
+  &__item
+    align-items: center
+    background-color: transparent
+    border: none
+    cursor: pointer
+    display: flex
+    transition: background-color 0.3s
+    text-align: left
+    padding: 12px 16px
+    width: 100%
+
+    @media(min-width: 768px)
+      padding-left: 24px
       padding-right: 24px
 
-.search-category
-  border-radius: $border-radius
-  background-size: cover
-  background-position: 50% 50%
-  background-repeat: no-repeat
-  color: #fff
-  display: block
-  font-size: 12px
-  height: 80px
-  overflow: hidden
-  position: relative
-  text-decoration: none
-  width: 216px
+    &:hover,
+    &:focus
+      background-color: $purple_light
 
-  &:hover,
-  &:focus
-    color: #fff
-    font-weight: 700
-
-  &__title
-    bottom: 0
-    background-image: linear-gradient(180deg, rgba(2, 48, 71, 0.14) 0%, rgba(2, 48, 71, 0.02) 100%)
-    content: ''
-    left: 0
-    position: absolute
-    padding: 16px 24px
-    right: 0
-    top: 0
-    z-index: 1
+    .icon
+      fill: $text-color
+      height: 16px
+      margin-right: 12px
+      width: 16px

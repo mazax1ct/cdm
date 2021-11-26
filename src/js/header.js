@@ -4,7 +4,7 @@ var header = $('.header'),
 $(window).scroll(function() {
 	var scrolled = $(window).scrollTop();
 
-  if ( scrolled > $('.header').height() ) {
+  if ( scrolled > $('.header').height()*2 ) {
 		header.addClass('scrolled');
 	} else {
 		header.removeClass('scrolled');
