@@ -102,54 +102,35 @@
     align-items: center;
     border-radius: 50%;
     border: none;
-    background-color: $text-color;
+    background-color: $green_light;
     cursor: pointer;
     display: flex;
     height: 40px;
     justify-content: center;
-    opacity: 0;
     padding: 0;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     transition: background-color 0.3s, opacity 0.3s;
     width: 40px;
     z-index: 1;
-    @media(min-width: 1350px) {
-        height: 60px;
-        width: 60px;
-    }
-    @media(min-width: 1900px) {
-        height: 93px;
-        width: 93px;
-    }
 
-    &:hover {}
+    &:focus,
+    &:hover {
+        background-color: $green;
 
-    svg {
-        fill: #fff;
-        height: 16px;
-        width: 16px;
-        @media(min-width: 1350px) {
-            height: 20px;
-            width: 20px;
-        }
-        @media(min-width: 1900px) {
-            height: 40px;
-            width: 40px;
+        .icon {
+            fill: #fff;
         }
     }
-}
 
-.slick-dotted.slick-slider {
-    margin-bottom: 30px;
+    .icon {
+        fill: $green;
+        height: 18px;
+        transition: fill 0.3s;
+        width: 18px;
+    }
 }
 
 .slick-dots {
-    position: absolute;
-    bottom: -25px;
-    display: block;
-    width: 100%;
+    display: flex;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -157,27 +138,28 @@
 }
 
 .slick-dots li {
-    position: relative;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin: 0 5px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 18px;
+    height: 40px;
     padding: 0;
     cursor: pointer;
 }
 
 .slick-dots li button {
+    border-radius: 50%;
     font-size: 0;
     line-height: 0;
     display: block;
-    width: 20px;
-    height: 20px;
-    padding: 5px;
+    width: 4px;
+    height: 4px;
+    padding: 0;
     cursor: pointer;
     color: transparent;
-    border: 0;
+    border: none;
     outline: none;
-    background: transparent;
+    background-color: rgba(#fff, 0.3);
 }
 
 .slick-dots li button:focus,
@@ -185,22 +167,6 @@
     outline: none;
 }
 
-.slick-dots li button {
-    font-size: 6px;
-    line-height: 20px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    opacity: 0.25;
-    color: black;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
 .slick-dots li.slick-active button {
-    opacity: 0.75;
-    color: black;
+    background-color: #fff;
 }

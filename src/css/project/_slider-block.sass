@@ -1,0 +1,178 @@
+.slider-block
+  @media(min-width: 1024px)
+    display: flex
+
+  &__slider
+    margin-bottom: 12px
+    position: relative
+
+    @media(min-width: 1024px)
+      margin-bottom: 0
+      padding-left: 6px
+      padding-right: 6px
+      width: 50%
+
+  &__tiles
+    @media(min-width: 1024px)
+      padding-left: 6px
+      padding-right: 6px
+      width: 50%
+
+  &__tiles-list
+    @media(min-width: 768px)
+      display: flex
+      flex-wrap: wrap
+      margin-left: -6px
+      margin-right: -6px
+
+  &__tiles-item
+    margin-bottom: 12px
+
+    @media(min-width: 768px)
+      padding-left: 6px
+      padding-right: 6px
+      width: 100%
+
+    &--type_1
+      @media(min-width: 768px)
+        width: 50%
+
+    &:last-child
+      margin-bottom: 0
+
+.slider
+  height: 100%
+
+  .slick-list,
+  .slick-track
+    display: flex
+    height: 100%
+
+  &.slick-initialized
+    .slick-slide
+      display: flex
+      flex-direction: column
+
+  &__slide
+    clear: #fff
+    position: relative
+
+  &__slide-link
+    color: #fff
+    display: block
+    height: 100%
+    text-decoration: none
+
+    &:hover,
+    &:focus
+      color: #fff
+
+      img
+        transform: scale(1.02)
+
+  &__slide-image
+    border-radius: $border-radius
+    display: block
+    height: 100%
+    overflow: hidden
+    position: relative
+
+    &::after
+      background-image: linear-gradient(112.96deg, rgba(2, 48, 71, 0.6) 3.18%, rgba(2, 48, 71, 0.06) 100%)
+      bottom: 0
+      content: ''
+      left: 0
+      position: absolute
+      right: 0
+      top: 0
+      z-index: 1
+
+  img
+    border-radius: $border-radius
+    height: 100%
+    min-height: 400px
+    object-position: center
+    object-fit: cover
+    transition: transform 0.3s
+    transform: scale(1)
+
+  &__slide-container
+    left: 0
+    padding: 24px
+    position: absolute
+    top: 0
+    z-index: 2
+
+    @media(min-width: 1350px)
+      padding: 40px
+
+  &__slide-title
+    display: block
+    font-size: 23px
+    line-height: 1.2
+    font-weight: 800
+    line-height: 1.2
+    letter-spacing: -1px
+    margin-bottom: 24px
+
+    @media(min-width: 1350px)
+      font-size: 32px
+
+  &__slide-button
+    align-items: center
+    background-color: #fff
+    border: none
+    border-radius: 4px
+    color: $text-color
+    display: inline-flex
+    font-size: 12px
+    height: 30px
+    justify-content: center
+    line-height: 1.16666
+    min-width: 126px
+    padding: 8px
+    text-decoration: none
+    text-align: center
+    vertical-align: middle
+
+.slider-nav
+  bottom: 24px
+  left: 18px
+  position: absolute
+  padding-left: 6px
+  padding-right: 6px
+  top: auto
+  z-index: 3
+
+  @media(min-width: 1024px)
+    left: 24px
+
+  @media(min-width: 1350px)
+    bottom: 40px
+    left: 40px
+
+  .slick-next,
+  .slick-prev
+    background-color: rgba(#fff, 0.8)
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+
+    &:hover,
+    &:focus
+      background-color: #fff
+
+    .icon
+      fill: $text-color
+
+  .slick-prev
+    left: 6px
+
+  .slick-next
+    left: auto
+    right: 6px
+
+  .slick-dots
+    position: static
+    margin-left: 40px
+    margin-right: 40px

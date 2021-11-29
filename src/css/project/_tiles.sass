@@ -1,0 +1,99 @@
+.tiles
+  display: flex
+  flex-wrap: wrap
+  list-style: none
+  margin-left: -6px
+  margin-right: -6px
+  padding: 0
+
+  &__item
+    display: flex
+    flex-direction: column
+    margin-bottom: 12px
+    padding-left: 6px
+    padding-right: 6px
+    width: 100%
+
+    @media(min-width: 1024px)
+      width: 50%
+
+    &--type_1
+      @media(min-width: 768px)
+        width: 50%
+
+      @media(min-width: 1024px)
+        width: 25%
+
+.tile-link
+  border-radius: $border-radius
+  box-shadow: none
+  color: $text-color
+  display: flex
+  flex-direction: column
+  height: 100%
+  position: relative
+  text-decoration: none
+  transition: box-shadow 0.3s
+  width: 100%
+
+  &:hover,
+  &:focus
+    color: $text-color
+    box-shadow: 0 4px 6px 0 rgba(#000, 0.2)
+
+  &--color_1
+    background-color: $green_light
+
+  &--color_2
+    background-color: $purple_light
+
+  &--color_3
+    border: 1px solid $purple_light
+    transition: background-color 0.3s, box-shadow 0.3s
+
+    &:hover,
+    &:focus
+      background-color: $purple_light
+
+  &--type_1
+    padding: 24px
+
+  &--type_2
+    position: relative
+
+    .tile-link__title
+      left: 0
+      margin-bottom: 0
+      padding: 24px
+      position: absolute
+      top: 0
+      z-index: 1
+
+  &--type_3
+    padding: 24px
+
+    @media(min-width: 1500px)
+      padding: 32px 24px
+
+  &__image
+    text-align: right
+
+  &__title
+    font-size: 18px
+    font-weight: 700
+    line-height: 1.2
+    margin-bottom: 16px
+
+    @media(min-width: 1350px)
+      font-size: 24px
+
+  &__text
+    &:not(:last-child)
+      margin-bottom: 16px
+
+  &__button-block
+    margin-top: auto
+    text-align: right
+
+    .button
+      min-width: 126px

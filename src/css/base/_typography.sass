@@ -25,56 +25,74 @@ h6,.h6
 
 h1,
 .h1
-  font-size: 40px
-  font-weight: 900
+  font-size: 28px
+  font-weight: 800
   line-height: 1.2
   letter-spacing: -1px
   margin-bottom: 24px
+
+  @media(min-width: 1350px)
+    font-size: 40px
 
 h2,
 .h2
-  font-size: 32px
+  font-size: 23px
   line-height: 1.2
-  font-weight: 900
+  font-weight: 800
   line-height: 1.2
   letter-spacing: -1px
   margin-bottom: 24px
+
+  @media(min-width: 1350px)
+    font-size: 32px
 
 h3,
 .h3
-  font-size: 24px
+  font-size: 17px
   line-height: 1.2
-  font-weight: 900
+  font-weight: 800
   line-height: 1.2
   letter-spacing: -1px
   margin-bottom: 24px
 
+  @media(min-width: 1350px)
+    font-size: 24px
+
 h4,
 .h4
-  font-size: 20px
+  font-size: 15px
   line-height: 1.2
-  font-weight: 900
+  font-weight: 800
   line-height: 1.2
   letter-spacing: -0.5px
   margin-bottom: 24px
+
+  @media(min-width: 1350px)
+    font-size: 20px
 
 h5,
 .h5
-  font-size: 18px
+  font-size: 14px
   line-height: 1.2
-  font-weight: 900
+  font-weight: 800
   line-height: 1.2
   letter-spacing: -0.5px
   margin-bottom: 24px
 
+  @media(min-width: 1350px)
+    font-size: 18px
+
 h6,
 .h6
-  font-size: 16px
+  font-size: 14px
   line-height: 1.2
-  font-weight: 900
+  font-weight: 800
   line-height: 1.2
   letter-spacing: -0.5px
   margin-bottom: 24px
+
+  @media(min-width: 1350px)
+    font-size: 16px
 
 h1,.h1,
 h2,.h2,
@@ -143,7 +161,7 @@ ol
 .title-block
   display: flex
   flex-wrap: wrap
-  margin-right: 24px
+  margin-bottom: 24px
 
   .h1,
   h1,
@@ -152,3 +170,25 @@ ol
     margin-bottom: 0
     margin-right: auto
     padding-right: 16px
+
+  &__buttons
+    align-items: center
+    display: flex
+
+    & > button:not(:last-child)
+      margin-right: 12px
+
+    &--type_1
+      .slick-next,
+      .slick-prev
+        background-color: $purple_light
+
+        &:hover,
+        &:focus
+          background-color: $purple
+
+          .icon
+            fill: #fff
+
+        .icon
+          fill: $purple
