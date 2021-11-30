@@ -6,6 +6,12 @@
   margin-right: -6px
   padding: 0
 
+  &:not(:last-child)
+    margin-bottom: 56px
+
+    @media(min-width: 1350px)
+      margin-bottom: 96px
+
   &__item
     display: flex
     flex-direction: column
@@ -86,6 +92,9 @@
     margin-bottom: 16px
 
     @media(min-width: 1350px)
+      font-size: 20px
+
+    @media(min-width: 1900px)
       font-size: 24px
 
   &__text

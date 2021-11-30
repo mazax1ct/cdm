@@ -2,6 +2,9 @@
   &:not(:last-child)
     margin-bottom: 56px
 
+    @media(min-width: 1350px)
+      margin-bottom: 96px
+
   &__buttons
     align-items: center
     display: flex
@@ -40,7 +43,7 @@
       flex-direction: row-reverse
 
   &__list
-    background-color: $purple_light
+    //background-color: $purple_light
     border-radius: 0 0 $border-radius $border-radius
     max-height: 600px
     overflow-y: auto
@@ -106,7 +109,8 @@
 
 .map-item
   border-radius: $border-radius
-  background-color: rgba(#fff,0.8)
+  border: 1px solid $purple
+  background-color: rgba($purple_light, 0.5)
   padding: 8px
 
   @media(min-width: 1350px)
@@ -122,6 +126,9 @@
     margin-bottom: 8px
 
     @media(min-width: 1350px)
+      font-size: 20px
+
+    @media(min-width: 1900px)
       font-size: 24px
 
   &__info

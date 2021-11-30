@@ -5,7 +5,7 @@ function getRandomInt(min, max) {
 }
 
 $(document).ready(function() {
-  if($('body').width() > 1399) {
+  if($('body').width() > 1349) {
     let i = 0;
 
     let bH = $('main').height()/6;
