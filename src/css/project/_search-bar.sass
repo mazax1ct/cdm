@@ -1,4 +1,7 @@
 .search-bar
+  &:not(:last-child)
+    margin-bottom: 56px
+    
   &__title-block
     align-items: center
     display: flex
@@ -163,7 +166,7 @@
       padding: 0 24px
 
     @media(min-width: 1350px)
-      max-height: 500px   
+      max-height: 500px
 
     &.is-active
       display: block

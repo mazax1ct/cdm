@@ -23,10 +23,18 @@ body
 .page-content
   flex: 1 0 auto
   padding-top: 90px
-  padding-bottom: 80px
+  padding-bottom: 40px
+  position: relative
 
   @media(min-width: 1024px)
     padding-top: 160px
+
+  @media(min-width: 1900px)
+    padding-bottom: 80px
+
+  & > .container
+    position: relative
+    z-index: 2
 
 .container
   margin-left: auto
