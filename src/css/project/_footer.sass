@@ -132,17 +132,14 @@
     @media(min-width: 1024px)
       font-size: 14px
 
-    ul
-      list-style: none
-      padding: 0
+  &__links-list
+    @media(min-width: 1024px)
+      display: flex
 
-      @media(min-width: 1024px)
-        display: flex
-
-      li
-        &:not(:last-child)
-          @media(min-width: 1024px)
-            margin-right: 24px
+    li
+      &:not(:last-child)
+        @media(min-width: 1024px)
+          margin-right: 24px
 
     a
       color: $text-color

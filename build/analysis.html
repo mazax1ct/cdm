@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-    <title>Анализы</title>
+    <title>Анализ детально</title>
 
     <meta name="description" content="">
 
@@ -251,468 +251,100 @@
                     <a class="breadcrumbs__link" href="#">Главная</a>
                 </li>
                 <li class="breadcrumbs__item">
-                    Анализы
+                    <a class="breadcrumbs__link" href="analyzes.html">Анализы</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    Ревматологический, расширенный
                 </li>
             </ul>
 
-            <div class="search-bar">
-                <div class="search-bar__title-block">
-                    <h1 class="search-bar__title">Анализы</h1>
-                    <label class="switch">
-                        <input type="checkbox" />
-                        <span class="switch__icon"></span>
-                        <span>Анализы на дому</span>
-                    </label>
-                </div>
-                <div class="search-bar__form-block">
-                    <form class="search-bar__form" action="">
-                        <input class="search-bar__input" type="text" placeholder="Что вы ищете?">
-                        <button class="search-bar__submit" type="submit" title="Найти">
-                            <svg class="icon">
-                                <use xlink:href="#search"></use>
-                            </svg>
-                        </button>
-                        <label class="search-bar__select select-wrapper select-wrapper--type_3">
-                            <span class="select-wrapper__container">
-                                <select class="js-select">
-                                    <option value="1">Поиск по анализам</option>
-                                    <option value="2">Поиск по услугам</option>
-                                </select>
-                            </span>
-                        </label>
-                        <div class="search-bar__dropdown">
-                            <div class="search-bar__options">
-                                <div class="search-bar__options-column">
-                                    <p class="search-bar__options-title">Популярные</p>
-                                    <ul class="search-bar__options-list">
-                                        <li><button class="button button--type_6 button--height_1" type="button">Антитела к ТПО</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">TORCH</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">Клинический</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">ТТГ</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">Т4</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">Все</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">Клинический</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">Витамин С</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">Клинический</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">Клинический</button></li>
-                                    </ul>
-                                </div>
-                                <div class="search-bar__options-column">
-                                    <p class="search-bar__options-title">Сезонные</p>
-                                    <ul class="search-bar__options-list">
-                                        <li><button class="button button--type_6 button--height_1" type="button">Антитела</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">Клинический</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">Клинический</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">Витамин D</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">COVID-19</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">COVID-19</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">Витамин С</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">Витамин С</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">Витамин С</button></li>
-                                    </ul>
-                                </div>
-                                <div class="search-bar__options-column">
-                                    <p class="search-bar__options-title">Женские</p>
-                                    <ul class="search-bar__options-list">
-                                        <li><button class="button button--type_6 button--height_1" type="button">Эстроген</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">Тестостерон</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">Эстрадиол</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">Прогестерон</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">Пролактин</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">COVID-19</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">ФСГ</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">Клинический</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">ТТГ</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">Т4</button></li>
-                                    </ul>
-                                </div>
-                                <div class="search-bar__options-column">
-                                    <p class="search-bar__options-title">Мужские</p>
-                                    <ul class="search-bar__options-list">
-                                        <li><button class="button button--type_6 button--height_1" type="button">Тестостерон</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">ЛГ</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">ФСГ</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">Эстрадиол</button></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="search-bar__items">
-                                <button class="search-bar__item" type="button">
-                                    <svg class="icon">
-                                        <use xlink:href="#search"></use>
-                                    </svg>
-                                    Клинический анализ крови
-                                </button>
-                                <button class="search-bar__item" type="button">
-                                    <svg class="icon">
-                                        <use xlink:href="#search"></use>
-                                    </svg>
-                                    Клинический анализ крови
-                                </button>
-                                <button class="search-bar__item" type="button">
-                                    <svg class="icon">
-                                        <use xlink:href="#search"></use>
-                                    </svg>
-                                    Клинический анализ крови
-                                </button>
-                                <button class="search-bar__item" type="button">
-                                    <svg class="icon">
-                                        <use xlink:href="#search"></use>
-                                    </svg>
-                                    Клинический анализ крови
-                                </button>
-                                <button class="search-bar__item" type="button">
-                                    <svg class="icon">
-                                        <use xlink:href="#search"></use>
-                                    </svg>
-                                    Клинический анализ крови
-                                </button>
-                                <button class="search-bar__item" type="button">
-                                    <svg class="icon">
-                                        <use xlink:href="#search"></use>
-                                    </svg>
-                                    Клинический анализ крови
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
+            <h2>Ревматологический, расширенный</h2>
 
-            <h2>Каталог анализов</h2>
-
-            <div class="filter">
-                <div class="filter__item">
-                    <div class="group-buttons">
-                        <label class="group-buttons__button">
-                            <input type="radio" name="sex" value="1">
-                            <span class="group-buttons__button-text">
-                                <span>Муж</span>
-                            </span>
-                        </label>
-                        <label class="group-buttons__button">
-                            <input type="radio" name="sex" value="2">
-                            <span class="group-buttons__button-text">
-                                <span>Жен</span>
-                            </span>
-                        </label>
-                    </div>
-                </div>
-                <div class="filter__item">
-                    <div class="group-buttons">
-                        <label class="group-buttons__button">
-                            <input type="radio" name="age" value="1">
-                            <span class="group-buttons__button-text">
-                                <span>Детям</span>
-                            </span>
-                        </label>
-                        <label class="group-buttons__button">
-                            <input type="radio" name="age" value="2">
-                            <span class="group-buttons__button-text">
-                                <span>Взрослым</span>
-                            </span>
-                        </label>
-                        <label class="group-buttons__button">
-                            <input type="radio" name="age" value="3">
-                            <span class="group-buttons__button-text">
-                                <span>Беременным</span>
-                            </span>
-                        </label>
-                    </div>
-                </div>
-                <div class="filter__item">
-                    <label class="select-wrapper select-wrapper--type_1">
-                        <span class="select-wrapper__container">
-                            <select class="js-select" placeholder="Системы организма">
-                                <option value=""></option>
-                                <option value="1">Дыхательная система</option>
-                                <option value="2">Пищеварительная система</option>
-                                <option value="3">Мочевыделительная система</option>
-                                <option value="4">Опорно-двигательный аппарат</option>
-                                <option value="5">Циркуляторная система</option>
-                                <option value="6">Нервная система</option>
-                            </select>
-                        </span>
-                    </label>
-                </div>
-                <div class="filter__item">
-                    <label class="select-wrapper select-wrapper--type_1">
-                        <span class="select-wrapper__container">
-                            <select class="js-select" placeholder="Все заболевания">
-                                <option value=""></option>
-                                <option value="1">Тип 1</option>
-                                <option value="2">Тип 2</option>
-                                <option value="3">Тип 3</option>
-                                <option value="4">Тип 4</option>
-                                <option value="5">Тип 5</option>
-                                <option value="6">Тип 6</option>
-                            </select>
-                        </span>
-                    </label>
-                </div>
-                <div class="filter__item filter__buttons">
-                    <button class="button button--height_4 button--type_3" type="submit">
-                        <svg class="icon">
-                            <use xlink:href="#eye"></use>
-                        </svg>
-                        <span>Показать</span>
-                    </button>
-                    <button class="button button--height_4 button--type_3" type="reset">
-                        <svg class="icon">
-                            <use xlink:href="#refresh"></use>
-                        </svg>
-                        <span>Сбросить</span>
-                    </button>
-                </div>
-            </div>
-
-            <div class="analyzes">
-                <div class="analysis">
-                    <div class="analysis__top">
-                        <p class="analysis__title">СРРА324</p>
-                        <p class="analysis__time">1 рабочий день</p>
-                    </div>
-                    <div class="analysis__bottom">
-                        <div class="analysis__info">
-                            <p class="analysis__subtitle">Диагностика рака молочной железы. Метаболиты эстрогенов.</p>
-                            <div class="analysis__preview">
-                                <ul>
-                                    <li>Рекомендован для выявления иммунного ответа в ходе заболевания и после перенесенного COVID-19, включая бессимптомную форму.</li>
-                                    <li>Обнаружение IgM антител свидетельствует о недавнем контакте с вирусом или острой фазе заболевания.</li>
-                                    <li>Производитель – Abbott</li>
-                                </ul>
-                                <p class="analysis__more-block">
-                                    <a class="analysis__more" href="#">
-                                        Подробно
-                                        <svg class="icon">
-                                            <use xlink:href="#arrow_right"></use>
-                                        </svg>
-                                    </a>
-                                </p>
+            <div class="analysis-detail">
+                <div class="analysis-detail__right">
+                    <div class="analysis-detail__right-inner">
+                        <div class="analysis-detail__artikul-bar">
+                            <p class="analysis-detail__artikul">Комплекс / 50.0.H105.201</p>
+                            <p class="analysis-detail__artikul">Артикул: ОБС166</p>
+                        </div>
+                        <p class="analysis-detail__title">Ревматологический, расширенный</p>
+                        <p class="analysis-detail__subtitle">Анализ доступен:</p>
+                        <div class="analysis-detail__tags">
+                            <ul class="tags">
+                                <li class="tags__item"><span class="tags__button">Петроградский р-н</span></li>
+                                <li class="tags__item"><span class="tags__button">Невский р-н</span></li>
+                            </ul>
+                        </div>
+                        <div class="analysis-detail__info">
+                            <div class="analysis-detail__info-block">
+                                <p>Срок изготовления:<br> 1 рабочий день</p>
+                            </div>
+                            <div class="analysis-detail__info-block">
+                                <p>Биоматериал:<br> Сыворотка</p>
                             </div>
                         </div>
-                        <div class="analysis__buy-block">
-                            <p class="analysis__price">4800&nbsp;₽</p>
+                        <p class="analysis-detail__subtitle">Цена:</p>
+                        <div class="analysis-detail__buy-block">
+                            <p class="analysis-detail__price">8 435 ₽</p>
                             <a class="button button--type_1 button--height_4" href="#">В корзину</a>
+                        </div>
+                        <p class="analysis-detail__subtitle">Цена указывается без учета стоимости<br> взятия биоматериала</p>
+                        <p class="analysis-detail__add-price">Биоматериал: 500 ₽</p>
+                    </div>
+                </div>
+                <div class="analysis-detail__left">
+                    <div class="tabs">
+                        <ul class="tabs__nav">
+                            <li class="tabs__nav-item">
+                                <button class="tabs__nav-button is-active" type="button" data-target="1">Описание</button>
+                            </li>
+                            <li class="tabs__nav-item">
+                                <button class="tabs__nav-button" type="button" data-target="2">Референсы</button>
+                            </li>
+                            <li class="tabs__nav-item">
+                                <button class="tabs__nav-button" type="button" data-target="3">Подготовка</button>
+                            </li>
+                            <li class="tabs__nav-item">
+                                <button class="tabs__nav-button" type="button" data-target="4">Ограничения</button>
+                            </li>
+                        </ul>
+                        <div class="tab is-active" data-target="1">
+                            <p>К ревматическим относят целый ряд заболеваний, характеризующихся поражением соединительной ткани (суставы, мышцы, хрящи) и сосудов и нередко приводящих к нарушению подвижности. Достаточно часто поражаются суставы,
+                                поэтому термин «ревматология» у многих ассоциируется с артритом. Однако клинические проявления ревматических заболеваний разнообразны. Например, системная красная волчанка (СКВ) может проявляться кожной сыпью или
+                                поражением сердца, полимиозит – нарастающей мышечной слабостью, васкулиты – поражением почек. Для диагностики ревматических заболеваний важна совместная оценка анамнеза, клиники, инструментальных и лабораторных
+                                методов.</p>
+                            <p>Комплекс «Ревматологический, расширенный» включает перечень лабораторных исследований, позволяющих заподозрить или выявить заболевание на ранних стадиях, когда клинические проявления ещё могут не проявиться явно.
+                                Лабораторный тест поможет своевременно поставить диагноз и назначить лечение, обеспечив хорошее качество жизни.</p>
+                            <h2>Что входит в состав комплекса?</h2>
+                            <p>С-реактивный белок – общий маркер воспаления, повышается при всех ревматических заболеваниях, его уровень ассоциирован с тяжестью течения процесса
+                                Мочевая кислота – откладывается в виде кристаллов солей в суставах; признак подагрического артрита
+                                Антистрептолизин-О – маркер стрептококковой инфекции в организме; его стойкое повышение может быть связано с развитием ревматизма
+                                Ревматоидный фактор (РФ) - суммарные антитела к собственным иммуноглобулинам G. Показатель ревматоидного артрита и других системных заболеваний
+                                Антитела к циклическому цитрулиновому пептиду (АССР) – основной диагностический маркер ревматоидного полиартрита (одновременное повышение АССР и РФ позволяет поставить диагноз в начальной стадии поражения суставов)
+                                Антинейтрофильные цитоплазматические антитела, IgG (ANCA, Combi 6) – тест для диагностики системных васкулитов.
+                                Антинуклеарные антитела, иммуноблот - группа антиядерных антител, повышаются при системной красной волчанке, склеродермии и других ревматических заболеваниях
+                                Антитела к Chlamydia trachomatis, IgG – свидетельствуют о давнем инфицировании организма Chlamidia trachomatis. Используются для диагностики синдрома Рейтера (последствия перенесенного хламидиоза, проявляются
+                                поражением суставов и тканей глаза)</p>
+                            <h2>В каких случаях назначают комплекс «Ревматологический, расширенный»?</h2>
+                            <p>Условно выделяют клинические признаки, позволяющие заподозрить ревматическое заболевание</p>
+                        </div>
+                        <div class="tab" data-target="2">
+                            <p>Nobis voluptatum, debitis nihil maiores soluta, ea eligendi earum facilis inventore illo recusandae ex possimus quis pariatur incidunt aperiam est neque porro.</p>
+                            <p>Ipsa dicta est maiores dignissimos aliquid in et, quo laboriosam officia consequatur nihil nulla, repudiandae culpa vel incidunt dolor quasi laudantium temporibus.</p>
+                        </div>
+                        <div class="tab" data-target="3">
+                            <p>Ipsa dicta est maiores dignissimos aliquid in et, quo laboriosam officia consequatur nihil nulla, repudiandae culpa vel incidunt dolor quasi laudantium temporibus.</p>
+                        </div>
+                        <div class="tab" data-target="4">
+                            <p>Ipsa dicta est maiores dignissimos aliquid in et, quo laboriosam officia consequatur nihil nulla, repudiandae culpa vel incidunt dolor quasi laudantium temporibus.</p>
+                            <p>Nobis voluptatum, debitis nihil maiores soluta, ea eligendi earum facilis inventore illo recusandae ex possimus quis pariatur incidunt aperiam est neque porro.</p>
                         </div>
                     </div>
                 </div>
-                <div class="analysis">
-                    <div class="analysis__top">
-                        <p class="analysis__title">СРРА324</p>
-                        <p class="analysis__time">1 рабочий день</p>
-                    </div>
-                    <div class="analysis__bottom">
-                        <div class="analysis__info">
-                            <p class="analysis__subtitle">Диагностика рака молочной железы. Метаболиты эстрогенов.</p>
-                            <div class="analysis__preview">
-                                <ul>
-                                    <li>Рекомендован для выявления иммунного ответа в ходе заболевания и после перенесенного COVID-19, включая бессимптомную форму.</li>
-                                    <li>Обнаружение IgM антител свидетельствует о недавнем контакте с вирусом или острой фазе заболевания.</li>
-                                    <li>Производитель – Abbott</li>
-                                </ul>
-                                <p class="analysis__more-block">
-                                    <a class="analysis__more" href="#">
-                                        Подробно
-                                        <svg class="icon">
-                                            <use xlink:href="#arrow_right"></use>
-                                        </svg>
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="analysis__buy-block">
-                            <p class="analysis__price">4800&nbsp;₽</p>
-                            <a class="button button--type_1 button--height_4" href="#">В корзину</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="analysis">
-                    <div class="analysis__top">
-                        <p class="analysis__title">СРРА324</p>
-                        <p class="analysis__time">1 рабочий день</p>
-                    </div>
-                    <div class="analysis__bottom">
-                        <div class="analysis__info">
-                            <p class="analysis__subtitle">Диагностика рака молочной железы. Метаболиты эстрогенов.</p>
-                            <div class="analysis__preview">
-                                <ul>
-                                    <li>Рекомендован для выявления иммунного ответа в ходе заболевания и после перенесенного COVID-19, включая бессимптомную форму.</li>
-                                    <li>Обнаружение IgM антител свидетельствует о недавнем контакте с вирусом или острой фазе заболевания.</li>
-                                    <li>Производитель – Abbott</li>
-                                </ul>
-                                <p class="analysis__more-block">
-                                    <a class="analysis__more" href="#">
-                                        Подробно
-                                        <svg class="icon">
-                                            <use xlink:href="#arrow_right"></use>
-                                        </svg>
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="analysis__buy-block">
-                            <p class="analysis__price">4800&nbsp;₽</p>
-                            <a class="button button--type_1 button--height_4" href="#">В корзину</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="analysis">
-                    <div class="analysis__top">
-                        <p class="analysis__title">СРРА324</p>
-                        <p class="analysis__time">1 рабочий день</p>
-                    </div>
-                    <div class="analysis__bottom">
-                        <div class="analysis__info">
-                            <p class="analysis__subtitle">Диагностика рака молочной железы. Метаболиты эстрогенов.</p>
-                            <div class="analysis__preview">
-                                <ul>
-                                    <li>Рекомендован для выявления иммунного ответа в ходе заболевания и после перенесенного COVID-19, включая бессимптомную форму.</li>
-                                    <li>Обнаружение IgM антител свидетельствует о недавнем контакте с вирусом или острой фазе заболевания.</li>
-                                    <li>Производитель – Abbott</li>
-                                </ul>
-                                <p class="analysis__more-block">
-                                    <a class="analysis__more" href="#">
-                                        Подробно
-                                        <svg class="icon">
-                                            <use xlink:href="#arrow_right"></use>
-                                        </svg>
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="analysis__buy-block">
-                            <p class="analysis__price">4800&nbsp;₽</p>
-                            <a class="button button--type_1 button--height_4" href="#">В корзину</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="analysis">
-                    <div class="analysis__top">
-                        <p class="analysis__title">СРРА324</p>
-                        <p class="analysis__time">1 рабочий день</p>
-                    </div>
-                    <div class="analysis__bottom">
-                        <div class="analysis__info">
-                            <p class="analysis__subtitle">Диагностика рака молочной железы. Метаболиты эстрогенов.</p>
-                            <div class="analysis__preview">
-                                <ul>
-                                    <li>Рекомендован для выявления иммунного ответа в ходе заболевания и после перенесенного COVID-19, включая бессимптомную форму.</li>
-                                    <li>Обнаружение IgM антител свидетельствует о недавнем контакте с вирусом или острой фазе заболевания.</li>
-                                    <li>Производитель – Abbott</li>
-                                </ul>
-                                <p class="analysis__more-block">
-                                    <a class="analysis__more" href="#">
-                                        Подробно
-                                        <svg class="icon">
-                                            <use xlink:href="#arrow_right"></use>
-                                        </svg>
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="analysis__buy-block">
-                            <p class="analysis__price">4800&nbsp;₽</p>
-                            <a class="button button--type_1 button--height_4" href="#">В корзину</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="analysis">
-                    <div class="analysis__top">
-                        <p class="analysis__title">СРРА324</p>
-                        <p class="analysis__time">1 рабочий день</p>
-                    </div>
-                    <div class="analysis__bottom">
-                        <div class="analysis__info">
-                            <p class="analysis__subtitle">Диагностика рака молочной железы. Метаболиты эстрогенов.</p>
-                            <div class="analysis__preview">
-                                <ul>
-                                    <li>Рекомендован для выявления иммунного ответа в ходе заболевания и после перенесенного COVID-19, включая бессимптомную форму.</li>
-                                    <li>Обнаружение IgM антител свидетельствует о недавнем контакте с вирусом или острой фазе заболевания.</li>
-                                    <li>Производитель – Abbott</li>
-                                </ul>
-                                <p class="analysis__more-block">
-                                    <a class="analysis__more" href="#">
-                                        Подробно
-                                        <svg class="icon">
-                                            <use xlink:href="#arrow_right"></use>
-                                        </svg>
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="analysis__buy-block">
-                            <p class="analysis__price">4800&nbsp;₽</p>
-                            <a class="button button--type_1 button--height_4" href="#">В корзину</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="analysis">
-                    <div class="analysis__top">
-                        <p class="analysis__title">СРРА324</p>
-                        <p class="analysis__time">1 рабочий день</p>
-                    </div>
-                    <div class="analysis__bottom">
-                        <div class="analysis__info">
-                            <p class="analysis__subtitle">Диагностика рака молочной железы. Метаболиты эстрогенов.</p>
-                            <div class="analysis__preview">
-                                <ul>
-                                    <li>Рекомендован для выявления иммунного ответа в ходе заболевания и после перенесенного COVID-19, включая бессимптомную форму.</li>
-                                    <li>Обнаружение IgM антител свидетельствует о недавнем контакте с вирусом или острой фазе заболевания.</li>
-                                    <li>Производитель – Abbott</li>
-                                </ul>
-                                <p class="analysis__more-block">
-                                    <a class="analysis__more" href="#">
-                                        Подробно
-                                        <svg class="icon">
-                                            <use xlink:href="#arrow_right"></use>
-                                        </svg>
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="analysis__buy-block">
-                            <p class="analysis__price">4800&nbsp;₽</p>
-                            <a class="button button--type_1 button--height_4" href="#">В корзину</a>
-                        </div>
-                    </div>
-                </div>
-
-                <ul class="pager pager--center">
-                    <li class="pager__item pager__arrow">
-                        <span class="pager__link" title="Назад">
-                            <svg class="icon">
-                                <use xlink:href="#arrow_left"></use>
-                            </svg>
-                        </span>
-                    </li>
-                    <li class="pager__item">
-                        <a class="pager__link" href="#">1</a>
-                    </li>
-                    <li class="pager__item">
-                        <span class="pager__link is-active">2</span>
-                    </li>
-                    <li class="pager__item">
-                        <a class="pager__link" href="#">3</a>
-                    </li>
-                    <li class="pager__item">
-                        <a class="pager__link" href="#">...</a>
-                    </li>
-                    <li class="pager__item">
-                        <a class="pager__link" href="#">45</a>
-                    </li>
-                    <li class="pager__item pager__arrow">
-                        <a class="pager__link" href="#" title="Вперёд">
-                            <svg class="icon">
-                                <use xlink:href="#arrow_right"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
             </div>
 
             <div class="title-block">
-                <h2>Комплексы анализов</h2>
+                <h2>Похожие комплексы</h2>
                 <div id="complexes_list_buttons" class="title-block__buttons"></div>
             </div>
 
@@ -818,42 +450,159 @@
                 </div>
             </div>
 
-            <h2>Вопросы и ответы:</h2>
+            <div class="title-block">
+                <h2>Вы можете получить консультацию у этих врачей:</h2>
+                <div id="doctors_list_buttons" class="title-block__buttons title-block__buttons--type_1"></div>
+            </div>
 
-            <div class="accordions">
-                <div class="accordion">
-                    <button class="accordion__toggler" type="button">Нужно ли записываться на сдачу анализов?</button>
-                    <div class="accordion__body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et ex magnam fugit suscipit labore, quam sequi adipisci, nam perferendis fuga nisi, modi enim possimus sed molestias unde velit, ullam hic?</p>
-                        <p>Nobis voluptatum, debitis nihil maiores soluta, ea eligendi earum facilis inventore illo recusandae ex possimus quis pariatur incidunt aperiam est neque porro.</p>
-                        <p>Ipsa dicta est maiores dignissimos aliquid in et, quo laboriosam officia consequatur nihil nulla, repudiandae culpa vel incidunt dolor quasi laudantium temporibus.</p>
+            <div class="js-doctors-list doctors-list" data-buttons="doctors_list_buttons">
+                <div class="doctors-list__item">
+                    <div class="doctor">
+                        <div class="doctor__image"><img src="images/content/doctors/img_1.jpg" srcset="images/content/doctors/img_1@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
+                        <div class="doctor__info">
+                            <p class="doctor__name"><a href="#">Гринжола<br> Елена Николаевна</a></p>
+                            <p class="doctor__place">Руководитель ОКДЛ-врач клинический лабораторной диагностики</p>
+                            <p class="doctor__exp">Стаж 20 лет</p>
+                        </div>
                     </div>
                 </div>
-                <div class="accordion">
-                    <button class="accordion__toggler" type="button">Нужно ли записываться на сдачу анализов?</button>
-                    <div class="accordion__body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et ex magnam fugit suscipit labore, quam sequi adipisci, nam perferendis fuga nisi, modi enim possimus sed molestias unde velit, ullam hic?</p>
-                        <p>Nobis voluptatum, debitis nihil maiores soluta, ea eligendi earum facilis inventore illo recusandae ex possimus quis pariatur incidunt aperiam est neque porro.</p>
-                        <p>Ipsa dicta est maiores dignissimos aliquid in et, quo laboriosam officia consequatur nihil nulla, repudiandae culpa vel incidunt dolor quasi laudantium temporibus.</p>
+                <div class="doctors-list__item">
+                    <div class="doctor">
+                        <div class="doctor__image"><img src="images/content/doctors/img_2.jpg" srcset="images/content/doctors/img_2@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
+                        <div class="doctor__info">
+                            <p class="doctor__name"><a href="#">Водяник<br> Павел Иванович</a></p>
+                            <p class="doctor__place">Руководитель медицинского центра</p>
+                            <p class="doctor__exp">Стаж 10 лет</p>
+                        </div>
                     </div>
                 </div>
-                <div class="accordion">
-                    <button class="accordion__toggler" type="button">Нужно ли записываться на сдачу анализов?</button>
-                    <div class="accordion__body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et ex magnam fugit suscipit labore, quam sequi adipisci, nam perferendis fuga nisi, modi enim possimus sed molestias unde velit, ullam hic?</p>
-                        <p>Nobis voluptatum, debitis nihil maiores soluta, ea eligendi earum facilis inventore illo recusandae ex possimus quis pariatur incidunt aperiam est neque porro.</p>
-                        <p>Ipsa dicta est maiores dignissimos aliquid in et, quo laboriosam officia consequatur nihil nulla, repudiandae culpa vel incidunt dolor quasi laudantium temporibus.</p>
+                <div class="doctors-list__item">
+                    <div class="doctor">
+                        <div class="doctor__image"><img src="images/content/doctors/img_3.jpg" srcset="images/content/doctors/img_3@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
+                        <div class="doctor__info">
+                            <p class="doctor__name"><a href="#">Володина<br> Людмила Николаевна</a></p>
+                            <p class="doctor__place">Руководитель медицинского центра</p>
+                            <p class="doctor__exp">Стаж 15 лет</p>
+                        </div>
                     </div>
                 </div>
-                <div class="accordion">
-                    <button class="accordion__toggler" type="button">Нужно ли записываться на сдачу анализов?</button>
-                    <div class="accordion__body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et ex magnam fugit suscipit labore, quam sequi adipisci, nam perferendis fuga nisi, modi enim possimus sed molestias unde velit, ullam hic?</p>
-                        <p>Nobis voluptatum, debitis nihil maiores soluta, ea eligendi earum facilis inventore illo recusandae ex possimus quis pariatur incidunt aperiam est neque porro.</p>
-                        <p>Ipsa dicta est maiores dignissimos aliquid in et, quo laboriosam officia consequatur nihil nulla, repudiandae culpa vel incidunt dolor quasi laudantium temporibus.</p>
+                <div class="doctors-list__item">
+                    <div class="doctor">
+                        <div class="doctor__image"><img src="images/content/doctors/img_4.jpg" srcset="images/content/doctors/img_4@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
+                        <div class="doctor__info">
+                            <p class="doctor__name"><a href="#">Писарева<br> Елена Михайловна</a></p>
+                            <p class="doctor__place">Врач-педиатор</p>
+                            <p class="doctor__exp">Стаж 10 лет</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="doctors-list__item">
+                    <div class="doctor">
+                        <div class="doctor__image"><img src="images/content/doctors/img_1.jpg" srcset="images/content/doctors/img_1@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
+                        <div class="doctor__info">
+                            <p class="doctor__name"><a href="#">Гринжола<br> Елена Николаевна</a></p>
+                            <p class="doctor__place">Руководитель ОКДЛ-врач клинический лабораторной диагностики</p>
+                            <p class="doctor__exp">Стаж 20 лет</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="doctors-list__item">
+                    <div class="doctor">
+                        <div class="doctor__image"><img src="images/content/doctors/img_2.jpg" srcset="images/content/doctors/img_2@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
+                        <div class="doctor__info">
+                            <p class="doctor__name"><a href="#">Водяник<br> Павел Иванович</a></p>
+                            <p class="doctor__place">Руководитель медицинского центра</p>
+                            <p class="doctor__exp">Стаж 10 лет</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="doctors-list__item">
+                    <div class="doctor">
+                        <div class="doctor__image"><img src="images/content/doctors/img_3.jpg" srcset="images/content/doctors/img_3@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
+                        <div class="doctor__info">
+                            <p class="doctor__name"><a href="#">Володина<br> Людмила Николаевна</a></p>
+                            <p class="doctor__place">Руководитель медицинского центра</p>
+                            <p class="doctor__exp">Стаж 15 лет</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="doctors-list__item">
+                    <div class="doctor">
+                        <div class="doctor__image"><img src="images/content/doctors/img_4.jpg" srcset="images/content/doctors/img_4@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
+                        <div class="doctor__info">
+                            <p class="doctor__name"><a href="#">Писарева<br> Елена Михайловна</a></p>
+                            <p class="doctor__place">Врач-педиатор</p>
+                            <p class="doctor__exp">Стаж 10 лет</p>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <h2>Комплекс доступен в этих центрах:</h2>
+
+            <div class="map-block">
+                <div class="map-block__buttons">
+                    <button class="map-block__button is-active" type="button" data-center="59.941707, 30.301902">Санкт-Петербург</button>
+                    <button class="map-block__button" type="button" data-center="55.755819, 37.617644">Москва</button>
+                </div>
+                <div class="map-block__container">
+                    <div class="map-block__map">
+                        <div id="clinics_map" class="map-block__map-block"></div>
+                    </div>
+                    <div class="map-block__list">
+                        <div class="map-item">
+                            <p class="map-item__title">Центр Урологии</p>
+                            <div class="map-item__info">
+                                <p>Санкт-Петербург, ул. Ильюшина, 25<br> <a href="tel:+79650038609">+7 (965) 003 86 09</a></p>
+                                <button class="button button--type_7 button--height_2" type="button" data-center="59.922064, 30.307739" data-info="1">На карте</button>
+                            </div>
+                        </div>
+                        <div class="map-item">
+                            <p class="map-item__title">Центр Урологии</p>
+                            <div class="map-item__info">
+                                <p>Санкт-Петербург, ул. Ильюшина, 25<br> <a href="tel:+79650038609">+7 (965) 003 86 09</a></p>
+                                <button class="button button--type_7 button--height_2" type="button" data-center="59.916929, 30.351444" data-info="2">На карте</button>
+                            </div>
+                        </div>
+                        <div class="map-item">
+                            <p class="map-item__title">Центр Урологии</p>
+                            <div class="map-item__info">
+                                <p>Санкт-Петербург, ул. Ильюшина, 25<br> <a href="tel:+79650038609">+7 (965) 003 86 09</a></p>
+                                <button class="button button--type_7 button--height_2" type="button" data-center="59.942068, 30.270203" data-info="3">На карте</button>
+                            </div>
+                        </div>
+                        <div class="map-item">
+                            <p class="map-item__title">Центр Урологии</p>
+                            <div class="map-item__info">
+                                <p>Санкт-Петербург, ул. Ильюшина, 25<br> <a href="tel:+79650038609">+7 (965) 003 86 09</a></p>
+                                <button class="button button--type_7 button--height_2" type="button" data-center="59.941707, 30.301902" data-info="4">На карте</button>
+                            </div>
+                        </div>
+                        <div class="map-item">
+                            <p class="map-item__title">Центр Урологии</p>
+                            <div class="map-item__info">
+                                <p>Санкт-Петербург, ул. Ильюшина, 25<br> <a href="tel:+79650038609">+7 (965) 003 86 09</a></p>
+                                <button class="button button--type_7 button--height_2" type="button" data-center="59.941707, 30.301902" data-info="5">На карте</button>
+                            </div>
+                        </div>
+                        <div class="map-item">
+                            <p class="map-item__title">Центр Урологии</p>
+                            <div class="map-item__info">
+                                <p>Санкт-Петербург, ул. Ильюшина, 25<br> <a href="tel:+79650038609">+7 (965) 003 86 09</a></p>
+                                <button class="button button--type_7 button--height_2" type="button" data-center="59.941707, 30.301902" data-info="6">На карте</button>
+                            </div>
+                        </div>
+                        <div class="map-item">
+                            <p class="map-item__title">Центр Урологии</p>
+                            <div class="map-item__info">
+                                <p>Санкт-Петербург, ул. Ильюшина, 25<br> <a href="tel:+79650038609">+7 (965) 003 86 09</a></p>
+                                <button class="button button--type_7 button--height_2" type="button" data-center="59.941707, 30.301902" data-info="7">На карте</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </main>
 
@@ -1060,8 +809,10 @@
     <script src="js/decor.js"></script>
 
     <!--скрипты страницы-->
-    <script src="js/search.js"></script>
+    <script src="js/analysis-detail.js"></script>
     <script src="js/complexes-list.js"></script>
+    <script src="js/doctors-list.js"></script>
+
 
     <!--прелоадер-->
     <script src="js/preloader.js"></script>

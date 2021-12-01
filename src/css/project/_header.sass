@@ -4,12 +4,13 @@
   position: absolute
   right: 0
   top: 0
-  transition: box-shadow 0.3s, transform 0.3s, background-color 0.3s
+  transition: box-shadow 0.3s, background-color 0.3s
   z-index: 10
 
   &.scrolled
     box-shadow: 0 0 6px 0 rgba($text-color, 0.1)
     position: fixed
+    transition: box-shadow 0.3s, transform 0.3s, background-color 0.3s
 
   &.out
     transform: translateY(-100%)

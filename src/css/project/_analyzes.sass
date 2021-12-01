@@ -1,0 +1,144 @@
+.analyzes
+  margin-left: auto
+  margin-right: auto
+  max-width: 1160px
+
+  &:not(:last-child)
+    margin-bottom: 56px
+
+    @media(min-width: 1350px)
+      margin-bottom: 96px
+
+  .analysis
+    &:not(:last-child)
+      margin-bottom: 24px
+
+.analysis
+  border-radius: $border-radius
+  background-color: #fff
+  border: 2px solid $green
+  padding: 24px 12px
+  position: relative
+  transition: background-color 0.3s, box-shadow 0.3s
+
+  @media(min-width: 768px)
+    padding-left: 24px
+    padding-right: 24px
+
+  @media(min-width: 1024px)
+    padding-top: 32px
+    padding-bottom: 32px
+
+  &:hover,
+  &:focus
+    background-color: $green_light
+    box-shadow: 0 4px 6px 0 rgba(#000, 0.2)
+
+  &__top
+    align-items: center
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 24px
+
+  &__title
+    font-size: 18px
+    font-weight: 800
+    line-height: 1.2
+    padding-right: 16px
+    margin-right: auto
+    margin-bottom: 0
+
+    @media(min-width: 1350px)
+      font-size: 20px
+
+    @media(min-width: 1900px)
+      font-size: 24px
+
+  &__time
+    font-weight: 700
+
+  &__bottom
+    @media(min-width: 768px)
+      align-items: center
+      display: flex
+
+  &__info
+    flex-grow: 1
+
+  &__subtitle
+    font-size: 18px
+    font-weight: 700
+    line-height: 1.2
+    margin-right: auto
+    margin-bottom: 16px
+
+    @media(min-width: 1350px)
+      font-size: 20px
+
+    @media(min-width: 1900px)
+      font-size: 24px
+
+  &__preview
+    @media(min-width: 768px)
+      max-width: 450px
+
+  &__more-block
+    text-align: right
+
+  &__more
+    align-items: center
+    display: inline-flex
+    font-weight: 700
+
+    &::after
+      bottom: 0
+      content: ''
+      left: 0
+      position: absolute
+      right: 0
+      top: 0
+      z-index: 1
+
+    &:hover,
+    &:focus
+      color: $green
+
+    .icon
+      fill: $green
+      height: 16px
+      margin-top: 3px
+      margin-left: 8px
+      transition: fill 0.3s
+      width: 16px
+
+  &__buy-block
+    align-items: center
+    display: flex
+    flex-wrap: wrap
+    margin-top: 16px
+
+    @media(min-width: 768px)
+      flex-direction: column
+      margin-left: auto
+
+    .button
+      min-width: 130px
+      position: relative
+      z-index: 2
+
+  &__price
+    font-size: 24px
+    font-weight: 800
+    line-height: 1
+    margin-bottom: 0
+    margin-right: auto
+    padding-right: 8px
+
+    @media(min-width: 768px)
+      font-size: 36px
+      margin-bottom: 12px
+      margin-right: 0
+      padding-right: 0
+
+    @media(min-width: 1350px)
+      font-size: 48px

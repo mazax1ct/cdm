@@ -1,0 +1,132 @@
+.analysis-detail
+  &:not(:last-child)
+    margin-bottom: 56px
+
+    @media(min-width: 1350px)
+      margin-bottom: 96px
+
+  @media(min-width: 1024px)
+    display: flex
+    flex-direction: row-reverse
+    margin-left: -10px
+    margin-right: -10px
+
+  &__left
+    @media(min-width: 1024px)
+      padding-left: 10px
+      padding-right: 10px
+      width: 63%
+
+  &__right
+    margin-bottom: 24px
+
+    @media(min-width: 1024px)
+      margin-bottom: 0
+      padding-left: 10px
+      padding-right: 10px
+      width: 37%
+
+  &__right-inner
+    background-color: #fff
+    border-radius: $border-radius
+    border: 1px solid $purple_light
+    padding: 24px 12px
+
+    @media(min-width: 1024px)
+      position: sticky
+      padding-left: 24px
+      padding-right: 24px
+      top: 0
+
+  &__artikul-bar
+    align-items: center
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 20px
+
+  &__artikul
+    background-color: $purple_light
+    border-radius: $border-radius
+    font-size: 14px
+    margin-bottom: 5px
+    padding: 4px 12px
+
+    &:first-child
+      margin-right: auto
+
+    &:last-child
+      margin-bottom: 5px
+
+  &__title
+    font-size: 18px
+    font-weight: 800
+    line-height: 1.2
+    margin-right: auto
+    margin-bottom: 12px
+
+    @media(min-width: 1350px)
+      font-size: 24px
+
+    @media(min-width: 1900px)
+      font-size: 32px
+
+  &__subtitle
+    font-weight: 700
+    font-size: 16px
+    margin-bottom: 8px
+
+    @media(min-width: 1350px)
+      font-size: 18px
+
+  &__tags
+    margin-bottom: 20px
+
+  &__info
+    display: flex
+    font-weight: 700
+    margin-left: -10px
+    margin-right: -10px
+    margin-bottom: 32px
+
+  &__info-block
+    padding-left: 10px
+    padding-right: 10px
+    width: 50%
+
+  &__buy-block
+    align-items: center
+    display: flex
+
+    .button
+      min-width: 130px
+
+    &:not(:last-child)
+      margin-bottom: 32px
+
+  &__price
+    font-size: 24px
+    font-weight: 800
+    line-height: 1
+    margin-bottom: 0
+    margin-right: auto
+    padding-right: 8px
+    white-space: nowrap
+
+    @media(min-width: 768px)
+      font-size: 36px
+
+    @media(min-width: 1350px)
+      font-size: 48px
+
+  &__add-price
+    font-size: 18px
+    font-weight: 800
+    line-height: 1.2
+    margin-right: auto
+    margin-bottom: 12px
+
+    @media(min-width: 1350px)
+      font-size: 20px
+
+    @media(min-width: 1900px)
+      font-size: 24px
