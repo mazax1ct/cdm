@@ -3,6 +3,9 @@
   margin-right: auto
   max-width: 1160px
 
+  @media(min-width: 1024px)
+    width: 80%
+
   &:not(:last-child)
     margin-bottom: 56px
 
@@ -49,9 +52,6 @@
     margin-bottom: 0
 
     @media(min-width: 1350px)
-      font-size: 20px
-
-    @media(min-width: 1900px)
       font-size: 24px
 
   &__time
@@ -59,7 +59,7 @@
 
   &__bottom
     @media(min-width: 768px)
-      align-items: center
+      align-items: flex-end
       display: flex
 
   &__info
@@ -83,7 +83,6 @@
       max-width: 450px
 
   &__more-block
-    text-align: right
 
   &__more
     align-items: center
@@ -118,7 +117,7 @@
     margin-top: 16px
 
     @media(min-width: 768px)
-      flex-direction: column
+      flex-wrap: nowrap
       margin-left: auto
 
     .button
@@ -128,7 +127,7 @@
 
   &__price
     font-size: 24px
-    font-weight: 800
+    font-weight: 700
     line-height: 1
     margin-bottom: 0
     margin-right: auto
@@ -136,9 +135,7 @@
 
     @media(min-width: 768px)
       font-size: 36px
-      margin-bottom: 12px
-      margin-right: 0
-      padding-right: 0
+      margin-right: 24px
 
     @media(min-width: 1350px)
       font-size: 48px
