@@ -3,6 +3,7 @@ body
   font-family: 'Mediator', Arial, sans-serif
   font-size: 14px
   line-height: 1.75
+  overflow-wrap: break-word
 
   @media(min-width: 1200px)
     font-size: 16px
@@ -192,6 +193,17 @@ ul
     margin-bottom: 0
     margin-right: auto
     padding-right: 16px
+
+  &__controls
+    align-items: center
+    display: flex
+
+  &__select
+    margin-right: 12px
+    min-width: 170px
+
+    @media(min-width: 768px)
+      margin-right: 32px
 
   &__buttons
     align-items: center

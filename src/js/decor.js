@@ -27,14 +27,15 @@ $(document).ready(function() {
       j = 5;
     }
 
+    $('main').append('<div class="decor-container"></div>');
+
     while (i < j) {
       let img = getRandomInt(1, 17);
       let className = 'right';
       if((i%2) > 0) {
         className = 'left';
       }
-
-      $('main').append('<div class="decor '+ className +'" style="top:'+(bHP*i + 160)+'px"><img src="images/backgrounds/decor/'+ img +'.png" /></div>');
+      $('.decor-container').append('<div class="decor '+ className +'" style="top:'+(bHP*i + 160)+'px"><img src="images/backgrounds/decor/'+ img +'.png" /></div>');
       i++;
     }
   }
