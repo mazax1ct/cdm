@@ -34,8 +34,9 @@ body
     padding-bottom: 80px
 
   & > .container
-    position: relative
-    z-index: 2
+    @media(min-width: 1350px)
+      position: relative
+      z-index: 2
 
 .container
   margin-left: auto

@@ -1,19 +1,242 @@
 .prices-list
+  @media(min-width: 1024px)
+    display: flex
+
   &__list-block
+    flex-grow: 1
 
   &__list
     background-color: #fff
     border-radius: $border-radius
     border: 2px solid $green
-    max-width: 1200px
+    max-width: 1060px
     margin-left: auto
     margin-right: auto
 
-  &__filter-block
+  &__filter-opener
+    align-items: center
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 16px
 
+    @media(min-width: 1024px)
+      display: none
+
+    p
+      font-size: 16px
+      font-weight: 700
+      margin-bottom: 0
+      padding-right: 16px
+
+  &__filter-block
+    background-color: rgba($text-color, 0.3)
+    bottom: 0
+    display: none
+    left: 0
+    position: fixed
+    right: 0
+    top: 0
+    z-index: 10
+
+    @media(min-width: 1024px)
+      background-color: transparent
+      bottom: auto
+      display: block !important
+      left: auto
+      position: static
+      padding-left: 20px
+      right: auto
+      top: auto
+      max-width: 370px
+      width: 370px
+      z-index: auto
 
   &__filter
     background-color: #fff
-    border-radius: $border-radius
-    border: 2px solid $green
-    max-width: 350px
+    height: 100%
+    margin-left: 0
+    max-width: 320px
+    overflow-y: auto
+    padding-left: 20px
+    padding-right: 20px
+    padding-top: 60px
+    padding-bottom: 30px
+    position: relative
+    transition: transform 0.3s
+    transform: translateX(-100%)
+
+    @media(min-width: 1024px)
+      border-radius: $border-radius
+      border: 2px solid $green
+      height: auto
+      max-width: 350px
+      overflow: visible
+      padding: 16px
+      transform: none
+
+    &.is-open
+      transform: translateX(0)
+
+  &__filter-closer
+    align-items: center
+    background-color: transparent
+    border: none
+    cursor: pointer
+    display: flex
+    height: 40px
+    justify-content: center
+    left: auto
+    margin-left: auto
+    padding: 0
+    position: absolute
+    right: 12px
+    top: 12px
+    width: 40px
+
+    @media(min-width: 1024px)
+      display: none
+
+    .icon
+      fill: $text-color
+      height: 18px
+      width: 18px
+
+  &__filter-title
+    font-size: 18px
+    font-weight: 700
+    line-height: 1.2
+    text-align: center
+
+    @media(min-width: 1350px)
+      font-size: 20px
+
+    @media(min-width: 1900px)
+      font-size: 24px
+
+  &__filter-list
+    max-height: calc(100% - 120px)
+    overflow-y: auto
+    scrollbar-width: thin
+    scrollbar-color: $green $green_light
+
+    @media(min-width: 1024px)
+      max-height: 500px
+
+    &::-webkit-scrollbar
+      border-radius: $border-radius
+      height: 6px
+      width: 6px
+
+    &::-webkit-scrollbar-track
+      background-color: $green_light
+
+    &::-webkit-scrollbar-thumb
+      background-color: $green
+      border-radius: $border-radius
+      width: 6px
+
+    li
+      &:not(:last-child)
+        margin-bottom: 12px
+
+  &__filter-buttons
+    display: flex
+    justify-content: center
+
+    .button
+      width: calc(50% - 10px)
+
+      &:first-child
+        margin-right: 5px
+
+      &:last-child
+        margin-left: 5px
+
+  &__filter-reset
+    &:hover,
+    &:focus
+      background-color: $purple_light
+
+.price-item
+  align-items: center
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  padding: 24px 12px
+  position: relative
+  transition: background-color 0.3s, box-shadow 0.3s
+
+  @media(min-width: 1024px)
+    flex-wrap: nowrap
+    padding: 40px
+
+  @media(min-width: 1350px)
+    padding-left: 80px
+    padding-right: 80px
+
+  &:hover,
+  &:focus
+    background-color: $green_light
+    box-shadow: 0 4px 6px 0 rgba(#000, 0.2)
+
+  &:not(:last-child)
+    border-bottom: 2px solid $green
+
+  &:first-child
+    border-top-left-radius: $border-radius
+    border-top-right-radius: $border-radius
+
+  &:last-child
+    border-bottom-left-radius: $border-radius
+    border-bottom-right-radius: $border-radius
+
+  &__title,
+  &__price
+    font-size: 18px
+    font-weight: 800
+    line-height: 1.2
+    margin-bottom: 0
+
+    @media(min-width: 1350px)
+      font-size: 20px
+
+    @media(min-width: 1900px)
+      font-size: 24px
+
+  &__title
+    margin-bottom: 8px
+    width: 100%
+
+    @media(min-width: 1024px)
+      margin-bottom: 0
+      max-width: calc(100% - 262px)
+      padding-right: 32px
+
+    a
+      color: $text-color
+      text-decoration: none
+
+      &::after
+        bottom: 0
+        content: ''
+        left: 0
+        position: absolute
+        right: 0
+        top: 0
+        z-index: 1
+
+  &__price
+    min-width: 130px
+    margin-right: auto
+    white-space: nowrap
+
+    @media(min-width: 1024px)
+      margin-left: auto
+
+  .button
+    min-width: 100px
+    position: relative
+    z-index: 2
+
+    @media(min-width: 1024px)
+      margin-left: 32px

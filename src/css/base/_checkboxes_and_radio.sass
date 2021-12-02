@@ -36,13 +36,16 @@
   @media(min-width: 1200px)
     top: 3px
 
+  &--type_1
+    border-color: $green
+
 .checkbox-icon
   border-radius: 4px
 
 .radio-icon
   border-radius: 50%
 
-input[type="checkbox"]:checked + .checkbox-icon:before
+input[type="checkbox"]:checked + .checkbox-icon::before
   background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpolygon fill='%238D83B2' points='9,18.4 3.3,12.7 4.7,11.3 9,15.6 19.3,5.3 20.7,6.7'/%3E%3C/svg%3E%0A")
   background-position: 50% 50%
   background-repeat: no-repeat
@@ -53,6 +56,10 @@ input[type="checkbox"]:checked + .checkbox-icon:before
   top: 50%
   transform: translate(-50%, -50%)
   width: 14px
+
+input[type="checkbox"]:checked + .checkbox-icon--type_1::before
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpolygon fill='%2300B0C8' points='9,18.4 3.3,12.7 4.7,11.3 9,15.6 19.3,5.3 20.7,6.7'/%3E%3C/svg%3E%0A")
+
 
 input[type="checkbox"]:focus + .checkbox-icon,
 input[type="checkbox"]:active + .checkbox-icon
