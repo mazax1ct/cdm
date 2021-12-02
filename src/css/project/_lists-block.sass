@@ -5,58 +5,6 @@
     @media(min-width: 1350px)
       margin-bottom: 84px
 
-  &__nav
-    align-items: center
-    display: flex
-    flex-wrap: wrap
-    margin-bottom: 20px
-
-    .button
-      margin-bottom: 10px
-
-      @media(min-width: 480px)
-        margin-left: auto
-
-  &__nav-button
-    align-items: center
-    border-radius: $border-radius
-    border: 2px solid $purple
-    background-color: #fff
-    color: $purple
-    cursor: pointer
-    display: inline-flex
-    font-family: 'Mediator', Arial, sans-serif
-    font-size: 16px
-    height: 48px
-    justify-content: center
-    line-height: 1.25
-    margin-bottom: 10px
-    margin-left: 16px
-    padding: 14px
-    text-decoration: none
-    text-align: center
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s
-    vertical-align: middle
-
-    &:first-child
-      margin-left: 0
-
-    &:hover,
-    &:focus
-      background-color: lighten($purple, 10%)
-      border-color: transparent
-      color: #fff
-
-    &.is-active
-      background-color: $purple
-      color: #fff
-
-  &__tab
-    display: none
-
-    &.is-active
-      display: block
-
   &__list
     list-style: none
     padding: 0
@@ -75,11 +23,12 @@
     overflow: hidden
 
   &__link
+    align-items: center
     border-radius: $border-radius
     border: 1px solid $purple_light
     background-color: #fff
     color: $text-color
-    display: block
+    display: flex
     font-size: 18px
     font-weight: 800
     line-height: 1.2
@@ -93,6 +42,13 @@
 
     @media(min-width: 1900px)
       font-size: 24px
+
+    .icon
+      fill: $text-color
+      height: 32px
+      min-width: 32px
+      margin-left: auto
+      width: 32px
 
     &:hover,
     &:focus
