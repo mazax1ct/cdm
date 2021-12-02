@@ -23,17 +23,11 @@
   @media(min-width: 1900px)
     max-width: 40vw
 
-  &:not(:first-child)
-    transform: translateY(-50%)
-
   &.left
     left: 0
-    transform: translate(-50%, -50%)
+    transform: translateX(-50%)
 
   &.right
     left: auto
     right: 0
-    transform: translate(50%, -50%)
-
-    &:nth-child(2)
-      transform: translate(50%, 0)
+    transform: translateX(50%)

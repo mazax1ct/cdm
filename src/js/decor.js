@@ -12,8 +12,6 @@ $(document).ready(function() {
 
     let bH = $('main').height();
 
-    let bHP = $('main').height()/6;
-
     if(bH > 2000){
       j = 2;
     }
@@ -32,6 +30,7 @@ $(document).ready(function() {
     while (i < j) {
       let img = getRandomInt(1, 17);
       let className = 'right';
+      let bHP = $('main').height()/(j+1);
       if((i%2) > 0) {
         className = 'left';
       }
