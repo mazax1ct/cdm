@@ -1,0 +1,79 @@
+.issues-list
+  margin-left: auto
+  margin-right: auto
+  max-width: 1060px
+
+  &:not(:last-child)
+    margin-bottom: 56px
+
+    @media(min-width: 1350px)
+      margin-bottom: 96px
+
+.issue
+  border: 2px solid $green
+  border-radius: $border-radius
+  background-color: #fff
+  padding: 24px 12px
+  position: relative
+  transition: background-color 0.3s, box-shadow 0.3s
+
+  @media(min-width: 768px)
+    padding: 24px
+
+  @media(min-width: 1350px)
+    padding: 32px 40px
+
+  &:hover,
+  &:focus
+    background-color: $green_light
+    box-shadow: 0 4px 6px 0 rgba(#000, 0.2)
+
+  &--type_1
+    border-color: $purple
+
+    &:hover,
+    &:focus
+      background-color: $purple_light
+
+  &:not(:last-child)
+    margin-bottom: 32px
+
+  &__title
+    font-size: 18px
+    font-weight: 800
+    line-height: 1.2
+    margin-bottom: 24px
+
+    @media(min-width: 1350px)
+      font-size: 20px
+
+    @media(min-width: 1900px)
+      font-size: 24px
+
+  &__text-block
+    @media(min-width: 768px)
+      align-items: flex-end
+      display: flex
+      justify-content: space-between
+
+    .button
+      min-width: 130px
+
+      @media(min-width: 768px)
+        margin-left: 32px
+
+      &::after
+        bottom: 0
+        content: ''
+        left: 0
+        position: absolute
+        right: 0
+        top: 0
+        z-index: 1
+
+  &__text
+    margin-bottom: 24px
+
+    @media(min-width: 768px)
+      max-width: 720px
+      margin-bottom: 0

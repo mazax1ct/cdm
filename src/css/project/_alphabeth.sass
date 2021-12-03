@@ -1,0 +1,50 @@
+.alphabeth-block
+  text-align: center
+
+  &:not(:last-child)
+    margin-bottom: 56px
+
+.alphabeth
+  background-color: $green_light
+  border-radius: $border-radius
+  display: inline-flex
+  list-style: none
+  max-width: 100%
+  padding: 4px
+  overflow-x: auto
+  scrollbar-width: thin
+  scrollbar-color: $green $green_light
+  vertical-align: top
+
+  &::-webkit-scrollbar
+    border-radius: $border-radius
+    height: 6px
+    width: 6px
+
+  &::-webkit-scrollbar-track
+    background-color: $green_light
+
+  &::-webkit-scrollbar-thumb
+    background-color: $green
+    border-radius: $border-radius
+    width: 6px
+
+  &__item
+
+  &__button
+    background-color: transparent
+    border: none
+    border-radius: $border-radius
+    cursor: pointer
+    font-weight: 700
+    height: 40px
+    padding: 0
+    transition: background-color 0.3s
+    width: 40px
+
+    &:hover,
+    &:focus
+      background-color: rgba(#fff, 0.7)
+
+    &.is-active
+      background-color: #fff

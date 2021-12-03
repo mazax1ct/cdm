@@ -6,6 +6,12 @@
   margin-right: auto
   max-width: 1160px
 
+  &:not(:last-child)
+    margin-bottom: 56px
+
+    @media(min-width: 1350px)
+      margin-bottom: 96px
+
 .accordion
   &:not(:last-child)
     border-bottom: 1px solid $purple

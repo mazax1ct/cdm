@@ -5,6 +5,9 @@
   margin: 0
   padding: 0
 
+  &:not(:last-child)
+    margin-bottom: 56px
+
   &__item
     margin-bottom: 6px
 
@@ -13,7 +16,7 @@
 
   &__button
     align-items: center
-    background-color: $purple_light
+    background-color: rgba($purple_light, 0.5)
     border: none
     border-radius: $border-radius
     color: $purple
