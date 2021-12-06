@@ -5,6 +5,34 @@
     @media(min-width: 1350px)
       margin-bottom: 96px
 
+  &--type_1
+    .map-block__container
+      border-color: $green
+
+    .map-block__list
+      scrollbar-width: thin
+      scrollbar-color: $green $green_light
+
+      &::-webkit-scrollbar-track
+        background-color: $green_light
+
+      &::-webkit-scrollbar-thumb
+        background-color: $green
+
+    .map-block__map-block
+      background-color: $green_light
+
+    .map-item
+      border-color: $green
+      background-color: rgba($green_light, 0.5)
+
+    .map-item__info
+      .button
+        &.is-active
+          background-color: $green_light
+          border: 1px solid $green
+          color: $green
+
   &__buttons
     align-items: center
     display: flex

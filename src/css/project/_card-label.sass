@@ -1,0 +1,75 @@
+.card-label
+  cursor: pointer
+  display: flex
+
+  &:hover
+    .card-label__inner
+      box-shadow: 0 4px 13px 0 rgba(#000, 0.3)
+
+  input[type="checkbox"],
+  input[type="radio"]
+    position: absolute
+    height: 1px
+    overflow: hidden
+    clip: rect(0 0 0 0)
+    width: 1px
+
+    &:focus + .card-label__inner
+      box-shadow: 0 4px 13px 0 rgba(#000, 0.3)
+
+    &:checked + .card-label__inner
+      .card-label__title
+        .card-label__icon
+          &::after
+            background-color: $green
+            border-radius: 50%
+            content: ''
+            display: block
+            height: 16px
+            width: 16px
+
+  &__inner
+    border-radius: $border-radius
+    box-shadow: 0 4px 13px 0 rgba(#000, 0.15)
+    background-color: #fff
+    display: block
+    height: 100%
+    padding: 24px 16px
+    position: relative
+    transition: box-shadow 0.3s
+    width: 100%
+
+    @media(min-width: 1024px)
+      padding: 24px 32px
+
+  &__title
+    display: block
+    font-size: 17px
+    line-height: 1.2
+    font-weight: 700
+    line-height: 1.2
+    letter-spacing: -1px
+    margin-bottom: 16px
+    padding-right: 32px
+    position: relative
+
+    @media(min-width: 1350px)
+      font-size: 24px
+
+  &__icon
+    align-items: center
+    border-radius: 50%
+    border: 2px solid $green
+    display: flex
+    height: 32px
+    justify-content: center
+    left: auto
+    position: absolute
+    right: 0
+    top: 0
+    width: 32px
+    z-index: 1
+
+  &__text
+    display: block
+    width: 90%

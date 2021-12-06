@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Консультация в клинике</title>
+
+    <meta name="description" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/fonts-preload.html
+
+    //= template/preloader-styles.html
+
+    //= template/style.html
+</head>
+
+<body>
+    //= template/sprite.html
+
+    //= template/preloader.html
+
+    //= template/header.html
+
+    <main class="page-content">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Запись онлайн</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    Консультация в клинике
+                </li>
+            </ul>
+
+            <div class="consult">
+                <ul class="consult__steps">
+                    <li class="consult__steps-item is-active">1</li>
+                    <li class="consult__steps-item">2</li>
+                    <li class="consult__steps-item">3</li>
+                    <li class="consult__steps-item">4</li>
+                    <li class="consult__steps-item">5</li>
+                </ul>
+
+                <div class="consult__step">
+                    <h2 class="consult__title is-active">Кто идет на прием?</h2>
+                    <div class="consult__age">
+                        <div class="group-buttons">
+                            <label class="group-buttons__button">
+                                <input type="radio" name="age" value="1">
+                                <span class="group-buttons__button-text group-buttons__button-text--type_1">
+                                    <span>Взрослый</span>
+                                </span>
+                            </label>
+                            <label class="group-buttons__button">
+                                <input type="radio" name="age" value="2">
+                                <span class="group-buttons__button-text group-buttons__button-text--type_1">
+                                    <span>Ребёнок</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    //= template/footer.html
+
+    //= template/float-bar.html
+
+    <!--общие скрипты-->
+    //= template/scripts.html
+
+    <!--скрипты страницы-->
+    <script src="js/clinics-map.js"></script>
+
+    <!--прелоадер-->
+    <script src="js/preloader.js"></script>
+</body>
+
+</html>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-    <title>Услуга контентная</title>
+    <title>Консультация в клинике</title>
 
     <meta name="description" content="">
 
@@ -360,181 +360,288 @@
                     <a class="breadcrumbs__link" href="#">Главная</a>
                 </li>
                 <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link" href="#">Клиника</a>
+                    <a class="breadcrumbs__link" href="#">Запись онлайн</a>
                 </li>
                 <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link" href="#">УЗИ</a>
-                </li>
-                <li class="breadcrumbs__item">
-                    УЗИ беременным
+                    Консультация в клинике
                 </li>
             </ul>
 
-            <h1>УЗИ беременным</h1>
-
-            <div class="banner">
-                <picture>
-                    <source srcset="images/content/cabinet/img_3.jpg, images/content/cabinet/img_3@2x.jpg 2x" media="(min-width: 768px)">
-                    <img src="images/content/cabinet/img_3_mobile.jpg" srcset="images/content/cabinet/img_3_mobile@2x.jpg 2x" alt="">
-                </picture>
-            </div>
-
-            <div class="text-block">
-                <h2>Ультразвуковое исследование в первом триместре:</h2>
-                <p>Первый триместр беременности начинается с момента зачатия и продолжается 13 недель. Единственным неинвазивным и абсолютно безопасным методом динамического наблюдения за состоянием плода с самых ранних сроков беременности является
-                    ультразвуковое исследование.</p>
-                <p>В конце первого триместра беременности при сроке 11-13 недель проводится комбинированный скрининг, который включает в себя УЗИ и анализ крови на гормоны (биохимический скрининг). Эти исследования являются обязательными и позволяют
-                    с высокой точностью исключить у плода врожденные пороки развития и хромосомные заболевания.</p>
-                <p>Очень важно не пропустить эти сроки ― определить дату прохождения первого скрининга необходимо на приеме у вашего лечащего врача.</p>
-                <h2>Что исследует специалист во время УЗИ-скрининга в I триместре?</h2>
-                <p>Врач оценивает ультразвуковые маркеры хромосомной аномалии:</p>
-                <ul>
-                    <li>толщину воротникового пространства. Это складка, которая находится между шеей плода и верхней кожной оболочкой тела;</li>
-                    <li>наличие носовой кости. При наличии генетических аномалий она может развиваться неправильно;</li>
-                    <li>показатели кровотока трехстворчатого клапана сердца;</li>
-                    <li>показатели венозного протока плода</li>
+            <div class="consult">
+                <ul class="consult__steps">
+                    <li class="consult__steps-item">1</li>
+                    <li class="consult__steps-item is-active">2</li>
+                    <li class="consult__steps-item">3</li>
+                    <li class="consult__steps-item">4</li>
+                    <li class="consult__steps-item">5</li>
                 </ul>
-                <p>Измеряется также копчико-теменной размер плода. Это один из самых важных показателей развития малыша, и измеряется, как следует из названия, расстояние от темени эмбриона до его копчика. Данный показатель позволяет точно установить
-                    возраст плода и служит точкой отсчета до конца беременности.</p>
-                <p>Доктор проводит оценку анатомии, наличия и строения жизненно важных органов плода:</p>
-                <ul>
-                    <li>сердца и головного мозга;</li>
-                    <li>структуры лица;</li>
-                    <li>считает пальчики на руках и ногах</li>
-                </ul>
-                <p>С 2021 года в соответствии с обновленным приказом Минздрава врач ультразвуковой диагностики при проведении первого скрининга также проводит оценку:</p>
-                <ul>
-                    <li>риска самопроизвольных родов до 34 недели беременности</li>
-                    <li>риска задержки развития плода до 37 недели беременности</li>
-                    <li>риска преэклампсии до 34 недели беременности</li>
-                </ul>
-                <p>Первый скрининг имеет ключевое значение при многоплодной беременности, так как только в I триместре устанавливается тип многоплодия, который определяет всю дальнейшую тактику ведения беременности.
-                    Наши врачи всегда объяснят все нюансы исследований, подробно расскажут о действиях, которые нужно предпринимать для здоровья ребенка.</p>
-            </div>
 
-            <div class="title-block">
-                <h2>Записаться на консультацию к специалистам</h2>
-                <div class="title-block__controls">
-                    <div id="doctors_list_buttons" class="title-block__buttons title-block__buttons--type_1"></div>
+                <div class="consult__step">
+                    <h2 class="consult__title is-active">Кто идет на прием?</h2>
+                    <div class="consult__age">
+                        <div class="group-buttons">
+                            <label class="group-buttons__button">
+                                <input type="radio" name="age" value="1" checked>
+                                <span class="group-buttons__button-text group-buttons__button-text--type_1">
+                                    <span>Взрослый</span>
+                                </span>
+                            </label>
+                            <label class="group-buttons__button">
+                                <input type="radio" name="age" value="2">
+                                <span class="group-buttons__button-text group-buttons__button-text--type_1">
+                                    <span>Ребёнок</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="js-doctors-list doctors-list" data-buttons="doctors_list_buttons">
-                <div class="doctors-list__item" data-filter="1">
-                    <div class="doctor">
-                        <div class="doctor__image"><img src="images/content/doctors/img_1.jpg" srcset="images/content/doctors/img_1@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
-                        <div class="doctor__info">
-                            <p class="doctor__name"><a href="#">Гринжола<br> Елена Николаевна</a></p>
-                            <p class="doctor__place">Руководитель ОКДЛ-врач клинический лабораторной диагностики</p>
-                            <p class="doctor__exp">Стаж 20 лет</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="doctors-list__item" data-filter="2">
-                    <div class="doctor">
-                        <div class="doctor__image"><img src="images/content/doctors/img_2.jpg" srcset="images/content/doctors/img_2@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
-                        <div class="doctor__info">
-                            <p class="doctor__name"><a href="#">Водяник<br> Павел Иванович</a></p>
-                            <p class="doctor__place">Руководитель медицинского центра</p>
-                            <p class="doctor__exp">Стаж 10 лет</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="doctors-list__item" data-filter="3">
-                    <div class="doctor">
-                        <div class="doctor__image"><img src="images/content/doctors/img_3.jpg" srcset="images/content/doctors/img_3@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
-                        <div class="doctor__info">
-                            <p class="doctor__name"><a href="#">Володина<br> Людмила Николаевна</a></p>
-                            <p class="doctor__place">Руководитель медицинского центра</p>
-                            <p class="doctor__exp">Стаж 15 лет</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="doctors-list__item" data-filter="4">
-                    <div class="doctor">
-                        <div class="doctor__image"><img src="images/content/doctors/img_4.jpg" srcset="images/content/doctors/img_4@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
-                        <div class="doctor__info">
-                            <p class="doctor__name"><a href="#">Писарева<br> Елена Михайловна</a></p>
-                            <p class="doctor__place">Врач-педиатор</p>
-                            <p class="doctor__exp">Стаж 10 лет</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="doctors-list__item" data-filter="5">
-                    <div class="doctor">
-                        <div class="doctor__image"><img src="images/content/doctors/img_1.jpg" srcset="images/content/doctors/img_1@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
-                        <div class="doctor__info">
-                            <p class="doctor__name"><a href="#">Гринжола<br> Елена Николаевна</a></p>
-                            <p class="doctor__place">Руководитель ОКДЛ-врач клинический лабораторной диагностики</p>
-                            <p class="doctor__exp">Стаж 20 лет</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="doctors-list__item" data-filter="1">
-                    <div class="doctor">
-                        <div class="doctor__image"><img src="images/content/doctors/img_2.jpg" srcset="images/content/doctors/img_2@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
-                        <div class="doctor__info">
-                            <p class="doctor__name"><a href="#">Водяник<br> Павел Иванович</a></p>
-                            <p class="doctor__place">Руководитель медицинского центра</p>
-                            <p class="doctor__exp">Стаж 10 лет</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="doctors-list__item" data-filter="2">
-                    <div class="doctor">
-                        <div class="doctor__image"><img src="images/content/doctors/img_3.jpg" srcset="images/content/doctors/img_3@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
-                        <div class="doctor__info">
-                            <p class="doctor__name"><a href="#">Володина<br> Людмила Николаевна</a></p>
-                            <p class="doctor__place">Руководитель медицинского центра</p>
-                            <p class="doctor__exp">Стаж 15 лет</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="doctors-list__item" data-filter="3">
-                    <div class="doctor">
-                        <div class="doctor__image"><img src="images/content/doctors/img_4.jpg" srcset="images/content/doctors/img_4@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
-                        <div class="doctor__info">
-                            <p class="doctor__name"><a href="#">Писарева<br> Елена Михайловна</a></p>
-                            <p class="doctor__place">Врач-педиатор</p>
-                            <p class="doctor__exp">Стаж 10 лет</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                <div class="consult__step">
+                    <h2 class="consult__title is-active">Выберите специалиста</h2>
 
-            <h2>Вопросы и ответы:</h2>
+                    <div class="consult__search">
+                        <div class="search-bar">
+                            <div class="search-bar__form-block">
+                                <form class="search-bar__form" action="">
+                                    <input class="search-bar__input" type="text" placeholder="Поиск по ФИО или по специальности">
+                                    <button class="search-bar__submit" type="submit" title="Найти">
+                                        <svg class="icon">
+                                            <use xlink:href="#search"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="search-bar__dropdown">
+                                        <div class="search-bar__items">
+                                            <button class="search-bar__item" type="button">
+                                                Невролог Гринжола Е. Н.
+                                            </button>
+                                            <button class="search-bar__item" type="button">
+                                                Невролог Водяник П. И.
+                                            </button>
+                                            <button class="search-bar__item" type="button">
+                                                Невролог Володина Л. Н.
+                                            </button>
+                                            <button class="search-bar__item" type="button">
+                                                Невролог Писарева Е. М.
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="accordions">
-                <div class="accordion">
-                    <button class="accordion__toggler" type="button">Нужно ли записываться на сдачу анализов?</button>
-                    <div class="accordion__body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et ex magnam fugit suscipit labore, quam sequi adipisci, nam perferendis fuga nisi, modi enim possimus sed molestias unde velit, ullam hic?</p>
-                        <p>Nobis voluptatum, debitis nihil maiores soluta, ea eligendi earum facilis inventore illo recusandae ex possimus quis pariatur incidunt aperiam est neque porro.</p>
-                        <p>Ipsa dicta est maiores dignissimos aliquid in et, quo laboriosam officia consequatur nihil nulla, repudiandae culpa vel incidunt dolor quasi laudantium temporibus.</p>
+                    <div class="consult__alphabeth">
+                        <ul class="alphabeth">
+                            <li class="alphabeth__item alphabeth__item--all"><button class="alphabeth__button is-active" type="button">Все</button></li>
+                            <li class="alphabeth__item"><button class="alphabeth__button" type="button">A</button></li>
+                            <li class="alphabeth__item"><button class="alphabeth__button" type="button">Б</button></li>
+                            <li class="alphabeth__item"><button class="alphabeth__button" type="button">В</button></li>
+                            <li class="alphabeth__item"><button class="alphabeth__button" type="button">Г</button></li>
+                            <li class="alphabeth__item"><button class="alphabeth__button" type="button">Д</button></li>
+                            <li class="alphabeth__item"><button class="alphabeth__button" type="button">Е</button></li>
+                            <li class="alphabeth__item"><button class="alphabeth__button" type="button">Ж</button></li>
+                            <li class="alphabeth__item"><button class="alphabeth__button" type="button">З</button></li>
+                            <li class="alphabeth__item"><button class="alphabeth__button" type="button">И</button></li>
+                            <li class="alphabeth__item"><button class="alphabeth__button" type="button">К</button></li>
+                            <li class="alphabeth__item"><button class="alphabeth__button" type="button">Л</button></li>
+                            <li class="alphabeth__item"><button class="alphabeth__button" type="button">М</button></li>
+                            <li class="alphabeth__item"><button class="alphabeth__button" type="button">Н</button></li>
+                            <li class="alphabeth__item"><button class="alphabeth__button" type="button">О</button></li>
+                            <li class="alphabeth__item"><button class="alphabeth__button" type="button">П</button></li>
+                            <li class="alphabeth__item"><button class="alphabeth__button" type="button">Р</button></li>
+                            <li class="alphabeth__item"><button class="alphabeth__button" type="button">С</button></li>
+                            <li class="alphabeth__item"><button class="alphabeth__button" type="button">Т</button></li>
+                            <li class="alphabeth__item"><button class="alphabeth__button" type="button">У</button></li>
+                            <li class="alphabeth__item"><button class="alphabeth__button" type="button">Ф</button></li>
+                            <li class="alphabeth__item"><button class="alphabeth__button" type="button">Х</button></li>
+                            <li class="alphabeth__item"><button class="alphabeth__button" type="button">Ц</button></li>
+                            <li class="alphabeth__item"><button class="alphabeth__button" type="button">Ч</button></li>
+                            <li class="alphabeth__item"><button class="alphabeth__button" type="button">Ш</button></li>
+                            <li class="alphabeth__item"><button class="alphabeth__button" type="button">Щ</button></li>
+                            <li class="alphabeth__item"><button class="alphabeth__button" type="button">Э</button></li>
+                            <li class="alphabeth__item"><button class="alphabeth__button" type="button">Ю</button></li>
+                            <li class="alphabeth__item"><button class="alphabeth__button" type="button">Я</button></li>
+                        </ul>
                     </div>
-                </div>
-                <div class="accordion">
-                    <button class="accordion__toggler" type="button">Нужно ли записываться на сдачу анализов?</button>
-                    <div class="accordion__body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et ex magnam fugit suscipit labore, quam sequi adipisci, nam perferendis fuga nisi, modi enim possimus sed molestias unde velit, ullam hic?</p>
-                        <p>Nobis voluptatum, debitis nihil maiores soluta, ea eligendi earum facilis inventore illo recusandae ex possimus quis pariatur incidunt aperiam est neque porro.</p>
-                        <p>Ipsa dicta est maiores dignissimos aliquid in et, quo laboriosam officia consequatur nihil nulla, repudiandae culpa vel incidunt dolor quasi laudantium temporibus.</p>
+
+                    <div class="consult__specials">
+                        <ul class="consult__specials-list">
+                            <li><button type="button">Семейный врач (врач общей практики)</button></li>
+                            <li><button type="button">Covid-вакцинация с приемом врача (СПУТНИК V)</button></li>
+                            <li><button type="button">Covid-вакцинация с приемом врача (Спутник Лайт) для граждан РФ</button></li>
+                            <li><button type="button">Аллерголог</button></li>
+                            <li><button type="button">Вестибулолог</button></li>
+                            <li><button type="button">Гастроэнтеролог</button></li>
+                            <li><button type="button">Гематолог</button></li>
+                            <li><button type="button">Генетик</button></li>
+                            <li><button type="button">Гинеколог-репродуктолог</button></li>
+                            <li><button type="button">Гинеколог-эндокринолог</button></li>
+                            <li><button type="button">Гинеколог</button></li>
+                            <li><button type="button">Дерматолог</button></li>
+                            <li><button type="button">Дерматоонколог</button></li>
+                            <li><button type="button">Дефектолог</button></li>
+                            <li><button type="button">Диетолог-нутрициолог</button></li>
+                            <li><button type="button">Иммунолог</button></li>
+                            <li><button type="button">Инфекционист</button></li>
+                            <li><button type="button">Кардиолог-аритмолог</button></li>
+                            <li><button type="button">Кардиолог</button></li>
+                            <li><button type="button">Маммолог</button></li>
+                            <li><button type="button">Мануальный терапевт</button></li>
+                            <li><button type="button">Нарколог</button></li>
+                            <li><button type="button">Невролог-альголог</button></li>
+                            <li><button type="button">Невролог-Эпилептолог</button></li>
+                            <li><button type="button">Невролог</button></li>
+                            <li><button type="button">Нейрохирург</button></li>
+                            <li><button type="button">Нефролог</button></li>
+                            <li><button type="button">Онкогинеколог</button></li>
+                            <li><button type="button">Онколог-маммолог</button></li>
+                            <li><button type="button">Онколог</button></li>
+                            <li><button type="button">Ортопед-Вертебролог (Позвоночник)</button></li>
+                            <li><button type="button">Ортопед</button></li>
+                            <li><button type="button">Остеопат</button></li>
+                            <li><button type="button">Отоларинголог (ЛОР)</button></li>
+                            <li><button type="button">Офтальмолог</button></li>
+                            <li><button type="button">Пластический хирург</button></li>
+                            <li><button type="button">Проктолог</button></li>
+                            <li><button type="button">Психиатр</button></li>
+                            <li><button type="button">Психолог</button></li>
+                            <li><button type="button">Психолог по грудному вскармливанию</button></li>
+                            <li><button type="button">Психолог. Подготовка к родам</button></li>
+                            <li><button type="button">Психотерапевт</button></li>
+                            <li><button type="button">Пульмонолог</button></li>
+                            <li><button type="button">Ревматолог</button></li>
+                            <li><button type="button">Рефлексотерапевт</button></li>
+                            <li><button type="button">Сосудистый хирург</button></li>
+                            <li><button type="button">Спермограмма</button></li>
+                            <li><button type="button">Спортивный врач</button></li>
+                            <li><button type="button">Терапевт</button></li>
+                            <li><button type="button">Травматолог-ортопед</button></li>
+                            <li><button type="button">Травматолог</button></li>
+                            <li><button type="button">Травматолог Хирургия кисти</button></li>
+                            <li><button type="button">Травматолог Хирургия стопы</button></li>
+                            <li><button type="button">Травматолог Эндопротезирование</button></li>
+                            <li><button type="button">Травматолог. Артроскопия. Заболевания суствов.</button></li>
+                            <li><button type="button">Трихолог</button></li>
+                            <li><button type="button">Уролог</button></li>
+                            <li><button type="button">Физиотерапевт</button></li>
+                            <li><button type="button">Флеболог</button></li>
+                            <li><button type="button">Фтизиатр</button></li>
+                            <li><button type="button">Функциональная диагностика</button></li>
+                            <li><button type="button">Хирург-эндокринолог</button></li>
+                            <li><button type="button">Хирург</button></li>
+                            <li><button type="button">Хирург торакальный</button></li>
+                            <li><button type="button">Челюстно-лицевой хирург</button></li>
+                            <li><button type="button">Эндокринолог</button></li>
+                            <li><button type="button">Эндоскопист</button></li>
+                        </ul>
                     </div>
-                </div>
-                <div class="accordion">
-                    <button class="accordion__toggler" type="button">Нужно ли записываться на сдачу анализов?</button>
-                    <div class="accordion__body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et ex magnam fugit suscipit labore, quam sequi adipisci, nam perferendis fuga nisi, modi enim possimus sed molestias unde velit, ullam hic?</p>
-                        <p>Nobis voluptatum, debitis nihil maiores soluta, ea eligendi earum facilis inventore illo recusandae ex possimus quis pariatur incidunt aperiam est neque porro.</p>
-                        <p>Ipsa dicta est maiores dignissimos aliquid in et, quo laboriosam officia consequatur nihil nulla, repudiandae culpa vel incidunt dolor quasi laudantium temporibus.</p>
+
+                    <div class="consult__types">
+                        <h2 class="consult__title is-active">Выберите тип приема</h2>
+                        <div class="consult__types-list">
+                            <div class="consult__types-item">
+                                <label class="card-label">
+                                    <input type="radio" name="priem" value="1">
+                                    <span class="card-label__inner">
+                                        <span class="card-label__title">
+                                            Первичный приём
+                                            <span class="card-label__icon"></span>
+                                        </span>
+                                        <span class="card-label__text">Новый случай, по которому ранее не обращались к этому врачу за последние 60 дней (или обращались, но в формате онлайн)</span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="consult__types-item">
+                                <label class="card-label">
+                                    <input type="radio" name="priem" value="2">
+                                    <span class="card-label__inner">
+                                        <span class="card-label__title">
+                                            Повторный приём
+                                            <span class="card-label__icon"></span>
+                                        </span>
+                                        <span class="card-label__text">Если были на очном приеме в клинике у этого врача менее 60 дней назад</span>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="accordion">
-                    <button class="accordion__toggler" type="button">Нужно ли записываться на сдачу анализов?</button>
-                    <div class="accordion__body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et ex magnam fugit suscipit labore, quam sequi adipisci, nam perferendis fuga nisi, modi enim possimus sed molestias unde velit, ullam hic?</p>
-                        <p>Nobis voluptatum, debitis nihil maiores soluta, ea eligendi earum facilis inventore illo recusandae ex possimus quis pariatur incidunt aperiam est neque porro.</p>
-                        <p>Ipsa dicta est maiores dignissimos aliquid in et, quo laboriosam officia consequatur nihil nulla, repudiandae culpa vel incidunt dolor quasi laudantium temporibus.</p>
+
+                    <div class="consult__map-block">
+                        <h2 class="consult__title is-active">Выберите отделение</h2>
+
+                        <div class="consult__map">
+                            <div class="map-block map-block--type_1">
+                                <div class="map-block__buttons">
+                                    <button class="map-block__button is-active" type="button" data-center="59.941707, 30.301902">Санкт-Петербург</button>
+                                    <button class="map-block__button" type="button" data-center="55.755819, 37.617644">Москва</button>
+                                </div>
+                                <div class="map-block__container">
+                                    <div class="map-block__map">
+                                        <div id="clinics_map" class="map-block__map-block"></div>
+                                    </div>
+                                    <div class="map-block__list">
+                                        <div class="map-item">
+                                            <p class="map-item__title">Центр Урологии</p>
+                                            <div class="map-item__info">
+                                                <p>Санкт-Петербург, ул. Ильюшина, 25<br> <a href="tel:+79650038609">+7 (965) 003 86 09</a></p>
+                                                <button class="button button--type_2 button--height_2" type="button" data-center="59.922064, 30.307739" data-info="1">На карте</button>
+                                            </div>
+                                        </div>
+                                        <div class="map-item">
+                                            <p class="map-item__title">Центр Урологии</p>
+                                            <div class="map-item__info">
+                                                <p>Санкт-Петербург, ул. Ильюшина, 25<br> <a href="tel:+79650038609">+7 (965) 003 86 09</a></p>
+                                                <button class="button button--type_2 button--height_2" type="button" data-center="59.916929, 30.351444" data-info="2">На карте</button>
+                                            </div>
+                                        </div>
+                                        <div class="map-item">
+                                            <p class="map-item__title">Центр Урологии</p>
+                                            <div class="map-item__info">
+                                                <p>Санкт-Петербург, ул. Ильюшина, 25<br> <a href="tel:+79650038609">+7 (965) 003 86 09</a></p>
+                                                <button class="button button--type_2 button--height_2" type="button" data-center="59.942068, 30.270203" data-info="3">На карте</button>
+                                            </div>
+                                        </div>
+                                        <div class="map-item">
+                                            <p class="map-item__title">Центр Урологии</p>
+                                            <div class="map-item__info">
+                                                <p>Санкт-Петербург, ул. Ильюшина, 25<br> <a href="tel:+79650038609">+7 (965) 003 86 09</a></p>
+                                                <button class="button button--type_2 button--height_2" type="button" data-center="59.941707, 30.301902" data-info="4">На карте</button>
+                                            </div>
+                                        </div>
+                                        <div class="map-item">
+                                            <p class="map-item__title">Центр Урологии</p>
+                                            <div class="map-item__info">
+                                                <p>Санкт-Петербург, ул. Ильюшина, 25<br> <a href="tel:+79650038609">+7 (965) 003 86 09</a></p>
+                                                <button class="button button--type_2 button--height_2" type="button" data-center="59.941707, 30.301902" data-info="5">На карте</button>
+                                            </div>
+                                        </div>
+                                        <div class="map-item">
+                                            <p class="map-item__title">Центр Урологии</p>
+                                            <div class="map-item__info">
+                                                <p>Санкт-Петербург, ул. Ильюшина, 25<br> <a href="tel:+79650038609">+7 (965) 003 86 09</a></p>
+                                                <button class="button button--type_2 button--height_2" type="button" data-center="59.941707, 30.301902" data-info="6">На карте</button>
+                                            </div>
+                                        </div>
+                                        <div class="map-item">
+                                            <p class="map-item__title">Центр Урологии</p>
+                                            <div class="map-item__info">
+                                                <p>Санкт-Петербург, ул. Ильюшина, 25<br> <a href="tel:+79650038609">+7 (965) 003 86 09</a></p>
+                                                <button class="button button--type_2 button--height_2" type="button" data-center="59.941707, 30.301902" data-info="7">На карте</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="text-right">
+                            <button class="button button--height_4 button--type_2" type="button">
+                                <span>Найти врача и время</span>
+                                <svg class="icon">
+                                    <use xlink:href="#arrow_right"></use>
+                                </svg>
+                            </button>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -744,7 +851,8 @@
     <script src="js/decor.js"></script>
 
     <!--скрипты страницы-->
-    <script src="js/doctors-list.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/clinics-map.js"></script>
 
     <!--прелоадер-->
     <script src="js/preloader.js"></script>

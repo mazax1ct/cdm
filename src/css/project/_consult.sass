@@ -1,0 +1,193 @@
+.consult
+  &__steps
+    display: flex
+    justify-content: center
+    margin-bottom: 48px
+
+  &__steps-item
+    align-items: center
+    border-radius: 50%
+    color: $green
+    display: flex
+    font-weight: 700
+    height: 40px
+    justify-content: center
+    margin-left: 8px
+    margin-right: 8px
+    text-decoration: none
+    transition: background-color 0.3s
+    width: 40px
+
+    @media(min-width: 768px)
+      height: 48px
+      width: 48px
+
+    &.is-active
+      background-color: $green_light
+
+    &:first-child
+      margin-left: 0
+
+    &:last-child
+      margin-right: 0
+
+  &__step
+    &:not(:last-child)
+      margin-bottom: 72px
+
+  &__title
+    margin-bottom: 32px
+    opacity: 0.5
+    text-align: center
+
+    &.is-active
+      opacity: 1
+
+  &__age
+    margin-bottom: 64px
+    text-align: center
+
+    .group-buttons
+      width: 238px
+
+    .group-buttons__button
+      width: 50%
+
+  &__search
+    margin-bottom: 24px
+
+    .search-bar__form-block
+      padding-bottom: 32px
+
+  &__alphabeth
+    background-color: $green_light
+    border-radius: $border-radius
+    margin-bottom: 56px
+    text-align: center
+
+  &__specials
+    margin-left: auto
+    margin-right: auto
+
+    @media(min-width: 1024px)
+      width: 90%
+
+    &:not(:last-child)
+      margin-bottom: 56px
+
+  &__specials-list
+    @media(min-width: 768px)
+      columns: 2
+      column-gap: 40px
+
+    @media(min-width: 1024px)
+      columns: 3
+
+    li
+      margin-bottom: 10px
+
+    button
+      background-color: transparent
+      border: none
+      cursor: pointer
+      font-weight: 700
+      padding: 5px 0
+      text-align: left
+      transition: color 0.3s
+
+      &:hover,
+      &:focus
+        color: $green
+
+  &__types
+    &:not(:last-child)
+      margin-bottom: 56px
+
+  &__types-list
+    @media(min-width: 768px)
+      display: flex
+      margin-left: -16px
+      margin-right: -16px
+
+  &__types-item
+    margin-bottom: 24px
+
+    @media(min-width: 768px)
+      display: flex
+      max-width: 616px
+      padding-left: 16px
+      padding-right: 16px
+      width: 50%
+
+    .card-label
+      height: auto
+      width: 100%
+
+  &__map
+    margin-bottom: 32px
+
+  &__result-block
+    margin-bottom: 56px
+
+    @media(min-width: 1024px)
+      display: flex
+      margin-left: -12px
+      margin-right: -12px
+
+  &__result-form
+    margin-bottom: 24px
+
+    @media(min-width: 1024px)
+      margin-bottom: 0
+      padding-left: 12px
+      padding-right: 12px
+      width: 66.66666%
+
+  &__result-form-columns
+    @media(min-width: 768px)
+      display: flex
+      margin-left: -12px
+      margin-right: -12px
+
+  &__result-form-column
+    @media(min-width: 768px)
+      padding-left: 12px
+      padding-right: 12px
+      width: 50%
+
+    .input-label
+      margin-bottom: 24px
+
+  &__result
+    @media(min-width: 1024px)
+      padding-left: 12px
+      padding-right: 12px
+      width: 33.33333%
+
+.consult-result
+  background-color: $green_light
+  border-radius: $border-radius
+
+  &__block
+    padding: 16px 24px
+
+    &--time
+      display: flex
+
+    &:not(:last-child)
+      border-bottom: 2px solid $text-color
+
+    p
+      &:not(:last-child)
+        margin-bottom: 8px
+
+  &__block-time
+    width: 40%
+
+  &__block-title
+    font-weight: 700
+
+  &__price
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Консультация в клинике</title>
+
+    <meta name="description" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/fonts-preload.html
+
+    //= template/preloader-styles.html
+
+    //= template/style.html
+</head>
+
+<body>
+    //= template/sprite.html
+
+    //= template/preloader.html
+
+    //= template/header.html
+
+    <main class="page-content">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Запись онлайн</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    Консультация в клинике
+                </li>
+            </ul>
+
+            <div class="consult">
+                <ul class="consult__steps">
+                    <li class="consult__steps-item">1</li>
+                    <li class="consult__steps-item">2</li>
+                    <li class="consult__steps-item">3</li>
+                    <li class="consult__steps-item">4</li>
+                    <li class="consult__steps-item is-active">5</li>
+                </ul>
+
+                <div class="consult__step">
+                    <h2 class="consult__title is-active">Подтверждение записи</h2>
+
+                    <div class="consult__result-block">
+                        <div class="consult__result-form">
+                            <div class="consult__result-form-columns">
+                                <div class="consult__result-form-column">
+                                    <label class="input-label">
+                                        <input class="input" type="text" value="" placeholder="Имя" />
+                                    </label>
+                                    <label class="input-label">
+                                        <input class="input" type="text" value="" placeholder="Фамилия" />
+                                    </label>
+                                    <label class="input-label">
+                                        <input class="input" type="text" value="" placeholder="Отчество" />
+                                    </label>
+                                </div>
+                                <div class="consult__result-form-column">
+                                    <label class="input-label">
+                                        <input class="js-date input" type="text" value="" placeholder="Дата рождения" />
+                                    </label>
+                                    <label class="input-label">
+                                        <input class="js-phone-mask input" type="text" value="" placeholder="Введите ваш телефон" />
+                                    </label>
+                                    <label class="input-label">
+                                        <input class="js-email-mask input" type="text" value="" placeholder="Введите ваш email" />
+                                    </label>
+                                </div>
+                            </div>
+                            <h2>Какие есть жалобы?</h2>
+                            <label class="input-label">
+                                <textarea class="textarea" placeholder="Напишите что Вас беспокоит..."></textarea>
+                            </label>
+                        </div>
+                        <div class="consult__result">
+                            <div class="consult-result">
+                                <div class="consult-result__block consult-result__block--time">
+                                    <div class="consult-result__block-time">
+                                        <p>Дата:</p>
+                                        <p><b>4 ноября, чт</b></p>
+                                    </div>
+                                    <div class="consult-result__block-time">
+                                        <p>Время:</p>
+                                        <p><b>9:30</b></p>
+                                    </div>
+                                </div>
+                                <div class="consult-result__block">
+                                    <p class="consult-result__block-title consult-result__price"><span>УЗИ щитовидной железы</span> <span>2760 ₽</span></p>
+                                    <p>30 минут</p>
+                                </div>
+                                <div class="consult-result__block">
+                                    <p class="consult-result__block-title">Приморский р-н</p>
+                                    <p>Санкт-Петербург, пр. Испытателей, 50</p>
+                                </div>
+                                <div class="consult-result__block">
+                                    <p class="consult-result__block-title">Об обследовании:</p>
+                                    <p>Проводится ультразвуковое исследование щитовидной железы – оценка структуры органа, наличие признаков патологических изменений и новообразований (узлов)</p>
+                                </div>
+                                <div class="consult-result__block">
+                                    <p class="consult-result__block-title">Подготовка к обследованию:</p>
+                                    <p>
+                                        Противопоказаний нет<br>
+                                        Подготовка не требуется
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="text-center">
+                        <button class="button button--height_4 button--type_2" type="button">
+                            <span>Завершить</span>
+                            <svg class="icon">
+                                <use xlink:href="#arrow_right"></use>
+                            </svg>
+                        </button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    //= template/footer.html
+
+    //= template/float-bar.html
+
+    <!--общие скрипты-->
+    //= template/scripts.html
+
+    <!--скрипты страницы-->
+    <script src="js/search.js"></script>
+    <script src="js/clinics-map.js"></script>
+
+    <!--прелоадер-->
+    <script src="js/preloader.js"></script>
+</body>
+
+</html>
