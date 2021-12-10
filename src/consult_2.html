@@ -43,13 +43,26 @@
             </ul>
 
             <div class="consult">
-                <ul class="consult__steps">
-                    <li class="consult__steps-item">1</li>
-                    <li class="consult__steps-item is-active">2</li>
-                    <li class="consult__steps-item">3</li>
-                    <li class="consult__steps-item">4</li>
-                    <li class="consult__steps-item">5</li>
-                </ul>
+                <div class="consult__steps-block">
+                    <ul class="consult__steps">
+                        <li class="consult__steps-item current is-active">
+                            <span class="is-active"></span>
+                            Кто идёт на приём?
+                        </li>
+                        <li class="consult__steps-item current">
+                            <span>2</span>
+                            Выберите специалиста
+                        </li>
+                        <li class="consult__steps-item">
+                            <span>3</span>
+                            Выберите врача и время приёма
+                        </li>
+                        <li class="consult__steps-item">
+                            <span>4</span>
+                            Подтверждение записи
+                        </li>
+                    </ul>
+                </div>
 
                 <div class="consult__step">
                     <h2 class="consult__title is-active">Кто идет на прием?</h2>
@@ -255,7 +268,7 @@
                                         <div id="clinics_map" class="map-block__map-block"></div>
                                     </div>
                                     <div class="map-block__list">
-                                        <div class="map-item">
+                                        <div class="map-item is-active">
                                             <p class="map-item__title">Центр Урологии</p>
                                             <div class="map-item__info">
                                                 <p>Санкт-Петербург, ул. Ильюшина, 25<br> <a href="tel:+79650038609">+7 (965) 003 86 09</a></p>
@@ -308,16 +321,16 @@
                                 </div>
                             </div>
                         </div>
-
-                        <p class="text-right">
-                            <button class="button button--height_4 button--type_2" type="button">
-                                <span>Найти врача и время</span>
-                                <svg class="icon">
-                                    <use xlink:href="#arrow_right"></use>
-                                </svg>
-                            </button>
-                        </p>
                     </div>
+
+                    <p class="text-center">
+                        <button class="button button--height_4 button--type_2" type="button">
+                            <span>Найти врача и время</span>
+                            <svg class="icon">
+                                <use xlink:href="#arrow_right"></use>
+                            </svg>
+                        </button>
+                    </p>
                 </div>
             </div>
         </div>

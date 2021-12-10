@@ -43,13 +43,26 @@
             </ul>
 
             <div class="consult">
-                <ul class="consult__steps">
-                    <li class="consult__steps-item">1</li>
-                    <li class="consult__steps-item">2</li>
-                    <li class="consult__steps-item">3</li>
-                    <li class="consult__steps-item">4</li>
-                    <li class="consult__steps-item is-active">5</li>
-                </ul>
+                <div class="consult__steps-block">
+                    <ul class="consult__steps">
+                        <li class="consult__steps-item current is-active">
+                            <span class="is-active"></span>
+                            Кто идёт на приём?
+                        </li>
+                        <li class="consult__steps-item current is-active">
+                            <span class="is-active"></span>
+                            Выберите специалиста
+                        </li>
+                        <li class="consult__steps-item current is-active">
+                            <span class="is-active"></span>
+                            Выберите врача и время приёма
+                        </li>
+                        <li class="consult__steps-item current">
+                            <span>4</span>
+                            Подтверждение записи
+                        </li>
+                    </ul>
+                </div>
 
                 <div class="consult__step">
                     <h2 class="consult__title is-active">Подтверждение записи</h2>
@@ -118,16 +131,15 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="consult__result-button-block">
+                            <button class="button button--height_4 button--type_2" type="button">
+                                <span>Завершить</span>
+                                <svg class="icon">
+                                    <use xlink:href="#arrow_right"></use>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
-
-                    <p class="text-center">
-                        <button class="button button--height_4 button--type_2" type="button">
-                            <span>Завершить</span>
-                            <svg class="icon">
-                                <use xlink:href="#arrow_right"></use>
-                            </svg>
-                        </button>
-                    </p>
                 </div>
             </div>
         </div>

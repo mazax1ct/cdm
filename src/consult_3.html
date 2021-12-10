@@ -43,105 +43,98 @@
             </ul>
 
             <div class="consult">
-                <ul class="consult__steps">
-                    <li class="consult__steps-item">1</li>
-                    <li class="consult__steps-item">2</li>
-                    <li class="consult__steps-item is-active">3</li>
-                    <li class="consult__steps-item">4</li>
-                    <li class="consult__steps-item">5</li>
-                </ul>
+                <div class="consult__steps-block">
+                    <ul class="consult__steps">
+                        <li class="consult__steps-item current is-active">
+                            <span class="is-active"></span>
+                            Кто идёт на приём?
+                        </li>
+                        <li class="consult__steps-item current is-active">
+                            <span class="is-active"></span>
+                            Выберите специалиста
+                        </li>
+                        <li class="consult__steps-item current">
+                            <span>3</span>
+                            Выберите врача и время приёма
+                        </li>
+                        <li class="consult__steps-item">
+                            <span>4</span>
+                            Подтверждение записи
+                        </li>
+                    </ul>
+                </div>
 
                 <div class="consult__step">
-                    <h2 class="consult__title is-active">Выберите врача</h2>
+                    <h2 class="consult__title is-active">Выберите время приема</h2>
 
-                    <div class="consult__doctors">
-                        <div class="doctors-list">
-                            <div class="doctors-list__item">
-                                <div class="doctor">
-                                    <div class="doctor__image"><img src="images/content/doctors/img_1.jpg" srcset="images/content/doctors/img_1@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
-                                    <div class="doctor__info">
-                                        <p class="doctor__name"><a href="#">Гринжола<br> Елена Николаевна</a></p>
-                                        <p class="doctor__place">Руководитель ОКДЛ-врач клинический лабораторной диагностики</p>
-                                        <p class="doctor__exp">Стаж 20 лет</p>
-                                    </div>
+                    <div class="consult__week">
+                        <div class="week">
+                            <button class="week__button" type="button" title="Назад">
+                                <svg class="icon">
+                                    <use xlink:href="#chevron_left"></use>
+                                </svg>
+                            </button>
+
+                            <div class="week__list">
+                                <div class="week__list-item">
+                                    <button class="week__day is-active" type="button">
+                                        <span class="week__day-title">ПН, 24 НОЯ</span>
+                                        <span class="week__day-options">12 вариантов</span>
+                                    </button>
+                                </div>
+                                <div class="week__list-item">
+                                    <button class="week__day" type="button">
+                                        <span class="week__day-title">ВТ, 25 НОЯ</span>
+                                        <span class="week__day-options">Нет вариантов</span>
+                                    </button>
+                                </div>
+                                <div class="week__list-item">
+                                    <button class="week__day" type="button">
+                                        <span class="week__day-title">СР, 26 НОЯ</span>
+                                        <span class="week__day-options">Нет вариантов</span>
+                                    </button>
+                                </div>
+                                <div class="week__list-item">
+                                    <button class="week__day" type="button">
+                                        <span class="week__day-title">ЧТ, 27 НОЯ</span>
+                                        <span class="week__day-options">Нет вариантов</span>
+                                    </button>
+                                </div>
+                                <div class="week__list-item">
+                                    <button class="week__day" type="button">
+                                        <span class="week__day-title">ПТ, 28 НОЯ</span>
+                                        <span class="week__day-options">Нет вариантов</span>
+                                    </button>
+                                </div>
+                                <div class="week__list-item">
+                                    <button class="week__day" type="button">
+                                        <span class="week__day-title">СБ, 29 НОЯ</span>
+                                        <span class="week__day-options">Нет вариантов</span>
+                                    </button>
+                                </div>
+                                <div class="week__list-item">
+                                    <button class="week__day" type="button">
+                                        <span class="week__day-title">СБ, 30 НОЯ</span>
+                                        <span class="week__day-options">12 вариантов</span>
+                                    </button>
                                 </div>
                             </div>
-                            <div class="doctors-list__item">
-                                <div class="doctor">
-                                    <div class="doctor__image"><img src="images/content/doctors/img_2.jpg" srcset="images/content/doctors/img_2@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
-                                    <div class="doctor__info">
-                                        <p class="doctor__name"><a href="#">Водяник<br> Павел Иванович</a></p>
-                                        <p class="doctor__place">Руководитель медицинского центра</p>
-                                        <p class="doctor__exp">Стаж 10 лет</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="doctors-list__item">
-                                <div class="doctor">
-                                    <div class="doctor__image"><img src="images/content/doctors/img_3.jpg" srcset="images/content/doctors/img_3@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
-                                    <div class="doctor__info">
-                                        <p class="doctor__name"><a href="#">Володина<br> Людмила Николаевна</a></p>
-                                        <p class="doctor__place">Руководитель медицинского центра</p>
-                                        <p class="doctor__exp">Стаж 15 лет</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="doctors-list__item">
-                                <div class="doctor">
-                                    <div class="doctor__image"><img src="images/content/doctors/img_4.jpg" srcset="images/content/doctors/img_4@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
-                                    <div class="doctor__info">
-                                        <p class="doctor__name"><a href="#">Писарева<br> Елена Михайловна</a></p>
-                                        <p class="doctor__place">Врач-педиатор</p>
-                                        <p class="doctor__exp">Стаж 10 лет</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="doctors-list__item">
-                                <div class="doctor">
-                                    <div class="doctor__image"><img src="images/content/doctors/img_1.jpg" srcset="images/content/doctors/img_1@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
-                                    <div class="doctor__info">
-                                        <p class="doctor__name"><a href="#">Гринжола<br> Елена Николаевна</a></p>
-                                        <p class="doctor__place">Руководитель ОКДЛ-врач клинический лабораторной диагностики</p>
-                                        <p class="doctor__exp">Стаж 20 лет</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="doctors-list__item">
-                                <div class="doctor">
-                                    <div class="doctor__image"><img src="images/content/doctors/img_2.jpg" srcset="images/content/doctors/img_2@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
-                                    <div class="doctor__info">
-                                        <p class="doctor__name"><a href="#">Водяник<br> Павел Иванович</a></p>
-                                        <p class="doctor__place">Руководитель медицинского центра</p>
-                                        <p class="doctor__exp">Стаж 10 лет</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="doctors-list__item">
-                                <div class="doctor">
-                                    <div class="doctor__image"><img src="images/content/doctors/img_3.jpg" srcset="images/content/doctors/img_3@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
-                                    <div class="doctor__info">
-                                        <p class="doctor__name"><a href="#">Володина<br> Людмила Николаевна</a></p>
-                                        <p class="doctor__place">Руководитель медицинского центра</p>
-                                        <p class="doctor__exp">Стаж 15 лет</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="doctors-list__item">
-                                <div class="doctor">
-                                    <div class="doctor__image"><img src="images/content/doctors/img_4.jpg" srcset="images/content/doctors/img_4@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
-                                    <div class="doctor__info">
-                                        <p class="doctor__name"><a href="#">Писарева<br> Елена Михайловна</a></p>
-                                        <p class="doctor__place">Врач-педиатор</p>
-                                        <p class="doctor__exp">Стаж 10 лет</p>
-                                    </div>
-                                </div>
-                            </div>
+
+                            <button class="week__button" type="button" title="Вперёд">
+                                <svg class="icon">
+                                    <use xlink:href="#chevron_right"></use>
+                                </svg>
+                            </button>
                         </div>
                     </div>
 
-                    <p class="text-right">
+                    <div class="consult__doctors">
+                        <h2>Варианты для записи на понедельник, 24 ноября</h2>
+                    </div>
+
+                    <p class="text-center">
                         <button class="button button--height_4 button--type_2" type="button">
-                            <span>Найти время</span>
+                            <span>Подтвердить запись</span>
                             <svg class="icon">
                                 <use xlink:href="#arrow_right"></use>
                             </svg>

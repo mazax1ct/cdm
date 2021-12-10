@@ -43,13 +43,26 @@
             </ul>
 
             <div class="consult">
-                <ul class="consult__steps">
-                    <li class="consult__steps-item is-active">1</li>
-                    <li class="consult__steps-item">2</li>
-                    <li class="consult__steps-item">3</li>
-                    <li class="consult__steps-item">4</li>
-                    <li class="consult__steps-item">5</li>
-                </ul>
+                <div class="consult__steps-block">
+                    <ul class="consult__steps">
+                        <li class="consult__steps-item current">
+                            <span>1</span>
+                            Кто идёт на приём?
+                        </li>
+                        <li class="consult__steps-item">
+                            <span>2</span>
+                            Выберите специалиста
+                        </li>
+                        <li class="consult__steps-item">
+                            <span>3</span>
+                            Выберите врача и время приёма
+                        </li>
+                        <li class="consult__steps-item">
+                            <span>4</span>
+                            Подтверждение записи
+                        </li>
+                    </ul>
+                </div>
 
                 <div class="consult__step">
                     <h2 class="consult__title is-active">Кто идет на прием?</h2>
@@ -69,10 +82,16 @@
                             </label>
                         </div>
                     </div>
+                    <p class="text-center">
+                        <button class="button button--height_4 button--type_2" type="button" disabled>
+                            <span>Выбрать специалиста</span>
+                            <svg class="icon">
+                                <use xlink:href="#arrow_right"></use>
+                            </svg>
+                        </button>
+                    </p>
                 </div>
-
             </div>
-
         </div>
     </main>
 
