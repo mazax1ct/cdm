@@ -1,0 +1,82 @@
+.reviews-slider
+  list-style: none
+  margin: 0
+  padding: 0
+
+  @media(min-width: 768px)
+    display: flex
+    flex-wrap: wrap
+    margin-left: -6px
+    margin-right: -6px
+
+  @media(min-width: 1024px)
+    margin-left: -10px
+    margin-right: -10px
+
+  &:not(:last-child)
+    margin-bottom: 56px
+
+    @media(min-width: 1350px)
+      margin-bottom: 96px
+
+  &.slick-initialized
+    .reviews-slider__item
+      margin-bottom: 0
+
+  .slick-list
+    width: 100%
+
+  .slick-track
+    display: flex
+    margin-left: 0
+    margin-right: 0
+
+  &__item
+    height: auto
+    margin-bottom: 24px
+
+    @media(min-width: 768px)
+      display: flex
+      padding-left: 6px
+      padding-right: 6px
+      width: 50%
+
+    @media(min-width: 1024px)
+      padding-left: 10px
+      padding-right: 10px
+      width: 16.66666%
+
+.review
+  color: $text-color
+  display: block
+  font-weight: 800
+  height: 100%
+  line-height: 1.33333
+  margin-left: auto
+  margin-right: auto
+  max-width: 276px
+  text-decoration: none
+  width: 100%
+
+  @media(min-width: 1900px)
+    font-size: 24px
+
+  &:hover,
+  &:focus
+    .review__image
+      box-shadow: 0 4px 6px 0 rgba(#000, 0.2)
+
+  &__image
+    border-radius: $border-radius
+    background-color: $purple_light
+    display: block
+    margin-bottom: 8px
+    padding: 16px
+    transition: box-shadow 0.3s
+
+  img
+    border-radius: $border-radius
+
+  &__title
+    color: $text-color
+    display: block

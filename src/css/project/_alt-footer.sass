@@ -1,0 +1,75 @@
+.alt-footer
+  flex-shrink: 0
+  padding-top: 50px
+  padding-bottom: 40px
+
+  &__top
+    margin-bottom: 24px
+
+    @media(min-width: 1024px)
+      align-items: center
+      display: flex
+      margin-bottom: 16px
+
+  &__logo
+    max-width: 254px
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 24px
+
+    @media(min-width: 1024px)
+      margin-bottom: 0
+      order: 2
+
+  &__menu
+    font-weight: 700
+    margin-bottom: 24px
+    text-align: center
+
+    @media(min-width: 1024px)
+      margin-bottom: 0
+      text-align: left
+      width: calc((100% - 254px)/2)
+
+    a
+      color: $text-color
+      text-decoration: none
+
+      &:hover,
+      &:focus
+        color: $green
+
+      &:not(:last-child)
+        margin-right: 24px
+
+  &__contacts
+    font-weight: 800
+    text-align: center
+
+    @media(min-width: 1024px)
+      order: 3
+      text-align: right
+      width: calc((100% - 254px)/2)
+
+    a
+      color: $text-color
+      text-decoration: none
+
+      &:hover,
+      &:focus
+        color: $green
+
+  &__links
+    margin-bottom: 16px
+    text-align: center
+
+    a
+      color: $text-color
+      text-decoration: none
+
+      &:hover,
+      &:focus
+        color: $green
+
+  &__copyright
+    text-align: center

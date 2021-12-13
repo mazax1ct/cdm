@@ -127,13 +127,15 @@
     font-size: 18px
     font-weight: 700
     line-height: 1.2
-    margin-bottom: 16px
 
     @media(min-width: 1350px)
       font-size: 20px
 
     @media(min-width: 1900px)
       font-size: 24px
+
+    &:not(:last-child)
+      margin-bottom: 16px
 
     a
       color: $text-color
@@ -173,3 +175,6 @@
 
       @media(min-width: 1350px)
         min-width: 130px
+
+  &__icon
+    margin-bottom: 64px
