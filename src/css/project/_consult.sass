@@ -271,8 +271,13 @@
     display: block
     font-size: 12px
     padding: 12px 8px
+    transition: box-shadow 0.3s
     white-space: nowrap
     width: 100%
+
+    &:hover,
+    &:focus
+      box-shadow: 0 2px 3px 0 rgba(#000, 0.1)
 
     @media(min-width: 1350px)
       font-size: 14px
@@ -322,3 +327,116 @@
     display: flex
     flex-wrap: wrap
     justify-content: space-between
+
+.doc-time
+  border-radius: $border-radius
+  background-color: $green_light
+  padding: 12px
+
+  @media(min-width: 1024px)
+    display: flex
+    justify-content: space-between
+
+  @media(min-width: 1900px)
+    padding: 24px
+
+  &:not(:last-child)
+    margin-bottom: 36px
+
+  &__info-block
+    margin-bottom: 24px
+
+    @media(min-width: 768px)
+      align-items: flex-start
+      display: flex
+
+    @media(min-width: 1024px)
+      margin-bottom: 0
+      max-width: 780px
+
+  &__image
+    background-color: #fff
+    border-radius: $border-radius
+    margin-bottom: 24px
+    max-width: 384px
+    padding: 16px
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+      width: 50%
+
+  &__info
+    @media(min-width: 768px)
+      padding-top: 16px
+      padding-left: 16px
+      width: 50%
+
+  &__name
+    font-size: 28px
+    font-weight: 900
+    line-height: 1.14285
+    margin-bottom: 0
+
+  &__place
+    font-weight: 700
+
+  &__location,
+  &__feature
+    @media(max-width: 767px)
+      display: none
+
+    align-items: center
+    display: flex
+    font-weight: 700
+
+    &:not(:last-child)
+      margin-bottom: 12px
+
+    .icon
+      fill: $text-color
+      height: 32px
+      margin-right: 12px
+      width: 32px
+
+  &__time-block
+    @media(min-width: 1024px)
+      padding-top: 16px
+      padding-left: 24px
+      max-width: 580px
+
+  &__time-list
+    display: flex
+    flex-wrap: wrap
+    list-style: none
+    padding: 0
+
+  &__time-list-item
+    margin-bottom: 8px
+    margin-right: 8px
+
+  &__time-radio
+    position: relative
+
+    input[type="checkbox"],
+    input[type="radio"]
+      position: absolute
+      height: 1px
+      overflow: hidden
+      clip: rect(0 0 0 0)
+      width: 1px
+
+      &:checked + .doc-time__time-text
+        background-color: $text-color
+        color: #fff
+
+  &__time-text
+    align-items: center
+    border-radius: 4px
+    background-color: #fff
+    cursor: pointer
+    display: flex
+    font-size: 14px
+    font-weight: 700
+    height: 40px
+    justify-content: center
+    min-width: 78px
