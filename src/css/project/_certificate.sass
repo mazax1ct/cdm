@@ -1,0 +1,31 @@
+.certificate
+  margin-top: 56px
+  margin-bottom: 56px
+  
+  @media(min-width: 1024px)
+    display: flex
+    flex-direction: row-reverse
+
+  &__image
+    background-color: $green_light
+    border-radius: $border-radius
+    margin-bottom: 24px
+    padding: 24px
+
+    @media(min-width: 1024px)
+      margin-bottom: 0
+
+    @media(min-width: 1350px)
+      width: 60%
+
+  &__image,
+  &__text-block
+    @media(min-width: 1024px)
+      width: 50%
+
+  &__text-block
+    @media(min-width: 1024px)
+      padding-right: 24px
+
+    @media(min-width: 1350px)
+      width: 40%

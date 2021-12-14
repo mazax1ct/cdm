@@ -63,7 +63,7 @@ h3,
 .h3
   font-size: 17px
   line-height: 1.2
-  font-weight: 700
+  font-weight: 800
   line-height: 1.2
   letter-spacing: -1px
   margin-bottom: 16px
@@ -123,10 +123,11 @@ table,
 .responsive-table
   min-height: 0.01%
   overflow-x: auto
+  padding-left: 2px
+  padding-right: 2px
 
 table
   border-collapse: collapse
-  border: none
   max-width: 100%
   margin-bottom: 40px
   text-align: left
@@ -137,10 +138,15 @@ table
 
   .th,
   th
-    font-weight: 700
+    font-weight: 800
     padding: 16px
     vertical-align: middle
-    text-transform: uppercase
+
+    @media(min-width: 1350px)
+      font-size: 20px
+
+    @media(min-width: 1900px)
+      font-size: 24px
 
   &.striped
     tbody
@@ -150,9 +156,23 @@ table
   tbody
     td,
     th
-      border-bottom: 1px solid $purple
+      border-bottom: 1px solid $purple_light
       padding: 14px 16px
       vertical-align: middle
+
+    tr
+      &:first-child
+        td
+          border-top: 1px solid $purple_light
+
+    td
+      background-color: #fff
+
+      &:first-child
+        border-left: 1px solid $purple_light
+
+      &:last-child
+        border-right: 1px solid $purple_light
 
 img
   height: auto
@@ -180,6 +200,49 @@ ul
         text-align: center
         top: 0
         width: 20px
+
+ol.big
+  counter-reset: myCounter
+  list-style: none
+  line-height: 1.5
+
+  li
+    position: relative
+    padding-left: 32px
+
+    @media(min-width: 1350px)
+      padding-left: 56px
+
+    @media(min-width: 1900px)
+      padding-left: 74px
+
+    &:not(:last-child)
+      margin-bottom: 24px
+
+      @media(min-width: 1350px)
+        margin-bottom: 36px
+
+      @media(min-width: 1900px)
+        margin-bottom: 48px
+
+    &::before
+      bottom: 0.1em
+      counter-increment: myCounter
+      content: counter(myCounter) ". "
+      font-size: 24px
+      font-weight: 800
+      left: 0
+      line-height: 1
+      position: absolute
+      top: auto
+
+      @media(min-width: 1350px)
+        bottom: 0
+        font-size: 36px
+
+      @media(min-width: 1900px)
+        bottom: 0
+        font-size: 56px
 
 .title-block
   display: flex
@@ -227,11 +290,17 @@ ul
         .icon
           fill: $purple
 
-  .more-link
-    margin-right: 12px
+    & + .more-link
+      margin-left: 12px
+
+      @media(min-width: 768px)
+        margin-left: 32px
+
+  .more-link + .title-block__buttons
+    margin-left: 12px
 
     @media(min-width: 768px)
-      margin-right: 32px
+      margin-left: 32px
 
 .iconed-title
   align-items: center

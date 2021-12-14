@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-    <title>Онлайн-запись на прием</title>
+    <title>Методы отбора</title>
 
     <meta name="description" content="">
 
@@ -250,53 +250,60 @@
     </div>
 
     <header class="header compensate-for-scrollbar">
-        <div class="header__top container">
+        <div class="header__top header__top--lab container">
             <a class="header__logo" href="#" title="На главную">
                 <picture>
                     <source srcset="images/logo_full.svg" media="(min-width: 1350px)">
                     <img src="images/logo.svg" alt="СЕВЕРО-ЗАПАДНЫЙ ЦЕНТР ДОКАЗАТЕЛЬНОЙ МЕДИЦИНЫ">
                 </picture>
             </a>
-            <div class="location">
-                <button class="location__button" type="button">
-                    <svg class="icon">
-                        <use xlink:href="#city"></use>
-                    </svg>
-                    <span>Петропавловск-Камчатский</span>
-                </button>
+    
+            <div class="header__bottom">
+                <div class="header__bottom-inner container">
+                    <button class="js-menu-closer header__menu-closer" type="button" title="Закрыть меню">
+                        <svg class="icon">
+                            <use xlink:href="#close"></use>
+                        </svg>
+                    </button>
+                    <nav class="main-menu">
+                        <ul class="main-menu__list">
+                            <li class="main-menu__list-item">
+                                <a class="main-menu__link" href="#">Лаборатория</a>
+                            </li>
+                            <li class="main-menu__list-item">
+                                <a class="main-menu__link" href="#">Услуги</a>
+                            </li>
+                            <li class="main-menu__list-item">
+                                <a class="main-menu__link" href="#">Цены</a>
+                            </li>
+                            <li class="main-menu__list-item">
+                                <a class="main-menu__link" href="#">Производственный контроль</a>
+                            </li>
+                            <li class="main-menu__list-item">
+                                <a class="main-menu__link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__contacts">
+                        <div class="header__phone">
+                            <a href="tel:+78126004200">8 (812) 600-42-00</a>
+                            <span>Контактный центр</span>
+                        </div>
+                        <button class="button button--height_2 button--type_1" type="button">
+                            <span>Записаться онлайн</span>
+                        </button>
+                    </div>
+                </div>
             </div>
+    
             <div class="header__contacts">
                 <div class="header__phone">
-                    <a href="tel:+78126004200">8 (812) 600-42-00</a>
+                    <a href="tel:+78126004712">600-47-12, доб. 3039</a>
                     <span>Контактный центр</span>
                 </div>
                 <button class="button button--height_2 button--type_1" type="button">
                     <span>Записаться онлайн</span>
                 </button>
-                <button class="button button--height_2 button--type_1" type="button">
-                    <svg class="icon">
-                        <use xlink:href="#analysis"></use>
-                    </svg>
-                    <span>Проверить анализ</span>
-                </button>
-            </div>
-            <div class="header__top-links">
-                <a class="header__top-link" href="#">
-                    <svg class="icon">
-                        <use xlink:href="#user"></use>
-                    </svg>
-                    <span>Личный кабинет</span>
-                </a>
-                <a class="header__top-link" href="#" title="Корзина">
-                    <svg class="icon">
-                        <use xlink:href="#cart"></use>
-                    </svg>
-                </a>
-                <a class="header__top-link" href="#" title="Версия для слабовидящих">
-                    <svg class="icon">
-                        <use xlink:href="#eye"></use>
-                    </svg>
-                </a>
             </div>
             <button class="js-menu-opener header__burger" type="button" title="Открыть меню">
                 <svg class="icon">
@@ -304,454 +311,122 @@
                 </svg>
             </button>
         </div>
-        <div class="header__bottom">
-            <div class="header__bottom-inner container">
-                <button class="js-menu-closer header__menu-closer" type="button" title="Закрыть меню">
-                    <svg class="icon">
-                        <use xlink:href="#close"></use>
-                    </svg>
-                </button>
-                <div class="header__users-type">
-                    <label class="select-wrapper select-wrapper--type_4">
-                        <span class="select-wrapper__container">
-                            <select class="js-select">
-                                <option value="1">Пациентам</option>
-                                <option value="2">Врачам</option>
-                            </select>
-                        </span>
-                    </label>
-                </div>
-                <nav class="main-menu">
-                    <ul class="main-menu__list">
-                        <li class="main-menu__list-item">
-                            <a class="main-menu__link" href="#">Анализы</a>
-                        </li>
-                        <li class="main-menu__list-item">
-                            <a class="main-menu__link" href="#">Программы</a>
-                        </li>
-                        <li class="main-menu__list-item">
-                            <a class="main-menu__link" href="#">Медицинские услуги</a>
-                        </li>
-                        <li class="main-menu__list-item">
-                            <a class="main-menu__link" href="#">Адреса</a>
-                        </li>
-                        <li class="main-menu__list-item">
-                            <a class="main-menu__link" href="#">О компании</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="header__search">
-                    <form class="search-form">
-                        <input class="search-form__input" type="text" placeholder="Поиск по сайту">
-                        <button class="search-form__submit" type="submit" title="Найти">
-                            <svg class="icon">
-                                <use xlink:href="#search"></use>
-                            </svg>
-                        </button>
-                    </form>
-                </div>
-                <div class="header__contacts">
-                    <div class="header__phone">
-                        <a href="tel:+78126004200">8 (812) 600-42-00</a>
-                        <span>Контактный центр</span>
-                    </div>
-                    <button class="button button--height_2 button--type_1" type="button">
-                        <span>Записаться онлайн</span>
-                    </button>
-                    <button class="button button--height_2 button--type_1" type="button">
-                        <svg class="icon">
-                            <use xlink:href="#analysis"></use>
-                        </svg>
-                        <span>Проверить анализ</span>
-                    </button>
-                </div>
-            </div>
-        </div>
     </header>
 
     <main class="page-content">
         <div class="container">
-            <ul class="breadcrumbs">
-                <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link" href="#">Главная</a>
-                </li>
-                <li class="breadcrumbs__item">
-                    Онлайн-запись на прием
-                </li>
-            </ul>
-
-            <h1>Онлайн-запись на прием</h1>
-
-            <ul class="tiles">
-                <li class="tiles__item tiles__item--type_2">
-                    <div class="tile-link tile-link--color_1 tile-link--type_4">
-                        <span class="tile-link__container">
-                            <span class="tile-link__container-text">
-                                <span class="tile-link__title"><a href="#">Кардиография</a></span>
-                                <span class="tile-link__text">УЗИ / МРТ / ЭКГ</span>
-                            </span>
-                            <button class="button button--type_1 button--height_3" type="button">Записаться</button>
-                        </span>
-                        <span class="tile-link__image">
-                            <img src="images/content/tiles/img_8.png" srcset="images/content/tiles/img_8@2x.png 2x" alt="">
-                        </span>
-                    </div>
-                </li>
-                <li class="tiles__item tiles__item--type_2">
-                    <div class="tile-link tile-link--color_2 tile-link--type_4">
-                        <span class="tile-link__container">
-                            <span class="tile-link__container-text">
-                                <span class="tile-link__title"><a href="#">COVID-19</a></span>
-                                <span class="tile-link__text">ПЦР-тест</span>
-                            </span>
-                            <button class="button button--type_1 button--height_3" type="button">Записаться</button>
-                        </span>
-                        <span class="tile-link__image">
-                            <img src="images/content/tiles/img_9.png" srcset="images/content/tiles/img_9@2x.png 2x" alt="">
-                        </span>
-                    </div>
-                </li>
-                <li class="tiles__item tiles__item--type_2">
-                    <div class="tile-link tile-link--color_1 tile-link--type_4">
-                        <span class="tile-link__container">
-                            <span class="tile-link__container-text">
-                                <span class="tile-link__title"><a href="#">Рентген</a></span>
-                                <span class="tile-link__text">Рентген-исследования</span>
-                            </span>
-                            <button class="button button--type_1 button--height_3" type="button">Записаться</button>
-                        </span>
-                        <span class="tile-link__image">
-                            <img src="images/content/tiles/img_5.png" srcset="images/content/tiles/img_5@2x.png 2x" alt="">
-                        </span>
-                    </div>
-                </li>
-                <li class="tiles__item tiles__item--type_2">
-                    <div class="tile-link tile-link--color_2 tile-link--type_4">
-                        <span class="tile-link__container">
-                            <span class="tile-link__container-text">
-                                <span class="tile-link__title"><a href="#">МРТ</a></span>
-                                <span class="tile-link__text">Магнитно-резонансная<br> томография</span>
-                            </span>
-                            <button class="button button--type_1 button--height_3" type="button">Записаться</button>
-                        </span>
-                        <span class="tile-link__image">
-                            <img src="images/content/tiles/img_3.png" srcset="images/content/tiles/img_3@2x.png 2x" alt="">
-                        </span>
-                    </div>
-                </li>
-                <li class="tiles__item tiles__item--type_2">
-                    <div class="tile-link tile-link--color_1 tile-link--type_4">
-                        <span class="tile-link__container">
-                            <span class="tile-link__container-text">
-                                <span class="tile-link__title"><a href="#">R.E.M.S.<br> денситометрия</a></span>
-                                <span class="tile-link__text">УЗИ / МРТ / ЭКГ</span>
-                            </span>
-                            <button class="button button--type_1 button--height_3" type="button">Записаться</button>
-                        </span>
-                        <span class="tile-link__image">
-                            <img src="images/content/tiles/img_6.png" srcset="images/content/tiles/img_6@2x.png 2x" alt="">
-                        </span>
-                    </div>
-                </li>
-                <li class="tiles__item tiles__item--type_2">
-                    <div class="tile-link tile-link--color_2 tile-link--type_4">
-                        <span class="tile-link__container">
-                            <span class="tile-link__container-text">
-                                <span class="tile-link__title"><a href="#">Эндоскопия</a></span>
-                                <span class="tile-link__text">УЗИ / МРТ / ЭКГ</span>
-                            </span>
-                            <button class="button button--type_1 button--height_3" type="button">Записаться</button>
-                        </span>
-                        <span class="tile-link__image">
-                            <img src="images/content/tiles/img_7.png" srcset="images/content/tiles/img_7@2x.png 2x" alt="">
-                        </span>
-                    </div>
-                </li>
-            </ul>
-
-            <h2>Центры сдачи анализов около вас:</h2>
-
-            <div class="map-block">
-                <div class="map-block__buttons">
-                    <button class="map-block__button is-active" type="button" data-center="59.941707, 30.301902">Санкт-Петербург</button>
-                    <button class="map-block__button" type="button" data-center="55.755819, 37.617644">Москва</button>
-                </div>
-                <div class="map-block__container">
-                    <div class="map-block__map">
-                        <div id="clinics_map" class="map-block__map-block"></div>
-                    </div>
-                    <div class="map-block__list">
-                        <div class="map-item">
-                            <p class="map-item__title">Центр Урологии</p>
-                            <div class="map-item__info">
-                                <p>Санкт-Петербург, ул. Ильюшина, 25<br> <a href="tel:+79650038609">+7 (965) 003 86 09</a></p>
-                                <button class="button button--type_7 button--height_2" type="button" data-center="59.922064, 30.307739" data-info="1">На карте</button>
-                            </div>
-                        </div>
-                        <div class="map-item">
-                            <p class="map-item__title">Центр Урологии</p>
-                            <div class="map-item__info">
-                                <p>Санкт-Петербург, ул. Ильюшина, 25<br> <a href="tel:+79650038609">+7 (965) 003 86 09</a></p>
-                                <button class="button button--type_7 button--height_2" type="button" data-center="59.916929, 30.351444" data-info="2">На карте</button>
-                            </div>
-                        </div>
-                        <div class="map-item">
-                            <p class="map-item__title">Центр Урологии</p>
-                            <div class="map-item__info">
-                                <p>Санкт-Петербург, ул. Ильюшина, 25<br> <a href="tel:+79650038609">+7 (965) 003 86 09</a></p>
-                                <button class="button button--type_7 button--height_2" type="button" data-center="59.942068, 30.270203" data-info="3">На карте</button>
-                            </div>
-                        </div>
-                        <div class="map-item">
-                            <p class="map-item__title">Центр Урологии</p>
-                            <div class="map-item__info">
-                                <p>Санкт-Петербург, ул. Ильюшина, 25<br> <a href="tel:+79650038609">+7 (965) 003 86 09</a></p>
-                                <button class="button button--type_7 button--height_2" type="button" data-center="59.941707, 30.301902" data-info="4">На карте</button>
-                            </div>
-                        </div>
-                        <div class="map-item">
-                            <p class="map-item__title">Центр Урологии</p>
-                            <div class="map-item__info">
-                                <p>Санкт-Петербург, ул. Ильюшина, 25<br> <a href="tel:+79650038609">+7 (965) 003 86 09</a></p>
-                                <button class="button button--type_7 button--height_2" type="button" data-center="59.941707, 30.301902" data-info="5">На карте</button>
-                            </div>
-                        </div>
-                        <div class="map-item">
-                            <p class="map-item__title">Центр Урологии</p>
-                            <div class="map-item__info">
-                                <p>Санкт-Петербург, ул. Ильюшина, 25<br> <a href="tel:+79650038609">+7 (965) 003 86 09</a></p>
-                                <button class="button button--type_7 button--height_2" type="button" data-center="59.941707, 30.301902" data-info="6">На карте</button>
-                            </div>
-                        </div>
-                        <div class="map-item">
-                            <p class="map-item__title">Центр Урологии</p>
-                            <div class="map-item__info">
-                                <p>Санкт-Петербург, ул. Ильюшина, 25<br> <a href="tel:+79650038609">+7 (965) 003 86 09</a></p>
-                                <button class="button button--type_7 button--height_2" type="button" data-center="59.941707, 30.301902" data-info="7">На карте</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <h2>Вопросы и ответы:</h2>
-
-            <div class="accordions">
-                <div class="accordion">
-                    <button class="accordion__toggler" type="button">Нужно ли записываться на сдачу анализов?</button>
-                    <div class="accordion__body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et ex magnam fugit suscipit labore, quam sequi adipisci, nam perferendis fuga nisi, modi enim possimus sed molestias unde velit, ullam hic?</p>
-                        <p>Nobis voluptatum, debitis nihil maiores soluta, ea eligendi earum facilis inventore illo recusandae ex possimus quis pariatur incidunt aperiam est neque porro.</p>
-                        <p>Ipsa dicta est maiores dignissimos aliquid in et, quo laboriosam officia consequatur nihil nulla, repudiandae culpa vel incidunt dolor quasi laudantium temporibus.</p>
-                    </div>
-                </div>
-                <div class="accordion">
-                    <button class="accordion__toggler" type="button">Нужно ли записываться на сдачу анализов?</button>
-                    <div class="accordion__body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et ex magnam fugit suscipit labore, quam sequi adipisci, nam perferendis fuga nisi, modi enim possimus sed molestias unde velit, ullam hic?</p>
-                        <p>Nobis voluptatum, debitis nihil maiores soluta, ea eligendi earum facilis inventore illo recusandae ex possimus quis pariatur incidunt aperiam est neque porro.</p>
-                        <p>Ipsa dicta est maiores dignissimos aliquid in et, quo laboriosam officia consequatur nihil nulla, repudiandae culpa vel incidunt dolor quasi laudantium temporibus.</p>
-                    </div>
-                </div>
-                <div class="accordion">
-                    <button class="accordion__toggler" type="button">Нужно ли записываться на сдачу анализов?</button>
-                    <div class="accordion__body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et ex magnam fugit suscipit labore, quam sequi adipisci, nam perferendis fuga nisi, modi enim possimus sed molestias unde velit, ullam hic?</p>
-                        <p>Nobis voluptatum, debitis nihil maiores soluta, ea eligendi earum facilis inventore illo recusandae ex possimus quis pariatur incidunt aperiam est neque porro.</p>
-                        <p>Ipsa dicta est maiores dignissimos aliquid in et, quo laboriosam officia consequatur nihil nulla, repudiandae culpa vel incidunt dolor quasi laudantium temporibus.</p>
-                    </div>
-                </div>
-                <div class="accordion">
-                    <button class="accordion__toggler" type="button">Нужно ли записываться на сдачу анализов?</button>
-                    <div class="accordion__body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et ex magnam fugit suscipit labore, quam sequi adipisci, nam perferendis fuga nisi, modi enim possimus sed molestias unde velit, ullam hic?</p>
-                        <p>Nobis voluptatum, debitis nihil maiores soluta, ea eligendi earum facilis inventore illo recusandae ex possimus quis pariatur incidunt aperiam est neque porro.</p>
-                        <p>Ipsa dicta est maiores dignissimos aliquid in et, quo laboriosam officia consequatur nihil nulla, repudiandae culpa vel incidunt dolor quasi laudantium temporibus.</p>
-                    </div>
-                </div>
+            <h1>Методы отбора</h1>
+            <div class="responsive-table" style="max-width: 1400px">
+                <table>
+                    <col width="20%">
+                    <col width="40%">
+                    <col width="40%">
+                    <thead>
+                        <tr>
+                            <th>Стандарты</th>
+                            <th>Тип&nbsp;отбора</th>
+                            <th>Виды&nbsp;отбора</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>ГОСТ&nbsp;56237-2014</b></td>
+                            <td><b>Вода&nbsp;питьевая</b></td>
+                            <td>отбор проб воды централизованных систем питьевого водоснабжения и домовых распределительных сетей централизованного водоснабжения.</td>
+                        </tr>
+                        <tr>
+                            <td><b>ГОСТ&nbsp;31861-2012</b></td>
+                            <td><b>Любой&nbsp;тип&nbsp;воды</b></td>
+                            <td>отбор, транспортирование и подготовка к хранению проб воды, предназначенных для определения показателей ее состава и свойств</td>
+                        </tr>
+                        <tr>
+                            <td><b>ГОСТ&nbsp;31942-2012</b></td>
+                            <td>
+                                <b>
+                                    вода&nbsp;питьевая<br>
+                                    вода&nbsp;поверхностная<br>
+                                    вода&nbsp;подземная<br>
+                                    вода&nbsp;сточная<br>
+                                    вода&nbsp;плавательных&nbsp;бассейнов
+                                </b>
+                            </td>
+                            <td>отбор, транспортирование и подготовка к хранению проб воды, предназначенных для микробиологического анализа</td>
+                        </tr>
+                        <tr>
+                            <td><b>МУК&nbsp;4.2.2314-08, п.&nbsp;2.1</b></td>
+                            <td><b>вода&nbsp;питьевая</b></td>
+                            <td>отбор, транспортирование и хранение проб воды, предназначенных для паразитологического анализа</td>
+                        </tr>
+                        <tr>
+                            <td><b>МУК&nbsp;4.2.1884-04, п.&nbsp;2.1</b></td>
+                            <td><b>вода поверхностных водных объектов в пунктах питьевого, хозяйственно-бытового, рекреационного водопользования, бассейнов и аквапарков</b></td>
+                            <td>отбор, транспортирование и хранение проб воды, предназначенных для санитарно-паразитологического анализа</td>
+                        </tr>
+                        <tr>
+                            <td><b>МУК&nbsp;4.2.2942-11,<br> п.&nbsp;3.2.2,&nbsp;3.2.3</b></td>
+                            <td>
+                                <b>
+                                    Смывы&nbsp;с&nbsp;поверхностей<br>
+                                    Смывы&nbsp;с&nbsp;рук&nbsp;персонала&nbsp;(ЛПУ)
+                                </b>
+                            </td>
+                            <td>отбор&nbsp;проб&nbsp;(смывы)</td>
+                        </tr>
+                        <tr>
+                            <td><b>МУК&nbsp;4.2.2942-11,<br> п.&nbsp;3.1.2</b></td>
+                            <td><b>воздушная&nbsp;среда</b></td>
+                            <td>отбор&nbsp;проб&nbsp;воздуха</td>
+                        </tr>
+                        <tr>
+                            <td><b>МУК&nbsp;3182-84,&nbsp;п.2</b></td>
+                            <td>
+                                <b>
+                                    Вода&nbsp;дистиллированная<br>
+                                    Инъекционные&nbsp;растворы&nbsp;до&nbsp;стерилизации<br>
+                                    Глазные капли<br>
+                                    Аптечная посуда<br>
+                                    Пробки<br>
+                                    Прокладки<br>
+                                    Инвентарь<br>
+                                    Оборудование<br>
+                                    Руки и спецодежда персонала<br>
+                                    Воздушная среда<br>
+                                    Сухие лекарственные вещества, используемые для приготовления инъекционных растворов
+                                </b>
+                            </td>
+                            <td>отбор проб</td>
+                        </tr>
+                        <tr>
+                            <td><b>МУ&nbsp;МЗ&nbsp;СССР&nbsp;15/6-5-91, приложение&nbsp;1.</b></td>
+                            <td><b>Контроль работы паровых и воздушных стерилизаторов.</b></td>
+                            <td>отбор проб</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </main>
 
-    <footer class="footer">
+    <footer class="alt-footer">
         <div class="container">
-            <div class="footer__top">
-                <div class="footer__top-left">
-                    <div class="footer-menu">
-                        <div class="footer-menu__column">
-                            <h3 class="footer-menu__title"><a href="#">Анализы</a></h3>
-                            <ul class="footer-menu__list">
-                                <li><a href="#">Анализ</a></li>
-                                <li><a href="#">Ограничение по приему биоматериалов</a></li>
-                                <li><a href="#">Подготовка к анализам</a></li>
-                                <li><a href="#">Где получить результаты</a></li>
-                                <li><a href="#">Какие анализы мы делаем</a></li>
-                                <li><a href="#">FAQ</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-menu__column">
-                            <h3 class="footer-menu__title"><a href="#">Пациентам</a></h3>
-                            <ul class="footer-menu__list">
-                                <li><a href="#">Забор анализов на дом</a></li>
-                                <li><a href="#">Телемедицина</a></li>
-                                <li><a href="#">Болезни и симптомы</a></li>
-                                <li><a href="#">Отзывы</a></li>
-                                <li><a href="#">Справки</a></li>
-                                <li><a href="#">Страховые компании</a></li>
-                                <li><a href="#">Партнеры</a></li>
-                                <li><a href="#">Детская педиатрия выездная NB</a></li>
-                                <li><a href="#">Бонусная программа</a></li>
-                                <li><a href="#">Полезные статьи и материалы</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-menu__column">
-                            <h3 class="footer-menu__title"><a href="#">Адреса</a></h3>
-                            <ul class="footer-menu__list">
-                                <li><a href="#">Лабораторные терминалы</a></li>
-                                <li><a href="#">Клиники</a></li>
-                            </ul>
-                            <h3 class="footer-menu__title"><a href="#">Программы</a></h3>
-                            <ul class="footer-menu__list">
-                                <li><a href="#">COVID-19</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-menu__column">
-                            <h3 class="footer-menu__title"><a href="#">Клиника</a></h3>
-                            <ul class="footer-menu__list">
-                                <li><a href="#">Направления</a></li>
-                                <li><a href="#">Специалисты</a></li>
-                                <li><a href="#">Медицинские услуги</a></li>
-                                <li><a href="#">Навигатор</a></li>
-                            </ul>
-                            <h3 class="footer-menu__title"><a href="#">Врачам</a></h3>
-                            <ul class="footer-menu__list">
-                                <li><a href="#">Высшая школа</a></li>
-                                <li><a href="#">Клуб врачей</a></li>
-                                <li><a href="#">Что такое клуб?</a></li>
-                                <li><a href="#">База знаний</a></li>
-                                <li><a href="#">Работать у нас</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-menu__column">
-                            <h3 class="footer-menu__title"><a href="#">О компании</a></h3>
-                            <ul class="footer-menu__list">
-                                <li><a href="#">Руководство</a></li>
-                                <li><a href="#">История</a></li>
-                                <li><a href="#">Вакансии</a></li>
-                                <li><a href="#">Лицензия и сертификаты</a></li>
-                                <li><a href="#">Миссия</a></li>
-                                <li><a href="#">Команда</a></li>
-                                <li><a href="#">Мероприятия</a></li>
-                                <li><a href="#">Контакты</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-menu__column">
-                            <h3 class="footer-menu__title"><a href="#">Юридическая информация</a></h3>
-                            <ul class="footer-menu__list">
-                                <li><a href="#">Работа в системе ОМС</a></li>
-                                <li><a href="#">Оказание платных услуг</a></li>
-                                <li><a href="#">Специальная оценка условий труда</a></li>
-                                <li><a href="#">Пользовательское соглашение</a></li>
-                                <li><a href="#">Политика конфденциальности</a></li>
-                                <li><a href="#">ФЗ 54</a></li>
-                                <li><a href="#">Образец договора</a></li>
-                                <li><a href="#">Реквизиты</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-menu__column">
-                            <h3 class="footer-menu__title"><a href="#">Корпоративным клиентам</a></h3>
-                            <ul class="footer-menu__list">
-                                <li><a href="#">Медицинским организациям</a></li>
-                                <li><a href="#">Немедицинским организациям</a></li>
-                                <li><a href="#">Страховым организациям</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-menu__column">
-                            <h3 class="footer-menu__title"><a href="#">Для прессы</a></h3>
-                            <ul class="footer-menu__list">
-                                <li><a href="#">Медицинским организациям</a></li>
-                                <li><a href="#">Немедицинским организациям</a></li>
-                                <li><a href="#">Страховым организациям</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer__top-right">
-                    <a class="footer__button button button--type_1" href="#">Личный кабинет</a>
-    
-                    <p class="footer__phone">
-                        <a href="tel:+78126004200">8 (812) 600-42-00</a>
-                        <span>Многоканальный</span>
-                    </p>
-                    <p class="footer__phone"><a href="tel:+78126004200">8 (812) 600-42-00</a></p>
-                    <p class="footer__work-time">
-                        Принимаем звонки сегодня<br>
-                        <span>С 7:30 - 22:00</span>
-                    </p>
-    
-                    <div class="footer__contact">
-                        <svg class="icon">
-                            <use xlink:href="#city_2"></use>
-                        </svg>
-                        <span>Центральный офис</span><br>
-                        <b>
-                            Время работы:<br>
-                            пн.-пт.: с 09:00 до 17:45<br>
-                            Пулковское шоссе, дом 28А<br>
-                            8 (812) 600-47-12
-                        </b>
-                    </div>
-                    <div class="footer__contact">
-                        <svg class="icon">
-                            <use xlink:href="#envelope"></use>
-                        </svg>
-                        <span>Почта для связи:</span><br>
-                        <a href="#"><b>info@cdmed.ru</b></a>
-                    </div>
-                    <div class="footer__contact">
-                        <svg class="icon">
-                            <use xlink:href="#voice"></use>
-                        </svg>
-                        <span>Пожелания и предложения по качеству работы можно отправить на электронную почту <a href="mailto:expert@cdmed.ru"><b>expert@cdmed.ru</b></a></span>
-                    </div>
-                </div>
-            </div>
-            <div class="footer__bottom">
-                <div class="footer__logo">
+            <div class="alt-footer__top">
+                <div class="alt-footer__logo">
                     <img src="images/logo_full.svg" alt="СЕВЕРО-ЗАПАДНЫЙ ЦЕНТР ДОКАЗАТЕЛЬНОЙ МЕДИЦИНЫ">
                 </div>
-                <div class="footer__links">
-                    <ul class="footer__links-list">
-                        <li><a href="#">Политика конфиденциальности</a></li>
-                        <li><a href="#">Обработка персональных даных</a></li>
-                        <li><a href="#">Карта сайта</a></li>
-                    </ul>
+                <div class="alt-footer__menu">
+                    <a href="#">СЗЦДМ</a>
+                    <a href="#">Лаборатория</a>
+                    <a href="#">Контакты</a>
                 </div>
-                <div class="footer__copyright">© СЗЦДМ 2021</div>
+                <div class="alt-footer__contacts">
+                    <a href="tel:+78126004712">600-47-12, доб. 3039</a><br>
+                    <a href="mailto:">testlab@cdmed.ru</a>
+                </div>
             </div>
+            <p class="alt-footer__links"><a href="#">Политика конфиденциальности и обработка<br> персональных даных</a></p>
+            <p class="alt-footer__copyright">© СЗЦДМ 2021</p>
         </div>
     </footer>
-
-    <div class="float-bar compensate-for-scrollbar">
-        <a class="iconed-link" href="#">
-            <svg class="icon">
-                <use xlink:href="#user"></use>
-            </svg>
-            <span class="iconed-link__title">Личный<br> кабинет</span>
-        </a>
-        <a class="iconed-link" href="#">
-            <svg class="icon">
-                <use xlink:href="#cart"></use>
-            </svg>
-            <span class="iconed-link__title">Корзина</span>
-        </a>
-        <a class="iconed-link" href="#">
-            <svg class="icon">
-                <use xlink:href="#eye"></use>
-            </svg>
-            <span class="iconed-link__title">Версия для<br> слабовидящих</span>
-        </a>
-    </div>
 
     <!--общие скрипты-->
     <script src="js/jquery-3.6.0.min.js"></script>
@@ -779,7 +454,6 @@
     <script src="js/decor.js"></script>
 
     <!--скрипты страницы-->
-    <script src="js/clinics-map.js"></script>
 
     <!--прелоадер-->
     <script src="js/preloader.js"></script>

@@ -12,6 +12,9 @@
     &:not(:last-child)
       margin-bottom: 24px
 
+      @media(min-width: 1024px)
+        margin-bottom: 0
+
     @media(min-width: 1024px)
       width: 50%
 
@@ -25,6 +28,10 @@
       border-radius: $border-radius
       display: block
       width: 100%
+
+      @media(min-width: 1024px)
+        height: 100%
+        object-fit: cover
 
 .consultation
   border-radius: $border-radius
