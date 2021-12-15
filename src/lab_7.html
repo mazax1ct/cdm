@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Контакты</title>
+
+    <meta name="description" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/fonts-preload.html
+
+    //= template/preloader-styles.html
+
+    //= template/style.html
+</head>
+
+<body>
+    //= template/sprite.html
+
+    //= template/preloader.html
+
+    //= template/header_lab.html
+
+    <main class="page-content">
+        <div class="container">
+            <h1>Контакты</h1>
+            <div class="contacts">
+                <div class="contacts__text-block">
+                    <p class="h1">Пулковское шоссе, дом&nbsp;28А</p>
+                    <div class="contacts__contact">
+                        <svg class="icon">
+                            <use xlink:href="#envelope"></use>
+                        </svg>
+                        <span>Почта для связи:</span><br>
+                        <a href="mailto:testlab@cdmed.ru">testlab@cdmed.ru</a>
+                    </div>
+                    <div class="contacts__contact">
+                        <svg class="icon">
+                            <use xlink:href="#phone"></use>
+                        </svg>
+                        <span>Телефон для связи:</span><br>
+                        <a href="tel:+78126004712">600-47-12, доб. 3039</a>
+                    </div>
+                </div>
+                <div id="contacts_map" class="contacts__map"></div>
+            </div>
+        </div>
+    </main>
+
+    //= template/footer_lab.html
+
+    //= template/recall_popup.html
+
+    <!--общие скрипты-->
+    //= template/scripts.html
+
+    <!--скрипты страницы-->
+    <script src="js/contacts-map.js"></script>
+
+    <!--прелоадер-->
+    <script src="js/preloader.js"></script>
+</body>
+
+</html>

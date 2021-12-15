@@ -1,0 +1,56 @@
+.contacts
+  @media(min-width: 1024px)
+    display: flex
+    flex-direction: row-reverse
+
+  &__text-block
+    margin-bottom: 24px
+
+    @media(min-width: 1024px)
+      margin-bottom: 0
+      padding-left: 48px
+      width: 50%
+
+    @media(min-width: 1350px)
+      padding-top: 100px
+
+  &__contact
+    font-weight: 700
+    position: relative
+    padding-left: 60px
+
+    &:not(:last-child)
+      margin-bottom: 24px
+
+    a
+      color: $text-color
+      font-weight: 800
+      text-decoration: none
+
+      &:hover,
+      &:focus
+        color: $green
+
+    .icon
+      fill: $text-color
+      height: 40px
+      left: 0
+      position: absolute
+      top: 0
+      width: 40px
+
+  &__map
+    background-color: $purple_light
+    display: flex
+    height: 400px
+    overflow: hidden
+
+    @media(min-width: 1024px)
+      width: 50%
+
+    @media(min-width: 1900px)
+      height: 600px
+
+    &::after
+      content: 'Карта загружается...'
+      margin: auto

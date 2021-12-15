@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-    <title>Услуги</title>
+    <title>Врач</title>
 
     <meta name="description" content="">
 
@@ -243,6 +243,10 @@
         <symbol id="download" viewBox="0 0 32 32">
             <path d="M25.3337 12H20.0003V4H12.0003V12H6.66699L16.0003 21.3333L25.3337 12ZM6.66699 24V26.6667H25.3337V24H6.66699Z" />
         </symbol>
+        <symbol id="phone" viewBox="0 0 48 48">
+            <path
+              d="M13.24 21.58C16.12 27.24 20.76 31.86 26.42 34.76L30.82 30.36C31.36 29.82 32.16 29.64 32.86 29.88C35.1 30.62 37.52 31.02 40 31.02C41.1 31.02 42 31.92 42 33.02V40C42 41.1 41.1 42 40 42C21.22 42 6 26.78 6 8C6 6.9 6.9 6 8 6H15C16.1 6 17 6.9 17 8C17 10.5 17.4 12.9 18.14 15.14C18.36 15.84 18.2 16.62 17.64 17.18L13.24 21.58Z" />
+        </symbol>
     </svg>
 
     <div id="preloader">
@@ -290,7 +294,7 @@
                             <span>Контактный центр</span>
                         </div>
                         <button class="button button--height_2 button--type_1" type="button">
-                            <span>Записаться онлайн</span>
+                            <span>Заказать звонок</span>
                         </button>
                     </div>
                 </div>
@@ -301,7 +305,7 @@
                     <a href="tel:+78126004712">600-47-12, доб. 3039</a>
                     <span>Контактный центр</span>
                 </div>
-                <button class="button button--height_2 button--type_1" type="button">
+                <button class="button button--height_2 button--type_1" type="button" data-fancybox="recall" data-src="#recall_popup">
                     <span>Записаться онлайн</span>
                 </button>
             </div>
@@ -315,245 +319,42 @@
 
     <main class="page-content">
         <div class="container">
-            <h1>Услуги</h1>
-
-            <ul class="tiles">
-                <li class="tiles__item">
-                    <a class="tile-link tile-link--color_4 tile-link--type_1" href="#">
-                        <span class="tile-link__title">Санитарно-бактериологические исследования объектов окружающей среды</span>
-                        <span class="tile-link__text">
-                            • Вода централизованных систем питьевого водоснабжения, питьевая вода из ёмкостей, вода из скважин, вода горячего водоснабжения, вода плавательных бассейнов и аквапарков, вода поверхностных водных объектов;<br>
-                            • Смывы с поверхностей и рук персонала ЛПУ;<br>
-                            • Воздушная среда помещений;<br>
-                            • Стерильность изделий медицинского назначения и лекарственных форм;<br>
-                            • Микробиологическая чистота аптечных форм;<br>
-                            • Бактериологический контроль стерилизационной техники;<br>
-                            • Антимикробная оценка эффективности дезинфекционных средств;
-                        </span>
-                        <span class="tile-link__button-block">
-                            <span class="button button--type_1 button--height_1">Заказать</span>
-                        </span>
-                    </a>
-                </li>
-                <li class="tiles__item">
-                    <a class="tile-link tile-link--color_4 tile-link--type_1" href="#">
-                        <span class="tile-link__title">Санитарно-химические исследования объектов окружающей среды:</span>
-                        <span class="tile-link__text">
-                            • Вода централизованных систем питьевого водоснабжения, питьевая вода из ёмкостей, вода из скважин, вода горячего водоснабжения, вода плавательных бассейнов и аквапарков, вода поверхностных водных объектов;<br>
-                            • Пищевые продукты.
-                        </span>
-                        <span class="tile-link__button-block">
-                            <span class="button button--type_1 button--height_1">Заказать</span>
-                        </span>
-                    </a>
-                </li>
-                <li class="tiles__item">
-                    <a class="tile-link tile-link--color_4 tile-link--type_1" href="#">
-                        <span class="tile-link__title">Санитарно-паразитологические исследования объектов окружающей среды:</span>
-                        <span class="tile-link__text">
-                            • Вода централизованных систем питьевого водоснабжения, питьевая вода из ёмкостей, вода из скважин, вода горячего водоснабжения, вода плавательных бассейнов и аквапарков, вода поверхностных водных объектов;<br>
-                            • Почва;<br>
-                            • Смывы с поверхностей и рук персонала.
-                        </span>
-                        <span class="tile-link__button-block">
-                            <span class="button button--type_1 button--height_1">Заказать</span>
-                        </span>
-                    </a>
-                </li>
-                <li class="tiles__item">
-                    <a class="tile-link tile-link--color_4 tile-link--type_1" href="#">
-                        <span class="tile-link__title">Измерение физических факторов в жилых и общественных зданиях, в производственных помещениях и на рабочих местах</span>
-                        <span class="tile-link__button-block">
-                            <span class="button button--type_1 button--height_1">Заказать</span>
-                        </span>
-                    </a>
-                </li>
-            </ul>
-
-            <div class="title-block">
-                <h2>Специалисты, готовые выехать для отбора проб</h2>
-                <div id="doctors_list_buttons" class="title-block__buttons title-block__buttons--type_1"></div>
-            </div>
-
-            <div class="js-doctors-list doctors-list" data-buttons="doctors_list_buttons">
-                <div class="doctors-list__item">
-                    <div class="doctor">
-                        <div class="doctor__image"><img src="images/content/doctors/img_1.jpg" srcset="images/content/doctors/img_1@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
-                        <div class="doctor__info">
-                            <p class="doctor__name"><a href="#">Гринжола<br> Елена Николаевна</a></p>
-                            <p class="doctor__place">Руководитель ОКДЛ-врач клинический лабораторной диагностики</p>
-                            <p class="doctor__exp">Стаж 20 лет</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="doctors-list__item">
-                    <div class="doctor">
-                        <div class="doctor__image"><img src="images/content/doctors/img_2.jpg" srcset="images/content/doctors/img_2@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
-                        <div class="doctor__info">
-                            <p class="doctor__name"><a href="#">Водяник<br> Павел Иванович</a></p>
-                            <p class="doctor__place">Руководитель медицинского центра</p>
-                            <p class="doctor__exp">Стаж 10 лет</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="doctors-list__item">
-                    <div class="doctor">
-                        <div class="doctor__image"><img src="images/content/doctors/img_3.jpg" srcset="images/content/doctors/img_3@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
-                        <div class="doctor__info">
-                            <p class="doctor__name"><a href="#">Володина<br> Людмила Николаевна</a></p>
-                            <p class="doctor__place">Руководитель медицинского центра</p>
-                            <p class="doctor__exp">Стаж 15 лет</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="doctors-list__item">
-                    <div class="doctor">
-                        <div class="doctor__image"><img src="images/content/doctors/img_4.jpg" srcset="images/content/doctors/img_4@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
-                        <div class="doctor__info">
-                            <p class="doctor__name"><a href="#">Писарева<br> Елена Михайловна</a></p>
-                            <p class="doctor__place">Врач-педиатор</p>
-                            <p class="doctor__exp">Стаж 10 лет</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="doctors-list__item">
-                    <div class="doctor">
-                        <div class="doctor__image"><img src="images/content/doctors/img_1.jpg" srcset="images/content/doctors/img_1@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
-                        <div class="doctor__info">
-                            <p class="doctor__name"><a href="#">Гринжола<br> Елена Николаевна</a></p>
-                            <p class="doctor__place">Руководитель ОКДЛ-врач клинический лабораторной диагностики</p>
-                            <p class="doctor__exp">Стаж 20 лет</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="doctors-list__item">
-                    <div class="doctor">
-                        <div class="doctor__image"><img src="images/content/doctors/img_2.jpg" srcset="images/content/doctors/img_2@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
-                        <div class="doctor__info">
-                            <p class="doctor__name"><a href="#">Водяник<br> Павел Иванович</a></p>
-                            <p class="doctor__place">Руководитель медицинского центра</p>
-                            <p class="doctor__exp">Стаж 10 лет</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="doctors-list__item">
-                    <div class="doctor">
-                        <div class="doctor__image"><img src="images/content/doctors/img_3.jpg" srcset="images/content/doctors/img_3@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
-                        <div class="doctor__info">
-                            <p class="doctor__name"><a href="#">Володина<br> Людмила Николаевна</a></p>
-                            <p class="doctor__place">Руководитель медицинского центра</p>
-                            <p class="doctor__exp">Стаж 15 лет</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="doctors-list__item">
-                    <div class="doctor">
-                        <div class="doctor__image"><img src="images/content/doctors/img_4.jpg" srcset="images/content/doctors/img_4@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
-                        <div class="doctor__info">
-                            <p class="doctor__name"><a href="#">Писарева<br> Елена Михайловна</a></p>
-                            <p class="doctor__place">Врач-педиатор</p>
-                            <p class="doctor__exp">Стаж 10 лет</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="incut-block">
-                <h2>Наша мобильная группа по отбору образцов готова осуществить необходимые виды отбора</h2>
-                <a class="button button--type_1 button--height_4" href="#">Методы проб</a>
-            </div>
-
-            <h2 class="text-center">Выберите свой план работы</h2>
-
-            <div class="two-lists">
-                <div class="two-lists__block">
-                    <h3 class="h2 text-center">Выезд лаборатории</h3>
-                    <ol class="big">
-                        <li>Наши специалисты приезжают к Вам и отбирают пробы самостоятельно;</li>
-                        <li>Заполняют всю необходимую сопроводительную документацию;</li>
-                        <li>Транспортируют пробы в лабораторию;</li>
-                        <li>Мы исследуем пробы в лаборатории;</li>
-                        <li>По готовности сразу же отправляем Вам сканы протоколов;</li>
-                        <li>Отправляем с курьером оригиналы протоколов.</li>
-                    </ol>
-                    <p class="two-lists__button-block"><button class="button button--type_1 button--height_4">Заказать</button></p>
-                </div>
-                <div class="two-lists__block two-lists__block--type_1">
-                    <h3 class="h2 text-center">Самостоятельно</h3>
-                    <ol class="big">
-                        <li>Мы отправляем Вам весь расходный материал и инструкции по отбору проб;</li>
-                        <li>Консультируем Вас по правилам отбора образцов;</li>
-                        <li>Вы самостоятельно отбираете пробы и заполняете сопроводительную документацию;</li>
-                        <li>Отправляете пробы в лабораторию (при помощи нашей транспортной службы);</li>
-                        <li>Мы исследуем пробы в лаборатории;</li>
-                        <li>По готовности сразу же отправляем Вам сканы протоколов;</li>
-                        <li>Отправляем с курьером оригиналы протоколов.</li>
-                    </ol>
-                    <p class="two-lists__button-block"><button class="button button--type_1 button--height_4">Заказать</button></p>
-                </div>
-            </div>
-
-            <div class="title-block">
-                <h2>Отзывы клиентов</h2>
-                <div class="title-block__controls">
-                    <div id="reviews_slider_buttons" class="title-block__buttons title-block__buttons--type_1"></div>
-                    <a class="more-link" href="#">
-                        Все отзывы
-                        <svg class="icon">
-                            <use xlink:href="#arrow_right"></use>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-
-            <div class="js-reviews-slider reviews-slider" data-buttons="reviews_slider_buttons">
-                <div class="reviews-slider__item">
-                    <a class="review" href="images/content/lab/img_2@2x.jpg" data-fancybox rel="gallery">
-                        <span class="review__image"><img src="images/content/lab/img_5.jpg" srcset="images/content/lab/img_5@2x.jpg 2x" alt=""></span>
-                        <span class="review__title">ГБУЗ ЛО Приозерская МБ</span>
-                    </a>
-                </div>
-                <div class="reviews-slider__item">
-                    <a class="review" href="images/content/lab/img_2@2x.jpg" data-fancybox rel="gallery">
-                        <span class="review__image"><img src="images/content/lab/img_5.jpg" srcset="images/content/lab/img_5@2x.jpg 2x" alt=""></span>
-                        <span class="review__title">ГБУЗ ЛО Приозерская МБ</span>
-                    </a>
-                </div>
-                <div class="reviews-slider__item">
-                    <a class="review" href="images/content/lab/img_2@2x.jpg" data-fancybox rel="gallery">
-                        <span class="review__image"><img src="images/content/lab/img_5.jpg" srcset="images/content/lab/img_5@2x.jpg 2x" alt=""></span>
-                        <span class="review__title">ГБУЗ ЛО Приозерская МБ</span>
-                    </a>
-                </div>
-                <div class="reviews-slider__item">
-                    <a class="review" href="images/content/lab/img_2@2x.jpg" data-fancybox rel="gallery">
-                        <span class="review__image"><img src="images/content/lab/img_5.jpg" srcset="images/content/lab/img_5@2x.jpg 2x" alt=""></span>
-                        <span class="review__title">ГБУЗ ЛО Приозерская МБ</span>
-                    </a>
-                </div>
-                <div class="reviews-slider__item">
-                    <a class="review" href="images/content/lab/img_2@2x.jpg" data-fancybox rel="gallery">
-                        <span class="review__image"><img src="images/content/lab/img_5.jpg" srcset="images/content/lab/img_5@2x.jpg 2x" alt=""></span>
-                        <span class="review__title">ГБУЗ ЛО Приозерская МБ</span>
-                    </a>
-                </div>
-                <div class="reviews-slider__item">
-                    <a class="review" href="images/content/lab/img_2@2x.jpg" data-fancybox rel="gallery">
-                        <span class="review__image"><img src="images/content/lab/img_5.jpg" srcset="images/content/lab/img_5@2x.jpg 2x" alt=""></span>
-                        <span class="review__title">ГБУЗ ЛО Приозерская МБ</span>
-                    </a>
-                </div>
-                <div class="reviews-slider__item">
-                    <a class="review" href="images/content/lab/img_2@2x.jpg" data-fancybox rel="gallery">
-                        <span class="review__image"><img src="images/content/lab/img_5.jpg" srcset="images/content/lab/img_5@2x.jpg 2x" alt=""></span>
-                        <span class="review__title">ГБУЗ ЛО Приозерская МБ</span>
-                    </a>
-                </div>
-                <div class="reviews-slider__item">
-                    <a class="review" href="images/content/lab/img_2@2x.jpg" data-fancybox rel="gallery">
-                        <span class="review__image"><img src="images/content/lab/img_5.jpg" srcset="images/content/lab/img_5@2x.jpg 2x" alt=""></span>
-                        <span class="review__title">ГБУЗ ЛО Приозерская МБ</span>
-                    </a>
+            <div class="doctor-detail">
+                <div class="doctor-detail__image"><img src="images/content/lab/img_4.jpg" srcset="images/content/lab/img_4@2x.jpg 2x" alt=""></div>
+                <div class="doctor-detail__text-block">
+                    <h1>Никитина Ирина Александровна</h1>
+                    <p class="h3">Инженер-химик</p>
+                    <p>
+                        <a class="button button--type_5 button--height_4" href="mailto:nikitina.ia@cdmed.ru">
+                            <svg class="icon">
+                                <use xlink:href="#envelope"></use>
+                            </svg>
+                            <span>nikitina.ia@cdmed.ru</span>
+                        </a>
+                    </p>
+                    <h2>Область научных интересов</h2>
+                    <p><b>ВЭЖХ-МС/МС, масс-спектрометрия, газовая хроматография.</b></p>
+                    <h2>Биография</h2>
+                    <h3>Образование:</h3>
+                    <p> Окончила ФГБОУ ВО «Санкт-Петербургский государственный лесотехнический университет им. С.М. Кирова» в 2012 г. по направлению: «химическая технология, технология химической переработки древесины».</p>
+                    <p>
+                        Проходила дополнительное профессиональное образование по следующим программам:<br> 2020 г. - «Обеспечение качества испытаний. Прекурсоры, реактивы, расходные материалы для проведения испытаний и калибровки» на базе ФГБОУ ДПО
+                        СПИУПТ.<br> 2021 г. - «Органолептический анализ. Методы проведения органолептического анализа воды в соответствии ГОСТ 57164-2016 Вода питьевая. Методы определения запаха, вкуса и мутности» на базе ООО «Национальная академия
+                        современных технологий».
+                    </p>
+                    <h3>Трудовая деятельность</h3>
+                    <p>И.А. Никитина начала трудовую деятельность в должности аппаратчика и начальника смены на производстве ООО «Вкусная косметика», выполняя мониторинг за исправностью оборудования, рецептурой перед изготовлением и контроль качества
+                        выпускаемой продукции.</p>
+                    <p>С 2015 г. Ирина Александровна выполняла функции химика – аналитика компании ООО «Европром». Проводила лабораторные исследования, испытания и измерения (пищевые продукты, пищевое сырье, дезинфекционные средства). Участвовала во
+                        внедрении и апробации новых методов исследований, экспериментальных работах. Осуществляла контроль технического обслуживания лабораторного оборудования и учет реактивов. С 2015 г. продолжила профессиональную деятельность в
+                        компании в должности ассистента менеджера СМК отдела контроля качества.</p>
+                    <p>С 2019 г. была санитарным химиком в ООО «Полимертест», выполняя широкий спектр санитарно-химических исследований (спектрофотометрия, титриметрия, рН-метрия, гравиметрия, кондуктометрия, работа с климатической камерой,
+                        органолептические испытания). Осуществляла наставничество для молодых сотрудников лаборатории.</p>
+                    <p>Является инженером-химиком аккредитованной испытательной лаборатории АО «Северо-западный центр доказательной медицины» с мая 2021 года.</p>
+                    <p>Опыт работы Никитиной И.А. составляет более 10 лет. Отдельного внимания в опыте сотрудника заслуживают глубокие знания и навыки ведения системы менеджмента лаборатории.</p>
+                    <h3>Научная деятельность:</h3>
+                    <p>И.А. Никитина работает над внедрением новых лабораторных возможностей химического анализа в практику ИЛ АО «СЗЦДМ». Перспективными направлениями, которые развивает испытатель, является применение хроматографических методов
+                        исследования и масс-спектрометрии в рамках санитарно-химического контроля объектов окружающей среды.</p>
                 </div>
             </div>
         </div>
@@ -579,6 +380,26 @@
             <p class="alt-footer__copyright">© СЗЦДМ 2021</p>
         </div>
     </footer>
+
+    <div id="recall_popup" class="recall-popup">
+        <p class="h1 text-center">Заказать звонок</p>
+        <form action="">
+            <div class="recall-popup__row">
+                <label class="input-label">
+                    <input class="input" type="text" value="" placeholder="Ваше имя" />
+                </label>
+            </div>
+            <div class="recall-popup__row">
+                <label class="input-label">
+                    <input class="js-phone-mask input" type="text" value="" placeholder="Ваш телефон" />
+                </label>
+            </div>
+            <p class="recall-popup__note">*нажимая на кнопку вы соглашаетесь на обработку <a href="#">персональных&nbsp;данных</a></p>
+            <p class="text-center">
+                <button class="recall-popup__submit button button--type_1 button--height_4" type="submit" disabled>Отправить</button>
+            </p>
+        </form>
+    </div>
 
     <!--общие скрипты-->
     <script src="js/jquery-3.6.0.min.js"></script>
@@ -606,8 +427,6 @@
     <script src="js/decor.js"></script>
 
     <!--скрипты страницы-->
-    <script src="js/doctors-list.js"></script>
-    <script src="js/reviews-slider.js"></script>
 
     <!--прелоадер-->
     <script src="js/preloader.js"></script>

@@ -243,6 +243,10 @@
         <symbol id="download" viewBox="0 0 32 32">
             <path d="M25.3337 12H20.0003V4H12.0003V12H6.66699L16.0003 21.3333L25.3337 12ZM6.66699 24V26.6667H25.3337V24H6.66699Z" />
         </symbol>
+        <symbol id="phone" viewBox="0 0 48 48">
+            <path
+              d="M13.24 21.58C16.12 27.24 20.76 31.86 26.42 34.76L30.82 30.36C31.36 29.82 32.16 29.64 32.86 29.88C35.1 30.62 37.52 31.02 40 31.02C41.1 31.02 42 31.92 42 33.02V40C42 41.1 41.1 42 40 42C21.22 42 6 26.78 6 8C6 6.9 6.9 6 8 6H15C16.1 6 17 6.9 17 8C17 10.5 17.4 12.9 18.14 15.14C18.36 15.84 18.2 16.62 17.64 17.18L13.24 21.58Z" />
+        </symbol>
     </svg>
 
     <div id="preloader">
@@ -290,7 +294,7 @@
                             <span>Контактный центр</span>
                         </div>
                         <button class="button button--height_2 button--type_1" type="button">
-                            <span>Записаться онлайн</span>
+                            <span>Заказать звонок</span>
                         </button>
                     </div>
                 </div>
@@ -301,7 +305,7 @@
                     <a href="tel:+78126004712">600-47-12, доб. 3039</a>
                     <span>Контактный центр</span>
                 </div>
-                <button class="button button--height_2 button--type_1" type="button">
+                <button class="button button--height_2 button--type_1" type="button" data-fancybox="recall" data-src="#recall_popup">
                     <span>Записаться онлайн</span>
                 </button>
             </div>
@@ -330,7 +334,7 @@
                             <p>Связь с менеджером</p>
                         </div>
                         <div class="consultation__block consultation__form">
-                            <button class="button button--type_1 button--height_3" type="button">Заказать</button>
+                            <button class="button button--type_1 button--height_3" type="button" data-fancybox="recall_1" data-src="#recall_popup">Заказать</button>
                         </div>
                     </div>
                 </div>
@@ -354,22 +358,22 @@
 
             <ul class="tiles">
                 <li class="tiles__item tiles__item--type_2">
-                    <a class="tile-link tile-link--type_1 tile-link--color_1" href="#">
+                    <div class="tile-link tile-link--type_1 tile-link--color_1">
                         <img class="tile-link__icon" width="64" height="64" src="images/content/lab/icon_1.svg" alt="">
                         <span class="tile-link__title">Широкая область аккредитации</span>
-                    </a>
+                    </div>
                 </li>
                 <li class="tiles__item tiles__item--type_2">
-                    <a class="tile-link tile-link--type_1 tile-link--color_2" href="#">
+                    <div class="tile-link tile-link--type_1 tile-link--color_2">
                         <img class="tile-link__icon" width="64" height="64" src="images/content/lab/icon_2.svg" alt="">
                         <span class="tile-link__title">Выполнение исследований<br> в короткие сроки</span>
-                    </a>
+                    </div>
                 </li>
                 <li class="tiles__item tiles__item--type_2">
-                    <a class="tile-link tile-link--type_1 tile-link--color_1" href="#">
+                    <div class="tile-link tile-link--type_1 tile-link--color_1">
                         <img class="tile-link__icon" width="64" height="64" src="images/content/lab/icon_3.svg" alt="">
                         <span class="tile-link__title">Высокая точность результатов</span>
-                    </a>
+                    </div>
                 </li>
             </ul>
 
@@ -479,7 +483,7 @@
                         <li>По готовности сразу же отправляем Вам сканы протоколов;</li>
                         <li>Отправляем с курьером оригиналы протоколов.</li>
                     </ol>
-                    <p class="two-lists__button-block"><button class="button button--type_1 button--height_4">Заказать</button></p>
+                    <p class="two-lists__button-block"><button class="button button--type_1 button--height_4" type="button" data-fancybox="recall_2" data-src="#recall_popup">Заказать</button></p>
                 </div>
                 <div class="two-lists__block two-lists__block--type_1">
                     <h3 class="h2 text-center">Самостоятельно</h3>
@@ -492,7 +496,7 @@
                         <li>По готовности сразу же отправляем Вам сканы протоколов;</li>
                         <li>Отправляем с курьером оригиналы протоколов.</li>
                     </ol>
-                    <p class="two-lists__button-block"><button class="button button--type_1 button--height_4">Заказать</button></p>
+                    <p class="two-lists__button-block"><button class="button button--type_1 button--height_4" type="button" data-fancybox="recall_3" data-src="#recall_popup">Заказать</button></p>
                 </div>
             </div>
 
@@ -598,6 +602,26 @@
             <p class="alt-footer__copyright">© СЗЦДМ 2021</p>
         </div>
     </footer>
+
+    <div id="recall_popup" class="recall-popup">
+        <p class="h1 text-center">Заказать звонок</p>
+        <form action="">
+            <div class="recall-popup__row">
+                <label class="input-label">
+                    <input class="input" type="text" value="" placeholder="Ваше имя" />
+                </label>
+            </div>
+            <div class="recall-popup__row">
+                <label class="input-label">
+                    <input class="js-phone-mask input" type="text" value="" placeholder="Ваш телефон" />
+                </label>
+            </div>
+            <p class="recall-popup__note">*нажимая на кнопку вы соглашаетесь на обработку <a href="#">персональных&nbsp;данных</a></p>
+            <p class="text-center">
+                <button class="recall-popup__submit button button--type_1 button--height_4" type="submit" disabled>Отправить</button>
+            </p>
+        </form>
+    </div>
 
     <!--общие скрипты-->
     <script src="js/jquery-3.6.0.min.js"></script>

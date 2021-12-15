@@ -60,11 +60,6 @@
   transition: box-shadow 0.3s, background-color 0.3s
   width: 100%
 
-  &:hover,
-  &:focus
-    color: $text-color
-    box-shadow: 0 4px 6px 0 rgba(#000, 0.2)
-
   &--color_1
     background-color: $green_light
 
@@ -75,17 +70,9 @@
     border: 1px solid $purple_light
     transition: background-color 0.3s, box-shadow 0.3s
 
-    &:hover,
-    &:focus
-      background-color: $purple_light
-
   &--color_4
     border: 1px solid $green_light
     transition: background-color 0.3s, box-shadow 0.3s
-
-    &:hover,
-    &:focus
-      background-color: $green_light
 
   &--type_1
     padding: 24px
@@ -186,3 +173,19 @@
 
   &__icon
     margin-bottom: 64px
+
+a.tile-link
+  &:hover,
+  &:focus
+    color: $text-color
+    box-shadow: 0 4px 6px 0 rgba(#000, 0.2)
+
+  &--color_3
+    &:hover,
+    &:focus
+      background-color: $purple_light
+
+  &--color_4
+    &:hover,
+    &:focus
+      background-color: $green_light
