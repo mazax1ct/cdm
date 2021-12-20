@@ -1,0 +1,246 @@
+.personal-page
+  .breadcrumbs
+    margin-bottom: 0
+
+  .page-content
+    padding-bottom: 0
+
+.personal
+  @media(min-width: 1024px)
+    border-top: 1px solid rgba($text-color, 0.15)
+    left: 50%
+    position: relative
+    transform: translateX(-50%)
+    width: 100vw
+
+  &__menu-opener
+    @media(min-width: 1024px)
+      display: none
+
+  &__inner
+    padding-top: 40px
+
+    @media(min-width: 1024px)
+      display: flex
+      margin-left: auto
+      margin-right: auto
+      max-width: 1570px
+      padding-left: 20px
+      padding-right: 20px
+      padding-top: 0
+
+    @media(min-width: 1350px)
+      width: 90%
+
+  &__menu-block
+    background-color: rgba($text-color, 0.3)
+    bottom: 0
+    display: none
+    left: 0
+    position: fixed
+    right: 0
+    top: 0
+    z-index: 10
+
+    @media(min-width: 1024px)
+      border-right: 1px solid rgba($text-color, 0.15)
+      background-color: transparent
+      bottom: auto
+      display: block !important
+      left: auto
+      padding-top: 26px
+      position: static
+      right: auto
+      top: auto
+      width: 320px
+      z-index: auto
+
+    @media(min-width: 1350px)
+      padding-top: 49px
+      width: 370px
+
+  &__menu-block-inner
+    background-color: #fff
+    height: 100%
+    max-width: 320px
+    overflow-y: auto
+    padding-top: 60px
+    padding-bottom: 30px
+    position: relative
+    transition: transform 0.3s
+    transform: translateX(-100%)
+
+    @media(min-width: 1024px)
+      height: auto
+      max-width: 100%
+      overflow: visible
+      padding-bottom: 0
+      padding-top: 0
+      transform: none
+
+    &.is-open
+      transform: translateX(0)
+
+  &__menu-closer
+    align-items: center
+    background-color: transparent
+    border: none
+    cursor: pointer
+    display: flex
+    height: 40px
+    justify-content: center
+    left: auto
+    margin-left: auto
+    padding: 0
+    position: absolute
+    right: 12px
+    top: 12px
+    width: 40px
+
+    @media(min-width: 1024px)
+      display: none
+
+    .icon
+      fill: $text-color
+      height: 18px
+      width: 18px
+
+  &__content-block
+    padding-top: 40px
+
+    @media(min-width: 1024px)
+      padding-left: 24px
+      width: calc(100% - 320px)
+
+    @media(min-width: 1350px)
+      padding-left: 56px
+      padding-top: 56px
+      width: calc(100% - 370px)
+
+.user-info
+  margin-bottom: 24px
+  padding-bottom: 20px
+  padding-left: 16px
+  padding-right: 16px
+  position: relative
+
+  @media(min-width: 1024px)
+    padding-left: 0
+
+  &::after
+    border-bottom: 1px solid $purple_light
+    bottom: 0
+    content: ''
+    height: 0
+    left: -200%
+    position: absolute
+    top: auto
+    width: 300%
+
+  &__settings
+    align-items: center
+    border-radius: $border-radius
+    display: flex
+    height: 40px
+    justify-content: center
+    left: auto
+    position: absolute
+    right: 8px
+    top: 0
+    transition: background-color 0.3s
+    width: 40px
+
+    &:hover,
+    &:focus
+      background-color: $purple_light
+
+    .icon
+      fill: $text-color
+      height: 32px
+      width: 32px
+
+  &__top
+    align-items: center
+    display: flex
+    margin-bottom: 16px
+
+  &__avatar
+    border-radius: 50%
+    min-width: 80px
+    overflow: hidden
+    width: 80px
+
+    img
+      height: 100%
+      object-fit: cover
+      object-position: center
+
+  &__user
+    padding-left: 16px
+
+  &__name
+    font-size: 23px
+    line-height: 1.2
+    font-weight: 800
+    line-height: 1.2
+    letter-spacing: -1px
+
+    @media(min-width: 1350px)
+      font-size: 32px
+
+  &__balance
+    font-size: 32px
+    font-weight: 800
+    line-height: 1
+    white-space: nowrap
+
+  p
+    margin-bottom: 0
+
+.personal-menu
+  font-size: 18px
+  list-style: none
+  padding: 0
+
+  @media(min-width: 1900px)
+    font-size: 20px
+
+  &__link
+    align-items: center
+    color: $text-color
+    display: flex
+    padding: 11px 16px
+    position: relative
+    text-decoration: none
+
+    &:hover,
+    &:focus
+      background-color: rgba($purple_light, 0.5)
+      color: $text-color
+
+      &::before
+        background-color: rgba($purple_light, 0.5)
+        content: ''
+        height: 100%
+        left: -200%
+        position: absolute
+        top: 0
+        width: 200%
+
+    &.is-active
+      background-color: $purple_light
+
+      &::before
+        background-color: $purple_light
+        content: ''
+        height: 100%
+        left: -200%
+        position: absolute
+        top: 0
+        width: 200%
+
+    .icon
+      fill: $text-color
+      height: 32px
+      margin-right: 16px
+      width: 32px
