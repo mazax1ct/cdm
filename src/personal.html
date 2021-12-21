@@ -41,194 +41,186 @@
 
             <div class="personal">
                 <div class="personal__inner">
-                    <button class="js-personal-menu-opener personal__menu-opener button button--type_1 button--height_3" type="button">
-                        <span>Открыть меню</span>
-                        <svg class="icon">
-                            <use xlink:href="#burger"></use>
-                        </svg>
-                    </button>
-                    <div class="personal__menu-block">
-                        <div class="personal__menu-block-inner">
-                            <button class="js-personal-menu-closer personal__menu-closer" type="button" title="Закрыть меню">
-                                <svg class="icon">
-                                    <use xlink:href="#close"></use>
-                                </svg>
-                            </button>
-                            <div class="user-info">
-                                <a class="user-info__settings" href="#" title="Настройки профиля">
-                                    <svg class="icon">
-                                        <use xlink:href="#settings"></use>
-                                    </svg>
-                                </a>
-                                <div class="user-info__top">
-                                    <div class="user-info__avatar">
-                                        <img src="images/content/personal/avatar.jpg" srcset="images/content/personal/avatar@2x.jpg 2x" alt="">
-                                    </div>
-                                    <div class="user-info__user">
-                                        <p class="user-info__name">Константин</p>
-                                        <p>helen@yandex.ru</p>
-                                    </div>
-                                </div>
-                                <p>Ваш баланс:</p>
-                                <p class="user-info__balance">3 000 000 ₽</p>
-                            </div>
-                            <ul class="personal-menu">
-                                <li class="personal-menu__item">
-                                    <a class="personal-menu__link is-active" href="#">
-                                        <svg class="icon">
-                                            <use xlink:href="#home"></use>
-                                        </svg>
-                                        Главная
-                                    </a>
-                                </li>
-                                <li class="personal-menu__item">
-                                    <a class="personal-menu__link" href="#">
-                                        <svg class="icon">
-                                            <use xlink:href="#results"></use>
-                                        </svg>
-                                        Результаты
-                                    </a>
-                                </li>
-                                <li class="personal-menu__item">
-                                    <a class="personal-menu__link" href="#">
-                                        <svg class="icon">
-                                            <use xlink:href="#meets"></use>
-                                        </svg>
-                                        Приемы
-                                    </a>
-                                </li>
-                                <li class="personal-menu__item">
-                                    <a class="personal-menu__link" href="#">
-                                        <svg class="icon">
-                                            <use xlink:href="#history"></use>
-                                        </svg>
-                                        Корзина
-                                    </a>
-                                </li>
-                                <li class="personal-menu__item">
-                                    <a class="personal-menu__link" href="#">
-                                        <svg class="icon">
-                                            <use xlink:href="#finance"></use>
-                                        </svg>
-                                        Финансы
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                    //= template/personal-menu.html
+
                     <div class="personal__content-block">
                         <div class="title-block">
                             <h2>Предложения для вас</h2>
-                            <div id="complexes_list_buttons" class="title-block__buttons"></div>
+                            <div id="offers_list_buttons" class="title-block__buttons title-block__buttons--type_1"></div>
                         </div>
 
-                        <div class="js-complexes-list complexes-list" data-buttons="complexes_list_buttons">
-                            <div class="complexes-list__item">
-                                <div class="complex">
-                                    <p class="complex__title">СРРА324</p>
-                                    <p class="complex__subtitle"><a href="#">Биохимия крови:<br> расширенный профиль</a></p>
-                                    <p class="complex__time">1 рабочий день</p>
-                                    <div class="complex__buy-block">
-                                        <p class="complex__price">4540 ₽</p>
-                                        <a class="button button--type_1 button--height_1" href="#">В корзину</a>
+                        <div class="js-offers-list offers-list" data-buttons="offers_list_buttons">
+                            <div class="offers-list__item">
+                                <div class="offer">
+                                    <p class="offer__title">Сдать анализы дома / на&nbsp;работе</p>
+                                    <p class="offer__text">Собственная выездная служба</p>
+                                    <div class="offer__button-block">
+                                        <a class="button button--type_1 button--height_1" href="#">Подробнее</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="complexes-list__item">
-                                <div class="complex">
-                                    <p class="complex__title">СРРА324</p>
-                                    <p class="complex__subtitle"><a href="#">Биохимия крови:<br> расширенный профиль</a></p>
-                                    <p class="complex__time">1 рабочий день</p>
-                                    <div class="complex__buy-block">
-                                        <p class="complex__price">4540 ₽</p>
-                                        <a class="button button--type_1 button--height_1" href="#">В корзину</a>
+                            <div class="offers-list__item">
+                                <div class="offer">
+                                    <p class="offer__title">Выезд детского<br> педиатра</p>
+                                    <p class="offer__text">Круглосуточная помощь для самых маленьких</p>
+                                    <div class="offer__button-block">
+                                        <a class="button button--type_1 button--height_1" href="#">Подробнее</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="complexes-list__item">
-                                <div class="complex">
-                                    <p class="complex__title">СРРА324</p>
-                                    <p class="complex__subtitle"><a href="#">Биохимия крови:<br> расширенный профиль</a></p>
-                                    <p class="complex__time">1 рабочий день</p>
-                                    <div class="complex__buy-block">
-                                        <p class="complex__price">4540 ₽</p>
-                                        <a class="button button--type_1 button--height_1" href="#">В корзину</a>
+                            <div class="offers-list__item">
+                                <div class="offer">
+                                    <p class="offer__title">Сдать анализы дома / на&nbsp;работе</p>
+                                    <p class="offer__text">Собственная выездная служба</p>
+                                    <div class="offer__button-block">
+                                        <a class="button button--type_1 button--height_1" href="#">Подробнее</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="complexes-list__item">
-                                <div class="complex">
-                                    <p class="complex__title">СРРА324</p>
-                                    <p class="complex__subtitle"><a href="#">Биохимия крови:<br> расширенный профиль</a></p>
-                                    <p class="complex__time">1 рабочий день</p>
-                                    <div class="complex__buy-block">
-                                        <p class="complex__price">4540 ₽</p>
-                                        <a class="button button--type_1 button--height_1" href="#">В корзину</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="complexes-list__item">
-                                <div class="complex">
-                                    <p class="complex__title">СРРА324</p>
-                                    <p class="complex__subtitle"><a href="#">Биохимия крови:<br> расширенный профиль</a></p>
-                                    <p class="complex__time">1 рабочий день</p>
-                                    <div class="complex__buy-block">
-                                        <p class="complex__price">4540 ₽</p>
-                                        <a class="button button--type_1 button--height_1" href="#">В корзину</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="complexes-list__item">
-                                <div class="complex">
-                                    <p class="complex__title">СРРА324</p>
-                                    <p class="complex__subtitle"><a href="#">Биохимия крови:<br> расширенный профиль</a></p>
-                                    <p class="complex__time">1 рабочий день</p>
-                                    <div class="complex__buy-block">
-                                        <p class="complex__price">4540 ₽</p>
-                                        <a class="button button--type_1 button--height_1" href="#">В корзину</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="complexes-list__item">
-                                <div class="complex">
-                                    <p class="complex__title">СРРА324</p>
-                                    <p class="complex__subtitle"><a href="#">Биохимия крови:<br> расширенный профиль</a></p>
-                                    <p class="complex__time">1 рабочий день</p>
-                                    <div class="complex__buy-block">
-                                        <p class="complex__price">4540 ₽</p>
-                                        <a class="button button--type_1 button--height_1" href="#">В корзину</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="complexes-list__item">
-                                <div class="complex">
-                                    <p class="complex__title">СРРА324</p>
-                                    <p class="complex__subtitle"><a href="#">Биохимия крови:<br> расширенный профиль</a></p>
-                                    <p class="complex__time">1 рабочий день</p>
-                                    <div class="complex__buy-block">
-                                        <p class="complex__price">4540 ₽</p>
-                                        <a class="button button--type_1 button--height_1" href="#">В корзину</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="complexes-list__item">
-                                <div class="complex">
-                                    <p class="complex__title">СРРА324</p>
-                                    <p class="complex__subtitle"><a href="#">Биохимия крови:<br> расширенный профиль</a></p>
-                                    <p class="complex__time">1 рабочий день</p>
-                                    <div class="complex__buy-block">
-                                        <p class="complex__price">4540 ₽</p>
-                                        <a class="button button--type_1 button--height_1" href="#">В корзину</a>
+                            <div class="offers-list__item">
+                                <div class="offer">
+                                    <p class="offer__title">Выезд детского<br> педиатра</p>
+                                    <p class="offer__text">Круглосуточная помощь для самых маленьких</p>
+                                    <div class="offer__button-block">
+                                        <a class="button button--type_1 button--height_1" href="#">Подробнее</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
+                        <div class="title-block">
+                            <h2>Последние результаты</h2>
+                            <div class="title-block__controls">
+                                <div id="results_slider_buttons" class="title-block__buttons"></div>
+                                <a class="more-link" href="#">
+                                    Все результаты
+                                    <svg class="icon">
+                                        <use xlink:href="#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
 
-                        <h2>Новости</h2>
+                        <div class="js-results-slider results-slider" data-buttons="results_slider_buttons">
+                            <div class="results-slider__item">
+                                <a class="results-item" href="#">
+                                    <span class="results-item__title">Уролог</span>
+                                    <span class="results-item__date">16 сен. 2021</span>
+                                </a>
+                            </div>
+                            <div class="results-slider__item">
+                                <a class="results-item" href="#">
+                                    <span class="results-item__title">Онколог</span>
+                                    <span class="results-item__date">17 сен. 2021</span>
+                                </a>
+                            </div>
+                            <div class="results-slider__item">
+                                <a class="results-item" href="#">
+                                    <span class="results-item__title">ПЦР-исследование</span>
+                                    <span class="results-item__date">17 сен. 2021</span>
+                                </a>
+                            </div>
+                            <div class="results-slider__item">
+                                <a class="results-item" href="#">
+                                    <span class="results-item__title">ПЦР-исследование</span>
+                                    <span class="results-item__date">17 сен. 2021</span>
+                                </a>
+                            </div>
+                            <div class="results-slider__item">
+                                <a class="results-item" href="#">
+                                    <span class="results-item__title">ПЦР-исследование</span>
+                                    <span class="results-item__date">17 сен. 2021</span>
+                                </a>
+                            </div>
+                            <div class="results-slider__item">
+                                <a class="results-item" href="#">
+                                    <span class="results-item__title">ПЦР-исследование</span>
+                                    <span class="results-item__date">17 сен. 2021</span>
+                                </a>
+                            </div>
+                        </div>
 
-                        <ul class="news-list">
-                            <li class="news-list__item">
+                        <h2>Мои врачи</h2>
+
+                        <ul class="my-doctors">
+                            <li class="my-doctors__item">
+                                <a class="my-doctor" href="#" title="Имя врача"><img src="images/content/personal/doctor.jpg" srcset="images/content/personal/doctor@2x.jpg 2x" alt="имя"></a>
+                            </li>
+                            <li class="my-doctors__item">
+                                <a class="my-doctor" href="#" title="Имя врача"><img src="images/content/personal/doctor.jpg" srcset="images/content/personal/doctor@2x.jpg 2x" alt="имя"></a>
+                            </li>
+                            <li class="my-doctors__item">
+                                <a class="my-doctor" href="#" title="Имя врача"><img src="images/content/personal/doctor.jpg" srcset="images/content/personal/doctor@2x.jpg 2x" alt="имя"></a>
+                            </li>
+                            <li class="my-doctors__item">
+                                <a class="my-doctor" href="#" title="Имя врача"><img src="images/content/personal/doctor.jpg" srcset="images/content/personal/doctor@2x.jpg 2x" alt="имя"></a>
+                            </li>
+                            <li class="my-doctors__item">
+                                <a class="my-doctor" href="#" title="Имя врача"><img src="images/content/personal/doctor.jpg" srcset="images/content/personal/doctor@2x.jpg 2x" alt="имя"></a>
+                            </li>
+                            <li class="my-doctors__item">
+                                <a class="my-doctor" href="#" title="Имя врача"><img src="images/content/personal/doctor.jpg" srcset="images/content/personal/doctor@2x.jpg 2x" alt="имя"></a>
+                            </li>
+                            <li class="my-doctors__item">
+                                <a class="my-doctor" href="#" title="Имя врача"><img src="images/content/personal/doctor.jpg" srcset="images/content/personal/doctor@2x.jpg 2x" alt="имя"></a>
+                            </li>
+                            <li class="my-doctors__item">
+                                <a class="my-doctor" href="#" title="Имя врача"><img src="images/content/personal/doctor.jpg" srcset="images/content/personal/doctor@2x.jpg 2x" alt="имя"></a>
+                            </li>
+                        </ul>
+
+                        <div class="consultation consultation--big">
+                            <div class="consultation__block">
+                                <p class="consultation__title">Записаться на приём</p>
+                                <p>Мы в любое время готовы помочь вам</p>
+                            </div>
+                            <div class="consultation__block consultation__form">
+                                <div class="consultation__label">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox">
+                                        <span class="checkbox-icon"></span>
+                                        <span class="checkbox-text">На дому</span>
+                                    </label>
+                                </div>
+                                <a class="button button--type_1 button--height_3" href="#">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="title-block">
+                            <h2>Приёмы</h2>
+                            <div class="title-block__controls">
+                                <div id="meets_slider_buttons" class="title-block__buttons"></div>
+                                <a class="more-link" href="#">
+                                    Все назначения
+                                    <svg class="icon">
+                                        <use xlink:href="#arrow_right"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="js-results-slider results-slider" data-buttons="meets_slider_buttons">
+                            <div class="results-slider__item">
+                                <a class="results-item" href="#">
+                                    <span class="results-item__title">Уролог</span>
+                                    <span class="results-item__date">16 сен. 2021</span>
+                                </a>
+                            </div>
+                            <div class="results-slider__item">
+                                <a class="results-item" href="#">
+                                    <span class="results-item__title">Онколог</span>
+                                    <span class="results-item__date">17 сен. 2021</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="title-block">
+                            <h2>Это интересно</h2>
+                            <div id="news_slider_buttons" class="title-block__buttons"></div>
+                        </div>
+
+                        <div class="js-news-slider news-list" data-buttons="news_slider_buttons">
+                            <div class="news-list__item">
                                 <article class="news">
                                     <div class="news__image"><img src="images/content/news/img_1.jpg" srcset="images/content/news/img_1@2x.jpg 2x" alt=""></div>
                                     <div class="news__info">
@@ -242,8 +234,8 @@
                                         </a>
                                     </div>
                                 </article>
-                            </li>
-                            <li class="news-list__item">
+                            </div>
+                            <div class="news-list__item">
                                 <article class="news">
                                     <div class="news__image"><img src="images/content/news/img_1.jpg" srcset="images/content/news/img_1@2x.jpg 2x" alt=""></div>
                                     <div class="news__info">
@@ -257,8 +249,8 @@
                                         </a>
                                     </div>
                                 </article>
-                            </li>
-                            <li class="news-list__item">
+                            </div>
+                            <div class="news-list__item">
                                 <article class="news">
                                     <div class="news__image"><img src="images/content/news/img_1.jpg" srcset="images/content/news/img_1@2x.jpg 2x" alt=""></div>
                                     <div class="news__info">
@@ -272,8 +264,23 @@
                                         </a>
                                     </div>
                                 </article>
-                            </li>
-                        </ul>
+                            </div>
+                            <div class="news-list__item">
+                                <article class="news">
+                                    <div class="news__image"><img src="images/content/news/img_1.jpg" srcset="images/content/news/img_1@2x.jpg 2x" alt=""></div>
+                                    <div class="news__info">
+                                        <time class="news__date" datetime="2011-11-02 19:00">02.11.2021</time>
+                                        <h2 class="news__title">Изменение режима работы<br> центра Урологии</h2>
+                                        <a class="news__more" href="#">
+                                            Читать полностью
+                                            <svg class="icon">
+                                                <use xlink:href="#arrow_right"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -289,8 +296,9 @@
 
     <!--скрипты страницы-->
     <script src="js/personal.js"></script>
-    <script src="js/complexes-list.js"></script>
-    <script src="js/doctors-list.js"></script>
+    <script src="js/offers-list.js"></script>
+    <script src="js/results-slider.js"></script>
+    <script src="js/news-slider.js"></script>
 
     <!--прелоадер-->
     <script src="js/preloader.js"></script>

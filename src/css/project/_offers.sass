@@ -1,4 +1,4 @@
-.complexes-list
+.offers-list
   list-style: none
   margin: 0
   padding: 0
@@ -6,8 +6,8 @@
   @media(min-width: 768px)
     display: flex
     flex-wrap: wrap
-    margin-left: -6px
-    margin-right: -6px
+    margin-left: -12px
+    margin-right: -12px
 
   &:not(:last-child)
     margin-bottom: 44px
@@ -22,7 +22,7 @@
       margin-left: -12px
       margin-right: -12px
 
-    .complexes-list__item
+    .offers-list__item
       @media(min-width: 580px)
         display: flex
         padding-left: 12px
@@ -39,15 +39,15 @@
 
     @media(min-width: 768px)
       display: flex
-      padding-left: 6px
-      padding-right: 6px
+      padding-left: 12px
+      padding-right: 12px
       width: 50%
 
     @media(min-width: 1024px)
-      width: 25%
+      width: 33.33333%
 
-.complex
-  border: 1px solid $green_light
+.offer
+  border: 1px solid $purple_light
   border-radius: $border-radius
   background-color: #fff
   box-shadow: none
@@ -56,7 +56,7 @@
   height: 100%
   margin-left: auto
   margin-right: auto
-  max-width: 424px
+  max-width: 364px
   padding: 20px
   position: relative
   transition: background-color 0.3s, box-shadow 0.3s
@@ -64,26 +64,14 @@
 
   &:hover,
   &:focus
-    background-color: $green_light
+    background-color: $purple_light
     box-shadow: 0 4px 6px 0 rgba(#000, 0.2)
 
   &__title
     font-size: 18px
-    font-weight: 800
-    line-height: 1.2
-    margin-bottom: 20px
-
-    @media(min-width: 1350px)
-      font-size: 20px
-
-    @media(min-width: 1900px)
-      font-size: 24px
-
-  &__subtitle
-    font-size: 18px
     font-weight: 700
     line-height: 1.2
-    margin-bottom: 12px
+    margin-bottom: 10px
 
     @media(min-width: 1350px)
       font-size: 20px
@@ -91,9 +79,15 @@
     @media(min-width: 1900px)
       font-size: 24px
 
-    a
-      color: $text-color
-      text-decoration: none
+  &__text
+    margin-bottom: 10px
+
+  &__button-block
+    margin-top: auto
+    text-align: right
+
+    .button
+      min-width: 130px
 
       &::after
         bottom: 0
@@ -102,26 +96,3 @@
         position: absolute
         right: 0
         top: 0
-        z-index: 1
-
-  &__time
-    margin-bottom: 16px
-
-  &__buy-block
-    align-items: center
-    display: flex
-    justify-content: space-between
-    margin-top: auto
-
-    .button
-      position: relative
-      z-index: 2
-
-  &__price
-    font-size: 18px
-    font-weight: 800
-    line-height: 1.2
-    margin-bottom: 0
-
-    @media(min-width: 1350px)
-      font-size: 24px

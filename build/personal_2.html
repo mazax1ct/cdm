@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-    <title>Главная</title>
+    <title>Личный кабинет - Результаты</title>
 
     <meta name="description" content="">
 
@@ -58,7 +58,7 @@
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 
-<body>
+<body class="personal-page">
     <svg aria-hidden="true" style="width: 0px; height: 0px; overflow: hidden; position: absolute;" xmlns="http://www.w3.org/2000/svg">
         <symbol id="refresh" viewBox="0 0 20 20">
             <path
@@ -402,651 +402,217 @@
 
     <main class="page-content">
         <div class="container">
-            <div class="slider-block">
-                <div class="slider-block__slider">
-                    <div class="js-slider slider">
-                        <div class="slider__slide">
-                            <a class="slider__slide-link" href="#">
-                                <span class="slider__slide-image">
-                                    <img src="images/content/slider/img_1.jpg" srcset="images/content/slider/img_1@2x.jpg 2x" alt="">
-                                </span>
-                                <span class="slider__slide-container">
-                                    <span class="slider__slide-title">Диагностика<br> коронавируса COVID-19<br> в лаборатории</span>
-                                    <span class="slider__slide-button">Подробнее</span>
-                                </span>
-                            </a>
-                        </div>
-                        <div class="slider__slide">
-                            <a class="slider__slide-link" href="#">
-                                <span class="slider__slide-image">
-                                    <img src="images/content/slider/img_1.jpg" srcset="images/content/slider/img_1@2x.jpg 2x" alt="">
-                                </span>
-                                <span class="slider__slide-container">
-                                    <span class="slider__slide-title">Диагностика<br> коронавируса COVID-19<br> в лаборатории</span>
-                                    <span class="slider__slide-button">Подробнее</span>
-                                </span>
-                            </a>
-                        </div>
-                        <div class="slider__slide">
-                            <a class="slider__slide-link" href="#">
-                                <span class="slider__slide-image">
-                                    <img src="images/content/slider/img_1.jpg" srcset="images/content/slider/img_1@2x.jpg 2x" alt="">
-                                </span>
-                                <span class="slider__slide-container">
-                                    <span class="slider__slide-title">Диагностика<br> коронавируса COVID-19<br> в лаборатории</span>
-                                    <span class="slider__slide-button">Подробнее</span>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="slider-nav"></div>
-                </div>
-                <div class="slider-block__tiles">
-                    <div class="slider-block__tiles-list">
-                        <div class="slider-block__tiles-item slider-block__tiles-item--type_1">
-                            <a class="tile-link tile-link--color_3 tile-link--type_3" href="#">
-                                <span class="tile-link__title">Сдать анализы дома или на работе</span>
-                                <span class="tile-link__text">Собственная выездная служба</span>
-                            </a>
-                        </div>
-                        <div class="slider-block__tiles-item slider-block__tiles-item--type_1">
-                            <a class="tile-link tile-link--color_3 tile-link--type_3" href="#">
-                                <span class="tile-link__title">Выезд детского педиатра</span>
-                                <span class="tile-link__text">Собственная выездная служба</span>
-                            </a>
-                        </div>
-                        <div class="slider-block__tiles-item slider-block__tiles-item--type_1">
-                            <a class="tile-link tile-link--color_3 tile-link--type_3" href="#">
-                                <span class="tile-link__title">Экспресс-тест на COVID-19</span>
-                                <span class="tile-link__text">Экспресс-тест только в сети лабораторий</span>
-                            </a>
-                        </div>
-                        <div class="slider-block__tiles-item slider-block__tiles-item--type_1">
-                            <a class="tile-link tile-link--color_3 tile-link--type_3" href="#">
-                                <span class="tile-link__title">Выезд детского педиатра</span>
-                                <span class="tile-link__text">Круглосуточная помощь для самых маленьких</span>
-                            </a>
-                        </div>
-                        <div class="slider-block__tiles-item">
-                            <a class="tile-link tile-link--color_1 tile-link--type_1" href="#">
-                                <span class="tile-link__title">Запись на прием к врачу онлайн</span>
-                                <span class="tile-link__text">Мы в любое время готовы помочь вам</span>
-                                <span class="tile-link__button-block">
-                                    <span class="button button--type_1 button--height_1">Подробнее</span>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="search-bar">
-                <div class="search-bar__title-block">
-                    <h1 class="search-bar__title">Более 1500 анализов в одном месте</h1>
-                    <label class="switch">
-                        <input type="checkbox" />
-                        <span class="switch__icon"></span>
-                        <span>Анализы на дому</span>
-                    </label>
-                </div>
-                <div class="search-bar__form-block">
-                    <form class="search-bar__form" action="">
-                        <input class="search-bar__input" type="text" placeholder="Что вы ищете?">
-                        <button class="search-bar__submit" type="submit" title="Найти">
-                            <svg class="icon">
-                                <use xlink:href="#search"></use>
-                            </svg>
-                        </button>
-                        <label class="search-bar__select select-wrapper select-wrapper--type_3">
-                            <span class="select-wrapper__container">
-                                <select class="js-select">
-                                    <option value="1">Поиск по анализам</option>
-                                    <option value="2">Поиск по услугам</option>
-                                </select>
-                            </span>
-                        </label>
-                        <div class="search-bar__dropdown">
-                            <div class="search-bar__options">
-                                <div class="search-bar__options-column">
-                                    <p class="search-bar__options-title">Популярные</p>
-                                    <ul class="search-bar__options-list">
-                                        <li><button class="button button--type_6 button--height_1" type="button">Антитела к ТПО</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">TORCH</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">Клинический</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">ТТГ</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">Т4</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">Все</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">Клинический</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">Витамин С</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">Клинический</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">Клинический</button></li>
-                                    </ul>
-                                </div>
-                                <div class="search-bar__options-column">
-                                    <p class="search-bar__options-title">Сезонные</p>
-                                    <ul class="search-bar__options-list">
-                                        <li><button class="button button--type_6 button--height_1" type="button">Антитела</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">Клинический</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">Клинический</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">Витамин D</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">COVID-19</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">COVID-19</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">Витамин С</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">Витамин С</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">Витамин С</button></li>
-                                    </ul>
-                                </div>
-                                <div class="search-bar__options-column">
-                                    <p class="search-bar__options-title">Женские</p>
-                                    <ul class="search-bar__options-list">
-                                        <li><button class="button button--type_6 button--height_1" type="button">Эстроген</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">Тестостерон</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">Эстрадиол</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">Прогестерон</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">Пролактин</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">COVID-19</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">ФСГ</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">Клинический</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">ТТГ</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">Т4</button></li>
-                                    </ul>
-                                </div>
-                                <div class="search-bar__options-column">
-                                    <p class="search-bar__options-title">Мужские</p>
-                                    <ul class="search-bar__options-list">
-                                        <li><button class="button button--type_6 button--height_1" type="button">Тестостерон</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">ЛГ</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">ФСГ</button></li>
-                                        <li><button class="button button--type_6 button--height_1" type="button">Эстрадиол</button></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="search-bar__items">
-                                <button class="search-bar__item" type="button">
-                                    <svg class="icon">
-                                        <use xlink:href="#search"></use>
-                                    </svg>
-                                    Клинический анализ крови
-                                </button>
-                                <button class="search-bar__item" type="button">
-                                    <svg class="icon">
-                                        <use xlink:href="#search"></use>
-                                    </svg>
-                                    Клинический анализ крови
-                                </button>
-                                <button class="search-bar__item" type="button">
-                                    <svg class="icon">
-                                        <use xlink:href="#search"></use>
-                                    </svg>
-                                    Клинический анализ крови
-                                </button>
-                                <button class="search-bar__item" type="button">
-                                    <svg class="icon">
-                                        <use xlink:href="#search"></use>
-                                    </svg>
-                                    Клинический анализ крови
-                                </button>
-                                <button class="search-bar__item" type="button">
-                                    <svg class="icon">
-                                        <use xlink:href="#search"></use>
-                                    </svg>
-                                    Клинический анализ крови
-                                </button>
-                                <button class="search-bar__item" type="button">
-                                    <svg class="icon">
-                                        <use xlink:href="#search"></use>
-                                    </svg>
-                                    Клинический анализ крови
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-            <div class="title-block">
-                <h2>Комплексы анализов</h2>
-                <div id="complexes_list_buttons" class="title-block__buttons"></div>
-            </div>
-
-            <div class="js-complexes-list complexes-list" data-buttons="complexes_list_buttons">
-                <div class="complexes-list__item">
-                    <div class="complex">
-                        <p class="complex__title">СРРА324</p>
-                        <p class="complex__subtitle"><a href="#">Биохимия крови:<br> расширенный профиль</a></p>
-                        <p class="complex__time">1 рабочий день</p>
-                        <div class="complex__buy-block">
-                            <p class="complex__price">4540 ₽</p>
-                            <a class="button button--type_1 button--height_1" href="#">В корзину</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="complexes-list__item">
-                    <div class="complex">
-                        <p class="complex__title">СРРА324</p>
-                        <p class="complex__subtitle"><a href="#">Биохимия крови:<br> расширенный профиль</a></p>
-                        <p class="complex__time">1 рабочий день</p>
-                        <div class="complex__buy-block">
-                            <p class="complex__price">4540 ₽</p>
-                            <a class="button button--type_1 button--height_1" href="#">В корзину</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="complexes-list__item">
-                    <div class="complex">
-                        <p class="complex__title">СРРА324</p>
-                        <p class="complex__subtitle"><a href="#">Биохимия крови:<br> расширенный профиль</a></p>
-                        <p class="complex__time">1 рабочий день</p>
-                        <div class="complex__buy-block">
-                            <p class="complex__price">4540 ₽</p>
-                            <a class="button button--type_1 button--height_1" href="#">В корзину</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="complexes-list__item">
-                    <div class="complex">
-                        <p class="complex__title">СРРА324</p>
-                        <p class="complex__subtitle"><a href="#">Биохимия крови:<br> расширенный профиль</a></p>
-                        <p class="complex__time">1 рабочий день</p>
-                        <div class="complex__buy-block">
-                            <p class="complex__price">4540 ₽</p>
-                            <a class="button button--type_1 button--height_1" href="#">В корзину</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="complexes-list__item">
-                    <div class="complex">
-                        <p class="complex__title">СРРА324</p>
-                        <p class="complex__subtitle"><a href="#">Биохимия крови:<br> расширенный профиль</a></p>
-                        <p class="complex__time">1 рабочий день</p>
-                        <div class="complex__buy-block">
-                            <p class="complex__price">4540 ₽</p>
-                            <a class="button button--type_1 button--height_1" href="#">В корзину</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="complexes-list__item">
-                    <div class="complex">
-                        <p class="complex__title">СРРА324</p>
-                        <p class="complex__subtitle"><a href="#">Биохимия крови:<br> расширенный профиль</a></p>
-                        <p class="complex__time">1 рабочий день</p>
-                        <div class="complex__buy-block">
-                            <p class="complex__price">4540 ₽</p>
-                            <a class="button button--type_1 button--height_1" href="#">В корзину</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="complexes-list__item">
-                    <div class="complex">
-                        <p class="complex__title">СРРА324</p>
-                        <p class="complex__subtitle"><a href="#">Биохимия крови:<br> расширенный профиль</a></p>
-                        <p class="complex__time">1 рабочий день</p>
-                        <div class="complex__buy-block">
-                            <p class="complex__price">4540 ₽</p>
-                            <a class="button button--type_1 button--height_1" href="#">В корзину</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="complexes-list__item">
-                    <div class="complex">
-                        <p class="complex__title">СРРА324</p>
-                        <p class="complex__subtitle"><a href="#">Биохимия крови:<br> расширенный профиль</a></p>
-                        <p class="complex__time">1 рабочий день</p>
-                        <div class="complex__buy-block">
-                            <p class="complex__price">4540 ₽</p>
-                            <a class="button button--type_1 button--height_1" href="#">В корзину</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="complexes-list__item">
-                    <div class="complex">
-                        <p class="complex__title">СРРА324</p>
-                        <p class="complex__subtitle"><a href="#">Биохимия крови:<br> расширенный профиль</a></p>
-                        <p class="complex__time">1 рабочий день</p>
-                        <div class="complex__buy-block">
-                            <p class="complex__price">4540 ₽</p>
-                            <a class="button button--type_1 button--height_1" href="#">В корзину</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <h2>Медицинские услуги</h2>
-
-            <ul class="tiles">
-                <li class="tiles__item">
-                    <a class="tile-link tile-link--color_1 tile-link--type_1" href="#">
-                        <span class="tile-link__title">Запись на прием к врачу онлайн</span>
-                        <span class="tile-link__text">Мы в любое время готовы помочь вам</span>
-                        <span class="tile-link__button-block">
-                            <span class="button button--type_1 button--height_1">Подробнее</span>
-                        </span>
-                    </a>
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Главная</a>
                 </li>
-                <li class="tiles__item tiles__item--type_1">
-                    <a class="tile-link tile-link--color_2 tile-link--type_2" href="#">
-                        <span class="tile-link__title">Кардиография</span>
-                        <span class="tile-link__image">
-                            <img src="images/content/tiles/img_1.png" srcset="images/content/tiles/img_1@2x.png 2x" alt="">
-                        </span>
-                    </a>
-                </li>
-                <li class="tiles__item tiles__item--type_1">
-                    <a class="tile-link tile-link--color_2 tile-link--type_2" href="#">
-                        <span class="tile-link__title">Телемедицина</span>
-                        <span class="tile-link__image">
-                            <img src="images/content/tiles/img_2.png" srcset="images/content/tiles/img_2@2x.png 2x" alt="">
-                        </span>
-                    </a>
-                </li>
-                <li class="tiles__item tiles__item--type_1">
-                    <a class="tile-link tile-link--color_2 tile-link--type_2" href="#">
-                        <span class="tile-link__title">УЗИ</span>
-                        <span class="tile-link__image">
-                            <img src="images/content/tiles/img_3.png" srcset="images/content/tiles/img_3@2x.png 2x" alt="">
-                        </span>
-                    </a>
-                </li>
-                <li class="tiles__item tiles__item--type_1">
-                    <a class="tile-link tile-link--color_2 tile-link--type_2" href="#">
-                        <span class="tile-link__title">Вакцинация</span>
-                        <span class="tile-link__image">
-                            <img src="images/content/tiles/img_4.png" srcset="images/content/tiles/img_4@2x.png 2x" alt="">
-                        </span>
-                    </a>
-                </li>
-                <li class="tiles__item tiles__item--type_1">
-                    <a class="tile-link tile-link--color_2 tile-link--type_2" href="#">
-                        <span class="tile-link__title">ЭКГ</span>
-                        <span class="tile-link__image">
-                            <img src="images/content/tiles/img_1.png" srcset="images/content/tiles/img_1@2x.png 2x" alt="">
-                        </span>
-                    </a>
-                </li>
-                <li class="tiles__item tiles__item--type_1">
-                    <a class="tile-link tile-link--color_2 tile-link--type_2" href="#">
-                        <span class="tile-link__title">Все услуги</span>
-                        <span class="tile-link__image">
-                            <img src="images/content/tiles/img_5.png" srcset="images/content/tiles/img_5@2x.png 2x" alt="">
-                        </span>
-                    </a>
-                </li>
-                <li class="tiles__item tiles__item--type_1">
-                    <a class="tile-link tile-link--color_2 tile-link--type_2" href="#">
-                        <span class="tile-link__title">Подготовка<br> к анализам</span>
-                        <span class="tile-link__image">
-                            <img src="images/content/tiles/img_6.png" srcset="images/content/tiles/img_6@2x.png 2x" alt="">
-                        </span>
-                    </a>
-                </li>
-                <li class="tiles__item tiles__item--type_1">
-                    <a class="tile-link tile-link--color_2 tile-link--type_2" href="#">
-                        <span class="tile-link__title">Консультация<br> маммолога</span>
-                        <span class="tile-link__image">
-                            <img src="images/content/tiles/img_7.png" srcset="images/content/tiles/img_7@2x.png 2x" alt="">
-                        </span>
-                    </a>
-                </li>
-                <li class="tiles__item">
-                    <a class="tile-link tile-link--color_1 tile-link--type_1" href="#">
-                        <span class="tile-link__title">Консультация онколога</span>
-                        <span class="tile-link__text">Наши врачи специалисты помогут вам с обнаружением и лечением онкологии</span>
-                        <span class="tile-link__button-block">
-                            <span class="button button--type_1 button--height_1">Подробнее</span>
-                        </span>
-                    </a>
+                <li class="breadcrumbs__item">
+                    Личный кабинет
                 </li>
             </ul>
 
-            <h2>О компании</h2>
-
-            <div class="about">
-                <div class="about__columns">
-                    <div class="about__column">
-                        <p><img src="images/content/about/img_1.jpg" srcset="images/content/about/img_1@2x.jpg 2x" alt=""></p>
-                        <p>Генеральный директор клиники</p>
-                    </div>
-                    <div class="about__column">
-                        <blockquote>
-                            Основное отличии масс-спектрометрии от других методов физико-химического анализа заключается в том, что определяются непосредственно частицы вещества, а не излучение или поглощение энергии атомами или молекулами. В основе
-                            метода лежит измерение отношения массы иона к его заряду. Для этого осуществляется ионизация пробы с последующей пространственной или временной сепарацией заряженных частиц по их массовым числам в электрическом или
-                            магнитном поле.
-                        </blockquote>
-                    </div>
-                </div>
-
-                <div class="about__infographic">
-                    <div class="about__infographic-item">
-                        <p class="h1">150 000<br> <small>человек</small></p>
-                        <p>прошли сдачу анализов</p>
-                    </div>
-                    <div class="about__infographic-item">
-                        <p class="h1">24,843<br> <small>случаев заболеваний</small></p>
-                        <p>было выявлено специалистами</p>
-                    </div>
-                    <div class="about__infographic-item">
-                        <p class="h1">24,843<br> <small>случаев заболеваний</small></p>
-                        <p>было выявлено специалистами</p>
-                    </div>
-                    <div class="about__infographic-item">
-                        <p class="h1">24,843<br> <small>случаев заболеваний</small></p>
-                        <p>было выявлено специалистами</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="title-block">
-                <h2>Ведущие врачи-специалисты центра</h2>
-                <div id="doctors_list_buttons" class="title-block__buttons title-block__buttons--type_1"></div>
-            </div>
-
-            <div class="js-doctors-list doctors-list" data-buttons="doctors_list_buttons">
-                <div class="doctors-list__item">
-                    <div class="doctor">
-                        <div class="doctor__image"><img src="images/content/doctors/img_1.jpg" srcset="images/content/doctors/img_1@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
-                        <div class="doctor__info">
-                            <p class="doctor__name"><a href="#">Гринжола<br> Елена Николаевна</a></p>
-                            <p class="doctor__place">Руководитель ОКДЛ-врач клинический лабораторной диагностики</p>
-                            <p class="doctor__exp">Стаж 20 лет</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="doctors-list__item">
-                    <div class="doctor">
-                        <div class="doctor__image"><img src="images/content/doctors/img_2.jpg" srcset="images/content/doctors/img_2@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
-                        <div class="doctor__info">
-                            <p class="doctor__name"><a href="#">Водяник<br> Павел Иванович</a></p>
-                            <p class="doctor__place">Руководитель медицинского центра</p>
-                            <p class="doctor__exp">Стаж 10 лет</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="doctors-list__item">
-                    <div class="doctor">
-                        <div class="doctor__image"><img src="images/content/doctors/img_3.jpg" srcset="images/content/doctors/img_3@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
-                        <div class="doctor__info">
-                            <p class="doctor__name"><a href="#">Володина<br> Людмила Николаевна</a></p>
-                            <p class="doctor__place">Руководитель медицинского центра</p>
-                            <p class="doctor__exp">Стаж 15 лет</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="doctors-list__item">
-                    <div class="doctor">
-                        <div class="doctor__image"><img src="images/content/doctors/img_4.jpg" srcset="images/content/doctors/img_4@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
-                        <div class="doctor__info">
-                            <p class="doctor__name"><a href="#">Писарева<br> Елена Михайловна</a></p>
-                            <p class="doctor__place">Врач-педиатор</p>
-                            <p class="doctor__exp">Стаж 10 лет</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="doctors-list__item">
-                    <div class="doctor">
-                        <div class="doctor__image"><img src="images/content/doctors/img_1.jpg" srcset="images/content/doctors/img_1@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
-                        <div class="doctor__info">
-                            <p class="doctor__name"><a href="#">Гринжола<br> Елена Николаевна</a></p>
-                            <p class="doctor__place">Руководитель ОКДЛ-врач клинический лабораторной диагностики</p>
-                            <p class="doctor__exp">Стаж 20 лет</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="doctors-list__item">
-                    <div class="doctor">
-                        <div class="doctor__image"><img src="images/content/doctors/img_2.jpg" srcset="images/content/doctors/img_2@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
-                        <div class="doctor__info">
-                            <p class="doctor__name"><a href="#">Водяник<br> Павел Иванович</a></p>
-                            <p class="doctor__place">Руководитель медицинского центра</p>
-                            <p class="doctor__exp">Стаж 10 лет</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="doctors-list__item">
-                    <div class="doctor">
-                        <div class="doctor__image"><img src="images/content/doctors/img_3.jpg" srcset="images/content/doctors/img_3@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
-                        <div class="doctor__info">
-                            <p class="doctor__name"><a href="#">Володина<br> Людмила Николаевна</a></p>
-                            <p class="doctor__place">Руководитель медицинского центра</p>
-                            <p class="doctor__exp">Стаж 15 лет</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="doctors-list__item">
-                    <div class="doctor">
-                        <div class="doctor__image"><img src="images/content/doctors/img_4.jpg" srcset="images/content/doctors/img_4@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
-                        <div class="doctor__info">
-                            <p class="doctor__name"><a href="#">Писарева<br> Елена Михайловна</a></p>
-                            <p class="doctor__place">Врач-педиатор</p>
-                            <p class="doctor__exp">Стаж 10 лет</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <h2>Новости</h2>
-
-            <ul class="news-list">
-                <li class="news-list__item">
-                    <article class="news">
-                        <div class="news__image"><img src="images/content/news/img_1.jpg" srcset="images/content/news/img_1@2x.jpg 2x" alt=""></div>
-                        <div class="news__info">
-                            <time class="news__date" datetime="2011-11-02 19:00">02.11.2021</time>
-                            <h2 class="news__title">Длинный заголовок для проверки переполнения вёрстки текстом</h2>
-                            <a class="news__more" href="#">
-                                Читать полностью
+            <div class="personal">
+                <div class="personal__inner">
+                    <button class="js-personal-menu-opener personal__menu-opener button button--type_1 button--height_3" type="button">
+                        <span>Открыть меню</span>
+                        <svg class="icon">
+                            <use xlink:href="#burger"></use>
+                        </svg>
+                    </button>
+                    <div class="personal__menu-block">
+                        <div class="personal__menu-block-inner">
+                            <button class="js-personal-menu-closer personal__menu-closer" type="button" title="Закрыть меню">
                                 <svg class="icon">
-                                    <use xlink:href="#arrow_right"></use>
+                                    <use xlink:href="#close"></use>
                                 </svg>
-                            </a>
+                            </button>
+                            <div class="user-info">
+                                <a class="user-info__settings" href="#" title="Настройки профиля">
+                                    <svg class="icon">
+                                        <use xlink:href="#settings"></use>
+                                    </svg>
+                                </a>
+                                <div class="user-info__top">
+                                    <div class="user-info__avatar">
+                                        <img src="images/content/personal/avatar.jpg" srcset="images/content/personal/avatar@2x.jpg 2x" alt="">
+                                    </div>
+                                    <div class="user-info__user">
+                                        <p class="user-info__name">Константин</p>
+                                        <p>helen@yandex.ru</p>
+                                    </div>
+                                </div>
+                                <p>Ваш баланс:</p>
+                                <p class="user-info__balance">3 000 000 ₽</p>
+                            </div>
+                            <ul class="personal-menu">
+                                <li class="personal-menu__item">
+                                    <a class="personal-menu__link is-active" href="#">
+                                        <svg class="icon">
+                                            <use xlink:href="#home"></use>
+                                        </svg>
+                                        Главная
+                                    </a>
+                                </li>
+                                <li class="personal-menu__item">
+                                    <a class="personal-menu__link" href="#">
+                                        <svg class="icon">
+                                            <use xlink:href="#results"></use>
+                                        </svg>
+                                        Результаты
+                                    </a>
+                                </li>
+                                <li class="personal-menu__item">
+                                    <a class="personal-menu__link" href="#">
+                                        <svg class="icon">
+                                            <use xlink:href="#meets"></use>
+                                        </svg>
+                                        Приемы
+                                    </a>
+                                </li>
+                                <li class="personal-menu__item">
+                                    <a class="personal-menu__link" href="#">
+                                        <svg class="icon">
+                                            <use xlink:href="#history"></use>
+                                        </svg>
+                                        Корзина
+                                    </a>
+                                </li>
+                                <li class="personal-menu__item">
+                                    <a class="personal-menu__link" href="#">
+                                        <svg class="icon">
+                                            <use xlink:href="#finance"></use>
+                                        </svg>
+                                        Финансы
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
-                    </article>
-                </li>
-                <li class="news-list__item">
-                    <article class="news">
-                        <div class="news__image"><img src="images/content/news/img_1.jpg" srcset="images/content/news/img_1@2x.jpg 2x" alt=""></div>
-                        <div class="news__info">
-                            <time class="news__date" datetime="2011-11-02 19:00">02.11.2021</time>
-                            <h2 class="news__title">Изменение режима работы<br> центра Урологии</h2>
-                            <a class="news__more" href="#">
-                                Читать полностью
-                                <svg class="icon">
-                                    <use xlink:href="#arrow_right"></use>
-                                </svg>
-                            </a>
-                        </div>
-                    </article>
-                </li>
-                <li class="news-list__item">
-                    <article class="news">
-                        <div class="news__image"><img src="images/content/news/img_1.jpg" srcset="images/content/news/img_1@2x.jpg 2x" alt=""></div>
-                        <div class="news__info">
-                            <time class="news__date" datetime="2011-11-02 19:00">02.11.2021</time>
-                            <h2 class="news__title">Изменение режима работы<br> центра Урологии</h2>
-                            <a class="news__more" href="#">
-                                Читать полностью
-                                <svg class="icon">
-                                    <use xlink:href="#arrow_right"></use>
-                                </svg>
-                            </a>
-                        </div>
-                    </article>
-                </li>
-            </ul>
-
-            <p class="more-block">
-                <a class="more-link" href="#">
-                    Все новости
-                    <svg class="icon">
-                        <use xlink:href="#arrow_right"></use>
-                    </svg>
-                </a>
-            </p>
-
-            <h2>Центры сдачи анализов около вас:</h2>
-
-            <div class="map-block">
-                <div class="map-block__buttons">
-                    <button class="map-block__button is-active" type="button" data-center="59.941707, 30.301902">Санкт-Петербург</button>
-                    <button class="map-block__button" type="button" data-center="55.755819, 37.617644">Москва</button>
-                </div>
-                <div class="map-block__container">
-                    <div class="map-block__map">
-                        <div id="clinics_map" class="map-block__map-block"></div>
                     </div>
-                    <div class="map-block__list">
-                        <div class="map-item">
-                            <p class="map-item__title">Центр Урологии</p>
-                            <div class="map-item__info">
-                                <p>Санкт-Петербург, ул. Ильюшина, 25<br> <a href="tel:+79650038609">+7 (965) 003 86 09</a></p>
-                                <button class="button button--type_7 button--height_2" type="button" data-center="59.922064, 30.307739" data-info="1">На карте</button>
+
+                    <div class="personal__content-block">
+                        <h2>Результаты</h2>
+                        <div class="results">
+                            <ul class="tags">
+                                <li class="tags__item"><button class="tags__button is-active" type="button">Анализы</button></li>
+                                <li class="tags__item"><button class="tags__button" type="button">Обследования</button></li>
+                                <li class="tags__item"><button class="tags__button" type="button">Заключения</button></li>
+                                <li class="tags__item"><button class="tags__button" type="button">Прививки</button></li>
+                            </ul>
+                            <div class="search-bar">
+                                <div class="search-bar__form-block">
+                                    <form class="search-bar__form" action="">
+                                        <input class="search-bar__input" type="text" placeholder="Что вы ищете?">
+                                        <button class="search-bar__submit" type="submit" title="Найти">
+                                            <svg class="icon">
+                                                <use xlink:href="#search"></use>
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </div>
                             </div>
-                        </div>
-                        <div class="map-item">
-                            <p class="map-item__title">Центр Урологии</p>
-                            <div class="map-item__info">
-                                <p>Санкт-Петербург, ул. Ильюшина, 25<br> <a href="tel:+79650038609">+7 (965) 003 86 09</a></p>
-                                <button class="button button--type_7 button--height_2" type="button" data-center="59.916929, 30.351444" data-info="2">На карте</button>
+                            <div class="responsive-table">
+                                <table class="results-table type_1">
+                                    <colgroup>
+                                        <col width="25%">
+                                        <col width="25%">
+                                        <col width="25%">
+                                        <col width="25%">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>Название</th>
+                                            <th>Принят</th>
+                                            <th>Статус</th>
+                                            <th>Срок&nbsp;исполнения</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><a href="#"><b>ПЦР исследование</b></a></td>
+                                            <td><b>12.01.2001</b></td>
+                                            <td><b>Готов</b></td>
+                                            <td><b>12.01.2001</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#"><b>ПЦР исследование</b></a></td>
+                                            <td><b>12.01.2001</b></td>
+                                            <td><b>Готов</b></td>
+                                            <td><b>12.01.2001</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#"><b>ПЦР исследование</b></a></td>
+                                            <td><b>12.01.2001</b></td>
+                                            <td><b>Готов</b></td>
+                                            <td><b>12.01.2001</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#"><b>ПЦР исследование</b></a></td>
+                                            <td><b>12.01.2001</b></td>
+                                            <td><b>Готов</b></td>
+                                            <td><b>12.01.2001</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#"><b>ПЦР исследование</b></a></td>
+                                            <td><b>12.01.2001</b></td>
+                                            <td><b>Готов</b></td>
+                                            <td><b>12.01.2001</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#"><b>ПЦР исследование</b></a></td>
+                                            <td><b>12.01.2001</b></td>
+                                            <td><b>Готов</b></td>
+                                            <td><b>12.01.2001</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#"><b>ПЦР исследование</b></a></td>
+                                            <td><b>12.01.2001</b></td>
+                                            <td><b>Готов</b></td>
+                                            <td><b>12.01.2001</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#"><b>ПЦР исследование</b></a></td>
+                                            <td><b>12.01.2001</b></td>
+                                            <td><b>Готов</b></td>
+                                            <td><b>12.01.2001</b></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
-                        </div>
-                        <div class="map-item">
-                            <p class="map-item__title">Центр Урологии</p>
-                            <div class="map-item__info">
-                                <p>Санкт-Петербург, ул. Ильюшина, 25<br> <a href="tel:+79650038609">+7 (965) 003 86 09</a></p>
-                                <button class="button button--type_7 button--height_2" type="button" data-center="59.942068, 30.270203" data-info="3">На карте</button>
-                            </div>
-                        </div>
-                        <div class="map-item">
-                            <p class="map-item__title">Центр Урологии</p>
-                            <div class="map-item__info">
-                                <p>Санкт-Петербург, ул. Ильюшина, 25<br> <a href="tel:+79650038609">+7 (965) 003 86 09</a></p>
-                                <button class="button button--type_7 button--height_2" type="button" data-center="59.941707, 30.301902" data-info="4">На карте</button>
-                            </div>
-                        </div>
-                        <div class="map-item">
-                            <p class="map-item__title">Центр Урологии</p>
-                            <div class="map-item__info">
-                                <p>Санкт-Петербург, ул. Ильюшина, 25<br> <a href="tel:+79650038609">+7 (965) 003 86 09</a></p>
-                                <button class="button button--type_7 button--height_2" type="button" data-center="59.941707, 30.301902" data-info="5">На карте</button>
-                            </div>
-                        </div>
-                        <div class="map-item">
-                            <p class="map-item__title">Центр Урологии</p>
-                            <div class="map-item__info">
-                                <p>Санкт-Петербург, ул. Ильюшина, 25<br> <a href="tel:+79650038609">+7 (965) 003 86 09</a></p>
-                                <button class="button button--type_7 button--height_2" type="button" data-center="59.941707, 30.301902" data-info="6">На карте</button>
-                            </div>
-                        </div>
-                        <div class="map-item">
-                            <p class="map-item__title">Центр Урологии</p>
-                            <div class="map-item__info">
-                                <p>Санкт-Петербург, ул. Ильюшина, 25<br> <a href="tel:+79650038609">+7 (965) 003 86 09</a></p>
-                                <button class="button button--type_7 button--height_2" type="button" data-center="59.941707, 30.301902" data-info="7">На карте</button>
-                            </div>
+                            <ul class="pager pager--center">
+                                <li class="pager__item pager__arrow">
+                                    <span class="pager__link" title="Назад">
+                                        <svg class="icon">
+                                            <use xlink:href="#arrow_left"></use>
+                                        </svg>
+                                    </span>
+                                </li>
+                                <li class="pager__item">
+                                    <a class="pager__link" href="#">1</a>
+                                </li>
+                                <li class="pager__item">
+                                    <span class="pager__link is-active">2</span>
+                                </li>
+                                <li class="pager__item">
+                                    <a class="pager__link" href="#">3</a>
+                                </li>
+                                <li class="pager__item">
+                                    <a class="pager__link" href="#">...</a>
+                                </li>
+                                <li class="pager__item">
+                                    <a class="pager__link" href="#">45</a>
+                                </li>
+                                <li class="pager__item pager__arrow">
+                                    <a class="pager__link" href="#" title="Вперёд">
+                                        <svg class="icon">
+                                            <use xlink:href="#arrow_right"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </main>
 
@@ -1254,12 +820,7 @@
     <script src="js/main.js"></script>
 
     <!--скрипты страницы-->
-    <script src="js/slider.js"></script>
-    <script src="js/search.js"></script>
-    <script src="js/complexes-list.js"></script>
-    <script src="js/doctors-list.js"></script>
-    <script src="js/clinics-map.js"></script>
-    <script src="js/decor.js"></script>
+    <script src="js/personal.js"></script>
 
     <!--прелоадер-->
     <script src="js/preloader.js"></script>

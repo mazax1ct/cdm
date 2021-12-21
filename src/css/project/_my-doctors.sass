@@ -1,0 +1,34 @@
+.my-doctors
+  display: flex
+  flex-wrap: wrap
+  list-style: none
+  margin-left: -6px
+  margin-right: -6px
+  padding: 0
+
+  @media(min-width: 1024px)
+    margin-left: -12px
+    margin-right: -12px
+
+  &:not(:last-child)
+    margin-bottom: 56px
+
+    @media(min-width: 1350px)
+      margin-bottom: 72px
+
+  &__item
+    flex-grow: 1
+    max-width: 104px
+    margin-bottom: 12px
+    padding-left: 6px
+    padding-right: 6px
+
+    @media(min-width: 1024px)
+      margin-bottom: 24px
+      padding-left: 12px
+      padding-right: 12px
+
+    a
+      display: block
+      border-radius: 2px
+      border: 2px solid $purple_light

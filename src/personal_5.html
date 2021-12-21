@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Личный кабинет - Результаты</title>
+
+    <meta name="description" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/fonts-preload.html
+
+    //= template/preloader-styles.html
+
+    //= template/style.html
+</head>
+
+<body class="personal-page">
+    //= template/sprite.html
+
+    //= template/preloader.html
+
+    //= template/header.html
+
+    <main class="page-content">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    Личный кабинет
+                </li>
+            </ul>
+
+            <div class="personal">
+                <div class="personal__inner">
+                    //= template/personal-menu.html
+
+                    <div class="personal__content-block">
+                        <h2>Результаты</h2>
+                        <div class="results">
+                            <ul class="tags">
+                                <li class="tags__item"><button class="tags__button" type="button">Анализы</button></li>
+                                <li class="tags__item"><button class="tags__button" type="button">Обследования</button></li>
+                                <li class="tags__item"><button class="tags__button" type="button">Заключения</button></li>
+                                <li class="tags__item"><button class="tags__button is-active" type="button">Прививки</button></li>
+                            </ul>
+                            <div class="search-bar">
+                                <div class="search-bar__form-block">
+                                    <form class="search-bar__form" action="">
+                                        <input class="search-bar__input" type="text" placeholder="Что вы ищете?">
+                                        <button class="search-bar__submit" type="submit" title="Найти">
+                                            <svg class="icon">
+                                                <use xlink:href="#search"></use>
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="responsive-table">
+                                <table class="results-table type_1">
+                                    <colgroup>
+                                        <col width="40%">
+                                        <col width="40%">
+                                        <col width="20%">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>Название</th>
+                                            <th>Заболевание</th>
+                                            <th>Срок&nbsp;исполнения</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><a href="#"><b>вакцина Энджерикс В, Эувакс, Регевак В, Комбиотекс</b></a></td>
+                                            <td><b>Геппатит В</td>
+                                            <td><b>12.01.2001</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#"><b>вакцина Энджерикс В, Эувакс, Регевак В, Комбиотекс</b></a></td>
+                                            <td><b>Геппатит В</td>
+                                            <td><b>12.01.2001</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#"><b>вакцина Энджерикс В, Эувакс, Регевак В, Комбиотекс</b></a></td>
+                                            <td><b>Геппатит В</td>
+                                            <td><b>12.01.2001</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#"><b>вакцина Энджерикс В, Эувакс, Регевак В, Комбиотекс</b></a></td>
+                                            <td><b>Геппатит В</td>
+                                            <td><b>12.01.2001</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#"><b>вакцина Энджерикс В, Эувакс, Регевак В, Комбиотекс</b></a></td>
+                                            <td><b>Геппатит В</td>
+                                            <td><b>12.01.2001</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#"><b>вакцина Энджерикс В, Эувакс, Регевак В, Комбиотекс</b></a></td>
+                                            <td><b>Геппатит В</td>
+                                            <td><b>12.01.2001</b></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <ul class="pager pager--center">
+                                <li class="pager__item pager__arrow">
+                                    <span class="pager__link" title="Назад">
+                                        <svg class="icon">
+                                            <use xlink:href="#arrow_left"></use>
+                                        </svg>
+                                    </span>
+                                </li>
+                                <li class="pager__item">
+                                    <a class="pager__link" href="#">1</a>
+                                </li>
+                                <li class="pager__item">
+                                    <span class="pager__link is-active">2</span>
+                                </li>
+                                <li class="pager__item">
+                                    <a class="pager__link" href="#">3</a>
+                                </li>
+                                <li class="pager__item">
+                                    <a class="pager__link" href="#">...</a>
+                                </li>
+                                <li class="pager__item">
+                                    <a class="pager__link" href="#">45</a>
+                                </li>
+                                <li class="pager__item pager__arrow">
+                                    <a class="pager__link" href="#" title="Вперёд">
+                                        <svg class="icon">
+                                            <use xlink:href="#arrow_right"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    //= template/footer.html
+
+    //= template/float-bar.html
+
+    <!--общие скрипты-->
+    //= template/scripts.html
+
+    <!--скрипты страницы-->
+    <script src="js/personal.js"></script>
+
+    <!--прелоадер-->
+    <script src="js/preloader.js"></script>
+</body>
+
+</html>

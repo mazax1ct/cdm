@@ -1,0 +1,51 @@
+.results
+  .tags,
+  .search-bar
+    &:not(:last-child)
+      margin-bottom: 16px
+
+  .search-bar__form-block
+    padding-bottom: 32px
+
+.results-table
+  tr
+    position: relative
+
+  tbody
+    tr
+
+      &:hover
+        background-color: $purple_light
+
+  &.type_1
+    tbody
+      tr
+        &:hover
+          background-color: $green_light
+
+  a
+    color: $text-color
+    text-decoration: none
+
+    &::after
+      bottom: 0
+      content: ''
+      left: 0
+      position: absolute
+      right: 0
+      top: 0
+
+.results-doctor
+  align-items: center
+  display: flex
+
+  &__avatar
+    min-width: 60px
+    width: 60px
+
+    img
+      border-radius: 2px
+
+  &__name
+    font-weight: 700
+    padding-left: 12px

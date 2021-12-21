@@ -19,6 +19,9 @@ a
 *:focus
   outline: none
 
+.bolder
+  font-weight: 800
+
 h1,.h1,
 h2,.h2,
 h3,.h3,
@@ -153,26 +156,43 @@ table
       tr:nth-child(odd)
         background-color: $purple_light
 
+  &.type_1.striped
+    tbody
+      tr:nth-child(odd)
+        background-color: $green_light
+
   tbody
+    background-color: #fff
+
     td,
     th
+      border-top: 1px solid $purple_light
       border-bottom: 1px solid $purple_light
       padding: 14px 16px
       vertical-align: middle
 
-    tr
-      &:first-child
-        td
-          border-top: 1px solid $purple_light
-
     td
-      background-color: #fff
-
       &:first-child
         border-left: 1px solid $purple_light
 
       &:last-child
         border-right: 1px solid $purple_light
+
+  &.type_1
+    tbody
+      td,
+      th
+        border-top: 1px solid $green_light
+        border-bottom: 1px solid $green_light
+        padding: 14px 16px
+        vertical-align: middle
+
+      td
+        &:first-child
+          border-left: 1px solid $green_light
+
+        &:last-child
+          border-right: 1px solid $green_light
 
 img
   height: auto
@@ -245,6 +265,7 @@ ol.big
         font-size: 56px
 
 .title-block
+  align-items: center
   display: flex
   flex-wrap: wrap
   margin-bottom: 24px

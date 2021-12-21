@@ -24,8 +24,20 @@
       margin-bottom: 96px
 
   &.slick-initialized
+    display: block
+
     .doctors-list__item
       margin-bottom: 0
+
+    @media(min-width: 580px)
+      margin-left: -12px
+      margin-right: -12px
+
+    .doctors-list__item
+      @media(min-width: 580px)
+        display: flex
+        padding-left: 12px
+        padding-right: 12px
 
   .slick-list
     width: 100%
