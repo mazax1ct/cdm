@@ -248,3 +248,59 @@
       height: 32px
       margin-right: 16px
       width: 32px
+
+.user-data
+  @media(min-width: 1024px)
+    display: flex
+    max-width: 930px
+
+  &__avatar-block
+    max-width: 260px
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 24px
+
+    @media(min-width: 1024px)
+      margin-left: 0
+
+  &__avatar
+    cursor: pointer
+    display: block
+    position: relative
+
+    input
+      position: absolute
+      height: 1px
+      overflow: hidden
+      clip: rect(0 0 0 0)
+      width: 1px
+
+    img
+      border-radius: 50%
+
+  &__avatar-label
+    align-items: center
+    display: flex
+    font-size: 14px
+    justify-content: center
+    margin-top: 24px
+
+    .icon
+      fill: $text-color
+      height: 18px
+      margin-right: 8px
+      width: 18px
+
+  &__form
+    @media(min-width: 1024px)
+      width: 54.83870%
+
+  &__form-row
+    margin-bottom: 16px
+
+  &__form-button-block
+    margin-top: 36px
+    text-align: center
+
+    .button
+      min-width: 130px

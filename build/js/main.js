@@ -15,30 +15,6 @@ $(document).ready(function() {
 		var $p = $(this).closest('.select-wrapper__container');
 		$p.removeClass('open');
 	});
-
-  //инпуты
-  $('.input-label .input').each(function () {
-    if($(this).val() !== '') {
-      $(this).parent('.input-label').addClass('changed');
-    }
-  });
-});
-
-//инпуты
-$(document).on('focus', '.input-label .input', function() {
-  $(this).parent('.input-label').addClass('changed');
-});
-
-//инпуты
-$(document).on('blur', '.input-label .input', function() {
-  if($(this).val() === '') {
-    $(this).parent('.input-label').removeClass('changed');
-  }
-});
-
-//флип-флап
-$(document).on('click', '.flip-flap__front', function () {
-	$(this).closest('.flip-flap').toggleClass('is-flipped');
 });
 
 //скролл по якорю
@@ -47,4 +23,21 @@ $(document).on('click', '.js-scroll-to', function () {
 	var id  = $(this).attr('href'),
 	top = $(id).offset().top - 20;
 	$('body,html').animate({scrollTop: top}, 1000);
+});
+
+//показать/скрыть пароль
+$(document).on('click', '.password-input__toggler', function () {
+	var _this = $(this);
+  _this.toggleClass('is-active');
+
+	if(_this.hasClass('is-active')) {
+		_this.closest('.password-input').find('input').attr("type", "text");
+		_this.attr('title', 'Скрыть пароль')
+		_this.find('svg use').attr('xlink:href', '#pass_visible');
+	} else {
+		_this.closest('.password-input').find('input').attr("type", "password");
+		_this.attr('title', 'Показать пароль')
+		_this.find('svg use').attr('xlink:href', '#pass_hidden');
+	}
+	return false;
 });

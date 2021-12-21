@@ -1,6 +1,18 @@
 .input-label
   display: block
 
+  &.error
+    color: $red
+
+  &__label-text
+    display: block
+    margin-bottom: 6px
+
+  &__error-text
+    color: $red
+    display: block
+    margin-top: 6px
+
 .input,
 .textarea
   background-color: #fff
@@ -31,10 +43,10 @@
       opacity: 0.6
 
   &.error
-    border-color: #ff0000
+    border-color: $red
 
     &:focus
-      border-color: #ff0000
+      border-color: $red
 
   &:disabled
     opacity: 0.5
@@ -54,6 +66,19 @@
     opacity: 1
     transition: opacity 0.3s
 
+  &.type_1
+    &::-webkit-input-placeholder
+      color: $text-color
+      opacity: 0.6
+
+    &::-moz-placeholder
+      color: $text-color
+      opacity: 0.6
+
+    &:-ms-input-placeholder
+      color: $text-color
+      opacity: 0.6
+
 .input
   height: 48px
   padding: 16px
@@ -67,3 +92,28 @@
   height: 160px
   padding: 16px
   resize: none
+
+.password-input
+  display: block
+  position: relative
+
+  &__toggler
+    align-items: center
+    border: none
+    background-color: transparent
+    cursor: pointer
+    display: flex
+    height: 40px
+    justify-content: center
+    left: auto
+    padding: 0
+    position: absolute
+    right: 12px
+    top: 50%
+    transform: translateY(-50%)
+    width: 40px
+
+    .icon
+      fill: $text-color
+      height: 24px
+      width: 24px
