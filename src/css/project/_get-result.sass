@@ -1,0 +1,42 @@
+.get-result
+  background-color: $green_light
+  border-radius: $border-radius
+  margin-left: auto
+  margin-right: auto
+  max-width: 1240px
+  padding: 24px
+
+  &__form
+    @media(min-width: 768px)
+      display: flex
+      flex-wrap: wrap
+
+  &__form-cell
+    margin-bottom: 24px
+
+    @media(min-width: 768px)
+      padding-left: 12px
+      padding-right: 12px
+      width: 33.33333%
+
+  &__button-block
+    text-align: center
+    width: 100%
+
+.get-result-answer
+  margin-left: auto
+  margin-right: auto
+  max-width: 1240px
+
+  th
+    border-bottom: 1px solid $text-color
+    font-size: 20px
+
+    &:first-child
+      padding-left: 0
+
+  td
+    border: none !important
+
+    &:first-child
+      padding-left: 0

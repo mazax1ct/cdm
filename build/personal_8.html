@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-    <title>Личный кабинет - Результаты</title>
+    <title>Личный кабинет - Личные данные</title>
 
     <meta name="description" content="">
 
@@ -286,6 +286,13 @@
             <path
               d="M12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C17 19.5 21.27 16.39 23 12C21.27 7.61 17 4.5 12 4.5ZM12 17C9.24 17 7 14.76 7 12C7 9.24 9.24 7 12 7C14.76 7 17 9.24 17 12C17 14.76 14.76 17 12 17ZM12 9C10.34 9 9 10.34 9 12C9 13.66 10.34 15 12 15C13.66 15 15 13.66 15 12C15 10.34 13.66 9 12 9Z" />
         </symbol>
+        <symbol id="payment" viewBox="0 0 24 24">
+            <path d="M20 4H4C2.89 4 2.01 4.89 2.01 6L2 18C2 19.11 2.89 20 4 20H20C21.11 20 22 19.11 22 18V6C22 4.89 21.11 4 20 4ZM20 18H4V12H20V18ZM20 8H4V6H20V8Z" />
+        </symbol>
+        <symbol id="send" viewBox="0 0 32 32">
+            <path
+              d="M26.667 5.33398H5.33366C3.86699 5.33398 2.66699 6.53398 2.66699 8.00065V24.0007C2.66699 25.4673 3.86699 26.6673 5.33366 26.6673H17.3337V24.0007H5.33366V10.6673L16.0003 17.334L26.667 10.6673V17.334H29.3337V8.00065C29.3337 6.53398 28.1337 5.33398 26.667 5.33398ZM16.0003 14.6673L5.33366 8.00065H26.667L16.0003 14.6673ZM25.3337 20.0007L30.667 25.334L25.3337 30.6673V26.6673H20.0003V24.0007H25.3337V20.0007Z" />
+        </symbol>
     </svg>
 
     <div id="preloader">
@@ -316,12 +323,12 @@
                 <button class="button button--height_2 button--type_1" type="button">
                     <span>Записаться онлайн</span>
                 </button>
-                <button class="button button--height_2 button--type_1" type="button">
+                <a class="button button--height_2 button--type_1" href="#">
                     <svg class="icon">
                         <use xlink:href="#analysis"></use>
                     </svg>
                     <span>Проверить анализ</span>
-                </button>
+                </a>
             </div>
             <div class="header__top-links">
                 <a class="header__top-link" href="#">
@@ -519,7 +526,19 @@
                             <div class="user-data__form">
                                 <div class="user-data__form-row">
                                     <label class="input-label">
-                                        <span class="input-label__label-text">Как вас зовут? *</span>
+                                        <span class="input-label__label-text">Имя *</span>
+                                        <input class="input type_1" type="text" value="" />
+                                    </label>
+                                </div>
+                                <div class="user-data__form-row">
+                                    <label class="input-label">
+                                        <span class="input-label__label-text">Фамилия *</span>
+                                        <input class="input type_1" type="text" value="" />
+                                    </label>
+                                </div>
+                                <div class="user-data__form-row">
+                                    <label class="input-label">
+                                        <span class="input-label__label-text">Отчество *</span>
                                         <input class="input type_1" type="text" value="" />
                                     </label>
                                 </div>
