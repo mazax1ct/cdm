@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Консультация в клинике</title>
+
+    <meta name="description" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/fonts-preload.html
+
+    //= template/preloader-styles.html
+
+    //= template/style.html
+</head>
+
+<body>
+    //= template/sprite.html
+
+    //= template/preloader.html
+
+    //= template/header.html
+
+    <main class="page-content">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Запись онлайн</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    Консультация в клинике
+                </li>
+            </ul>
+
+            <div class="consult">
+                <div class="consult__steps-block">
+                    <ul class="consult__steps">
+                        <li class="consult__steps-item current is-active">
+                            <span class="is-active"></span>
+                            Кто идёт на приём?
+                        </li>
+                        <li class="consult__steps-item current is-active">
+                            <span class="is-active"></span>
+                            Выберите специалиста
+                        </li>
+                        <li class="consult__steps-item current">
+                            <span>3</span>
+                            Выберите врача и время приёма
+                        </li>
+                        <li class="consult__steps-item">
+                            <span>4</span>
+                            Подтверждение записи
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="consult__step">
+                    <h2 class="consult__title is-active">Выберите время приема</h2>
+
+                    <div class="consult__week">
+                        <div class="week">
+                            <button class="week__button" type="button" title="Назад">
+                                <svg class="icon">
+                                    <use xlink:href="#chevron_left"></use>
+                                </svg>
+                            </button>
+
+                            <div class="week__list">
+                                <div class="week__list-item">
+                                    <button class="week__day is-active" type="button">
+                                        <span class="week__day-title">ПН, 24 НОЯ</span>
+                                        <span class="week__day-options">12 вариантов</span>
+                                    </button>
+                                </div>
+                                <div class="week__list-item">
+                                    <button class="week__day" type="button">
+                                        <span class="week__day-title">ВТ, 25 НОЯ</span>
+                                        <span class="week__day-options">Нет вариантов</span>
+                                    </button>
+                                </div>
+                                <div class="week__list-item">
+                                    <button class="week__day" type="button">
+                                        <span class="week__day-title">СР, 26 НОЯ</span>
+                                        <span class="week__day-options">Нет вариантов</span>
+                                    </button>
+                                </div>
+                                <div class="week__list-item">
+                                    <button class="week__day" type="button">
+                                        <span class="week__day-title">ЧТ, 27 НОЯ</span>
+                                        <span class="week__day-options">Нет вариантов</span>
+                                    </button>
+                                </div>
+                                <div class="week__list-item">
+                                    <button class="week__day" type="button">
+                                        <span class="week__day-title">ПТ, 28 НОЯ</span>
+                                        <span class="week__day-options">Нет вариантов</span>
+                                    </button>
+                                </div>
+                                <div class="week__list-item">
+                                    <button class="week__day" type="button">
+                                        <span class="week__day-title">СБ, 29 НОЯ</span>
+                                        <span class="week__day-options">Нет вариантов</span>
+                                    </button>
+                                </div>
+                                <div class="week__list-item">
+                                    <button class="week__day" type="button">
+                                        <span class="week__day-title">СБ, 30 НОЯ</span>
+                                        <span class="week__day-options">12 вариантов</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <button class="week__button" type="button" title="Вперёд">
+                                <svg class="icon">
+                                    <use xlink:href="#chevron_right"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="consult__doctors">
+                        <h3>Варианты для записи на понедельник, 24 ноября</h3>
+                        <div class="doc-time">
+                            <div class="doc-time__info-block">
+                                <div class="doc-time__image"><img src="images/content/doctors/img_1.jpg" srcset="images/content/doctors/img_1@2x.jpg 2x" alt=""></div>
+                                <div class="doc-time__info">
+                                    <p class="doc-time__name">Гринжола<br> Елена Николаевна</p>
+                                    <p class="doc-time__place">Руководитель ОКДЛ-врач клинический лабораторной диагностики</p>
+                                    <p class="doc-time__location">
+                                        <svg class="icon">
+                                            <use xlink:href="#pin"></use>
+                                        </svg>
+                                        Петроградский р-н
+                                    </p>
+                                    <p class="doc-time__feature">
+                                        <svg class="icon">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        Врач высшей категории, 12 лет стаж
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="doc-time__time-block">
+                                <h6>Выберите время приема</h6>
+                                <ul class="doc-time__time-list">
+                                    <li class="doc-time__time-list-item">
+                                        <label class="doc-time__time-radio">
+                                            <input type="radio" name="time" value="1">
+                                            <span class="doc-time__time-text">12:00</span>
+                                        </label>
+                                    </li>
+                                    <li class="doc-time__time-list-item">
+                                        <label class="doc-time__time-radio">
+                                            <input type="radio" name="time" value="2">
+                                            <span class="doc-time__time-text">13:00</span>
+                                        </label>
+                                    </li>
+                                    <li class="doc-time__time-list-item">
+                                        <label class="doc-time__time-radio">
+                                            <input type="radio" name="time" value="3">
+                                            <span class="doc-time__time-text">14:00</span>
+                                        </label>
+                                    </li>
+                                    <li class="doc-time__time-list-item">
+                                        <label class="doc-time__time-radio">
+                                            <input type="radio" name="time" value="4">
+                                            <span class="doc-time__time-text">15:00</span>
+                                        </label>
+                                    </li>
+                                    <li class="doc-time__time-list-item">
+                                        <label class="doc-time__time-radio">
+                                            <input type="radio" name="time" value="5">
+                                            <span class="doc-time__time-text">16:00</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                                <h6>Выберите время дня</h6>
+                                <ul class="doc-time__time-list">
+                                    <li class="doc-time__time-list-item">
+                                        <label class="doc-time__time-radio">
+                                            <input type="radio" name="period" value="1">
+                                            <span class="doc-time__time-text">Утро</span>
+                                        </label>
+                                    </li>
+                                    <li class="doc-time__time-list-item">
+                                        <label class="doc-time__time-radio">
+                                            <input type="radio" name="period" value="2">
+                                            <span class="doc-time__time-text">День</span>
+                                        </label>
+                                    </li>
+                                    <li class="doc-time__time-list-item">
+                                        <label class="doc-time__time-radio">
+                                            <input type="radio" name="period" value="3">
+                                            <span class="doc-time__time-text">Вечер</span>
+                                        </label>
+                                    </li>
+                                    <li class="doc-time__time-list-item">
+                                        <label class="doc-time__time-radio">
+                                            <input type="radio" name="period" value="4">
+                                            <span class="doc-time__time-text">Любое</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h3>Варианты для записи на понедельник, 24 ноября</h3>
+                        <div class="doc-time">
+                            <div class="doc-time__info-block">
+                                <div class="doc-time__image"><img src="images/content/doctors/img_1.jpg" srcset="images/content/doctors/img_1@2x.jpg 2x" alt=""></div>
+                                <div class="doc-time__info">
+                                    <p class="doc-time__name">Гринжола<br> Елена Николаевна</p>
+                                    <p class="doc-time__place">Руководитель ОКДЛ-врач клинический лабораторной диагностики</p>
+                                    <p class="doc-time__location">
+                                        <svg class="icon">
+                                            <use xlink:href="#pin"></use>
+                                        </svg>
+                                        Петроградский р-н
+                                    </p>
+                                    <p class="doc-time__feature">
+                                        <svg class="icon">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                        Врач высшей категории, 12 лет стаж
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="doc-time__time-block">
+                                <h6>Выберите время приема</h6>
+                                <ul class="doc-time__time-list">
+                                    <li class="doc-time__time-list-item">
+                                        <label class="doc-time__time-radio">
+                                            <input type="radio" name="time" value="1">
+                                            <span class="doc-time__time-text">12:00</span>
+                                        </label>
+                                    </li>
+                                    <li class="doc-time__time-list-item">
+                                        <label class="doc-time__time-radio">
+                                            <input type="radio" name="time" value="2">
+                                            <span class="doc-time__time-text">13:00</span>
+                                        </label>
+                                    </li>
+                                    <li class="doc-time__time-list-item">
+                                        <label class="doc-time__time-radio">
+                                            <input type="radio" name="time" value="3">
+                                            <span class="doc-time__time-text">14:00</span>
+                                        </label>
+                                    </li>
+                                    <li class="doc-time__time-list-item">
+                                        <label class="doc-time__time-radio">
+                                            <input type="radio" name="time" value="4">
+                                            <span class="doc-time__time-text">15:00</span>
+                                        </label>
+                                    </li>
+                                    <li class="doc-time__time-list-item">
+                                        <label class="doc-time__time-radio">
+                                            <input type="radio" name="time" value="5">
+                                            <span class="doc-time__time-text">16:00</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                                <h6>Выберите время дня</h6>
+                                <ul class="doc-time__time-list">
+                                    <li class="doc-time__time-list-item">
+                                        <label class="doc-time__time-radio">
+                                            <input type="radio" name="period" value="1">
+                                            <span class="doc-time__time-text">Утро</span>
+                                        </label>
+                                    </li>
+                                    <li class="doc-time__time-list-item">
+                                        <label class="doc-time__time-radio">
+                                            <input type="radio" name="period" value="2">
+                                            <span class="doc-time__time-text">День</span>
+                                        </label>
+                                    </li>
+                                    <li class="doc-time__time-list-item">
+                                        <label class="doc-time__time-radio">
+                                            <input type="radio" name="period" value="3">
+                                            <span class="doc-time__time-text">Вечер</span>
+                                        </label>
+                                    </li>
+                                    <li class="doc-time__time-list-item">
+                                        <label class="doc-time__time-radio">
+                                            <input type="radio" name="period" value="4">
+                                            <span class="doc-time__time-text">Любое</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="text-center">
+                        <button class="button button--height_4 button--type_2" type="button">
+                            <span>Подтвердить запись</span>
+                            <svg class="icon">
+                                <use xlink:href="#arrow_right"></use>
+                            </svg>
+                        </button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    //= template/footer.html
+
+    //= template/float-bar.html
+
+    //= template/geo.html
+
+    <!--общие скрипты-->
+    //= template/scripts.html
+
+    <!--скрипты страницы-->
+    <script src="js/search.js"></script>
+    <script src="js/clinics-map.js"></script>
+
+    <!--прелоадер-->
+    <script src="js/preloader.js"></script>
+</body>
+
+</html>

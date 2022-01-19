@@ -1,0 +1,50 @@
+.geo-popup
+  background-color: #fff
+  border-radius: $border-radius
+  display: none
+  max-width: 880px
+  padding: 24px
+  width: 100%
+
+  @media(min-width: 768px)
+    padding-left: 48px
+    padding-right: 48px
+
+  &.fancybox-content
+    max-width: 880px
+
+  &__big-list
+    display: flex
+    flex-wrap: wrap
+    list-style: none
+    margin-bottom: 10px
+    padding: 0
+
+    li
+      &:not(:last-child)
+        margin-right: 10px
+        margin-bottom: 10px
+
+  &__list
+    list-style: none
+    margin: 0
+    overflow: hidden
+    padding: 0
+
+    @media(min-width: 768px)
+      columns: 3
+
+    @media(min-width: 1024px)
+      columns: 4
+
+    button
+      background-color: transparent
+      border: none
+      color: $purple
+      cursor: pointer
+      padding-left: 0
+      padding-right: 0
+
+      &:hover,
+      &:focus
+        font-weight: 700

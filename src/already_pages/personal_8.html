@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Личный кабинет - Личные данные</title>
+
+    <meta name="description" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/fonts-preload.html
+
+    //= template/preloader-styles.html
+
+    //= template/style.html
+</head>
+
+<body class="personal-page">
+    //= template/sprite.html
+
+    //= template/preloader.html
+
+    //= template/header.html
+
+    <main class="page-content">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    Личный кабинет
+                </li>
+            </ul>
+
+            <div class="personal">
+                <div class="personal__inner">
+                    //= template/personal-menu.html
+
+                    <div class="personal__content-block">
+                        <h2>Личные данные</h2>
+                        <div class="user-data">
+                            <div class="user-data__avatar-block">
+                                <label class="user-data__avatar">
+                                    <input type="file">
+                                    <img src="images/content/personal/avatar.jpg" srcset="images/content/personal/avatar@2x.jpg 2x" alt="">
+                                    <span class="user-data__avatar-label">
+                                        <svg class="icon">
+                                            <use xlink:href="#edit"></use>
+                                        </svg>
+                                        Изменить фото
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="user-data__form">
+                                <div class="user-data__form-row">
+                                    <label class="input-label">
+                                        <span class="input-label__label-text">Имя *</span>
+                                        <input class="input type_1" type="text" value="" />
+                                    </label>
+                                </div>
+                                <div class="user-data__form-row">
+                                    <label class="input-label">
+                                        <span class="input-label__label-text">Фамилия *</span>
+                                        <input class="input type_1" type="text" value="" />
+                                    </label>
+                                </div>
+                                <div class="user-data__form-row">
+                                    <label class="input-label">
+                                        <span class="input-label__label-text">Отчество *</span>
+                                        <input class="input type_1" type="text" value="" />
+                                    </label>
+                                </div>
+                                <div class="user-data__form-row">
+                                    <label class="input-label">
+                                        <span class="input-label__label-text">Номер телефона *</span>
+                                        <input class="js-phone-mask input type_1" type="text" value="" />
+                                    </label>
+                                </div>
+                                <div class="user-data__form-row">
+                                    <label class="input-label">
+                                        <span class="input-label__label-text">Почтовый адрес *</span>
+                                        <input class="js-email-mask input type_1" type="text" value="" />
+                                    </label>
+                                </div>
+                                <div class="user-data__form-row">
+                                    <label class="input-label">
+                                        <span class="input-label__label-text">Дата рождения *</span>
+                                        <input class="js-date input type_1" type="text" value="" />
+                                    </label>
+                                </div>
+                                <div class="user-data__form-row">
+                                    <label class="input-label">
+                                        <span class="input-label__label-text">Пароль *</span>
+                                        <span class="password-input">
+                                            <input class="input type_1" type="password" value="" />
+                                            <button class="password-input__toggler" type="button" title="Показать пароль">
+                                                <svg class="icon">
+                                                    <use xlink:href="#pass_hidden"></use>
+                                                </svg>
+                                            </button>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="user-data__form-row">
+                                    <label class="input-label error">
+                                        <span class="input-label__label-text">Повторить пароль *</span>
+                                        <span class="password-input">
+                                            <input class="input type_1 error" type="password" value="" />
+                                            <button class="password-input__toggler" type="button" title="Показать пароль">
+                                                <svg class="icon">
+                                                    <use xlink:href="#pass_hidden"></use>
+                                                </svg>
+                                            </button>
+                                        </span>
+                                        <span class="input-label__error-text">Вы используете недопустимые символы: #$*’:;&</span>
+                                    </label>
+                                </div>
+                                <div class="user-data__form-button-block">
+                                    <button class="button button--type_1 button--height_4" type="submit" disabled>Сохранить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    //= template/footer.html
+
+    //= template/float-bar.html
+
+    //= template/geo.html
+
+    <!--общие скрипты-->
+    //= template/scripts.html
+
+    <!--скрипты страницы-->
+    <script src="js/personal.js"></script>
+
+    <!--прелоадер-->
+    <script src="js/preloader.js"></script>
+</body>
+
+</html>

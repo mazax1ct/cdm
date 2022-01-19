@@ -206,6 +206,27 @@
     .icon
       fill: $purple
 
+  &--type_8
+    background-color: #fff
+    border: 1px solid $purple
+    color: $purple
+
+    &:hover,
+    &:focus
+      background-color: $purple
+      color: #fff
+
+      .icon
+        fill: #fff
+
+    &:disabled,
+    &.disabled
+      background-color: rgba($purple, 0.3)
+      pointer-events: none
+
+    .icon
+      fill: $purple
+
 a.button
   align-items: center
   display: inline-flex

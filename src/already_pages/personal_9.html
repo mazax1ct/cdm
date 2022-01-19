@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Личный кабинет - Корзина</title>
+
+    <meta name="description" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/fonts-preload.html
+
+    //= template/preloader-styles.html
+
+    //= template/style.html
+</head>
+
+<body class="personal-page">
+    //= template/sprite.html
+
+    //= template/preloader.html
+
+    //= template/header.html
+
+    <main class="page-content">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    Личный кабинет
+                </li>
+            </ul>
+
+            <div class="personal">
+                <div class="personal__inner">
+                    //= template/personal-menu.html
+
+                    <div class="personal__content-block">
+                        <h2>Корзина</h2>
+                        <div class="cart">
+                            <div class="cart__items">
+                                <div class="responsive-table">
+                                    <table class="type_1">
+                                        <colgroup>
+                                            <col>
+                                            <col>
+                                            <col width="70px">
+                                        </colgroup>
+                                        <tr class="cart__item">
+                                            <td><a href="#">Диагностика рака молочной железы.<br> Метаболиты эстрогенов.</a></td>
+                                            <td class="cart__item-price">1800 ₽</td>
+                                            <td>
+                                                <button class="cart__item-delete" type="button" title="Удалить">
+                                                    <svg class="icon">
+                                                        <use xlink:href="#close"></use>
+                                                    </svg>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr class="cart__item">
+                                            <td><a href="#">Узи почек</a></td>
+                                            <td class="cart__item-price">500 ₽</td>
+                                            <td>
+                                                <button class="cart__item-delete" type="button" title="Удалить">
+                                                    <svg class="icon">
+                                                        <use xlink:href="#close"></use>
+                                                    </svg>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr class="cart__item">
+                                            <td><a href="#">Узи почек</a></td>
+                                            <td class="cart__item-price">19800 ₽</td>
+                                            <td>
+                                                <button class="cart__item-delete" type="button" title="Удалить">
+                                                    <svg class="icon">
+                                                        <use xlink:href="#close"></use>
+                                                    </svg>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr class="cart__item">
+                                            <td><a href="#">Узи почек</a></td>
+                                            <td class="cart__item-price">119800 ₽</td>
+                                            <td>
+                                                <button class="cart__item-delete" type="button" title="Удалить">
+                                                    <svg class="icon">
+                                                        <use xlink:href="#close"></use>
+                                                    </svg>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="cart__results">
+                                <p class="cart__results-row">
+                                    <span>Итого:</span>
+                                    <span>11800&nbsp;₽</span>
+                                </p>
+                                <p class="cart__results-row">
+                                    <span>Акция:<br> <small>2 узи по цене одного</small></span>
+                                    <span>-1800&nbsp;₽</span>
+                                </p>
+                                <div class="cart__results-button-block">
+                                    <a class="button button--type_2 button--height_4" href="#">
+                                        <svg class="icon">
+                                            <use xlink:href="#payment"></use>
+                                        </svg>
+                                        <span>Оплатить</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    //= template/footer.html
+
+    //= template/float-bar.html
+
+    //= template/geo.html
+
+    <!--общие скрипты-->
+    //= template/scripts.html
+
+    <!--скрипты страницы-->
+    <script src="js/personal.js"></script>
+
+    <!--прелоадер-->
+    <script src="js/preloader.js"></script>
+</body>
+
+</html>

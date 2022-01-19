@@ -86,9 +86,9 @@ $(document).on('click', '.map-item__info .button', function () {
     placemark = new ymaps.Placemark(center.split(','), {
       balloonContentBody: info
     }, {
+      balloonMaxWidth: 520,
       iconLayout: 'default#image',
       iconImageHref: 'images/icons/map-pin.svg',
-      // Размеры метки.
       iconImageSize: [40, 40],
       iconImageOffset: [-20, -20]
     });
@@ -96,6 +96,28 @@ $(document).on('click', '.map-item__info .button', function () {
     clinics_map.geoObjects.removeAll();
     clinics_map.geoObjects.add(placemark);
     clinics_map.setCenter(center.split(','), 10);
+
+    clinics_map.balloon.open(center.split(','), info, {maxWidth: 520});
+
+    setTimeout( function() {
+      if (clinics_map.balloon.isOpen()) {
+        var slider = $('#clinics_map').find('.balloon').find('.js-balloon-slider')
+        if(slider.length) {
+          slider.slick({
+            arrows: true,
+            prevArrow: '<button class="slick-arrow slick-prev" aria-label="Назад" type="button"><svg class="icon" aria-hidden="true"><use xlink:href="#arrow_left"/></svg></button>',
+            nextArrow: '<button class="slick-arrow slick-next" aria-label="Вперед" type="button"><svg class="icon" aria-hidden="true"><use xlink:href="#arrow_right"/></svg></button>',
+            mobileFirst: true,
+            dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 5,
+            slidesToScroll: 5
+          });
+        }
+      }
+    }, 500);
+
   }
   return false;
 });

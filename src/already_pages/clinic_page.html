@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Страница клиники</title>
+
+    <meta name="description" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/fonts-preload.html
+
+    //= template/preloader-styles.html
+
+    //= template/style.html
+</head>
+
+<body>
+    //= template/sprite.html
+
+    //= template/preloader.html
+
+    //= template/header.html
+
+    <main class="page-content">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Клиники</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    Клиника на Охте
+                </li>
+            </ul>
+
+            <h1>Клиника на Охте</h1>
+            <div class="contacts">
+                <div class="contacts__text-block">
+                    <p class="h1">Пулковское шоссе, дом&nbsp;28А</p>
+                    <div class="contacts__contact">
+                        <svg class="icon">
+                            <use xlink:href="#envelope"></use>
+                        </svg>
+                        <span>Почта для связи:</span><br>
+                        <a href="mailto:testlab@cdmed.ru">testlab@cdmed.ru</a>
+                    </div>
+                    <div class="contacts__contact">
+                        <svg class="icon">
+                            <use xlink:href="#phone"></use>
+                        </svg>
+                        <span>Телефон для связи:</span><br>
+                        <a href="tel:+78126004712">600-47-12, доб. 3039</a>
+                    </div>
+                </div>
+                <div id="contacts_map" class="contacts__map"></div>
+            </div>
+
+            <div class="title-block">
+                <h2>Ведущие врачи-специалисты центра</h2>
+                <div id="doctors_list_buttons" class="title-block__buttons title-block__buttons--type_1"></div>
+            </div>
+
+            <div class="js-doctors-list doctors-list" data-buttons="doctors_list_buttons">
+                <div class="doctors-list__item">
+                    <div class="doctor">
+                        <div class="doctor__image"><img src="images/content/doctors/img_1.jpg" srcset="images/content/doctors/img_1@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
+                        <div class="doctor__info">
+                            <p class="doctor__name"><a href="#">Гринжола<br> Елена Николаевна</a></p>
+                            <p class="doctor__place">Руководитель ОКДЛ-врач клинический лабораторной диагностики</p>
+                            <p class="doctor__exp">Стаж 20 лет</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="doctors-list__item">
+                    <div class="doctor">
+                        <div class="doctor__image"><img src="images/content/doctors/img_2.jpg" srcset="images/content/doctors/img_2@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
+                        <div class="doctor__info">
+                            <p class="doctor__name"><a href="#">Водяник<br> Павел Иванович</a></p>
+                            <p class="doctor__place">Руководитель медицинского центра</p>
+                            <p class="doctor__exp">Стаж 10 лет</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="doctors-list__item">
+                    <div class="doctor">
+                        <div class="doctor__image"><img src="images/content/doctors/img_3.jpg" srcset="images/content/doctors/img_3@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
+                        <div class="doctor__info">
+                            <p class="doctor__name"><a href="#">Володина<br> Людмила Николаевна</a></p>
+                            <p class="doctor__place">Руководитель медицинского центра</p>
+                            <p class="doctor__exp">Стаж 15 лет</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="doctors-list__item">
+                    <div class="doctor">
+                        <div class="doctor__image"><img src="images/content/doctors/img_4.jpg" srcset="images/content/doctors/img_4@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
+                        <div class="doctor__info">
+                            <p class="doctor__name"><a href="#">Писарева<br> Елена Михайловна</a></p>
+                            <p class="doctor__place">Врач-педиатор</p>
+                            <p class="doctor__exp">Стаж 10 лет</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="doctors-list__item">
+                    <div class="doctor">
+                        <div class="doctor__image"><img src="images/content/doctors/img_1.jpg" srcset="images/content/doctors/img_1@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
+                        <div class="doctor__info">
+                            <p class="doctor__name"><a href="#">Константинопольский<br> Константин Константинович</a></p>
+                            <p class="doctor__place">Руководитель ОКДЛ-врач клинический лабораторной диагностики</p>
+                            <p class="doctor__exp">Стаж 20 лет</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="doctors-list__item">
+                    <div class="doctor">
+                        <div class="doctor__image"><img src="images/content/doctors/img_2.jpg" srcset="images/content/doctors/img_2@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
+                        <div class="doctor__info">
+                            <p class="doctor__name"><a href="#">Водяник<br> Павел Иванович</a></p>
+                            <p class="doctor__place">Руководитель медицинского центра</p>
+                            <p class="doctor__exp">Стаж 10 лет</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="doctors-list__item">
+                    <div class="doctor">
+                        <div class="doctor__image"><img src="images/content/doctors/img_3.jpg" srcset="images/content/doctors/img_3@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
+                        <div class="doctor__info">
+                            <p class="doctor__name"><a href="#">Володина<br> Людмила Николаевна</a></p>
+                            <p class="doctor__place">Руководитель медицинского центра</p>
+                            <p class="doctor__exp">Стаж 15 лет</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="doctors-list__item">
+                    <div class="doctor">
+                        <div class="doctor__image"><img src="images/content/doctors/img_4.jpg" srcset="images/content/doctors/img_4@2x.jpg 2x" alt="Гринжола Елена Николаевна"></div>
+                        <div class="doctor__info">
+                            <p class="doctor__name"><a href="#">Писарева<br> Елена Михайловна</a></p>
+                            <p class="doctor__place">Врач-педиатор</p>
+                            <p class="doctor__exp">Стаж 10 лет</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="title-block">
+                <h2>Оборудование</h2>
+                <div class="title-block__controls">
+                    <div id="equip_list_buttons" class="title-block__buttons title-block__buttons--type_1"></div>
+                </div>
+            </div>
+
+            <div class="js-equip-slider equip-slider" data-buttons="equip_list_buttons">
+                <div class="equip-slider__item">
+                    <a class="equip" href="#">
+                        <span class="equip__image"><img src="images/content/equip/img_1.jpg" srcset="images/content/equip/img_1@2x.jpg 2x" alt=""></span>
+                        <span class="equip__title">Рентген-аппарат</span>
+                    </a>
+                </div>
+                <div class="equip-slider__item">
+                    <a class="equip" href="#">
+                        <span class="equip__image"><img src="images/content/equip/img_1.jpg" srcset="images/content/equip/img_1@2x.jpg 2x" alt=""></span>
+                        <span class="equip__title">Рентген-аппарат</span>
+                    </a>
+                </div>
+                <div class="equip-slider__item">
+                    <a class="equip" href="#">
+                        <span class="equip__image"><img src="images/content/equip/img_1.jpg" srcset="images/content/equip/img_1@2x.jpg 2x" alt=""></span>
+                        <span class="equip__title">Рентген-аппарат</span>
+                    </a>
+                </div>
+                <div class="equip-slider__item">
+                    <a class="equip" href="#">
+                        <span class="equip__image"><img src="images/content/equip/img_1.jpg" srcset="images/content/equip/img_1@2x.jpg 2x" alt=""></span>
+                        <span class="equip__title">Рентген-аппарат</span>
+                    </a>
+                </div>
+                <div class="equip-slider__item">
+                    <a class="equip" href="#">
+                        <span class="equip__image"><img src="images/content/equip/img_1.jpg" srcset="images/content/equip/img_1@2x.jpg 2x" alt=""></span>
+                        <span class="equip__title">Рентген-аппарат</span>
+                    </a>
+                </div>
+                <div class="equip-slider__item">
+                    <a class="equip" href="#">
+                        <span class="equip__image"><img src="images/content/equip/img_1.jpg" srcset="images/content/equip/img_1@2x.jpg 2x" alt=""></span>
+                        <span class="equip__title">Рентген-аппарат</span>
+                    </a>
+                </div>
+                <div class="equip-slider__item">
+                    <a class="equip" href="#">
+                        <span class="equip__image"><img src="images/content/equip/img_1.jpg" srcset="images/content/equip/img_1@2x.jpg 2x" alt=""></span>
+                        <span class="equip__title">Рентген-аппарат</span>
+                    </a>
+                </div>
+                <div class="equip-slider__item">
+                    <a class="equip" href="#">
+                        <span class="equip__image"><img src="images/content/equip/img_1.jpg" srcset="images/content/equip/img_1@2x.jpg 2x" alt=""></span>
+                        <span class="equip__title">Рентген-аппарат</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="title-block">
+                <h2>Лицензии</h2>
+                <div class="title-block__controls">
+                    <div id="reviews_slider_buttons" class="title-block__buttons title-block__buttons--type_1"></div>
+                </div>
+            </div>
+
+            <div class="js-reviews-slider reviews-slider" data-buttons="reviews_slider_buttons">
+                <div class="reviews-slider__item">
+                    <a class="review" href="images/content/lab/img_2@2x.jpg" data-fancybox rel="gallery">
+                        <span class="review__image"><img src="images/content/lab/img_5.jpg" srcset="images/content/lab/img_5@2x.jpg 2x" alt=""></span>
+                        <span class="review__title">Лицензия №123</span>
+                    </a>
+                </div>
+                <div class="reviews-slider__item">
+                    <a class="review" href="images/content/lab/img_2@2x.jpg" data-fancybox rel="gallery">
+                        <span class="review__image"><img src="images/content/lab/img_5.jpg" srcset="images/content/lab/img_5@2x.jpg 2x" alt=""></span>
+                        <span class="review__title">Лицензия №123</span>
+                    </a>
+                </div>
+                <div class="reviews-slider__item">
+                    <a class="review" href="images/content/lab/img_2@2x.jpg" data-fancybox rel="gallery">
+                        <span class="review__image"><img src="images/content/lab/img_5.jpg" srcset="images/content/lab/img_5@2x.jpg 2x" alt=""></span>
+                        <span class="review__title">Лицензия №123</span>
+                    </a>
+                </div>
+                <div class="reviews-slider__item">
+                    <a class="review" href="images/content/lab/img_2@2x.jpg" data-fancybox rel="gallery">
+                        <span class="review__image"><img src="images/content/lab/img_5.jpg" srcset="images/content/lab/img_5@2x.jpg 2x" alt=""></span>
+                        <span class="review__title">Лицензия №123</span>
+                    </a>
+                </div>
+                <div class="reviews-slider__item">
+                    <a class="review" href="images/content/lab/img_2@2x.jpg" data-fancybox rel="gallery">
+                        <span class="review__image"><img src="images/content/lab/img_5.jpg" srcset="images/content/lab/img_5@2x.jpg 2x" alt=""></span>
+                        <span class="review__title">Лицензия №123</span>
+                    </a>
+                </div>
+                <div class="reviews-slider__item">
+                    <a class="review" href="images/content/lab/img_2@2x.jpg" data-fancybox rel="gallery">
+                        <span class="review__image"><img src="images/content/lab/img_5.jpg" srcset="images/content/lab/img_5@2x.jpg 2x" alt=""></span>
+                        <span class="review__title">Лицензия №123</span>
+                    </a>
+                </div>
+                <div class="reviews-slider__item">
+                    <a class="review" href="images/content/lab/img_2@2x.jpg" data-fancybox rel="gallery">
+                        <span class="review__image"><img src="images/content/lab/img_5.jpg" srcset="images/content/lab/img_5@2x.jpg 2x" alt=""></span>
+                        <span class="review__title">Лицензия №123</span>
+                    </a>
+                </div>
+                <div class="reviews-slider__item">
+                    <a class="review" href="images/content/lab/img_2@2x.jpg" data-fancybox rel="gallery">
+                        <span class="review__image"><img src="images/content/lab/img_5.jpg" srcset="images/content/lab/img_5@2x.jpg 2x" alt=""></span>
+                        <span class="review__title">Лицензия №123</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    //= template/footer.html
+
+    //= template/float-bar.html
+
+    //= template/geo.html
+
+    <!--общие скрипты-->
+    //= template/scripts.html
+
+    <!--скрипты страницы-->
+    <script src="js/contacts-map.js"></script>
+    <script src="js/doctors-list.js"></script>
+    <script src="js/equip-slider.js"></script>
+    <script src="js/reviews-slider.js"></script>
+    <script src="js/decor.js"></script>
+
+    <!--прелоадер-->
+    <script src="js/preloader.js"></script>
+</body>
+
+</html>

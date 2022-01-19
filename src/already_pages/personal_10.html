@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Личный кабинет - Заключение</title>
+
+    <meta name="description" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/fonts-preload.html
+
+    //= template/preloader-styles.html
+
+    //= template/style.html
+</head>
+
+<body class="personal-page">
+    //= template/sprite.html
+
+    //= template/preloader.html
+
+    //= template/header.html
+
+    <main class="page-content">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    Личный кабинет
+                </li>
+            </ul>
+
+            <div class="personal">
+                <div class="personal__inner">
+                    //= template/personal-menu.html
+
+                    <div class="personal__content-block">
+                        <div class="opinion">
+                            <div class="opinion__title-block">
+                                <h2>Онколог</h2>
+                                <div class="opinion__title-buttons">
+                                    <a class="opinion__title-button" href="#" download target="_blank" title="Скачать PDF">
+                                        <svg class="icon">
+                                            <use xlink:href="#download"></use>
+                                        </svg>
+                                    </a>
+                                    <button class="opinion__title-button" type="button" title="Отправить на почту">
+                                        <svg class="icon">
+                                            <use xlink:href="#send"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="opinion__container">
+                                <div class="opinion__left">
+                                    <h3>Основной диагноз окончательный:</h3>
+                                    <p>Фиброаденомы левой молочной железы на фоне диффузной двусторонней дисгормональной мастопатии, больше выраженной слева.</p>
+                                    <h3>Лечение и рекомендации:</h3>
+                                    <p>
+                                        1. В течение 2-х месяцев принимать МАСТОДИНОН по 30 капель 2 раза в день и далее<br>
+                                        2. В течение 2-х месяцев принимать ИНДИНОЛ ФОРТО по 1 таблетке 2 раза в день<br>
+                                        3. Плановый осмотр онколога-маммолога и контрольное УЗИ молочных желез (врач Харакоз Е.Ю.) через 4 месяца.
+                                    </p>
+
+                                    <div class="consultation consultation--big consultation--color_2">
+                                        <div class="consultation__block">
+                                            <p class="consultation__title">Записаться на приём</p>
+                                            <p>Мы в любое время готовы помочь вам</p>
+                                        </div>
+                                        <div class="consultation__block consultation__form">
+                                            <div class="consultation__label">
+                                                <label class="checkbox-label">
+                                                    <input type="checkbox">
+                                                    <span class="checkbox-icon"></span>
+                                                    <span class="checkbox-text">На дому</span>
+                                                </label>
+                                            </div>
+                                            <a class="button button--type_1 button--height_3" href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="opinion__right">
+                                    <div class="opinion__doctor">
+                                        <div class="opinion__doctor-avatar">
+                                            <img src="images/content/personal/doctor_2.jpg" srcset="images/content/personal/doctor_2@2x.jpg 2x" alt="имя">
+                                        </div>
+                                        <div class="opinion__doctor-info">
+                                            <p class="opinion__doctor-name">Константинопольский<br> Константин Константинович</p>
+                                        </div>
+                                    </div>
+                                    <div class="opinion__date">
+                                        <p>Дата приема:</p>
+                                        <h3>16 сен 2021</h3>
+                                    </div>
+                                    <div class="opinion__patient-info">
+                                        <p>Пациент</p>
+                                        <h3>Константинопольский<br> Константин Константинович</h3>
+                                    </div>
+                                    <div class="opinion__button-block">
+                                        <a class="button button--type_1 button--height_4" href="#" download target="_blank">
+                                            <svg class="icon">
+                                                <use xlink:href="#download"></use>
+                                            </svg>
+                                            <span>Скачать PDF</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    //= template/footer.html
+
+    //= template/float-bar.html
+
+    //= template/geo.html
+
+    <!--общие скрипты-->
+    //= template/scripts.html
+
+    <!--скрипты страницы-->
+    <script src="js/personal.js"></script>
+
+    <!--прелоадер-->
+    <script src="js/preloader.js"></script>
+</body>
+
+</html>
