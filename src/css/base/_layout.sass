@@ -90,3 +90,44 @@ body
     @media(min-width: 1350px)
       padding-left: 20px
       padding-right: 20px
+
+.menued-list
+  @media(min-width: 1024px)
+    display: flex
+    flex-wrap: wrap
+    margin-left: -10px
+    margin-right: -10px
+
+  &:not(:last-child)
+    margin-bottom: 56px
+
+    @media(min-width: 1350px)
+      margin-bottom: 96px
+
+  &__left
+    margin-bottom: 40px
+
+    @media(min-width: 1024px)
+      margin-bottom: 0
+      padding-left: 10px
+      padding-right: 10px
+      width: 340px
+
+    @media(min-width: 1600px)
+      width: 380px
+
+    .dropmenu
+      position: sticky
+      top: 0
+
+  &__right
+    @media(min-width: 1024px)
+      padding-left: 10px
+      padding-right: 10px
+      width: calc(100% - 340px)
+
+    @media(min-width: 1600px)
+      width: calc(100% - 380px)
+
+    .analyzes
+      width: 100%

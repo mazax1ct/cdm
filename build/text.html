@@ -293,6 +293,9 @@
             <path
               d="M26.667 5.33398H5.33366C3.86699 5.33398 2.66699 6.53398 2.66699 8.00065V24.0007C2.66699 25.4673 3.86699 26.6673 5.33366 26.6673H17.3337V24.0007H5.33366V10.6673L16.0003 17.334L26.667 10.6673V17.334H29.3337V8.00065C29.3337 6.53398 28.1337 5.33398 26.667 5.33398ZM16.0003 14.6673L5.33366 8.00065H26.667L16.0003 14.6673ZM25.3337 20.0007L30.667 25.334L25.3337 30.6673V26.6673H20.0003V24.0007H25.3337V20.0007Z" />
         </symbol>
+        <symbol id="small_arrow_down" viewBox="0 0 12 12">
+            <path d="M6,9L0.8,3l10.4,0L6,9z" />
+        </symbol>
     </svg>
 
     <div id="preloader">
@@ -736,6 +739,28 @@
                         <option value="9">Ортодонтия</option>
                         <option value="10">Ортопедия</option>
                         <option value="11">Имплантация</option>
+                    </select>
+                </span>
+            </label>
+
+            <br><br>
+
+            <label class="select-wrapper select-wrapper--type_5">
+                <span class="select-wrapper__container">
+                    <select class="js-select" placeholder="">
+                        <option value="0">г. Санкт-Петербург, Богатырский пр., д. 4</option>
+                        <option value="1">г. Санкт-Петербург, Кондратьевский пр., д. 62, к. 3</option>
+                        <option value="2">г. Санкт-Петербург, Ленинский пр., д. 88</option>
+                        <option value="3">г. Санкт-Петербург, наб. Фонтанки, д. 154</option>
+                        <option value="3">г. Санкт-Петербург, пр. Наставников, д. 36 к. 2</option>
+                        <option value="4">г. Санкт-Петербург, пр. Просвещения, д.14 к.4</option>
+                        <option value="5">г. Санкт-Петербург, Пулковское шоссе, д. 28А</option>
+                        <option value="6">г. Санкт-Петербург, ул. Будапештская, д. 6</option>
+                        <option value="7">г. Санкт-Петербург, ул. Малая Конюшенная, д.2</option>
+                        <option value="8">г. Санкт-Петербург, ул. Моисеенко, д. 5</option>
+                        <option value="9">г. Санкт-Петербург, ул. Олеко Дундича, д. 8</option>
+                        <option value="10">г. Санкт-Петербург, ул. Правды, д. 18</option>
+                        <option value="11">г. Санкт-Петербург, ул. Школьная, д. 116, к1</option>
                     </select>
                 </span>
             </label>
@@ -1307,10 +1332,12 @@
                     </div>
                     <div class="map-block__list">
                         <div class="map-item">
-                            <p class="map-item__title">Центр Урологии</p>
+                            <p class="map-item__title"><a href="#">Центр Урологии</a></p>
                             <div class="map-item__info">
                                 <p>Санкт-Петербург, ул. Ильюшина, 25<br> <a href="tel:+79650038609">+7 (965) 003 86 09</a></p>
-                                <button class="button button--type_7 button--height_2" type="button" data-center="59.922064, 30.307739" data-info="1">На карте</button>
+                                <button class="button button--type_7 button--height_2" type="button" data-center="59.922064, 30.307739"
+                                  data-info="<div class='balloon'><p class='balloon__title'><a href='#'>Центр Урологии</a></p><p class='balloon__address'>Санкт-Петербург, ул. Ильюшина, 25</p><p class='balloon__phone'><a href='tel:+79650038609'>+7 (965) 003 86 09</a><br> <a href='tel:+79650038609'>+7 (965) 003 86 09</a></p><p class='balloon__work-time'>С 09.00 - 22.00<br> С 09.00 - 22.00</p><p class='balloon__metro'>м. Комендантский проспект, 1 км<br> м. Пионерская, 5 км<br> м. Старая деревня, 5 км</p> <button class='button button--height_3 button--type_3' type='button'>Построить маршрут</button><div class='js-balloon-slider balloon__images'><div class='balloon__image'><img src='images/content/balloon/img_1.jpg' alt='Фото 1'></div><div class='balloon__image'><img src='images/content/balloon/img_1.jpg' alt='Фото 1'></div><div class='balloon__image'><img src='images/content/balloon/img_1.jpg' alt='Фото 1'></div><div class='balloon__image'><img src='images/content/balloon/img_1.jpg' alt='Фото 1'></div><div class='balloon__image'><img src='images/content/balloon/img_1.jpg' alt='Фото 1'></div><div class='balloon__image'><img src='images/content/balloon/img_1.jpg' alt='Фото 1'></div></div></div>">На
+                                    карте</button>
                             </div>
                         </div>
                         <div class="map-item">

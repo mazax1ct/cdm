@@ -1,5 +1,6 @@
 .doctor-detail
   @media(min-width: 1024px)
+    align-items: flex-start
     display: flex
 
   &__image
@@ -8,10 +9,14 @@
     @media(min-width: 1024px)
       max-width: 690px
       margin-bottom: 0
+      position: sticky
+      top: 0
       width: 50%
 
     img
       border-radius: $border-radius
+      display: block
+      width: 100%
 
   &__text-block
     @media(min-width: 1024px)
@@ -24,4 +29,24 @@
     h1
       margin-bottom: 12px
 
-  &__place
+  &__name
+    align-items: center
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-bottom: 20px
+
+    .button
+      margin-bottom: 10px
+      padding-left: 30px
+      padding-right: 30px
+
+  &__name-block
+    margin-bottom: 10px
+    padding-right: 10px
+
+  &__clinics
+    margin-bottom: 20px
+
+    .select-wrapper
+      max-width: 360px

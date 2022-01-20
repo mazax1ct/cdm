@@ -1,0 +1,117 @@
+.dropmenu
+  border: 2px solid $green
+  border-radius: $border-radius * 1.5
+  background-color: #fff
+  overflow: hidden
+  max-width: 360px
+
+  &--type_1
+    border-color: $purple_light
+    border-width: 1px
+
+    .dropmenu__link
+      &.is-active
+        background-color: $purple_light
+
+      &:hover,
+      &:focus
+        color: $purple
+
+    .dropmenu__toggler
+      &:hover,
+      &:focus,
+      &.is-active
+        background-color: $purple_light
+
+    .dropmenu__dropdown-link
+      background-color: $purple_light
+
+      &:hover,
+      &:focus,
+      &.is-active
+        background-color: $purple
+        color: #fff
+
+  &__item
+
+  &__item-inner
+    position: relative
+    padding-right: 40px
+
+  &__link
+    align-items: center
+    color: $text-color
+    display: flex
+    font-weight: 700
+    min-height: 60px
+    padding: 16px 20px
+    text-decoration: none
+    transition: background-color 0.3s, color 0.3s
+
+    @media(min-width: 1900px)
+      font-size: 18px
+      padding-left: 40px
+
+    &.is-active
+      background-color: $green_light
+
+    &:hover,
+    &:focus
+      color: $green
+
+  &__toggler
+    align-items: center
+    border: none
+    background-color: transparent
+    cursor: pointer
+    display: flex
+    height: 60px
+    justify-content: center
+    left: auto
+    padding: 0
+    position: absolute
+    right: 0
+    top: 0
+    transition: background-color 0.3s
+    width: 40px
+
+    &:hover,
+    &:focus,
+    &.is-active
+      background-color: $green_light
+
+    &.is-active
+      .icon
+        transform: rotate(180deg)
+
+    .icon
+      fill: $text-color
+      height: 12px
+      width: 12px
+
+  &__dropdown
+    display: none
+
+  &__dropdown-link
+    align-items: center
+    color: $text-color
+    background-color: $green_light
+    display: flex
+    min-height: 60px
+    padding: 16px 20px
+    text-decoration: none
+    transition: background-color 0.3s, color 0.3s
+
+    @media(min-width: 1600px)
+      padding-left: 40px
+      padding-right: 40px
+
+    &:hover,
+    &:focus,
+    &.is-active
+      background-color: $green
+      color: #fff
+
+    &::before
+      content: '•'
+      margin-right: 10px
