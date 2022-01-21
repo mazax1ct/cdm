@@ -1,8 +1,16 @@
 .contacts
-
   @media(min-width: 1024px)
     display: flex
     flex-direction: row-reverse
+
+  &--type_1
+    @media(min-width: 1024px)
+      flex-direction: row
+
+    .contacts__text-block
+      @media(min-width: 1024px)
+        padding-left: 0
+        padding-right: 48px
 
   &:not(:last-child)
     margin-bottom: 56px
@@ -21,8 +29,16 @@
     @media(min-width: 1350px)
       padding-top: 100px
 
+  &__contacts-list
+    @media(min-width: 768px)
+      columns: 2
+
+    &:not(:last-child)
+      margin-bottom: 30px
+
   &__contact
     font-weight: 700
+    overflow: hidden
     position: relative
     padding-left: 60px
 
@@ -43,7 +59,7 @@
       height: 40px
       left: 0
       position: absolute
-      top: 0
+      top: 6px
       width: 40px
 
   &__map

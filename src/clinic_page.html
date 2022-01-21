@@ -42,24 +42,63 @@
                 </li>
             </ul>
 
-            <h1>Клиника на Охте</h1>
-            <div class="contacts">
+            <h1 class="mb0">Клиника на Охте</h1>
+            <p>Медицинский центр</p>
+
+            <div class="clinic-intro">
+                <div class="clinic-intro__image-block">
+                    <div class="js-simple-slider simple-slider">
+                        <div><img src="images/content/clicnic-detail/img_1.jpg" srcset="images/content/clicnic-detail/img_1@2x.jpg" alt=""></div>
+                        <div><img src="images/content/clicnic-detail/img_1.jpg" srcset="images/content/clicnic-detail/img_1@2x.jpg" alt=""></div>
+                        <div><img src="images/content/clicnic-detail/img_1.jpg" srcset="images/content/clicnic-detail/img_1@2x.jpg" alt=""></div>
+                    </div>
+                </div>
+                <div class="clinic-intro__text-block">
+                    <p>
+                        Основное отличии масс-спектрометрии от других методов физико-химического анализа заключается в
+                        том, что определяются непосредственно частицы вещества, а не излучение или поглощение энергии
+                        атомами или молекулами. В основе метода лежит измерение отношения массы иона к его заряду. Для
+                        этого осуществляется ионизация пробы с последующей пространственной или временной сепарацией
+                        заряженных частиц по их массовым числам в электрическом или магнитном поле.
+                    </p>
+                </div>
+            </div>
+
+            <div class="contacts contacts--type_1">
                 <div class="contacts__text-block">
-                    <p class="h1">Пулковское шоссе, дом&nbsp;28А</p>
-                    <div class="contacts__contact">
-                        <svg class="icon">
-                            <use xlink:href="#envelope"></use>
-                        </svg>
-                        <span>Почта для связи:</span><br>
-                        <a href="mailto:testlab@cdmed.ru">testlab@cdmed.ru</a>
+                    <p class="h1 mb0">Пулковское шоссе, дом&nbsp;28А</p>
+                    <p>Ближайшая станция метро: Пионерская</p>
+                    <div class="contacts__contacts-list">
+                        <div class="contacts__contact">
+                            <svg class="icon">
+                                <use xlink:href="#envelope"></use>
+                            </svg>
+                            <span>Почта для связи:</span><br>
+                            <a href="mailto:testlab@cdmed.ru">testlab@cdmed.ru</a>
+                        </div>
+                        <div class="contacts__contact">
+                            <svg class="icon">
+                                <use xlink:href="#clock"></use>
+                            </svg>
+                            <span>Режим работы:</span><br>
+                            <b>пн-пт: 8:00-20:00</b><br>
+                            <b>сб: 8:00-20:00</b><br>
+                            <b>вс: 8:00-16:00</b>
+                        </div>
+                        <div class="contacts__contact">
+                            <svg class="icon">
+                                <use xlink:href="#phone"></use>
+                            </svg>
+                            <span>Телефон для связи:</span><br>
+                            <a href="tel:+78126004712">600-47-12, доб. 3039</a>
+                        </div>
                     </div>
-                    <div class="contacts__contact">
+                    <button class="button button--type_3 button--height_3" type="button">
                         <svg class="icon">
-                            <use xlink:href="#phone"></use>
+                            <use xlink:href="#eye"></use>
                         </svg>
-                        <span>Телефон для связи:</span><br>
-                        <a href="tel:+78126004712">600-47-12, доб. 3039</a>
-                    </div>
+                        <span>Проложить маршрут</span>
+                    </button>
                 </div>
                 <div id="contacts_map" class="contacts__map"></div>
             </div>
@@ -152,6 +191,93 @@
                 </div>
             </div>
 
+            <h2>Медицинские услуги</h2>
+
+            <ul class="tiles">
+                <li class="tiles__item">
+                    <a class="tile-link tile-link--color_1 tile-link--type_1" href="#">
+                        <span class="tile-link__title">Запись на прием к врачу онлайн</span>
+                        <span class="tile-link__text">Мы в любое время готовы помочь вам</span>
+                        <span class="tile-link__button-block">
+                            <span class="button button--type_1 button--height_1">Подробнее</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="tiles__item tiles__item--type_1">
+                    <a class="tile-link tile-link--color_2 tile-link--type_2" href="#">
+                        <span class="tile-link__title">Кардиография</span>
+                        <span class="tile-link__image">
+                            <img src="images/content/tiles/new/img_1.png" srcset="images/content/tiles/new/img_1@2x.png 2x" alt="">
+                        </span>
+                    </a>
+                </li>
+                <li class="tiles__item tiles__item--type_1">
+                    <a class="tile-link tile-link--color_2 tile-link--type_2" href="#">
+                        <span class="tile-link__title">Телемедицина</span>
+                        <span class="tile-link__image">
+                            <img src="images/content/tiles/new/img_2.png" srcset="images/content/tiles/new/img_2@2x.png 2x" alt="">
+                        </span>
+                    </a>
+                </li>
+                <li class="tiles__item tiles__item--type_1">
+                    <a class="tile-link tile-link--color_2 tile-link--type_2" href="#">
+                        <span class="tile-link__title">УЗИ</span>
+                        <span class="tile-link__image">
+                            <img src="images/content/tiles/new/img_3.png" srcset="images/content/tiles/new/img_3@2x.png 2x" alt="">
+                        </span>
+                    </a>
+                </li>
+                <li class="tiles__item tiles__item--type_1">
+                    <a class="tile-link tile-link--color_2 tile-link--type_2" href="#">
+                        <span class="tile-link__title">Вакцинация</span>
+                        <span class="tile-link__image">
+                            <img src="images/content/tiles/new/img_4.png" srcset="images/content/tiles/new/img_4@2x.png 2x" alt="">
+                        </span>
+                    </a>
+                </li>
+                <li class="tiles__item tiles__item--type_1">
+                    <a class="tile-link tile-link--color_2 tile-link--type_2" href="#">
+                        <span class="tile-link__title">ЭКГ</span>
+                        <span class="tile-link__image">
+                            <img src="images/content/tiles/new/img_5.png" srcset="images/content/tiles/new/img_5@2x.png 2x" alt="">
+                        </span>
+                    </a>
+                </li>
+                <li class="tiles__item tiles__item--type_1">
+                    <a class="tile-link tile-link--color_2 tile-link--type_2" href="#">
+                        <span class="tile-link__title">Все услуги</span>
+                        <span class="tile-link__image">
+                            <img src="images/content/tiles/new/img_6.png" srcset="images/content/tiles/new/img_6@2x.png 2x" alt="">
+                        </span>
+                    </a>
+                </li>
+                <li class="tiles__item tiles__item--type_1">
+                    <a class="tile-link tile-link--color_2 tile-link--type_2" href="#">
+                        <span class="tile-link__title">Подготовка<br> к анализам</span>
+                        <span class="tile-link__image">
+                            <img src="images/content/tiles/new/img_7.png" srcset="images/content/tiles/new/img_7@2x.png 2x" alt="">
+                        </span>
+                    </a>
+                </li>
+                <li class="tiles__item tiles__item--type_1">
+                    <a class="tile-link tile-link--color_2 tile-link--type_2" href="#">
+                        <span class="tile-link__title">Консультация<br> маммолога</span>
+                        <span class="tile-link__image">
+                            <img src="images/content/tiles/new/img_8.png" srcset="images/content/tiles/new/img_8@2x.png 2x" alt="">
+                        </span>
+                    </a>
+                </li>
+                <li class="tiles__item">
+                    <a class="tile-link tile-link--color_1 tile-link--type_1" href="#">
+                        <span class="tile-link__title">Консультация онколога</span>
+                        <span class="tile-link__text">Наши врачи специалисты помогут вам с обнаружением и лечением онкологии</span>
+                        <span class="tile-link__button-block">
+                            <span class="button button--type_1 button--height_1">Подробнее</span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+
             <div class="title-block">
                 <h2>Оборудование</h2>
                 <div class="title-block__controls">
@@ -207,6 +333,74 @@
                         <span class="equip__image"><img src="images/content/equip/img_1.jpg" srcset="images/content/equip/img_1@2x.jpg 2x" alt=""></span>
                         <span class="equip__title">Рентген-аппарат</span>
                     </a>
+                </div>
+            </div>
+
+            <div class="title-block">
+                <h2>Новости</h2>
+                <div id="news_slider_buttons" class="title-block__buttons title-block__buttons--type_1"></div>
+            </div>
+
+            <div class="js-news-slider news-list" data-buttons="news_slider_buttons">
+                <div class="news-list__item">
+                    <article class="news">
+                        <div class="news__image"><img src="images/content/news/img_1.jpg" srcset="images/content/news/img_1@2x.jpg 2x" alt=""></div>
+                        <div class="news__info">
+                            <time class="news__date" datetime="2011-11-02 19:00">02.11.2021</time>
+                            <h2 class="news__title">Длинный заголовок для проверки переполнения вёрстки текстом</h2>
+                            <a class="news__more" href="#">
+                                Читать полностью
+                                <svg class="icon">
+                                    <use xlink:href="#arrow_right"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                <div class="news-list__item">
+                    <article class="news">
+                        <div class="news__image"><img src="images/content/news/img_1.jpg" srcset="images/content/news/img_1@2x.jpg 2x" alt=""></div>
+                        <div class="news__info">
+                            <time class="news__date" datetime="2011-11-02 19:00">02.11.2021</time>
+                            <h2 class="news__title">Изменение режима работы<br> центра Урологии</h2>
+                            <a class="news__more" href="#">
+                                Читать полностью
+                                <svg class="icon">
+                                    <use xlink:href="#arrow_right"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                <div class="news-list__item">
+                    <article class="news">
+                        <div class="news__image"><img src="images/content/news/img_1.jpg" srcset="images/content/news/img_1@2x.jpg 2x" alt=""></div>
+                        <div class="news__info">
+                            <time class="news__date" datetime="2011-11-02 19:00">02.11.2021</time>
+                            <h2 class="news__title">Изменение режима работы<br> центра Урологии</h2>
+                            <a class="news__more" href="#">
+                                Читать полностью
+                                <svg class="icon">
+                                    <use xlink:href="#arrow_right"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                <div class="news-list__item">
+                    <article class="news">
+                        <div class="news__image"><img src="images/content/news/img_1.jpg" srcset="images/content/news/img_1@2x.jpg 2x" alt=""></div>
+                        <div class="news__info">
+                            <time class="news__date" datetime="2011-11-02 19:00">02.11.2021</time>
+                            <h2 class="news__title">Изменение режима работы<br> центра Урологии</h2>
+                            <a class="news__more" href="#">
+                                Читать полностью
+                                <svg class="icon">
+                                    <use xlink:href="#arrow_right"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
                 </div>
             </div>
 
@@ -280,9 +474,11 @@
     //= template/scripts.html
 
     <!--скрипты страницы-->
+    <script src="js/simple-slider.js"></script>
     <script src="js/contacts-map.js"></script>
     <script src="js/doctors-list.js"></script>
     <script src="js/equip-slider.js"></script>
+    <script src="js/news-slider.js"></script>
     <script src="js/reviews-slider.js"></script>
     <script src="js/decor.js"></script>
 

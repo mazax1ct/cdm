@@ -11,7 +11,7 @@
       margin-bottom: 0
       position: sticky
       top: 0
-      width: 50%
+      width: 40%
 
     img
       border-radius: $border-radius
@@ -21,16 +21,15 @@
   &__text-block
     @media(min-width: 1024px)
       padding-left: 24px
-      width: 50%
+      width: 55%
 
-    @media(min-width: 1350px)
+    @media(min-width: 1600px)
       padding-left: 48px
 
     h1
       margin-bottom: 12px
 
   &__name
-    align-items: center
     display: flex
     flex-wrap: wrap
     justify-content: space-between
@@ -45,8 +44,100 @@
     margin-bottom: 10px
     padding-right: 10px
 
+    @media(min-width: 1350px)
+      max-width: calc(100% - 220px)
+
+  &__features-block
+    align-items: center
+    border-radius: $border-radius
+    background-color: $purple_light
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 30px
+    padding: 20px
+
+    @media(min-width: 1350px)
+      flex-wrap: nowrap
+
+  &__exp
+    font-size: 28px
+    font-weight: 800
+    line-height: 26px
+    letter-spacing: -1px
+    margin-bottom: 0
+    margin-right: 30px
+    white-space: nowrap
+
+    @media(min-width: 1350px)
+      font-size: 40px
+      line-height: 26px
+
+    small
+      font-weight: 700
+      font-size: 16px
+      letter-spacing: 0
+
+  &__features
+    font-weight: 700
+
+    @media(min-width: 768px)
+      columns: 2
+      overflow: hidden
+      overflow-wrap: initial
+      page-break-inside: avoid
+
+    @media(min-width: 1024px) and (max-width: 1349px)
+      columns: 1
+
+    p
+      align-items: center
+      display: flex
+      margin-bottom: 0
+      overflow: hidden
+      padding-top: 10px
+      padding-bottom: 10px
+
+      &::before
+        background-image: url("data:image/svg+xml,%3Csvg width='30' height='29' viewBox='0 0 30 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.0979 1.8541C13.6966 0.0114784 16.3034 0.0114794 16.9021 1.8541L19.0413 8.43769C19.309 9.26174 20.0769 9.81966 20.9434 9.81966H27.8658C29.8032 9.81966 30.6088 12.2989 29.0413 13.4377L23.441 17.5066C22.74 18.0159 22.4467 18.9186 22.7145 19.7426L24.8536 26.3262C25.4523 28.1689 23.3433 29.7011 21.7759 28.5623L16.1756 24.4934C15.4746 23.9841 14.5254 23.9841 13.8244 24.4934L8.22409 28.5623C6.65666 29.7011 4.5477 28.1689 5.14641 26.3262L7.28555 19.7426C7.5533 18.9186 7.25998 18.0159 6.559 17.5066L0.958665 13.4377C-0.608762 12.2989 0.19679 9.81966 2.13424 9.81966H9.05664C9.92309 9.81966 10.691 9.26174 10.9587 8.43769L13.0979 1.8541Z' fill='%238D83B2'/%3E%3C/svg%3E%0A")
+        content: ''
+        display: block
+        height: 30px
+        margin-right: 10px
+        min-width: 30px
+        width: 30px
+
+  &__contacts
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 20px
+
+    a
+      align-items: center
+      color: $text-color
+      display: inline-flex
+      font-weight: 700
+      padding-top: 10px
+      padding-bottom: 10px
+
+      &:not(:last-child)
+        margin-right: 40px
+
+      &:hover,
+      &:focus
+        color: $green
+
+        .icon
+          fill: $green
+
+      .icon
+        fill: $text-color
+        height: 32px
+        margin-right: 10px
+        transition: fill 0.3s
+        width: 32px
+
   &__clinics
     margin-bottom: 20px
 
     .select-wrapper
-      max-width: 360px
+      max-width: 380px
