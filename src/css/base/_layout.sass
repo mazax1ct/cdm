@@ -54,6 +54,9 @@ body
   margin-right: auto
   max-width: 1000px
 
+  &--860
+    max-width: 860px
+
   &:not(:last-child)
     margin-bottom: 56px
 
@@ -75,6 +78,10 @@ body
     .columns__column
       @media(min-width: 1024px)
         width: 33.33333%
+
+  &--reverse
+    @media(min-width: 768px)
+      flex-direction: row-reverse
 
   &:not(:last-child)
     margin-bottom: 32px

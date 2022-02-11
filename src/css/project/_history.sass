@@ -1,0 +1,37 @@
+.history
+  margin-left: auto
+  margin-right: auto
+  max-width: 1154px
+
+  &__item
+    margin-bottom: 40px
+
+  &__columns
+    @media(min-width: 768px)
+      display: flex
+      flex-wrap: wrap
+      margin-left: -12px
+      margin-right: -12px
+
+    @media(min-width: 1350px)
+      margin-left: -20px
+      margin-right: -20px
+
+    &--reverse
+      @media(min-width: 768px)
+        flex-direction: row-reverse
+
+  &__column
+    margin-bottom: 24px
+
+    @media(min-width: 768px)
+      padding-left: 12px
+      padding-right: 12px
+      width: 50%
+
+    @media(min-width: 1350px)
+      padding-left: 20px
+      padding-right: 20px
+
+    h2
+      margin-bottom: 8px

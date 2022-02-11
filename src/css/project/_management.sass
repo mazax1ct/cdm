@@ -1,0 +1,76 @@
+.management
+  margin-left: auto
+  margin-right: auto
+  max-width: 1154px
+  margin-top: 40px
+
+  @media(min-width: 1350px)
+    margin-top: 80px
+
+.manager
+  max-width: 1060px
+
+  @media(min-width: 768px)
+    display: flex
+
+  &:not(:last-child)
+    margin-bottom: 56px
+
+    @media(min-width: 1350px)
+      margin-bottom: 80px
+
+  &__image
+    border-radius: $border-radius
+    border: 16px solid $purple_light
+    max-width: 370px
+    margin-bottom: 20px
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+      min-width: 370px
+
+    img
+      border-radius: $border-radius
+
+  &__info
+    @media(min-width: 768px)
+      padding-left: 40px
+
+    h2,
+    p
+      margin-bottom: 16px
+
+    p
+
+      @media(min-width: 1900px)
+        font-size: 20px
+
+  &__contacts
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 16px
+
+    a
+      align-items: center
+      color: $text-color
+      display: inline-flex
+      font-weight: 700
+      padding-top: 10px
+      padding-bottom: 10px
+
+      &:not(:last-child)
+        margin-right: 40px
+
+      &:hover,
+      &:focus
+        color: $green
+
+        .icon
+          fill: $green
+
+      .icon
+        fill: $text-color
+        height: 32px
+        margin-right: 10px
+        transition: fill 0.3s
+        width: 32px
