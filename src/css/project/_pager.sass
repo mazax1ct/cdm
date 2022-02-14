@@ -11,6 +11,24 @@
   &--center
     justify-content: center
 
+  &--type_2
+    .pager__link
+      color: $purple
+
+      &.is-active
+        background-color: $purple_light
+
+      .icon
+        fill: $purple
+        height: 24px
+        width: 24px
+
+    a.pager__link
+      &:hover,
+      &:focus
+        background-color: $purple_light
+        color: $purple
+
   &__item
     margin-left: 8px
     margin-right: 8px

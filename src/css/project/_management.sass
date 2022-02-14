@@ -11,6 +11,7 @@
   max-width: 1060px
 
   @media(min-width: 768px)
+    align-items: flex-start
     display: flex
 
   &:not(:last-child)
@@ -27,6 +28,9 @@
 
     @media(min-width: 768px)
       margin-bottom: 0
+      min-width: 300px
+
+    @media(min-width: 1350px)
       min-width: 370px
 
     img
@@ -34,16 +38,14 @@
 
   &__info
     @media(min-width: 768px)
+      padding-left: 20px
+
+    @media(min-width: 1350px)
       padding-left: 40px
 
     h2,
     p
       margin-bottom: 16px
-
-    p
-
-      @media(min-width: 1900px)
-        font-size: 20px
 
   &__contacts
     display: flex
