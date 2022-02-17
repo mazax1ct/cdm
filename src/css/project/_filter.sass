@@ -16,7 +16,34 @@
     @media(min-width: 1900px)
       margin-right: 40px
 
+    .select-wrapper
+      min-width: 120px
+
+    &--type_1
+      align-items: center
+      display: flex
+      flex-wrap: wrap
+
+      .select-wrapper
+        min-width: 280px
+
+    &--type_2
+      display: flex
+      flex-direction: column
+
+      .select-wrapper
+        min-width: 205px
+
+      .checkbox-label
+        margin-top: 16px
+
+  &__item-title
+    display: block
+    min-height: 21px
+    margin-right: 12px
+
   &__buttons
+    align-self: flex-end
     display: flex
     margin-right: 0
 
