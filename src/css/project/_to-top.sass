@@ -1,0 +1,44 @@
+.to-top
+  bottom: 30px
+  display: none
+  height: 0
+  max-width: 1570px
+  margin-left: auto
+  margin-right: auto
+  padding-left: 10px
+  padding-right: 10px
+  left: 50%
+  position: fixed
+  top: auto
+  transform: translateX(-50%)
+  width: 100%
+  z-index: 9
+
+  @media(min-width: 1350px)
+    width: 90%
+
+  &__button
+    align-items: center
+    border-radius: 8px
+    background-color: $green
+    display: flex
+    height: 40px
+    justify-content: center
+    transform: translateY(-50%)
+    transition: background-color 0.3s
+    width: 40px
+
+    @media(min-width: 1350px)
+      margin-left: -20px
+      transform: translate(-100%, -50%)
+
+  &.is-active
+    display: block
+
+  &:hover
+    background-color: $green_light
+
+  svg
+    fill: #fff
+    height: 24px
+    width: 24px
