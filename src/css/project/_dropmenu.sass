@@ -9,7 +9,8 @@
     border-color: $purple_light
     border-width: 1px
 
-    .dropmenu__link
+    .dropmenu__link,
+    .dropmenu__dropdown-link
       &.is-active
         background-color: $purple_light
 
@@ -22,7 +23,8 @@
       &.is-active
         background-color: $purple_light
 
-    .dropmenu__dropdown-link
+    .dropmenu__dropdown-link,
+    .dropmenu__sub-dropdown-link
       background-color: $purple_light
 
       &:hover,
@@ -34,7 +36,8 @@
   &--type_2
     border-color: $purple
 
-    .dropmenu__link
+    .dropmenu__link,
+    .dropmenu__dropdown-link
       &.is-active
         background-color: $purple_light
 
@@ -48,7 +51,8 @@
       &.is-active
         background-color: $purple_light
 
-    .dropmenu__dropdown-link
+    .dropmenu__dropdown-link,
+    .dropmenu__sub-dropdown-link
       background-color: $purple_light
 
       &:hover,
@@ -121,8 +125,35 @@
     color: $text-color
     background-color: $green_light
     display: flex
+    font-size: 14px
     min-height: 60px
-    padding: 16px 24px
+    padding: 16px 48px 16px 36px
+    text-decoration: none
+    transition: background-color 0.3s, color 0.3s
+
+    @media(min-width: 1900px)
+      font-size: 16px
+
+    &:hover,
+    &:focus,
+    &.is-active
+      background-color: $green
+      color: #fff
+
+  &__sub-dropdown
+    display: none
+
+  &__dropdown-item-inner
+    position: relative
+
+  &__sub-dropdown-link
+    align-items: center
+    color: $text-color
+    background-color: $green_light
+    display: flex
+    font-size: 14px
+    min-height: 60px
+    padding: 16px 36px 16px 36px
     text-decoration: none
     transition: background-color 0.3s, color 0.3s
 
