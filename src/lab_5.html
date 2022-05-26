@@ -30,7 +30,14 @@
 
     <main class="page-content">
         <div class="container">
-            <h1>Все отзывы</h1>
+            <div class="title-block">
+                <h1>Все отзывы</h1>
+                <div class="title-block__controls">
+                    <a class="button button--type_3 button--height_4" href="javascript:void(0)" data-fancybox="review" data-src="#review_popup">
+                        <span>Добавить отзыв</span>
+                    </a>
+                </div>
+            </div>
 
             <div class="reviews-slider">
                 <div class="reviews-slider__item">
@@ -82,12 +89,20 @@
                     </a>
                 </div>
             </div>
+
+            <div class="text-right">
+                <a class="button button--type_3 button--height_4" href="javascript:void(0)" data-fancybox="review_2" data-src="#review_popup">
+                    <span>Добавить отзыв</span>
+                </a>
+            </div>
         </div>
     </main>
 
     //= template/footer_lab.html
 
     //= template/recall_popup.html
+
+    //= template/review_popup.html
 
     <!--общие скрипты-->
     //= template/scripts.html

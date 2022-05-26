@@ -82,3 +82,102 @@
   &__title
     color: $text-color
     display: block
+
+.reviews-slider-2
+  list-style: none
+  margin: 0
+  padding: 0
+
+  @media(min-width: 768px)
+    display: flex
+    flex-wrap: wrap
+    margin-left: -6px
+    margin-right: -6px
+
+  @media(min-width: 1024px)
+    margin-left: -10px
+    margin-right: -10px
+
+  @media(min-width: 1350px)
+    margin-left: -20px
+    margin-right: -20px
+
+  &:not(:last-child)
+    margin-bottom: 56px
+
+    @media(min-width: 1350px)
+      margin-bottom: 96px
+
+  &.slick-initialized
+    display: block
+
+    .reviews-slider-2__item
+      margin-bottom: 0
+
+    @media(min-width: 580px)
+      margin-left: -12px
+      margin-right: -12px
+
+    .reviews-slider-2__item
+      @media(min-width: 580px)
+        display: flex
+        padding-left: 12px
+        padding-right: 12px
+
+  .slick-list
+    width: 100%
+
+  .slick-track
+    display: flex
+    margin-left: 0
+    margin-right: 0
+
+  &__item
+    height: auto
+    margin-bottom: 24px
+
+    @media(min-width: 768px)
+      display: flex
+      padding-left: 6px
+      padding-right: 6px
+      width: 50%
+
+    @media(min-width: 1024px)
+      padding-left: 10px
+      padding-right: 10px
+      width: 25%
+
+    @media(min-width: 1350px)
+      padding-left: 20px
+      padding-right: 20px
+
+.review-2
+  border-radius: $border-radius
+  background-color: #fff
+  border: 2px solid $green
+  padding: 24px 12px
+  position: relative
+  transition: background-color 0.3s, box-shadow 0.3s
+
+  @media(min-width: 768px)
+    padding-left: 16px
+    padding-right: 16px
+
+  &:hover,
+  &:focus
+    background-color: $green_light
+    box-shadow: 0 4px 6px 0 rgba(#000, 0.2)
+
+  &__time
+    font-weight: 700
+    margin-bottom: 10px
+
+  &__title
+    font-size: 18px
+    font-weight: 800
+    line-height: 1.2
+    margin-right: auto
+    margin-bottom: 16px
+
+    @media(min-width: 1350px)
+      font-size: 20px

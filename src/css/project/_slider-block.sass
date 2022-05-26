@@ -46,6 +46,15 @@
     &:last-child
       margin-bottom: 0
 
+.slider-wrapper
+  position: relative
+  
+  &:not(:last-child)
+    margin-bottom: 56px
+
+    @media(min-width: 1350px)
+      margin-bottom: 96px
+
 .slider
   height: 100%
 
@@ -60,7 +69,7 @@
       flex-direction: column
 
   &__slide
-    clear: #fff
+    color: #fff
     position: relative
 
   &__slide-link
