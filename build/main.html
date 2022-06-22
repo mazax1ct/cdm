@@ -837,9 +837,11 @@
 
             <div class="columns">
                 <div class="columns__column columns__column--align_center">
-                    <div class="responsive-video">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/PSccuRCGTt8?autoplay=1&amp;loop=1&amp;mute=1" title="YouTube video player" frameborder="0"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="video">
+                        <video class="video__video" preload="auto" loop="loop" muted poster="images/poster.webp">
+                            <source src="images/intro_video.mp4">
+                        </video>
+                        <button class="video__play" type="button" title="Включить видео"></button>
                     </div>
                 </div>
                 <div class="columns__column columns__column--align_center">
@@ -1352,6 +1354,7 @@
     <script src="js/slider.js"></script>
     <script src="js/search.js"></script>
     <script src="js/complexes-list.js"></script>
+    <script src="js/video.js"></script>
     <script src="js/doctors-list.js"></script>
     <script src="js/clinics-map.js"></script>
     <script src="js/decor.js"></script>
