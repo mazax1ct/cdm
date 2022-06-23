@@ -58,7 +58,7 @@
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 
-<body class="personal-page">
+<body>
     <svg aria-hidden="true" style="width: 0px; height: 0px; overflow: hidden; position: absolute;" xmlns="http://www.w3.org/2000/svg">
         <symbol id="refresh" viewBox="0 0 20 20">
             <path
@@ -448,164 +448,80 @@
                 </li>
             </ul>
 
-            <div class="personal">
-                <div class="personal__inner">
-                    <button class="js-personal-menu-opener personal__menu-opener button button--type_1 button--height_3" type="button">
-                        <span>Открыть меню</span>
-                        <svg class="icon">
-                            <use xlink:href="#burger"></use>
-                        </svg>
-                    </button>
-                    <div class="personal__menu-block">
-                        <div class="personal__menu-block-inner">
-                            <button class="js-personal-menu-closer personal__menu-closer" type="button" title="Закрыть меню">
-                                <svg class="icon">
-                                    <use xlink:href="#close"></use>
-                                </svg>
-                            </button>
-                            <div class="user-info">
-                                <a class="user-info__settings" href="#" title="Настройки профиля">
-                                    <svg class="icon">
-                                        <use xlink:href="#settings"></use>
-                                    </svg>
-                                </a>
-                                <div class="user-info__top">
-                                    <div class="user-info__avatar">
-                                        <img src="images/content/personal/avatar.jpg" srcset="images/content/personal/avatar@2x.jpg 2x" alt="">
-                                    </div>
-                                    <div class="user-info__user">
-                                        <p class="user-info__name">Константин</p>
-                                        <p>helen@yandex.ru</p>
-                                    </div>
-                                </div>
-                                <p>Ваш баланс:</p>
-                                <p class="user-info__balance">3 000 000 ₽</p>
-                            </div>
-                            <ul class="personal-menu">
-                                <li class="personal-menu__item">
-                                    <a class="personal-menu__link is-active" href="#">
+            <h2>Корзина</h2>
+            <div class="cart">
+                <div class="cart__items">
+                    <div class="responsive-table">
+                        <table class="type_1">
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col width="70px">
+                            </colgroup>
+                            <tr class="cart__item">
+                                <td><a href="#">Диагностика рака молочной железы.<br> Метаболиты эстрогенов.</a></td>
+                                <td class="cart__item-price">1800 ₽</td>
+                                <td>
+                                    <button class="cart__item-delete" type="button" title="Удалить">
                                         <svg class="icon">
-                                            <use xlink:href="#home"></use>
+                                            <use xlink:href="#close"></use>
                                         </svg>
-                                        Главная
-                                    </a>
-                                </li>
-                                <li class="personal-menu__item">
-                                    <a class="personal-menu__link" href="#">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="cart__item">
+                                <td><a href="#">Узи почек</a></td>
+                                <td class="cart__item-price">500 ₽</td>
+                                <td>
+                                    <button class="cart__item-delete" type="button" title="Удалить">
                                         <svg class="icon">
-                                            <use xlink:href="#results"></use>
+                                            <use xlink:href="#close"></use>
                                         </svg>
-                                        Результаты
-                                    </a>
-                                </li>
-                                <li class="personal-menu__item">
-                                    <a class="personal-menu__link" href="#">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="cart__item">
+                                <td><a href="#">Узи почек</a></td>
+                                <td class="cart__item-price">19800 ₽</td>
+                                <td>
+                                    <button class="cart__item-delete" type="button" title="Удалить">
                                         <svg class="icon">
-                                            <use xlink:href="#meets"></use>
+                                            <use xlink:href="#close"></use>
                                         </svg>
-                                        Приемы
-                                    </a>
-                                </li>
-                                <li class="personal-menu__item">
-                                    <a class="personal-menu__link" href="#">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="cart__item">
+                                <td><a href="#">Узи почек</a></td>
+                                <td class="cart__item-price">119800 ₽</td>
+                                <td>
+                                    <button class="cart__item-delete" type="button" title="Удалить">
                                         <svg class="icon">
-                                            <use xlink:href="#history"></use>
+                                            <use xlink:href="#close"></use>
                                         </svg>
-                                        Корзина
-                                    </a>
-                                </li>
-                                <li class="personal-menu__item">
-                                    <a class="personal-menu__link" href="#">
-                                        <svg class="icon">
-                                            <use xlink:href="#finance"></use>
-                                        </svg>
-                                        Финансы
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                                    </button>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
-
-                    <div class="personal__content-block">
-                        <h2>Корзина</h2>
-                        <div class="cart">
-                            <div class="cart__items">
-                                <div class="responsive-table">
-                                    <table class="type_1">
-                                        <colgroup>
-                                            <col>
-                                            <col>
-                                            <col width="70px">
-                                        </colgroup>
-                                        <tr class="cart__item">
-                                            <td><a href="#">Диагностика рака молочной железы.<br> Метаболиты эстрогенов.</a></td>
-                                            <td class="cart__item-price">1800 ₽</td>
-                                            <td>
-                                                <button class="cart__item-delete" type="button" title="Удалить">
-                                                    <svg class="icon">
-                                                        <use xlink:href="#close"></use>
-                                                    </svg>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr class="cart__item">
-                                            <td><a href="#">Узи почек</a></td>
-                                            <td class="cart__item-price">500 ₽</td>
-                                            <td>
-                                                <button class="cart__item-delete" type="button" title="Удалить">
-                                                    <svg class="icon">
-                                                        <use xlink:href="#close"></use>
-                                                    </svg>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr class="cart__item">
-                                            <td><a href="#">Узи почек</a></td>
-                                            <td class="cart__item-price">19800 ₽</td>
-                                            <td>
-                                                <button class="cart__item-delete" type="button" title="Удалить">
-                                                    <svg class="icon">
-                                                        <use xlink:href="#close"></use>
-                                                    </svg>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr class="cart__item">
-                                            <td><a href="#">Узи почек</a></td>
-                                            <td class="cart__item-price">119800 ₽</td>
-                                            <td>
-                                                <button class="cart__item-delete" type="button" title="Удалить">
-                                                    <svg class="icon">
-                                                        <use xlink:href="#close"></use>
-                                                    </svg>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="cart__results">
-                                <p class="cart__results-row">
-                                    <span>Итого:</span>
-                                    <span>11800&nbsp;₽</span>
-                                </p>
-                                <p class="cart__results-row">
-                                    <span>Акция:<br> <small>2 узи по цене одного</small></span>
-                                    <span>-1800&nbsp;₽</span>
-                                </p>
-                                <div class="cart__results-button-block">
-                                    <a class="button button--type_2 button--height_4" href="#">
-                                        <svg class="icon">
-                                            <use xlink:href="#payment"></use>
-                                        </svg>
-                                        <span>Оплатить</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                </div>
+                <div class="cart__results">
+                    <p class="cart__results-row">
+                        <span>Итого:</span>
+                        <span>11800&nbsp;₽</span>
+                    </p>
+                    <p class="cart__results-row">
+                        <span>Акция:<br> <small>2 узи по цене одного</small></span>
+                        <span>-1800&nbsp;₽</span>
+                    </p>
+                    <div class="cart__results-button-block">
+                        <a class="button button--type_1 button--height_4" href="#">
+                            <span>Заказать</span>
+                        </a>
                     </div>
                 </div>
             </div>
+
         </div>
     </main>
 
