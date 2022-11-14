@@ -31,10 +31,18 @@
     font-weight: 800
     line-height: 1.2
     letter-spacing: -1px
+    text-align: right
     white-space: nowrap
 
     @media(min-width: 1350px)
       font-size: 24px
+
+  &__item-old-price
+    font-size: 60%
+    font-weight: 400
+    margin-bottom: 0
+    opacity: 0.6
+    text-decoration: line-through
 
   &__item-delete
     align-items: center
@@ -60,6 +68,7 @@
 
   &__results
     border: 1px solid $green_light
+    background-color: #fff
 
     @media(min-width: 1200px)
       min-width: 300px
@@ -93,6 +102,16 @@
     small
       font-weight: 700
       letter-spacing: 0
+
+  &__results-price-block
+    text-align: right
+
+  &__results-old-price
+    display: block
+    font-size: 60%
+    font-weight: 400
+    opacity: 0.6
+    text-decoration: line-through
 
   &__results-button-block
     padding: 24px

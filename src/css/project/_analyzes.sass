@@ -113,7 +113,7 @@
       width: 16px
 
   &__buy-block
-    align-items: center
+    align-items: flex-end
     display: flex
     flex-wrap: wrap
     margin-top: 16px
@@ -127,7 +127,8 @@
       position: relative
       z-index: 2
 
-  &__price
+
+  &__price-block
     font-size: 24px
     font-weight: 700
     line-height: 1
@@ -139,6 +140,17 @@
     @media(min-width: 768px)
       font-size: 36px
       margin-right: 24px
+      text-align: right
 
     @media(min-width: 1350px)
       font-size: 44px
+
+  &__price
+    margin-bottom: 0
+
+  &__old-price
+    font-weight: 400
+    font-size: 60%
+    margin-bottom: 0
+    opacity: 0.6
+    text-decoration: line-through

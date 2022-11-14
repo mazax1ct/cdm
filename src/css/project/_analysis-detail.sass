@@ -126,7 +126,7 @@
     &:not(:last-child)
       margin-bottom: 32px
 
-  &__price
+  &__price-block
     font-size: 24px
     font-weight: 800
     line-height: 1
@@ -139,7 +139,17 @@
       font-size: 30px
 
     @media(min-width: 1600px)
-      font-size: 48px
+      font-size: 40px
+
+  &__price
+    margin-bottom: 0
+
+  &__old-price
+    font-weight: 400
+    font-size: 60%
+    margin-bottom: 0
+    opacity: 0.6
+    text-decoration: line-through
 
   &__add-price
     font-size: 18px
